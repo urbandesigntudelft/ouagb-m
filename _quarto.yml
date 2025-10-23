@@ -16,7 +16,7 @@ bibliography: references.bib
 format:
   html:
     theme:
-      - cosmo
+      - yeti
       - brand
   pdf:
     documentclass: scrreprt
