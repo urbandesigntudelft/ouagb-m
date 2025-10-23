@@ -3,7 +3,6 @@ image: quarto-dev/quarto:latest
 pages:
   stage: deploy
   script:
-    - echo "start"
     - quarto render
   artifacts:
     paths:
