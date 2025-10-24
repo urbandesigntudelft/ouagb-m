@@ -2,30 +2,30 @@
 
 [![Open Educational Resource](https://img.shields.io/badge/OER-open-blue)](https://en.wikipedia.org/wiki/Open_educational_resources)
 
-This repository hosts the *Open Urban Analysis Guidebook - Morphology* developed by the Section of Urban Design at TU Delft. The book is an update of the *Urban Analysis Guidebook: Typo-Morphology* published in the early 2000s. This version is meant to (1) update the content with new developments in the field of urban morphology, (2) provide a more dynamic interface that enables interaction, and (3) make the book openly accessible beyond TU Delft. The first phase of development is currently ongoing with financtial support from the Open Education Stimulation Fund of TU Delft.
+This repository hosts the source of the *Open Urban Analysis Guidebook - Morphology* developed at the Section of Urban Design, Department of Urbanism, TU Delft.
+
+The book is an extensive update of the *Urban Analysis Guidebook: Typomorphology* published in more than two decades ago [@]. This version is meant to (1) update the content with new developments in the field of urban morphology, (2) provide a more dynamic interface that allows learners to interact with the content, and (3) make the book openly accessible beyond TU Delft.
+
+The first phase of development is currently ongoing with financial support from the [Open Education Stimulation Fund](https://www.tudelft.nl/en/open-science/articles-tu-delft/call-for-proposals-2025) of TU Delft.
 
 Read the book at: 
 
 For questions about the book, contact us at:
 
-## Support
-
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
 ## Roadmap
 
 **Content update & development (2025-2026)**
-The current phase is focused on updating the previous version of the guidebook and on developing new content.
+The current phase is focused on updating the previous version of the guidebook, developing new content, and setting up the book in digital format.
 
 **Interactive features & tools (2026-)**
 In the medium term, we aim to increase the interactivity of the book together with students and instructors.
 
 **Integration of AI functionality**
-In the long term, we will explore AI functionality.
+In the long term, we will explore AI functionality for deeper interaction.
 
 ## Contributing
 
-As this is an open book, we welcome contributions from the community.
+As this is an open book, we welcome contributions from the community!
 
 If you would like to contribute and
 
