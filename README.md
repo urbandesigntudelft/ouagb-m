@@ -1,4 +1,5 @@
 
+
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 # Open Urban Analysis Guidebook - Morphology
@@ -6,7 +7,7 @@
 <!-- badges: start -->
 
 [![Open Educational
-Resource](https://img.shields.io/badge/OER-open-blue)](https://en.wikipedia.org/wiki/Open_educational_resources)
+Resource](https://img.shields.io/badge/OER-open-blue.png)](https://en.wikipedia.org/wiki/Open_educational_resources)
 <!-- badges: end -->
 
 This repository hosts the source of the *Open Urban Analysis Guidebook -
@@ -14,11 +15,11 @@ Morphology* developed at the Section of Urban Design, Department of
 Urbanism, TU Delft.
 
 The book is an extensive update of the *Urban Analysis Guidebook:
-Typomorphology* published in more than two decades ago
-\[@vandenburg2004\]. This version is meant to (1) update the content
-with new developments in the field of urban morphology, (2) provide a
-more dynamic interface that allows learners to interact with the
-content, and (3) make the book openly accessible beyond TU Delft.
+Typomorphology* published in more than two decades ago (van den Burg
+2004). This version is meant to (1) update the content with new
+developments in the field of urban morphology, (2) provide a more
+dynamic interface that allows learners to interact with the content, and
+(3) make the book openly accessible beyond TU Delft.
 
 The first phase of development is currently ongoing with financial
 support from the [Open Education Stimulation
@@ -71,3 +72,15 @@ For open source projects, say how it is licensed.
 The project is in an active state of development.
 
 ## References
+
+<div id="refs" class="references csl-bib-body hanging-indent"
+entry-spacing="0">
+
+<div id="ref-vandenburg2004" class="csl-entry">
+
+van den Burg, Leo, ed. 2004. *Urban Analysis Guidebook, Typomorphology*.
+Delft: Technical University of Delft.
+
+</div>
+
+</div>
