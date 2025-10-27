@@ -16,14 +16,10 @@ book:
     - intro.qmd
     - summary.qmd
     - references.qmd
-    
-  website:
-    page-footer: 
-      -text: "Licensed under"
-      -text: "CC BY 4.0"
-       href: "https://creativecommons.org/licenses/by/4.0/"
-      -text: " | "
-      -text: "[![CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)"
+  page-footer:
+    center: "© 2025, Section of Urban Design TU Delft - CC BY 4.0"
+
+license: "CC BY"
 
 bibliography: references.bib
 
