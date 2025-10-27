@@ -1,8 +1,5 @@
 project:
   type: book
-  # render:
-  # - "*.qmd"
-  # - "!*.pdf"  # prevent PDF builds on GitHub Pages
 
 book:
   title: "Open Urban Analysis Guidebook: Morphology"
