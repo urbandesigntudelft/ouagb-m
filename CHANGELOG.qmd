@@ -1,0 +1,29 @@
+---
+title: "CHANGELOG"
+format: html
+---
+
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased]
+
+### Added
+
+- New quarto book project.
+- Changelog page.
+
+## [released version numver] - 2023-03-05(release data in format as this)
+### Added
+### Changed
+### Deprecated
+### Removed
+### Fixed
+### Security
+
+[unreleased]: link to the website
+[released version number]: link to the website
