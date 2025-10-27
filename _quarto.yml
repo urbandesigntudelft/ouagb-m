@@ -14,6 +14,13 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
+    - part: part-1.qmd
+      chapters:
+        - Foundations&Frontiers.qmd
+        - Methods&Techniques.qmd
+    - part: part-2.qmd
+      chapters: 
+        - examples.qmd
     - summary.qmd
     - references.qmd
   page-footer:
