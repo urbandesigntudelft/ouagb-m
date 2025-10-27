@@ -1,10 +1,15 @@
 project:
   type: book
-  output-dir: public
 
 book:
   title: "Open Urban Analysis Guidebook: Morphology"
-  author: "Norah Jones"
+  author:
+    - name: Giambattista Nolli
+      orcid: 0000-0003-1689-0557
+      email: bill@gates.com
+      affiliations:
+        - name: The Morphology Foundation
+          city: Rome
   date: "10/23/2025"
   chapters:
     - index.qmd
