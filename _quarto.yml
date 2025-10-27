@@ -1,8 +1,8 @@
 project:
   type: book
-  render:
-  - "*.qmd"
-  - "!*.pdf"  # prevent PDF builds on GitHub Pages
+  # render:
+  # - "*.qmd"
+  # - "!*.pdf"  # prevent PDF builds on GitHub Pages
 
 book:
   title: "Open Urban Analysis Guidebook: Morphology"
@@ -31,8 +31,8 @@ format:
     theme:
       - yeti
       - brand
-  pdf:
-    documentclass: scrreprt
+  # pdf:
+  #   documentclass: scrreprt
 
 
 
