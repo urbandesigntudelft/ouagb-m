@@ -13,9 +13,20 @@ book:
   date: "10/23/2025"
   chapters:
     - index.qmd
-    - intro.qmd
-    - summary.qmd
-    - references.qmd
+    - part: "Foundations & Frontiers"
+      chapters:
+        - chapters/foundations.qmd
+        - chapters/frontiers.qmd
+        - chapters/methods.qmd
+    - part: "Examples"
+      chapters:
+        # - catalog/examples/01.qmd
+        - catalog/index.qmd
+    - part: "Appendices"
+      chapters:
+        # - appendices/glossary.qmd
+        - appendices/references.qmd
+
   page-footer:
     center: "© 2025, Section of Urban Design TU Delft - CC BY 4.0"
 

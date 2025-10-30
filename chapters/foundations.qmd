@@ -1,0 +1,8 @@
+---
+title: "Foundations"
+author: "Leo van den Burg"
+---
+
+This chapter introduces schools of urban morphology, typomorphology, fundamental concepts...
+
+See @knuth84 for additional discussion of literate programming.

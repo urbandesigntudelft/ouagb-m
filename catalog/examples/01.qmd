@@ -1,0 +1,19 @@
+---
+title: "Example 01"
+description: "An example catalog entry with a map."
+categories: [Spatial Network Analysis, Density Analysis]
+tags: [built, map]
+date: 2025-10-29
+---
+
+## Overview
+Short description of this example. You can add images, links, and details here.
+
+```{r}
+library(leaflet)
+lat <- 40.7794; lon <- -73.9632
+leaflet() |>
+  addTiles() |>
+  setView(lng = lon, lat = lat, zoom = 13) |>
+  addMarkers(lng = lon, lat = lat, popup = "Some text")
+```
