@@ -43,8 +43,20 @@ format:
     theme:
       - yeti
       - brand
+    toc: true
+    number-sections: true
+    smooth-scroll: true
+    anchor-sections: true
+    fig-cap-location: margin
+    tbl-cap-location: top
+    bread-crumbs: false
+    css: styles.css
   # pdf:
   #   documentclass: scrreprt
 
+# Enable site-wide search
+search: true
 
-
+# Speed up rebuilds in CI
+execute:
+  freeze: auto
