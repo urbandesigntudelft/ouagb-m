@@ -1,5 +1,9 @@
 project:
   type: book
+  output-dir: _book
+
+site-url: https://urbandesigntudelft.github.io/ouagb-m/
+base-url: /ouagb-m/
 
 book:
   title: "Open Urban Analysis Guidebook: Morphology"
