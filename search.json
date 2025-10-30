@@ -4,38 +4,85 @@
     "href": "index.html",
     "title": "Open Urban Analysis Guidebook: Morphology",
     "section": "",
-    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
+    "text": "Preface\nThis section provides context and background information for the book.",
     "crumbs": [
       "Preface"
     ]
   },
   {
-    "objectID": "intro.html",
-    "href": "intro.html",
-    "title": "1  Introduction",
+    "objectID": "chapters/foundations.html",
+    "href": "chapters/foundations.html",
+    "title": "1  Foundations",
     "section": "",
-    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "text": "This chapter introduces schools of urban morphology, typomorphology, fundamental concepts…\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+      "Foundations & Frontiers",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Foundations</span>"
     ]
   },
   {
-    "objectID": "summary.html",
-    "href": "summary.html",
-    "title": "2  Summary",
+    "objectID": "chapters/frontiers.html",
+    "href": "chapters/frontiers.html",
+    "title": "2  Frontiers",
     "section": "",
-    "text": "In summary, this book has no content whatsoever.",
+    "text": "This chapter explores emerging frontiers in urban morphology: urban morphometrics, spatial morphology, and spatial data science. Urban morphometrics is a quantitative field aiming at extracting patterns from large amounts of morphological data; spatial morphology expands the field to the analysis of unbuilt space mostly using space syntax theory and landscape ecology principles; spatial data science as a cross-cutting field increasingly adopts urban morphological information to enrich the understanding of spatial phenomena of environmental, social and economic kind.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+      "Foundations & Frontiers",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Frontiers</span>"
     ]
   },
   {
-    "objectID": "references.html",
-    "href": "references.html",
+    "objectID": "chapters/methods.html",
+    "href": "chapters/methods.html",
+    "title": "3  Methods & Techniques",
+    "section": "",
+    "text": "3.1 Methods\nThis section provides a structured overview of methods and techniques for urban morphology analysis. All methods and techniques described here are cross-referenced with the Examples part of the book.",
+    "crumbs": [
+      "Foundations & Frontiers",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Methods & Techniques</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/methods.html#methods",
+    "href": "chapters/methods.html#methods",
+    "title": "3  Methods & Techniques",
+    "section": "",
+    "text": "3.1.1 Typo-morphology analysis\n\n\n3.1.2 Space syntax analysis\n\n\n3.1.3 (Morpho-)Typology analysis",
+    "crumbs": [
+      "Foundations & Frontiers",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Methods & Techniques</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/methods.html#techniques",
+    "href": "chapters/methods.html#techniques",
+    "title": "3  Methods & Techniques",
+    "section": "3.2 Techniques",
+    "text": "3.2 Techniques\n\n3.2.1 Calculating density\n\n\n3.2.2 Figure-ground mapping\n\n\n3.2.3 Mapping spatial structures",
+    "crumbs": [
+      "Foundations & Frontiers",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Methods & Techniques</span>"
+    ]
+  },
+  {
+    "objectID": "catalog/index.html",
+    "href": "catalog/index.html",
+    "title": "4  Examples",
+    "section": "",
+    "text": "Use the filters and search box above to explore the catalog. Click items to open their detail pages.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Examples",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Examples</span>"
+    ]
+  },
+  {
+    "objectID": "appendices/references.html",
+    "href": "appendices/references.html",
     "title": "References",
     "section": "",
     "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
     "crumbs": [
+      "Appendices",
       "References"
     ]
   }
