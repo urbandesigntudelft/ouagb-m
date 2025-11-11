@@ -6,3 +6,83 @@ author: "Claudiu Forgaci"
 This chapter explores emerging frontiers in urban morphology: urban morphometrics, spatial morphology, and spatial data science. Urban morphometrics is a quantitative field aiming at extracting patterns from large amounts of morphological data; spatial morphology expands the field to the analysis of unbuilt space mostly using space syntax theory and landscape ecology principles; spatial data science as a cross-cutting field increasingly adopts urban morphological information to enrich the understanding of spatial phenomena of environmental, social and economic kind.
 
 ![VOSviewer visualization of keyword co-occurrence from a dataset exported from Scopus on 30 October 2025 using the query "urban morpho*".](../images/scopus_clusters.png)
+
+```{r}
+# load packages
+library(leaflet)
+library(sf)
+library(mapview)
+library(here)
+library(raster)
+library(magrittr)
+library(leafsync)
+
+# load morphology data
+buildings <- st_read(here("data-for-map/delft_buildings.gpkg")) |> st_transform(4326)
+
+# load maps
+map1 <- leaflet() |>
+  addProviderTiles("CartoDB.Positron") |>
+  setView(lng = 4.3571, lat = 52.0116, zoom = 13) |>  # Delft coordinates
+  addPolygons(
+    data = buildings,
+    color = "orange",
+    weight = 0.2,
+    opacity = 1,
+    fillOpacity = 1,
+    group = "Buildings",
+    popup = ~paste("gebruiksdoel", ifelse(!is.na(gebruiksdoel), gebruiksdoel, "N/A"))
+  ) |>
+  addScaleBar(position = "bottomleft") |>
+  addMiniMap(toggleDisplay = TRUE) |>
+  addLayersControl(
+    baseGroups = c("Base Map"),
+    overlayGroups = c("Buildings"),
+    options = layersControlOptions(collapsed = FALSE)
+  )
+
+map2 <- leaflet() |>
+  addProviderTiles("Esri.WorldImagery", group = "Satellite (Esri)") |>
+  setView(lng = 4.3571, lat = 52.0116, zoom = 13) |>
+  addScaleBar(position = "bottomleft")
+
+leafsync::sync(map1,map2)
+
+```
+
+
+```{r}
+# try to add topotijdreis to leaflet but it does not work
+
+# load packages
+library(leaflet)
+library(mapview)
+library(here)
+library(raster)
+library(magrittr)
+
+# transforming leaflet map to EPSG28992 as topotijdreis is in 28992
+# does not work without transformation either
+crs_28992 <- leafletCRS(
+  crsClass = "L.Proj.CRS",
+  code = "EPSG:28992",
+  proj4def = "+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889
+              +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel
+              +towgs84=565.2369,50.0087,465.658,-0.406857,0.350733,-1.87035,4.0812 +units=m +no_defs",
+  origin = c(-285401.92, 903401.92),
+  resolutions = 3440.64 / 2^(0:14)
+)
+
+map3 <- leaflet(options = leafletOptions(crs = crs_28992)) |>
+  addWMSTiles(
+    baseUrl = "https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_2021/MapServer/WMTS/",
+    layers = "Historische_tijdreis_2021",
+    options = WMSTileOptions(format = "image/jpgpng", transparent = FALSE),
+    attribution = "© Kadaster | Topotijdreis"
+  ) |>
+  setView(lng = 4.3571, lat = 52.0116, zoom = 14) |>
+  addScaleBar(position = "bottomleft")
+
+map3
+```
+
