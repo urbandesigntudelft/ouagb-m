@@ -9,6 +9,15 @@ This section provides a structured overview of methods and techniques for urban 
 ### Typo-morphology analysis
 
 ### Space syntax analysis
+```{r space-syntax, echo=FALSE}
+question("Which one is the most suitable analysis method if you want to find the settlement centers in a larger region?",
+  answer("Angular Integration, 800m"),
+  answer("Angular Integration, 1500m", correct = TRUE),
+  answer("Angular Choice, 800m", message = "Angular choice measures the through-movement potential."),
+  answer("Angular Choice, 1500m", message = "Angular choice measures the through-movement potential.")
+)
+```
+
 
 ### (Morpho-)Typology analysis
 
