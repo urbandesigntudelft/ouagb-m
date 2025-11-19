@@ -52,37 +52,39 @@ leafsync::sync(map1,map2)
 
 
 ```{r}
-# try to add topotijdreis to leaflet but it does not work
-
-# load packages
 library(leaflet)
-library(mapview)
-library(here)
-library(raster)
-library(magrittr)
 
-# transforming leaflet map to EPSG28992 as topotijdreis is in 28992
-# does not work without transformation either
-crs_28992 <- leafletCRS(
-  crsClass = "L.Proj.CRS",
-  code = "EPSG:28992",
-  proj4def = "+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889
-              +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel
-              +towgs84=565.2369,50.0087,465.658,-0.406857,0.350733,-1.87035,4.0812 +units=m +no_defs",
-  origin = c(-285401.92, 903401.92),
-  resolutions = 3440.64 / 2^(0:14)
-)
+# Function to get historical map layer for a specific year
+get_historical_layer <- function(year) {
+  url_template <- paste0(
+    "https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/",
+    "Historische_tijdreis_", year, "/MapServer/tile/{z}/{y}/{x}?blankTile=false"
+  )
+  
+  return(url_template)
+}
 
-map3 <- leaflet(options = leafletOptions(crs = crs_28992)) |>
-  addWMSTiles(
-    baseUrl = "https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/Historische_tijdreis_2021/MapServer/WMTS/",
-    layers = "Historische_tijdreis_2021",
-    options = WMSTileOptions(format = "image/jpgpng", transparent = FALSE),
-    attribution = "© Kadaster | Topotijdreis"
-  ) |>
-  setView(lng = 4.3571, lat = 52.0116, zoom = 14) |>
-  addScaleBar(position = "bottomleft")
+# Create leaflet map with historical layer
+create_historical_map <- function(year = 1881, center = c(52.1326, 5.2913), zoom = 8) {
+  leaflet() %>%
+    addTiles() %>%  # Add OpenStreetMap as base
+    addTiles(
+      urlTemplate = get_historical_layer(year),
+      options = tileOptions(
+        minZoom = 3,
+        maxZoom = 16,
+        attribution = paste("© Kadaster", year)
+      ),
+      layerId = "historical"
+    ) %>%
+    setView(lng = center[2], lat = center[1], zoom = zoom)
+}
 
-map3
+# Create map for 1881
+map_1881 <- create_historical_map(1881)
+map_1881
+
 ```
+
+
 
