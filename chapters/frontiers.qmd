@@ -22,17 +22,17 @@ buildings <- st_read(here("data-for-map/delft_buildings.gpkg")) |> st_transform(
 
 # load maps
 map1 <- leaflet() |>
-  addProviderTiles("CartoDB.Positron") |>
-  setView(lng = 4.3571, lat = 52.0116, zoom = 13) |>  # Delft coordinates
-  addPolygons(
-    data = buildings,
-    color = "orange",
-    weight = 0.2,
-    opacity = 1,
-    fillOpacity = 1,
-    group = "Buildings",
-    popup = ~paste("gebruiksdoel", ifelse(!is.na(gebruiksdoel), gebruiksdoel, "N/A"))
-  ) |>
+  addProviderTiles("Esri.WorldImagery") |>
+  setView(lng = 4.4777, lat = 51.9244, zoom = 13) |>  # Rotterdam coordinates
+  # addPolygons(
+  #   data = buildings,
+  #   color = "orange",
+  #   weight = 0.2,
+  #   opacity = 1,
+  #   fillOpacity = 1,
+  #   group = "Buildings",
+  #   popup = ~paste("gebruiksdoel", ifelse(!is.na(gebruiksdoel), gebruiksdoel, "N/A"))
+  # ) |>
   addScaleBar(position = "bottomleft") |>
   addMiniMap(toggleDisplay = TRUE) |>
   addLayersControl(
@@ -41,50 +41,19 @@ map1 <- leaflet() |>
     options = layersControlOptions(collapsed = FALSE)
   )
 
-map2 <- leaflet() |>
-  addProviderTiles("Esri.WorldImagery", group = "Satellite (Esri)") |>
-  setView(lng = 4.3571, lat = 52.0116, zoom = 13) |>
-  addScaleBar(position = "bottomleft")
-
-leafsync::sync(map1,map2)
-
-```
-
-
-```{r}
-library(leaflet)
-
-# Function to get historical map layer for a specific year
-get_historical_layer <- function(year) {
-  url_template <- paste0(
-    "https://tiles.arcgis.com/tiles/nSZVuSZjHpEZZbRo/arcgis/rest/services/",
-    "Historische_tijdreis_", year, "/MapServer/tile/{z}/{y}/{x}?blankTile=false"
+map2 <- leaflet() %>%
+  setView(lng = 4.4777, lat = 51.9244, zoom = 13) %>%
+  addTiles() %>%  # Base OSM layer
+  addTiles(
+    urlTemplate = "https://allmaps.xyz/maps/8ebee9ef638a08cf/{z}/{x}/{y}.png",
+    attribution = "Allmaps",
+    options = tileOptions(opacity = 0.7)  # Optional: make it semi-transparent
   )
-  
-  return(url_template)
-}
 
-# Create leaflet map with historical layer
-create_historical_map <- function(year = 1881, center = c(52.1326, 5.2913), zoom = 8) {
-  leaflet() %>%
-    addTiles() %>%  # Add OpenStreetMap as base
-    addTiles(
-      urlTemplate = get_historical_layer(year),
-      options = tileOptions(
-        minZoom = 3,
-        maxZoom = 16,
-        attribution = paste("© Kadaster", year)
-      ),
-      layerId = "historical"
-    ) %>%
-    setView(lng = center[2], lat = center[1], zoom = zoom)
-}
-
-# Create map for 1881
-map_1881 <- create_historical_map(1881)
-map_1881
+leafsync::sync(map1, map2)
 
 ```
+
 
 
 
