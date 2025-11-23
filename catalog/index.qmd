@@ -6,7 +6,6 @@ listing:
   fields: [title, description, categories, date]
   sort: "title"
   sort-ui: true
-  image: true
   filter-ui: true
   categories: true
 ---

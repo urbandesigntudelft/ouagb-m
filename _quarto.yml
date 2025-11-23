@@ -42,7 +42,7 @@ bibliography: references.bib
 format:
   html:
     theme:
-      - yeti
+      - flatly
       - brand
     toc: true
     number-sections: true
