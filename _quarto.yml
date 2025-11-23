@@ -25,6 +25,7 @@ book:
     - part: "Examples"
       chapters:
         - catalog/examples/01.qmd
+        - catalog/examples/roma_al_tempo_di_benedetto.qmd
         - catalog/index.qmd
     - part: "Appendices"
       chapters:
