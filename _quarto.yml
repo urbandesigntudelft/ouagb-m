@@ -24,7 +24,7 @@ book:
         - chapters/methods.qmd
     - part: "Examples"
       chapters:
-        # - catalog/examples/01.qmd
+        - catalog/examples/01.qmd
         - catalog/index.qmd
     - part: "Appendices"
       chapters:
