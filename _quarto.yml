@@ -20,7 +20,7 @@ book:
     - chapters/foundations_frontiers.qmd
     - part: "Methodology, Techniques & Applications"
       chapters:
-        - chapters/methodology.qmd
+        - chapters/methodology.Rmd
         - chapters/techniques.qmd
         - chapters/applications.qmd
     - part: "Cases"
