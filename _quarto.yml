@@ -20,9 +20,10 @@ book:
     - chapters/foundations_frontiers.qmd
     - part: "Methodology, Techniques & Applications"
       chapters:
-        - chapters/methodology.Rmd
+        - chapters/methodology.qmd
         - chapters/techniques.qmd
         - chapters/applications.qmd
+        - chapters/quiz.Rmd
     - part: "Cases"
       chapters:
         - catalog/index.qmd
@@ -44,7 +45,7 @@ bibliography: references.bib
 format:
   html:
     theme:
-      - cosmo
+      - simplex    # alternative: cosmo, yeti, lux, flatly, journal
       - brand
     toc: true
     number-sections: true
