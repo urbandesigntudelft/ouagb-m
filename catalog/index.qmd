@@ -1,5 +1,5 @@
 ---
-title: "Examples"
+title: "Example Index"
 listing:
   contents: examples
   type: grid        # alternatives: grid, default, cards

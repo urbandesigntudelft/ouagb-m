@@ -1,5 +1,5 @@
 ---
-title: "techniques"
+title: "Techniques"
 author: "Leo van den Burg"
 ---
 
@@ -11,7 +11,7 @@ author: "Leo van den Burg"
 
 ### Mapping spatial structures
 
-```{r}
+```{r echo=FALSE}
 #| label: leaflet-limburg
 #| echo: false
 #| message: false

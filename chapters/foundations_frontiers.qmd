@@ -10,7 +10,7 @@ This chapter explores emerging frontiers in urban morphology: urban morphometric
 ![VOSviewer visualization of keyword co-occurrence from a dataset exported from Scopus on 30 October 2025 using the query "urban morpho*".](../images/scopus_clusters.png)
 
 
-```{r}
+```{r echo=FALSE}
 # load packages
 library(leaflet)
 library(sf)

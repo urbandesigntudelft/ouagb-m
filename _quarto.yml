@@ -25,9 +25,10 @@ book:
         - chapters/applications.qmd
     - part: "Cases"
       chapters:
-        - catalog/examples/01.qmd
-        - catalog/examples/roma_al_tempo_di_benedetto.qmd
         - catalog/index.qmd
+        - catalog/examples/roma_al_tempo_di_benedetto.qmd
+        - catalog/examples/image_of_the_city.qmd
+        - catalog/examples/01.qmd
     - part: "Appendices"
       chapters:
         # - appendices/glossary.qmd

@@ -1,5 +1,5 @@
 ---
-title: "roma_al_tempo_di_benedetto"
+title: "Roma al Tempo di Benedetto"
 description: "An analytical mapping method created by Giambattista Nolli"
 categories: [Figure Ground Analysis, Public-Private Analysis]
 tags: [analysis, map]
