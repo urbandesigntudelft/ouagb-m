@@ -1,0 +1,53 @@
+---
+title: "Foundations and Frontiers"
+author: "Claudiu Forgaci"
+---
+
+A chapter that is meant to provide an update on the state of the field as well as a structured description of current sub-fields and types of analysis. This will be reflected the structure of the next section.
+
+This chapter explores emerging frontiers in urban morphology: urban morphometrics, spatial morphology, and spatial data science. Urban morphometrics is a quantitative field aiming at extracting patterns from large amounts of morphological data; spatial morphology expands the field to the analysis of unbuilt space mostly using space syntax theory and landscape ecology principles; spatial data science as a cross-cutting field increasingly adopts urban morphological information to enrich the understanding of spatial phenomena of environmental, social and economic kind.
+
+![VOSviewer visualization of keyword co-occurrence from a dataset exported from Scopus on 30 October 2025 using the query "urban morpho*".](../images/scopus_clusters.png)
+
+
+```{r}
+# load packages
+library(leaflet)
+library(sf)
+library(mapview)
+library(here)
+library(raster)
+library(magrittr)
+library(leafsync)
+# load morphology data
+# buildings <- st_read(here("data-for-map/delft_buildings.gpkg")) |> st_transform(4326)
+# load maps
+map1 <- leaflet() |>
+  addProviderTiles("Esri.WorldImagery") |>
+  setView(lng = 4.4777, lat = 51.9244, zoom = 13) |>  # Rotterdam coordinates
+  # addPolygons(
+  #   data = buildings,
+  #   color = "orange",
+  #   weight = 0.2,
+  #   opacity = 1,
+  #   fillOpacity = 1,
+  #   group = "Buildings",
+  #   popup = ~paste("gebruiksdoel", ifelse(!is.na(gebruiksdoel), gebruiksdoel, "N/A"))
+  # ) |>
+  addScaleBar(position = "bottomleft") |>
+  addMiniMap(toggleDisplay = TRUE) |>
+  addLayersControl(
+    baseGroups = c("Base Map"),
+    overlayGroups = c("Buildings"),
+    options = layersControlOptions(collapsed = FALSE)
+  )
+map2 <- leaflet() %>%
+  setView(lng = 4.4777, lat = 51.9244, zoom = 13) %>%
+  addTiles() %>%  # Base OSM layer
+  addTiles(
+    urlTemplate = "https://allmaps.xyz/maps/8ebee9ef638a08cf/{z}/{x}/{y}.png",
+    attribution = "Allmaps",
+    options = tileOptions(opacity = 0.7)  # Optional: make it semi-transparent
+  )
+leafsync::sync(map1, map2)
+```

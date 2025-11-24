@@ -17,12 +17,13 @@ book:
   date: "10/23/2025"
   chapters:
     - index.qmd
-    - part: "Foundations & Frontiers"
+    - chapters/foundations_frontiers.qmd
+    - part: "Methodology, Techniques & Applications"
       chapters:
-        - chapters/foundations.qmd
-        - chapters/frontiers.qmd
-        - chapters/methods.qmd
-    - part: "Examples"
+        - chapters/methodology.qmd
+        - chapters/techniques.qmd
+        - chapters/applications.qmd
+    - part: "Cases"
       chapters:
         - catalog/examples/01.qmd
         - catalog/examples/roma_al_tempo_di_benedetto.qmd
@@ -42,7 +43,7 @@ bibliography: references.bib
 format:
   html:
     theme:
-      - flatly
+      - cosmo
       - brand
     toc: true
     number-sections: true
