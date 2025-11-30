@@ -1,8 +1,0 @@
----
-title: "Frontiers"
-author: "Claudiu Forgaci"
----
-
-This chapter explores emerging frontiers in urban morphology: urban morphometrics, spatial morphology, and spatial data science. Urban morphometrics is a quantitative field aiming at extracting patterns from large amounts of morphological data; spatial morphology expands the field to the analysis of unbuilt space mostly using space syntax theory and landscape ecology principles; spatial data science as a cross-cutting field increasingly adopts urban morphological information to enrich the understanding of spatial phenomena of environmental, social and economic kind.
-
-![VOSviewer visualization of keyword co-occurrence from a dataset exported from Scopus on 30 October 2025 using the query "urban morpho*".](../images/scopus_clusters.png)
