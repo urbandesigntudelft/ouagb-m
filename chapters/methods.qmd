@@ -78,6 +78,11 @@ sync_zoom_only_simple(map1, map2)
 
 ```
 
+```{r}
+# Add search function to one of the map
+```
+
+
 
 
 
