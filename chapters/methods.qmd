@@ -13,6 +13,73 @@ This section provides a structured overview of methods and techniques for urban 
 ### (Morpho-)Typology analysis
 
 ## Techniques
+```{r}
+# Synchronizing only zoom level, not the map center
+
+library(leaflet)
+library(leaflet.extras)
+library(leaflet.extras2)
+library(leafsync)
+
+sync_zoom_only_simple <- function(map1, map2, ncol = 2) {
+  # Use standard sync but override with JavaScript
+  result <- leafsync::sync(map1, map2, ncol = ncol, sync.cursor = FALSE, no.initial.sync = TRUE)
+  
+  # Inject JavaScript to modify the sync behavior
+  custom_js <- htmltools::tags$script(htmltools::HTML('
+    setTimeout(function() {
+      // Find all leaflet maps on the page
+      var maps = [];
+      Array.prototype.forEach.call(document.querySelectorAll(".leaflet"), function(div) {
+        var map = HTMLWidgets.find("#" + div.id);
+        if (map && map.getMap) {
+          maps.push(map.getMap());
+        }
+      });
+      
+      if (maps.length >= 2) {
+        var map1 = maps[0];
+        var map2 = maps[1];
+        
+        // Remove all existing sync
+        try { map1.unsync(map2); } catch(e) {}
+        try { map2.unsync(map1); } catch(e) {}
+        
+        // Create zoom-only sync
+        var syncZoom = function(from, to) {
+          from.on("zoomend", function() {
+            to.setZoom(from.getZoom());
+          });
+        };
+        
+        // Apply zoom sync in both directions
+        syncZoom(map1, map2);
+        syncZoom(map2, map1);
+        
+        console.log("Zoom-only sync applied");
+      }
+    }, 500);
+  '))
+  
+  # Combine the sync result with our custom JavaScript
+  htmltools::browsable(htmltools::tagList(result, custom_js))
+}
+
+map1 <- leaflet() %>%
+  addTiles() %>%
+  addMarkers(lng = -74.006, lat = 40.7128, popup = "New York")
+
+map2 <- leaflet() %>%
+  addTiles() %>%
+  addMarkers(lng = -118.2437, lat = 34.0522, popup = "Los Angeles")
+
+# Sync only the size (zoom level), not location
+sync_zoom_only_simple(map1, map2)
+
+```
+
+
+
 
 ### Calculating density
 
