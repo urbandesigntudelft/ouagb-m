@@ -69,7 +69,7 @@ map1 <- leaflet() %>%
   addTiles() %>%
   addFullscreenControl() %>%
   addSearchGoogle(
-    apikey = Sys.getenv("GOOGLE_MAP_GEOCODING_KEY"),    # this service is not free
+    apikey = Sys.getenv("GOOGLE_MAP_GEOCODING_KEY"),    # this service is not for free
     options = searchOptions(autoCollapse = TRUE, minLength = 2)
   ) %>%
   addMarkers(lng = -74.006, lat = 40.7128, popup = "New York")
