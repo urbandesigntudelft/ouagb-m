@@ -24,7 +24,8 @@ book:
         - chapters/methods.qmd
     - part: "Examples"
       chapters:
-        # - catalog/examples/01.qmd
+        - catalog/examples/01.qmd
+        - catalog/examples/roma_al_tempo_di_benedetto.qmd
         - catalog/index.qmd
     - part: "Appendices"
       chapters:
@@ -41,7 +42,7 @@ bibliography: references.bib
 format:
   html:
     theme:
-      - yeti
+      - flatly
       - brand
     toc: true
     number-sections: true
