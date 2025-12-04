@@ -1,9 +1,31 @@
 ---
-title: "leaflet_template"
+title: "Leaflet Template Combining R and Javascript"
 format: html
 ---
 
+***R for accessing the Geo-data API and processing the data***
+***Javascript for advanced functions and editing the map***
+
 # Single Map
+```{r}
+# load packages
+library(leaflet)
+library(leaflet.extras)
+
+# load maps
+map2 <- leaflet() %>%
+  setView(lng = 4.4777, lat = 51.9244, zoom = 13) %>%
+  addTiles() %>%  # Base OSM layer
+  addTiles(
+    urlTemplate = "https://allmaps.xyz/maps/8ebee9ef638a08cf/{z}/{x}/{y}.png",
+    attribution = "Allmaps",
+    options = tileOptions(opacity = 0.7)  # Optional: make it semi-transparent
+  ) |> 
+  addFullscreenControl()
+map2
+```
+
+
 
 # Side-By-Side Map
 
