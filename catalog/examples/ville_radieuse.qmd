@@ -1,0 +1,16 @@
+---
+title: "La Ville Radieuse "
+description: "An analytical mapping method created by Giambattista Nolli"
+categories: [Figure ground analysis, Comparative urban analysis]
+tags: [analysis, map]
+date: 1930-01-01
+---
+
+***Le Corbusier***\
+
+![](E:/Delft/ouagb_m/ouagb-m/catalog/examples/image/villa_radieuse.jpg)
+
+This drawing by Le Corbusier is one of the examples where an analysis has become an icon. Good analyses have the power to convey knowledge at a glance. Some analyses do even more than that and become powerful design statements in themselves.\
+This drawing is a figure ground analysis (cf. project 10) and comparative analysis in one. Several city structures are drawn to the same scale. Please note that Le Corbusier also included information about the orientation of the cities and how he chose to give his own theoretical plan a different one.
+
+[source](https://www.fondationlecorbusier.fr/oeuvre-architecture/projets-ville-radieuse-sans-lieu-1930/)

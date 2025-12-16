@@ -29,7 +29,28 @@ book:
         - catalog/index.qmd
         - catalog/examples/roma_al_tempo_di_benedetto.qmd
         - catalog/examples/image_of_the_city.qmd
-        - catalog/examples/01.qmd
+        - catalog/examples/measuring_pompeii.qmd
+        - catalog/examples/object_van_beweging.qmd
+        - catalog/examples/the_view_from_the_road.qmd
+        - catalog/examples/territory_of_a_new_modernity.qmd
+        - catalog/examples/evolution_of_a_compact_city.qmd
+        - catalog/examples/manifolds_grids.qmd
+        - catalog/examples/grassroots_mapping.qmd
+        - catalog/examples/favelas_4d.qmd
+        - catalog/examples/glastonbury.qmd
+        - catalog/examples/kobe_refugee_camp.qmd
+        - catalog/examples/kumbh_mela.qmd
+        - catalog/examples/mapping_wuhan.qmd
+        - catalog/examples/building_with_superblocks.qmd
+        - catalog/examples/Stadtebau.qmd
+        - catalog/examples/ville_radieuse.qmd
+        - catalog/examples/studi_per_una_operante.qmd
+        - catalog/examples/concise_townscape.qmd
+        - catalog/examples/las_vegas.qmd
+        - catalog/examples/bologna.qmd
+        - catalog/examples/comparisons_of_form_and_scale.qmd
+        - catalog/examples/collage_city.qmd
+        - catalog/examples/versailles.qmd
     - part: "Appendices"
       chapters:
         # - appendices/glossary.qmd
@@ -45,7 +66,7 @@ bibliography: references.bib
 format:
   html:
     theme:
-      - simplex    # alternative: cosmo, yeti, lux, flatly, journal
+      - journal    # alternative: cosmo, yeti, lux, flatly, journal
       - brand
     toc: true
     number-sections: true

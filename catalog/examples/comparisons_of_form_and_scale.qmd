@@ -1,0 +1,17 @@
+---
+title: "Cities, comparisons of form and scale"
+description: "An analytical mapping method created by Giambattista Nolli"
+categories: [Comparative urban analysis, Scale and representation]
+tags: [analysis, map]
+date: 1974-01-01
+---
+
+***Richard Saul Wurman***\
+
+![](E:/Delft/ouagb_m/ouagb-m/catalog/examples/image/wurman.jpg)
+
+This study is a comparison of different cities. Its value lies in the immediate accessibility of the information; “ah, so Amsterdam is as big as this, and New York is as big as that”. One glance and you know.\
+
+Notice that there is strict adherence to several basic principles: a unity in medium (in this case clay tablets), a unity and legibility of scale (through the gridlines) and a unity of information (each city is represented through the same elements). If any of these principles had been neglected, the information would have been lost. The most critical point in analyses like these therefore is the choice of what to show and what to leave out.\
+
+Further examples of Wurman’s clay tablets can be found [here](https://www.davidrumsey.com/luna/servlet/view/search/who/School+of+Design%2C+North+Carolina+State+University/what/Data+Visualization?q=richard+saul+wurman+1963&sort=pub_list_no_initialsort%2Cpub_date%2Cpub_list_no%2Cseries_no). 
