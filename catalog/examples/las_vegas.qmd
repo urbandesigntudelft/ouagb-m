@@ -4,6 +4,7 @@ author: "Robert Venturi, Denise Scott Brown and Steven Izenour"
 description: "An analytical mapping method created by Giambattista Nolli"
 categories: [Urban sprawl, Everyday urbanism]
 tags: [analysis, map]
+image: "catalog/examples/image/las_vegas.jpg"
 date-format: "YYYY"
 date: "1972"
 ---

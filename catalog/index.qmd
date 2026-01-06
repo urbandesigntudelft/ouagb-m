@@ -3,7 +3,7 @@ title: "Index"
 listing:
   contents: examples
   type: grid        # alternatives: grid, default, cards
-  fields: [title, description, categories, date]
+  fields: [image, title, description, categories, date]
   sort: "title"
   sort-ui: true
   filter-ui: true
