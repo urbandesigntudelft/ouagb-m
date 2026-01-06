@@ -8,6 +8,7 @@ listing:
   sort-ui: true
   filter-ui: true
   categories: true
+date-format: "YYYY"
 ---
 
 Use the filters and search box above to explore the catalog. Click items to open their detail pages.
