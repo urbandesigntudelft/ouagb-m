@@ -69,6 +69,7 @@ format:
       - journal    # alternative: cosmo, yeti, lux, flatly, journal
       - brand
     toc: true
+    lightbox: true
     number-sections: true
     smooth-scroll: true
     anchor-sections: true
