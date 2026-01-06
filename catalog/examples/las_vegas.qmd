@@ -4,12 +4,11 @@ author: "Robert Venturi, Denise Scott Brown and Steven Izenour"
 description: "An analytical mapping method created by Giambattista Nolli"
 categories: [Urban sprawl, Everyday urbanism]
 tags: [analysis, map]
-image: "catalog/examples/image/las_vegas.jpg"
 date-format: "YYYY"
 date: "1972"
 ---
 
-![](image/las_vegas.jpg)
+![](../../images/las_vegas.jpg)
 
 Before 1972, Las Vegas was regarded by many as an almost featureless and meaningless urban environment. This changed with the publication of this book. With the advent of the car- and media based culture in the nineteen sixties, a place like Las Vegas could suddenly acquire a completely different meaning; at least for architects and urban designers. This analysis suddenly made visible to the profession what had long been hidden under the surface: non-spaces and popular culture are powerful material for designers. A similar wish to find something unique in the everyday environment seems to drive many contemporary designers who try to represent phenomena like mobility, urban sprawl or the essence of the Randstad.\
 

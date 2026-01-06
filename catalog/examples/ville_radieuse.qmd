@@ -4,7 +4,6 @@ author: "Le Corbusier"
 description: "An analytical mapping method created by Giambattista Nolli"
 categories: [Figure ground analysis, Comparative urban analysis]
 tags: [Le Corbusier, la Ville Radieuse]
-image: "images/villa_radieuse.jpg"
 date-format: "YYYY"
 date: "1930"
 ---
