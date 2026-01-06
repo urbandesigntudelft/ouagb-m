@@ -1,11 +1,15 @@
 ---
-title: "Roma al tempo di Benedetto XIV"
-author: "Giambattista Nolli"
+title: "Built for Change: neighborhood architecture in San Francisco"
+author: "Anne Vernez Moudon"
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [Figure ground analysis, Public-private analysis, Public space, Conceptual abstraction]
-tags: [3d, Learning from Las Vegas, Nolli, Giambattista, Nolli map, perspective drawings, Rome]
+categories: [Building typology, Urban blocks]
+tags: [Alamo Square, development, documentation, “French school” of analysis, “Italian school” of analysis, morphological layers, morphology, Anne Moudon Vernez, the use of photographs, San Francisco, type, typology ]
 date-format: "YYYY"
-date: "1748"
+date: "1986"
 ---
 
-![](../../images/nolli.jpg)
+![](../../images/moudon.jpg)
+
+This study describes the area around Alamo Square in San Francisco. This part of the city is unique for its beautiful domestic architecture. With this study, Moudon wanted to raise questions about the ability of the urban fabric to absorb contemporary requirements: how to preserve an area like this in such a way that the beauty of it remains, while allowing to adapt itself to modern life. Like in Italian and French studies, this means for Moudon that one has to understand the development of the area, but also its most typical features. To learn about this, the urban analyst has to do much work in documenting the area through the ages and on different scale levels. We see here on pages 140-141 some illustrations of the development around Alamo Square  in several thematic maps. Note how one can notice shifts in use and layout even with only a quick scan of the drawings. \ 
+
+Page 142 shows how the building blocks are built up from so-called vara-modules and the typical parcellation solutions that result from that. Page 143 extends the study to the scale level of the typical Alamo Square type house and its variations. 
