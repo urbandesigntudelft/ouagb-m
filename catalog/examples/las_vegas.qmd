@@ -1,12 +1,12 @@
 ---
 title: "Learning from Las Vegas"
+author: "Robert Venturi, Denise Scott Brown and Steven Izenour"
 description: "An analytical mapping method created by Giambattista Nolli"
 categories: [Urban sprawl, Everyday urbanism]
 tags: [analysis, map]
-date: 1972-01-01
+date-format: "YYYY"
+date: "1972"
 ---
-
-***Robert Venturi, Denise Scott Brown and Steven Izenour***\
 
 ![](E:/Delft/ouagb_m/ouagb-m/catalog/examples/image/las_vegas.jpg)
 
