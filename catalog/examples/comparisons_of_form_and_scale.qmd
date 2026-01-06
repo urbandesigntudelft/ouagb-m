@@ -1,14 +1,13 @@
 ---
 title: "Cities, comparisons of form and scale"
+author: "Richard Saul Wurman"
 description: "An analytical mapping method created by Giambattista Nolli"
 categories: [Comparative urban analysis, Scale and representation]
-tags: [analysis, map]
-date: 1974-01-01
+tags: [Amsterdam, Athens, Babylon, Brugues, Chandigarh, comparison, Gizeh, Karlsruhe, Miletus, New York, Palmanova, Rome, Venice, Richard Saul Wurman]
+date-format: "YYYY"
+date: "1974"
 ---
-
-***Richard Saul Wurman***\
-
-![](E:/Delft/ouagb_m/ouagb-m/catalog/examples/image/wurman.jpg)
+![](../../images/wurman.jpg)
 
 This study is a comparison of different cities. Its value lies in the immediate accessibility of the information; “ah, so Amsterdam is as big as this, and New York is as big as that”. One glance and you know.\
 

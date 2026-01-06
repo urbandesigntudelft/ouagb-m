@@ -1,13 +1,12 @@
 ---
 title: "Lecture d’une ville: Versailles"
+author: "Jean Castex a.o."
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [Building typology, Urban tissue]
-tags: [analysis, map]
-date: 1980-01-01
+categories: [Building typology, Public space analysis, Urban blocks]
+tags: [Jean Castex, density, development, “French school” of analysis, Versailles]
+date-format: "YYYY"
+date: "1980"
 ---
-
-***Jean Castex a.o.***\
-
-![](E:/Delft/ouagb_m/ouagb-m/catalog/examples/image/versailles.jpg)
+![](../../images/versailles.jpg)
 
 This is another example of a French School urban analysis. That means that apart from a number of introductory drawings on a larger scale, the emphasis is on building- and block typology. In addition to the palace, a large number of houses or “pavillons” were built in Versailles for the nobility and government officials. These were all based on the same typology, resulting in a very regular and formal urban environment (fig. 4). Although there were many variants of these houses and many have been extended or modified, the basic module is still recognisable. The book shows this basic module and some of its variants and characteristic details. Figs. 7-10 show how streets, squares and blocks were constructed from this. This urban layout has also survived, even though the tissue has become denser (fig.8). Especially fig. 11 is interesting because it clearly shows that a street is more than just the “white” in the map. 

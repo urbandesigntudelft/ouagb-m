@@ -1,11 +1,17 @@
 ---
-title: "Roma al tempo di Benedetto XIV"
-author: "Giambattista Nolli"
+title: "Amsterdam als stedelijk bouwwerk"
+author: "Louwe and Van der Hoeven"
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [Figure ground analysis, Public-private analysis, Public space, Conceptual abstraction]
-tags: [3d, Learning from Las Vegas, Nolli, Giambattista, Nolli map, perspective drawings, Rome]
+categories: [Figure ground analysis, Public space]
+tags: [Amsterdam, conceptual abstraction, Casper van der Hoeven, morphological layers, Jos Louwe, modern cities, morphology, patterns, public space, Speckle, Simon Stevin, visualisation]
 date-format: "YYYY"
-date: "1748"
+date: "1985"
 ---
 
-![](../../images/nolli.jpg)
+![](../../images/amsterdam.jpg)
+
+Amsterdam als stedelijk bouwwerk was the first of its kind in the Netherlands. The study systematically analysed different parts of Amsterdam in a great number of drawings and an accompanying text. The emphasis is on the relationship between reality and an idealised or abstracted morphology. The writers look for patterns in the city structure in an attempt to find out what Amsterdam is.\
+
+Different areas are analysed with different drawing techniques. For the canal- zone, the emphasis is on the radial pattern formed by the canals and the streets. Its structure can be compared with ideal city plans such as those by Speckle and Stevin. Louwe and Van der Hoeven take up the canal zone and twist, cut and deform it to show its ordering principles. In fig. 3, they investigate whether we should read Amsterdam as an ideal military settlement like Speckle’s design. But the regularity in this plan is clearly absent in Amsterdam. Fig. 4 on the other hand shows the likeness between 17th century Amsterdam and the Stevin plan when the canal zone is “unrolled”.\
+
+Please note how in fig. 10, the actual state of the area around the Noorderkerk is constructed from an abstract pattern: as if the “designers” of the area had taken this pattern as a starting point. For the analysis of the Westelijke Tuinsteden, the drawings focus on the built mass, rather than on the public space. This limits the effect of the drawings somewhat since in the modern city, the space around buildings is often as relevant as the buildings themselves. 

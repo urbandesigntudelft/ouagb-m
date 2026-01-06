@@ -1,11 +1,13 @@
 ---
-title: "Roma al tempo di Benedetto XIV"
-author: "Giambattista Nolli"
+title: "Les Bastides: d’Aquitaine, du Bas-Languedoc et du Béarn"
+author: "F. Divorne, B. Gendre, B. Lavergne and Ph. Panerai "
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [Figure ground analysis, Public-private analysis, Public space, Conceptual abstraction]
-tags: [3d, Learning from Las Vegas, Nolli, Giambattista, Nolli map, perspective drawings, Rome]
+categories: [Building typology, Urban blocks]
+tags: [3d, Les Bastides, Bologna, building and building blocks, comparison, cultural heritage, development, Francois Divorne, documentation, “French school” of analysis, “Italian school” of analysis, social issues, type, typology]
 date-format: "YYYY"
-date: "1748"
+date: "1985"
 ---
 
-![](../../images/nolli.jpg)
+![](../../images/bastides.jpg)
+
+Like in earlier examples of the French and Italian schools of urban analysis, this book on the French bastides- towns draws heavily on typological research. To isolate the typical, a very large number of towns has been studied on different scale levels. The analysis focuses on the typology of the towns themselves (fig. 4), the relationship of the internal elements such as squares, streets and churches (fig. 5 - 8), typology of the building blocks (fig. 9, 10), the typology of the houses and their relation to other elements (fig. 9). Fig. 3 shows an idealized layout and how a real Bastide is related to that. As with the Italian analysis of Bologna, the essence of the city is represented in this careful description of the typical. The study implies that an intimate knowledge of this is necessary for architects and urbanists to base their designs on, requiring lengthy and extremely thorough research. 

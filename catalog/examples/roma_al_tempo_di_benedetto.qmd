@@ -2,8 +2,8 @@
 title: "Roma al tempo di Benedetto XIV"
 author: "Giambattista Nolli"
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [Figure ground analysis, Public-private analysis, Public space, Conceptual abstraction]
-tags: [3d, Learning from Las Vegas, Nolli, Giambattista, Nolli map, perspective drawings, Rome]
+categories: [Figure ground analysis, Public space analysis]
+tags: [3d, conceptual abstraction, Learning from Las Vegas, Nolli, Giambattista, Nolli map, perspective drawings, Rome]
 date-format: "YYYY"
 date: "1748"
 ---

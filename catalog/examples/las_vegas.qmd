@@ -3,7 +3,7 @@ title: "Learning from Las Vegas"
 author: "Robert Venturi, Denise Scott Brown and Steven Izenour"
 description: "An analytical mapping method created by Giambattista Nolli"
 categories: [Urban sprawl, Everyday urbanism]
-tags: [analysis, map]
+tags: [Steven Izenour, Las Vegas, morphological layers, Learning from Las Vegas, morphology, Nolli map, non-spaces, the use of photographs, popular culture, Denise Scott Brown, traditional urban features, Robert Venturi]
 date-format: "YYYY"
 date: "1972"
 ---
