@@ -1,11 +1,14 @@
 ---
-title: "Roma al tempo di Benedetto XIV"
-author: "Giambattista Nolli"
+title: "Costa Iberica: upbeat to the leisure city"
+author: "MVRDV"
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [Figure ground analysis, Public-private analysis, Public space, Conceptual abstraction]
-tags: [3d, Learning from Las Vegas, Nolli, Giambattista, Nolli map, perspective drawings, Rome]
+categories: [the use of 3d, computer techniques, density, analysis as basis for design, economy, Rem Koolhaas, landscape, MVRDV]
 date-format: "YYYY"
-date: "1748"
+date: "2000"
 ---
 
-![](../../images/nolli.jpg)
+![](../../images/costa_iberica.jpg)
+
+Many of MVRDV’s analyses are based on reinterpretations of density or related statistical data. This is an approach not unlike Rem Koolhaas’ in his analysis of Point City and South City (project 21). The present analysis looks at the impact of tourism on the landscape and economy of Spain and how one can take this as a departure for design. The main interest here is in the use of computer graphics which make a complicated and obscure starting point visible and understandable for everybody. The renderings almost take up a life of their own. The shape of the analysis could be confused with the actual landscape. Depending on your standpoint, this can result in nonsense or an inspiring allusion to possible spatial conditions. Costa Iberica in fact contains design proposals based on this material. These are not included here.\
+
+Also see: Project 21[Point city-South city](point_city.qmd)
