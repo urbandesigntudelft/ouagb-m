@@ -1,0 +1,13 @@
+---
+title: "Studi per una Operante Storia Urbana di Venezia"
+author: "Saverio Muratori"
+description: "An analytical mapping method created by Giambattista Nolli"
+categories: [Building typology, Urban blocks]
+tags: [cultural heritage, development, documentation, “Italian school” of analysis, Moudon Vernez, Anne Muratori, Saverio patterns, Venice]
+date-format: "YYYY"
+date: "1959"
+---
+
+![](../../images/muratori.jpg)
+
+After the second world war, even a monumental city like Venice was in danger of large-scale modernisations that would have destroyed the old urban tissue. Saverio Muratori was one of the first architects to (unpopular at that time) raise his voice against this threat. He did this through a monumental documentation of the city in which he illustrated how Venice had grown through the centuries on the basis of very stable urban patterns. Muratori implied with his book that an understanding and appreciation of these patterns (and their vulnerability) was a basic requirement for architects and urban designers who wanted to design for the city. For Muratori, the basic elements of the city are buildings and configurations of buildings. This means that to understand these, one has to make a detailed survey of many individual buildings and areas in search for what they have in common. Like this, one can describe the basic building “types” which are used in Venice. An understanding of these types could help designers to avoid plans which are alien to the city.  This book was the first of its kind and had an enormous influence in Italy, but also abroad. Muratori helped ground an Italian “school” in urban analysis. For more information about this, see the text by Anne Vernez Moudon elsewhere in this volume. 

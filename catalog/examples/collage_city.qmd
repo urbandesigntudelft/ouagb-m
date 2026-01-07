@@ -1,0 +1,15 @@
+---
+title: "Collage City"
+author: "Colin Rowe and Fred Koetter"
+description: "An analytical mapping method created by Giambattista Nolli"
+categories: [Figure ground analysis, Collage city]
+tags: [bricolage, classical urban examples, Le Corbusier, Fred Koetter, modern cities, Nolli map, Rome, Colin Rowe, traditional urban features]
+date-format: "YYYY"
+date: "1978"
+---
+![](../../images/collage_city_1.jpg)
+![](../../images/collage_city_2.jpg)
+
+Essential here is the so called “figure-ground” analysis (fig. 2-3); two carefully drawn illustrations where white represents public space and black represents built mass. The drawings themselves are not revolutionary (compare for instance fig. 2 to the Nolli-map), yet the opposition between the “traditional” city vs. the “modern” city (as already used in design by Le Corbusier, fig. 1) is made very clear and has made this study very influential.\
+
+in Rowe’s and Koetter’s view, neither pure adherence to modern urbanism, nor a fall back on the traditional city can be the answer to the contemporary urban design task. They seek the answer in what they call the collage city; a mix or “bricolage” where modern, freestanding typologies can exist side by side with a less specific and more traditional infill. Ancient Rome is presented as an illustration of the principle. Further examples of what can be done with the figure- ground method are shown in fig. 7 and 8. 

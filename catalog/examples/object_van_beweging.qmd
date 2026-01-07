@@ -1,0 +1,13 @@
+---
+title: "De stad, object van beweging"
+description: "An analytical mapping method created by Giambattista Nolli"
+categories: [Figure Ground Analysis, Public-Private Analysis]
+tags: [analysis, map]
+date: 1989-01-01
+---
+
+***Rein Geurtsen***\
+
+![](catalog/examples/image/nolli.tif)
+
+When most city maps were still bird’s eye perspective views (fig. 1), Giambattista Nolli produced a map of 18th century Rome which greatly reduced and systematised the information contained in the map (fig 2). Nolli limited himself to a 2d representation and only distinguished between public space (white) and private space (black). As a result, publicly accessible interior spaces like churches are visible in the map. Through reduction and abstraction, knowledge which otherwise remains hidden under the surface is instantly accessible. This is one of the basic goals of any analysis. Over the last decades, the Nolli map has mesmerised generations of urban designers, theorists and architects. Especially since the publication of “Learning from Las Vegas” (which also used  the Nolli technique) dozens of “Nolli maps” have been produced . 
