@@ -7,6 +7,6 @@ date-format: "YYYY"
 date: "1990"
 ---
 
-![](../../images/nolli.jpg)
+![](../../images/landschap_en_verstedelijking.jpg)
 
 This is a good example of how an analysis can be used as a basis for urban design. In this study, the landscape between Den Haag and Rotterdam is looked at from all sides; from its geomorphology to the traffic routes. Systematically presented theme maps are alternated with hand-drawn illustrations, summarising the argument. The reader is taken by the hand along all the steps that the designer took to understand the area. The last drawing shows the design proposal that was made possible with the analysis. Through such a systematic and yet intuitive process, the designer can indeed gain enough information for new design proposals. All decisions seem to derive from the analysis. On the one hand, this makes it easy for the reader or client to follow the designer’s reasoning, on the other hand, just because of its persuasive character, an analysis might often be used to justify a design which in fact has a wholly different agenda.
