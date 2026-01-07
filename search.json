@@ -10,69 +10,343 @@
     ]
   },
   {
-    "objectID": "chapters/foundations.html",
-    "href": "chapters/foundations.html",
-    "title": "1  Foundations",
+    "objectID": "chapters/foundations_frontiers.html",
+    "href": "chapters/foundations_frontiers.html",
+    "title": "1  Foundations and Frontiers",
     "section": "",
-    "text": "This chapter introduces schools of urban morphology, typomorphology, fundamental concepts…\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "text": "A chapter that is meant to provide an update on the state of the field as well as a structured description of current sub-fields and types of analysis. This will be reflected the structure of the next section.\nThis chapter explores emerging frontiers in urban morphology: urban morphometrics, spatial morphology, and spatial data science. Urban morphometrics is a quantitative field aiming at extracting patterns from large amounts of morphological data; spatial morphology expands the field to the analysis of unbuilt space mostly using space syntax theory and landscape ecology principles; spatial data science as a cross-cutting field increasingly adopts urban morphological information to enrich the understanding of spatial phenomena of environmental, social and economic kind.\n\n\n\nVOSviewer visualization of keyword co-occurrence from a dataset exported from Scopus on 30 October 2025 using the query “urban morpho*“.\n\n\n\n\nLinking to GEOS 3.13.0, GDAL 3.8.5, PROJ 9.5.1; sf_use_s2() is TRUE\n\n\nhere() starts at /Users/yayinghao/Documents/ouagb-m\n\n\nLoading required package: sp\n\n\n\nAttaching package: 'magrittr'\n\n\nThe following object is masked from 'package:raster':\n\n    extract",
     "crumbs": [
-      "Foundations & Frontiers",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Foundations</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Foundations and Frontiers</span>"
     ]
   },
   {
-    "objectID": "chapters/frontiers.html",
-    "href": "chapters/frontiers.html",
-    "title": "2  Frontiers",
+    "objectID": "chapters/methodology.html",
+    "href": "chapters/methodology.html",
+    "title": "2  Methodology",
     "section": "",
-    "text": "This chapter explores emerging frontiers in urban morphology: urban morphometrics, spatial morphology, and spatial data science. Urban morphometrics is a quantitative field aiming at extracting patterns from large amounts of morphological data; spatial morphology expands the field to the analysis of unbuilt space mostly using space syntax theory and landscape ecology principles; spatial data science as a cross-cutting field increasingly adopts urban morphological information to enrich the understanding of spatial phenomena of environmental, social and economic kind.\n\n\n\nVOSviewer visualization of keyword co-occurrence from a dataset exported from Scopus on 30 October 2025 using the query “urban morpho*“.",
+    "text": "2.1 Methods\nThis section provides a structured overview of methods and techniques for urban morphology analysis. All methods and techniques described here are cross-referenced with the Examples part of the book.\n# load maps\nmap2 &lt;- leaflet() %&gt;%\n  setView(lng = 4.4777, lat = 51.9244, zoom = 13) %&gt;%\n  addTiles() %&gt;%  # Base OSM layer\n  addTiles(\n    urlTemplate = \"https://allmaps.xyz/maps/8ebee9ef638a08cf/{z}/{x}/{y}.png\",\n    attribution = \"Allmaps\",\n    options = tileOptions(opacity = 0.7)  # Optional: make it semi-transparent\n  ) |&gt; \n  addFullscreenControl()\nmap2",
     "crumbs": [
-      "Foundations & Frontiers",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Frontiers</span>"
+      "Methodology, Techniques & Applications",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Methodology</span>"
     ]
   },
   {
-    "objectID": "chapters/methods.html",
-    "href": "chapters/methods.html",
-    "title": "3  Methods & Techniques",
+    "objectID": "chapters/methodology.html#methods",
+    "href": "chapters/methodology.html#methods",
+    "title": "2  Methodology",
     "section": "",
-    "text": "3.1 Methods\nThis section provides a structured overview of methods and techniques for urban morphology analysis. All methods and techniques described here are cross-referenced with the Examples part of the book.",
+    "text": "2.1.1 Typo-morphology analysis\n\n\n2.1.2 Space syntax analysis\nQuiz functionality to be shown in a separate file\n\n\n2.1.3 (Morpho-)Typology analysis",
     "crumbs": [
-      "Foundations & Frontiers",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Methods & Techniques</span>"
+      "Methodology, Techniques & Applications",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Methodology</span>"
     ]
   },
   {
-    "objectID": "chapters/methods.html#methods",
-    "href": "chapters/methods.html#methods",
-    "title": "3  Methods & Techniques",
+    "objectID": "chapters/techniques.html",
+    "href": "chapters/techniques.html",
+    "title": "3  Techniques",
     "section": "",
-    "text": "3.1.1 Typo-morphology analysis\n\n\n3.1.2 Space syntax analysis\n\n\n3.1.3 (Morpho-)Typology analysis",
+    "text": "3.1 Techniques",
     "crumbs": [
-      "Foundations & Frontiers",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Methods & Techniques</span>"
+      "Methodology, Techniques & Applications",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Techniques</span>"
     ]
   },
   {
-    "objectID": "chapters/methods.html#techniques",
-    "href": "chapters/methods.html#techniques",
-    "title": "3  Methods & Techniques",
-    "section": "3.2 Techniques",
-    "text": "3.2 Techniques\n\n3.2.1 Calculating density\n\n\n3.2.2 Figure-ground mapping\n\n\n3.2.3 Mapping spatial structures",
+    "objectID": "chapters/techniques.html#techniques",
+    "href": "chapters/techniques.html#techniques",
+    "title": "3  Techniques",
+    "section": "",
+    "text": "3.1.1 Calculating density\n\n\n3.1.2 Figure-ground mapping\n\n\n3.1.3 Mapping spatial structures\n\n\nReading layer `gis_osm_railways_free_1' from data source \n  `/Users/yayinghao/Documents/ouagb-m/data-for-map/limburg_railway.gpkg' \n  using driver `GPKG'\nSimple feature collection with 2188 features and 4 fields\nGeometry type: MULTILINESTRING\nDimension:     XY\nBounding box:  xmin: 5.589132 ymin: 50.7501 xmax: 6.197994 ymax: 51.81715\nGeodetic CRS:  WGS 84\n\n\nReading layer `gis_osm_waterways_free_1' from data source \n  `/Users/yayinghao/Documents/ouagb-m/data-for-map/limburg_water.gpkg' \n  using driver `GPKG'\nSimple feature collection with 10060 features and 5 fields\nGeometry type: MULTILINESTRING\nDimension:     XY\nBounding box:  xmin: 5.498348 ymin: 50.73725 xmax: 6.745541 ymax: 51.84072\nGeodetic CRS:  WGS 84\n\n\nReading layer `gis_osm_landuse_a_free_1' from data source \n  `/Users/yayinghao/Documents/ouagb-m/data-for-map/limburg_industry.gpkg' \n  using driver `GPKG'\nSimple feature collection with 499 features and 4 fields\nGeometry type: MULTIPOLYGON\nDimension:     XY\nBounding box:  xmin: 5.601581 ymin: 50.74544 xmax: 6.220584 ymax: 51.76557\nGeodetic CRS:  WGS 84",
     "crumbs": [
-      "Foundations & Frontiers",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Methods & Techniques</span>"
+      "Methodology, Techniques & Applications",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Techniques</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/applications.html",
+    "href": "chapters/applications.html",
+    "title": "4  Applications",
+    "section": "",
+    "text": "hdjsfbhdjfkjjkhfjkhfjkshdfjdkhfjkdhfjkdhfkjdhfjkdhfjkshdfjkhfkjhdkjfhs(van den Burg 2004), bshjbfhdbfhdjbshjbshjbhfjdbhfksbfdjkbhsdbjsbhjdbhfjdbshfkbdjkfdsjkfhsdjklncjsdkbcds(Knuth 1984)\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.\n\n\nvan den Burg, Leo, ed. 2004. Urban Analysis Guidebook, Typomorphology. Delft: Technical University of Delft.",
+    "crumbs": [
+      "Methodology, Techniques & Applications",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Applications</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/quiz.html",
+    "href": "chapters/quiz.html",
+    "title": "5  Quiz",
+    "section": "",
+    "text": "5.1 Methods",
+    "crumbs": [
+      "Methodology, Techniques & Applications",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Quiz</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/quiz.html#methods",
+    "href": "chapters/quiz.html#methods",
+    "title": "5  Quiz",
+    "section": "",
+    "text": "5.1.1 Typo-morphology analysis\n\n\n5.1.2 Space syntax analysis\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5.1.3 (Morpho-)Typology analysis",
+    "crumbs": [
+      "Methodology, Techniques & Applications",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Quiz</span>"
     ]
   },
   {
     "objectID": "catalog/index.html",
     "href": "catalog/index.html",
-    "title": "4  Examples",
+    "title": "6  Index",
     "section": "",
-    "text": "Use the filters and search box above to explore the catalog. Click items to open their detail pages.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\nNo matching items",
+    "text": "Use the filters and search box above to explore the catalog. Click items to open their detail pages.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\nAmsterdam als stedelijk bouwwerk\n\n\n\nFigure ground analysis\n\nPublic space\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1985\n\n\n\n\n\n\n\n\n\n\n\nAntwerp: Territory of a New Modernity\n\n\n\nFigure Ground Analysis\n\nPublic-Private Analysis\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n2009\n\n\n\n\n\n\n\n\n\n\n\nBarcelona, The Evolution of A Compact City\n\n\n\nFigure Ground Analysis\n\nPublic-Private Analysis\n\n\n\nStudy of Gulf Corperation Cities\n\n\n\n2005\n\n\n\n\n\n\n\n\n\n\n\nBologna: politica e metodologia del restauro nei centri storici\n\n\n\nBuilding typology\n\nUrban blocks\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1973\n\n\n\n\n\n\n\n\n\n\n\nBuilding with Superblocks\n\n\n\nFigure Ground Analysis\n\nPublic-Private Analysis\n\n\n\nStudy of Gulf Corperation Cities\n\n\n\n2024\n\n\n\n\n\n\n\n\n\n\n\nBuilt for Change: neighborhood architecture in San Francisco\n\n\n\nBuilding typology\n\nUrban blocks\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1986\n\n\n\n\n\n\n\n\n\n\n\nCities, comparisons of form and scale\n\n\n\nComparative urban analysis\n\nScale and representation\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1974\n\n\n\n\n\n\n\n\n\n\n\nCollage City\n\n\n\nFigure ground analysis\n\nCollage city\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1978\n\n\n\n\n\n\n\n\n\n\n\nDe stad, object van beweging\n\n\n\nFigure Ground Analysis\n\nPublic-Private Analysis\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1989\n\n\n\n\n\n\n\n\n\n\n\nDie Städtebau nach seinen künstlerischen Grundsätzen\n\n\n\nPublic space form\n\nUrban spatial composition\n\nPublic space\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1889\n\n\n\n\n\n\n\n\n\n\n\nElements d’analyse urbaine\n\n\n\nBuilding typology\n\nUrban sprawl\n\nUrban blocks\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1980\n\n\n\n\n\n\n\n\n\n\n\nEphemeral Urbanisms: Kumbh Mela, India\n\n\n\nFigure Ground Analysis\n\nPublic-Private Analysis\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n2022\n\n\n\n\n\n\n\n\n\n\n\nLa Ville Radieuse\n\n\n\nFigure ground analysis\n\nComparative urban analysis\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1930\n\n\n\n\n\n\n\n\n\n\n\nLearning from Las Vegas\n\n\n\nUrban sprawl\n\nEveryday urbanism\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1972\n\n\n\n\n\n\n\n\n\n\n\nLecture d’une ville: Versailles\n\n\n\nBuilding typology\n\nPublic space analysis\n\nUrban blocks\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1980\n\n\n\n\n\n\n\n\n\n\n\nLes Bastides: d’Aquitaine, du Bas-Languedoc et du Béarn\n\n\n\nBuilding typology\n\nUrban blocks\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1985\n\n\n\n\n\n\n\n\n\n\n\nMeasuring Spatial Visibility, Adjacency, Permeability and Degrees of Street Life in Pompeii\n\n\n\nFigure Ground Analysis\n\nPublic-Private Analysis\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n2011\n\n\n\n\n\n\n\n\n\n\n\nRoma al tempo di Benedetto XIV\n\n\n\nFigure ground analysis\n\nPublic space analysis\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1748\n\n\n\n\n\n\n\n\n\n\n\nRoma al tempo di Benedetto XIV\n\n\n\nFigure ground analysis\n\nPublic-private analysis\n\nPublic space\n\nConceptual abstraction\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1748\n\n\n\n\n\n\n\n\n\n\n\nRoma al tempo di Benedetto XIV\n\n\n\nFigure ground analysis\n\nPublic-private analysis\n\nPublic space\n\nConceptual abstraction\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1748\n\n\n\n\n\n\n\n\n\n\n\nRoma al tempo di Benedetto XIV\n\n\n\nFigure ground analysis\n\nPublic-private analysis\n\nPublic space\n\nConceptual abstraction\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1748\n\n\n\n\n\n\n\n\n\n\n\nRoma al tempo di Benedetto XIV\n\n\n\nFigure ground analysis\n\nPublic-private analysis\n\nPublic space\n\nConceptual abstraction\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1748\n\n\n\n\n\n\n\n\n\n\n\nRoma al tempo di Benedetto XIV\n\n\n\nFigure ground analysis\n\nPublic-private analysis\n\nPublic space\n\nConceptual abstraction\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1748\n\n\n\n\n\n\n\n\n\n\n\nRoma al tempo di Benedetto XIV\n\n\n\nFigure ground analysis\n\nPublic-private analysis\n\nPublic space\n\nConceptual abstraction\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1748\n\n\n\n\n\n\n\n\n\n\n\nRoma al tempo di Benedetto XIV\n\n\n\nFigure ground analysis\n\nPublic-private analysis\n\nPublic space\n\nConceptual abstraction\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1748\n\n\n\n\n\n\n\n\n\n\n\nRoma al tempo di Benedetto XIV\n\n\n\nFigure ground analysis\n\nPublic-private analysis\n\nPublic space\n\nConceptual abstraction\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1748\n\n\n\n\n\n\n\n\n\n\n\nRoma al tempo di Benedetto XIV\n\n\n\nFigure ground analysis\n\nPublic-private analysis\n\nPublic space\n\nConceptual abstraction\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1748\n\n\n\n\n\n\n\n\n\n\n\nRoma al tempo di Benedetto XIV\n\n\n\nFigure ground analysis\n\nPublic-private analysis\n\nPublic space\n\nConceptual abstraction\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1748\n\n\n\n\n\n\n\n\n\n\n\nRoma al tempo di Benedetto XIV\n\n\n\nFigure ground analysis\n\nPublic-private analysis\n\nPublic space\n\nConceptual abstraction\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1748\n\n\n\n\n\n\n\n\n\n\n\nRoma al tempo di Benedetto XIV\n\n\n\nFigure ground analysis\n\nPublic-private analysis\n\nPublic space\n\nConceptual abstraction\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1748\n\n\n\n\n\n\n\n\n\n\n\nRoma al tempo di Benedetto XIV\n\n\n\nFigure ground analysis\n\nPublic-private analysis\n\nPublic space\n\nConceptual abstraction\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1748\n\n\n\n\n\n\n\n\n\n\n\nRoma al tempo di Benedetto XIV\n\n\n\nFigure ground analysis\n\nPublic-private analysis\n\nPublic space\n\nConceptual abstraction\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1748\n\n\n\n\n\n\n\n\n\n\n\nRoma al tempo di Benedetto XIV\n\n\n\nFigure ground analysis\n\nPublic-private analysis\n\nPublic space\n\nConceptual abstraction\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1748\n\n\n\n\n\n\n\n\n\n\n\nRoma al tempo di Benedetto XIV\n\n\n\nFigure ground analysis\n\nPublic-private analysis\n\nPublic space\n\nConceptual abstraction\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1748\n\n\n\n\n\n\n\n\n\n\n\nRoma al tempo di Benedetto XIV\n\n\n\nFigure ground analysis\n\nPublic-private analysis\n\nPublic space\n\nConceptual abstraction\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1748\n\n\n\n\n\n\n\n\n\n\n\nRoma al tempo di Benedetto XIV\n\n\n\nFigure ground analysis\n\nPublic-private analysis\n\nPublic space\n\nConceptual abstraction\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1748\n\n\n\n\n\n\n\n\n\n\n\nRoma al tempo di Benedetto XIV\n\n\n\nFigure ground analysis\n\nPublic-private analysis\n\nPublic space\n\nConceptual abstraction\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1748\n\n\n\n\n\n\n\n\n\n\n\nRoma al tempo di Benedetto XIV\n\n\n\nFigure ground analysis\n\nPublic-private analysis\n\nPublic space\n\nConceptual abstraction\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1748\n\n\n\n\n\n\n\n\n\n\n\nRotterdam Verstedelijkt landschap\n\n\n\nFigure ground analysis\n\nPublic-private analysis\n\nPublic space\n\nConceptual abstraction\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1748\n\n\n\n\n\n\n\n\n\n\n\nStudi per una Operante Storia Urbana di Venezia\n\n\n\nBuilding typology\n\nUrban blocks\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1959\n\n\n\n\n\n\n\n\n\n\n\nThe Concise Townscape\n\n\n\nUrban scenes\n\nSpatial sequence\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1961\n\n\n\n\n\n\n\n\n\n\n\nThe Image of the City\n\n\n\nMental map\n\nSpatial network analysis\n\n\n\nDifferent ways of perceiving the elements in a city\n\n\n\n1960\n\n\n\n\n\n\n\n\n\n\n\nThe View From The Road\n\n\n\nFigure Ground Analysis\n\nPublic-Private Analysis\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1964\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
-      "Examples",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Examples</span>"
+      "Cases",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Index</span>"
+    ]
+  },
+  {
+    "objectID": "catalog/examples/roma_al_tempo_di_benedetto.html",
+    "href": "catalog/examples/roma_al_tempo_di_benedetto.html",
+    "title": "7  Roma al tempo di Benedetto XIV",
+    "section": "",
+    "text": "When most city maps were still bird’s eye perspective views (fig. 1), Giambattista Nolli produced a map of 18th century Rome which greatly reduced and systematised the information contained in the map (fig 2). Nolli limited himself to a 2d representation and only distinguished between public space (white) and private space (black). As a result, publicly accessible interior spaces like churches are visible in the map. Through reduction and abstraction, knowledge which otherwise remains hidden under the surface is instantly accessible. This is one of the basic goals of any analysis. Over the last decades, the Nolli map has mesmerised generations of urban designers, theorists and architects. Especially since the publication of “Learning from Las Vegas” (which also used the Nolli technique) dozens of “Nolli maps” have been produced.",
+    "crumbs": [
+      "Cases",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Roma al tempo di Benedetto XIV</span>"
+    ]
+  },
+  {
+    "objectID": "catalog/examples/Stadtebau.html",
+    "href": "catalog/examples/Stadtebau.html",
+    "title": "8  Die Städtebau nach seinen künstlerischen Grundsätzen",
+    "section": "",
+    "text": "Through his clear drawings and his texts, Camillo Sitte tried to establish principles for well designed public spaces. With ancient Greek and Roman cities as basic models, Sitte’s book presents a multitude of examples of good public spaces (fig. 3, 4) and explains in his texts why these are good. He uses this knowledge to also show the reader examples of how things have gone terribly wrong in contemporary cities (fig. 5). Perspectives are included to further illustrate his point. His texts cannot be included here. The main interest is in the precision and delicacy of the drawings.",
+    "crumbs": [
+      "Cases",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Die Städtebau nach seinen künstlerischen Grundsätzen</span>"
+    ]
+  },
+  {
+    "objectID": "catalog/examples/ville_radieuse.html",
+    "href": "catalog/examples/ville_radieuse.html",
+    "title": "9  La Ville Radieuse",
+    "section": "",
+    "text": "This drawing by Le Corbusier is one of the examples where an analysis has become an icon. Good analyses have the power to convey knowledge at a glance. Some analyses do even more than that and become powerful design statements in themselves.\nThis drawing is a figure ground analysis (cf. project 10) and comparative analysis in one. Several city structures are drawn to the same scale. Please note that Le Corbusier also included information about the orientation of the cities and how he chose to give his own theoretical plan a different one.\nsource",
+    "crumbs": [
+      "Cases",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>La Ville Radieuse</span>"
+    ]
+  },
+  {
+    "objectID": "catalog/examples/studi_per_una_operante.html",
+    "href": "catalog/examples/studi_per_una_operante.html",
+    "title": "10  Studi per una Operante Storia Urbana di Venezia",
+    "section": "",
+    "text": "After the second world war, even a monumental city like Venice was in danger of large-scale modernisations that would have destroyed the old urban tissue. Saverio Muratori was one of the first architects to (unpopular at that time) raise his voice against this threat. He did this through a monumental documentation of the city in which he illustrated how Venice had grown through the centuries on the basis of very stable urban patterns. Muratori implied with his book that an understanding and appreciation of these patterns (and their vulnerability) was a basic requirement for architects and urban designers who wanted to design for the city. For Muratori, the basic elements of the city are buildings and configurations of buildings. This means that to understand these, one has to make a detailed survey of many individual buildings and areas in search for what they have in common. Like this, one can describe the basic building “types” which are used in Venice. An understanding of these types could help designers to avoid plans which are alien to the city. This book was the first of its kind and had an enormous influence in Italy, but also abroad. Muratori helped ground an Italian “school” in urban analysis. For more information about this, see the text by Anne Vernez Moudon elsewhere in this volume.",
+    "crumbs": [
+      "Cases",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Studi per una Operante Storia Urbana di Venezia</span>"
+    ]
+  },
+  {
+    "objectID": "catalog/examples/image_of_the_city.html",
+    "href": "catalog/examples/image_of_the_city.html",
+    "title": "11  The Image of the City",
+    "section": "",
+    "text": "A basic point of urban analysis is that the topographical map is not the only one you can draw to represent a city. Kevin Lynch became famous by drawing maps that were reflective of people’s image of a city; their mental maps. Lynch developed drawing techniques to visualise relationships, borders, important places etc. that are perceivable to city dwellers, but are often invisible; at least on a map. Fig. 1 shows the basic principle that people moving from A to B need visual stimuli to make sense of their environment. Fig. 2 shows some of the basic urban configurations that Lynch drew for his book which people use in their image of the city. In Lynch’s view, it is important to be aware of these mental considerations. Knowing how people find their way in a city and what gives cities or areas their specific character can be a valuable tool for design. This can be done on all scale levels, as is shown in figs. 12 - 17.\nYou can find the collection of original drawings here.",
+    "crumbs": [
+      "Cases",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>The Image of the City</span>"
+    ]
+  },
+  {
+    "objectID": "catalog/examples/concise_townscape.html",
+    "href": "catalog/examples/concise_townscape.html",
+    "title": "12  The Concise Townscape",
+    "section": "",
+    "text": "These drawings make the reader aware of the many different “scenes” in a city. These scenes can be drawn, named and understood. This is valuable information for urban designers since it represents some of the basic elements in the city and how these are connected through the movement of people. For Cullen, the city has qualities related to space and movement that cannot be represented in 2d. This is not unlike the idea behind the perspective drawings in for example “Elements d’Analyse Urbaine” (project 11) or “Die Städtebau nach seinen Künstlerischen Grundsätzen” (project 2). Cullen proposed no method for design; he primarily wanted to point out the beauty and importance of these spaces in the city. Please note that photographs would not have had the same effect. By drawing, Cullen had to be precise as to what was relevant and what not. His drawings are in fact analyses.\n\nAlso see: Project 11, Elements d’Analyse Urbaine\nProject 2, Die Städtebau nach seinen Künstlerischen Grundsätzen",
+    "crumbs": [
+      "Cases",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>The Concise Townscape</span>"
+    ]
+  },
+  {
+    "objectID": "catalog/examples/las_vegas.html",
+    "href": "catalog/examples/las_vegas.html",
+    "title": "13  Learning from Las Vegas",
+    "section": "",
+    "text": "Before 1972, Las Vegas was regarded by many as an almost featureless and meaningless urban environment. This changed with the publication of this book. With the advent of the car- and media based culture in the nineteen sixties, a place like Las Vegas could suddenly acquire a completely different meaning; at least for architects and urban designers. This analysis suddenly made visible to the profession what had long been hidden under the surface: non-spaces and popular culture are powerful material for designers. A similar wish to find something unique in the everyday environment seems to drive many contemporary designers who try to represent phenomena like mobility, urban sprawl or the essence of the Randstad.\n\nA traditional analysis of Las Vegas would have made little sense since the city has few traditional urban features. That is; fig. 6 shows that in fact Las Vegas is built up from the same elements as any city, only in a different mix. This is also made clear by their re-use of the Nolli map. A host of other new techniques is introduced, for instance in their visualisation of the importance of signs in Las Vegas and the use of photography.",
+    "crumbs": [
+      "Cases",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Learning from Las Vegas</span>"
+    ]
+  },
+  {
+    "objectID": "catalog/examples/bologna.html",
+    "href": "catalog/examples/bologna.html",
+    "title": "14  Bologna: politica e metodologia del restauro nei centri storici",
+    "section": "",
+    "text": "This is a good example of an analysis in the Italian tradition. Typically, these are based on meticulous surveys of the city. For Cervelatti, the most relevant source of knowledge about the city would probably be the building block, its characteristics and especially building typology. Conceptual abstractions like in many contemporary analyses (see for example projects 26, 29, 32 or 33) are obviously of a totally different nature. This analysis of Bologna begins with the city as a whole, but the information contained in the drawings is derived from a lower scale level. The drawings are not supposed to uncover a hidden truth about the city; they merely document its parts. In analyses like these, the factual information derived from a survey is as valuable and usable for design and policy as the conceptual force of many recent analyses.",
+    "crumbs": [
+      "Cases",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Bologna: politica e metodologia del restauro nei centri storici</span>"
+    ]
+  },
+  {
+    "objectID": "catalog/examples/comparisons_of_form_and_scale.html",
+    "href": "catalog/examples/comparisons_of_form_and_scale.html",
+    "title": "15  Cities, comparisons of form and scale",
+    "section": "",
+    "text": "This study is a comparison of different cities. Its value lies in the immediate accessibility of the information; “ah, so Amsterdam is as big as this, and New York is as big as that”. One glance and you know.\n\nNotice that there is strict adherence to several basic principles: a unity in medium (in this case clay tablets), a unity and legibility of scale (through the gridlines) and a unity of information (each city is represented through the same elements). If any of these principles had been neglected, the information would have been lost. The most critical point in analyses like these therefore is the choice of what to show and what to leave out.\n\nFurther examples of Wurman’s clay tablets can be found here.",
+    "crumbs": [
+      "Cases",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Cities, comparisons of form and scale</span>"
+    ]
+  },
+  {
+    "objectID": "catalog/examples/collage_city.html",
+    "href": "catalog/examples/collage_city.html",
+    "title": "16  Collage City",
+    "section": "",
+    "text": "Essential here is the so called “figure-ground” analysis (fig. 2-3); two carefully drawn illustrations where white represents public space and black represents built mass. The drawings themselves are not revolutionary (compare for instance fig. 2 to the Nolli-map), yet the opposition between the “traditional” city vs. the “modern” city (as already used in design by Le Corbusier, fig. 1) is made very clear and has made this study very influential.\n\nin Rowe’s and Koetter’s view, neither pure adherence to modern urbanism, nor a fall back on the traditional city can be the answer to the contemporary urban design task. They seek the answer in what they call the collage city; a mix or “bricolage” where modern, freestanding typologies can exist side by side with a less specific and more traditional infill. Ancient Rome is presented as an illustration of the principle. Further examples of what can be done with the figure- ground method are shown in fig. 7 and 8.",
+    "crumbs": [
+      "Cases",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Collage City</span>"
+    ]
+  },
+  {
+    "objectID": "catalog/examples/elements_urbaine.html",
+    "href": "catalog/examples/elements_urbaine.html",
+    "title": "17  Elements d’analyse urbaine",
+    "section": "",
+    "text": "Similar to this book, Elements d’analyse urbaine gives general principles and drawing examples for urban analysis. Their modification of the Nolli map and functional analysis below are good examples of simple but effective reduction drawings. Note also the drawings to the right which illustrate different kinds of urban growth. As a representative of the French school of urban analysis, this overview pays much attention to typological research, for example about housing typology in connection to city blocks (p.118). Interesting are the perspective drawings showing basic types of urban scenes. At first glance, the drawings and techniques might look outdated, but many of the examples you see in this book still use the same principles.",
+    "crumbs": [
+      "Cases",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Elements d’analyse urbaine</span>"
+    ]
+  },
+  {
+    "objectID": "catalog/examples/versailles.html",
+    "href": "catalog/examples/versailles.html",
+    "title": "18  Lecture d’une ville: Versailles",
+    "section": "",
+    "text": "This is another example of a French School urban analysis. That means that apart from a number of introductory drawings on a larger scale, the emphasis is on building- and block typology. In addition to the palace, a large number of houses or “pavillons” were built in Versailles for the nobility and government officials. These were all based on the same typology, resulting in a very regular and formal urban environment (fig. 4). Although there were many variants of these houses and many have been extended or modified, the basic module is still recognisable. The book shows this basic module and some of its variants and characteristic details. Figs. 7-10 show how streets, squares and blocks were constructed from this. This urban layout has also survived, even though the tissue has become denser (fig.8). Especially fig. 11 is interesting because it clearly shows that a street is more than just the “white” in the map.",
+    "crumbs": [
+      "Cases",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Lecture d’une ville: Versailles</span>"
+    ]
+  },
+  {
+    "objectID": "catalog/examples/stedelijk_bouwwerk.html",
+    "href": "catalog/examples/stedelijk_bouwwerk.html",
+    "title": "19  Amsterdam als stedelijk bouwwerk",
+    "section": "",
+    "text": "Amsterdam als stedelijk bouwwerk was the first of its kind in the Netherlands. The study systematically analysed different parts of Amsterdam in a great number of drawings and an accompanying text. The emphasis is on the relationship between reality and an idealised or abstracted morphology. The writers look for patterns in the city structure in an attempt to find out what Amsterdam is.\n\nDifferent areas are analysed with different drawing techniques. For the canal- zone, the emphasis is on the radial pattern formed by the canals and the streets. Its structure can be compared with ideal city plans such as those by Speckle and Stevin. Louwe and Van der Hoeven take up the canal zone and twist, cut and deform it to show its ordering principles. In fig. 3, they investigate whether we should read Amsterdam as an ideal military settlement like Speckle’s design. But the regularity in this plan is clearly absent in Amsterdam. Fig. 4 on the other hand shows the likeness between 17th century Amsterdam and the Stevin plan when the canal zone is “unrolled”.\n\nPlease note how in fig. 10, the actual state of the area around the Noorderkerk is constructed from an abstract pattern: as if the “designers” of the area had taken this pattern as a starting point. For the analysis of the Westelijke Tuinsteden, the drawings focus on the built mass, rather than on the public space. This limits the effect of the drawings somewhat since in the modern city, the space around buildings is often as relevant as the buildings themselves.",
+    "crumbs": [
+      "Cases",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Amsterdam als stedelijk bouwwerk</span>"
+    ]
+  },
+  {
+    "objectID": "catalog/examples/les_bastides.html",
+    "href": "catalog/examples/les_bastides.html",
+    "title": "20  Les Bastides: d’Aquitaine, du Bas-Languedoc et du Béarn",
+    "section": "",
+    "text": "Like in earlier examples of the French and Italian schools of urban analysis, this book on the French bastides- towns draws heavily on typological research. To isolate the typical, a very large number of towns has been studied on different scale levels. The analysis focuses on the typology of the towns themselves (fig. 4), the relationship of the internal elements such as squares, streets and churches (fig. 5 - 8), typology of the building blocks (fig. 9, 10), the typology of the houses and their relation to other elements (fig. 9). Fig. 3 shows an idealized layout and how a real Bastide is related to that. As with the Italian analysis of Bologna, the essence of the city is represented in this careful description of the typical. The study implies that an intimate knowledge of this is necessary for architects and urbanists to base their designs on, requiring lengthy and extremely thorough research.",
+    "crumbs": [
+      "Cases",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Les Bastides: d’Aquitaine, du Bas-Languedoc et du Béarn</span>"
+    ]
+  },
+  {
+    "objectID": "catalog/examples/built_for_change.html",
+    "href": "catalog/examples/built_for_change.html",
+    "title": "21  Built for Change: neighborhood architecture in San Francisco",
+    "section": "",
+    "text": "This study describes the area around Alamo Square in San Francisco. This part of the city is unique for its beautiful domestic architecture. With this study, Moudon wanted to raise questions about the ability of the urban fabric to absorb contemporary requirements: how to preserve an area like this in such a way that the beauty of it remains, while allowing to adapt itself to modern life. Like in Italian and French studies, this means for Moudon that one has to understand the development of the area, but also its most typical features. To learn about this, the urban analyst has to do much work in documenting the area through the ages and on different scale levels. We see here on pages 140-141 some illustrations of the development around Alamo Square in several thematic maps. Note how one can notice shifts in use and layout even with only a quick scan of the drawings.  \nPage 142 shows how the building blocks are built up from so-called vara-modules and the typical parcellation solutions that result from that. Page 143 extends the study to the scale level of the typical Alamo Square type house and its variations.",
+    "crumbs": [
+      "Cases",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Built for Change: neighborhood architecture in San Francisco</span>"
+    ]
+  },
+  {
+    "objectID": "catalog/examples/evolution_of_a_compact_city.html",
+    "href": "catalog/examples/evolution_of_a_compact_city.html",
+    "title": "43  Barcelona, The Evolution of A Compact City",
+    "section": "",
+    "text": "Joan Busquets\n\n\nWhen most city maps were still bird’s eye perspective views (fig. 1), Giambattista Nolli produced a map of 18th century Rome which greatly reduced and systematised the information contained in the map (fig 2). Nolli limited himself to a 2d representation and only distinguished between public space (white) and private space (black). As a result, publicly accessible interior spaces like churches are visible in the map. Through reduction and abstraction, knowledge which otherwise remains hidden under the surface is instantly accessible. This is one of the basic goals of any analysis. Over the last decades, the Nolli map has mesmerised generations of urban designers, theorists and architects. Especially since the publication of “Learning from Las Vegas” (which also used the Nolli technique) dozens of “Nolli maps” have been produced .",
+    "crumbs": [
+      "Cases",
+      "<span class='chapter-number'>43</span>  <span class='chapter-title'>Barcelona, The Evolution of A Compact City</span>"
+    ]
+  },
+  {
+    "objectID": "catalog/examples/measuring_pompeii.html",
+    "href": "catalog/examples/measuring_pompeii.html",
+    "title": "44  Measuring Spatial Visibility, Adjacency, Permeability and Degrees of Street Life in Pompeii",
+    "section": "",
+    "text": "Akkelies van Nes\n\n\nWhen most city maps were still bird’s eye perspective views (fig. 1), Giambattista Nolli produced a map of 18th century Rome which greatly reduced and systematised the information contained in the map (fig 2). Nolli limited himself to a 2d representation and only distinguished between public space (white) and private space (black). As a result, publicly accessible interior spaces like churches are visible in the map. Through reduction and abstraction, knowledge which otherwise remains hidden under the surface is instantly accessible. This is one of the basic goals of any analysis. Over the last decades, the Nolli map has mesmerised generations of urban designers, theorists and architects. Especially since the publication of “Learning from Las Vegas” (which also used the Nolli technique) dozens of “Nolli maps” have been produced .",
+    "crumbs": [
+      "Cases",
+      "<span class='chapter-number'>44</span>  <span class='chapter-title'>Measuring Spatial Visibility, Adjacency, Permeability and Degrees of Street Life in Pompeii</span>"
+    ]
+  },
+  {
+    "objectID": "catalog/examples/object_van_beweging.html",
+    "href": "catalog/examples/object_van_beweging.html",
+    "title": "45  De stad, object van beweging",
+    "section": "",
+    "text": "Rein Geurtsen\n\n\nWhen most city maps were still bird’s eye perspective views (fig. 1), Giambattista Nolli produced a map of 18th century Rome which greatly reduced and systematised the information contained in the map (fig 2). Nolli limited himself to a 2d representation and only distinguished between public space (white) and private space (black). As a result, publicly accessible interior spaces like churches are visible in the map. Through reduction and abstraction, knowledge which otherwise remains hidden under the surface is instantly accessible. This is one of the basic goals of any analysis. Over the last decades, the Nolli map has mesmerised generations of urban designers, theorists and architects. Especially since the publication of “Learning from Las Vegas” (which also used the Nolli technique) dozens of “Nolli maps” have been produced .",
+    "crumbs": [
+      "Cases",
+      "<span class='chapter-number'>45</span>  <span class='chapter-title'>De stad, object van beweging</span>"
+    ]
+  },
+  {
+    "objectID": "catalog/examples/the_view_from_the_road.html",
+    "href": "catalog/examples/the_view_from_the_road.html",
+    "title": "46  The View From The Road",
+    "section": "",
+    "text": "Donald Appleyard, Kevin Lynch, John R. Myer\n\n\nWhen most city maps were still bird’s eye perspective views (fig. 1), Giambattista Nolli produced a map of 18th century Rome which greatly reduced and systematised the information contained in the map (fig 2). Nolli limited himself to a 2d representation and only distinguished between public space (white) and private space (black). As a result, publicly accessible interior spaces like churches are visible in the map. Through reduction and abstraction, knowledge which otherwise remains hidden under the surface is instantly accessible. This is one of the basic goals of any analysis. Over the last decades, the Nolli map has mesmerised generations of urban designers, theorists and architects. Especially since the publication of “Learning from Las Vegas” (which also used the Nolli technique) dozens of “Nolli maps” have been produced .",
+    "crumbs": [
+      "Cases",
+      "<span class='chapter-number'>46</span>  <span class='chapter-title'>The View From The Road</span>"
+    ]
+  },
+  {
+    "objectID": "catalog/examples/kumbh_mela.html",
+    "href": "catalog/examples/kumbh_mela.html",
+    "title": "47  Ephemeral Urbanisms: Kumbh Mela, India",
+    "section": "",
+    "text": "Rahul Mehrotra, Felipe Vera\n\n\nWhen most city maps were still bird’s eye perspective views (fig. 1), Giambattista Nolli produced a map of 18th century Rome which greatly reduced and systematised the information contained in the map (fig 2). Nolli limited himself to a 2d representation and only distinguished between public space (white) and private space (black). As a result, publicly accessible interior spaces like churches are visible in the map. Through reduction and abstraction, knowledge which otherwise remains hidden under the surface is instantly accessible. This is one of the basic goals of any analysis. Over the last decades, the Nolli map has mesmerised generations of urban designers, theorists and architects. Especially since the publication of “Learning from Las Vegas” (which also used the Nolli technique) dozens of “Nolli maps” have been produced .",
+    "crumbs": [
+      "Cases",
+      "<span class='chapter-number'>47</span>  <span class='chapter-title'>Ephemeral Urbanisms: Kumbh Mela, India</span>"
+    ]
+  },
+  {
+    "objectID": "catalog/examples/territory_of_a_new_modernity.html",
+    "href": "catalog/examples/territory_of_a_new_modernity.html",
+    "title": "48  Antwerp: Territory of a New Modernity",
+    "section": "",
+    "text": "Bernardo Secchi, Paolo Vigano\n\n\nWhen most city maps were still bird’s eye perspective views (fig. 1), Giambattista Nolli produced a map of 18th century Rome which greatly reduced and systematised the information contained in the map (fig 2). Nolli limited himself to a 2d representation and only distinguished between public space (white) and private space (black). As a result, publicly accessible interior spaces like churches are visible in the map. Through reduction and abstraction, knowledge which otherwise remains hidden under the surface is instantly accessible. This is one of the basic goals of any analysis. Over the last decades, the Nolli map has mesmerised generations of urban designers, theorists and architects. Especially since the publication of “Learning from Las Vegas” (which also used the Nolli technique) dozens of “Nolli maps” have been produced .",
+    "crumbs": [
+      "Cases",
+      "<span class='chapter-number'>48</span>  <span class='chapter-title'>Antwerp: Territory of a New Modernity</span>"
+    ]
+  },
+  {
+    "objectID": "catalog/examples/building_with_superblocks.html",
+    "href": "catalog/examples/building_with_superblocks.html",
+    "title": "49  Building with Superblocks",
+    "section": "",
+    "text": "Khaled Alawadi, Nour Alkhaja, Esma Mohamed Vall\n\n\nWhen most city maps were still bird’s eye perspective views (fig. 1), Giambattista Nolli produced a map of 18th century Rome which greatly reduced and systematised the information contained in the map (fig 2). Nolli limited himself to a 2d representation and only distinguished between public space (white) and private space (black). As a result, publicly accessible interior spaces like churches are visible in the map. Through reduction and abstraction, knowledge which otherwise remains hidden under the surface is instantly accessible. This is one of the basic goals of any analysis. Over the last decades, the Nolli map has mesmerised generations of urban designers, theorists and architects. Especially since the publication of “Learning from Las Vegas” (which also used the Nolli technique) dozens of “Nolli maps” have been produced .",
+    "crumbs": [
+      "Cases",
+      "<span class='chapter-number'>49</span>  <span class='chapter-title'>Building with Superblocks</span>"
     ]
   },
   {
@@ -80,7 +354,7 @@
     "href": "appendices/references.html",
     "title": "References",
     "section": "",
-    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.\n\n\nvan den Burg, Leo, ed. 2004. Urban Analysis Guidebook,\nTypomorphology. Delft: Technical University of Delft.",
     "crumbs": [
       "Appendices",
       "References"
