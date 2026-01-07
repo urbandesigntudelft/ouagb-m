@@ -6,10 +6,37 @@ author: "Leo van den Burg"
 This section provides a structured overview of methods and techniques for urban morphology analysis. All methods and techniques described here are cross-referenced with the Examples part of the book.
 
 ## Methods
+```{r}
+library(leaflet)
+library(leaflet.extras)
+
+# load maps
+map2 <- leaflet() %>%
+  setView(lng = 4.4777, lat = 51.9244, zoom = 13) %>%
+  addTiles() %>%  # Base OSM layer
+  addTiles(
+    urlTemplate = "https://allmaps.xyz/maps/8ebee9ef638a08cf/{z}/{x}/{y}.png",
+    attribution = "Allmaps",
+    options = tileOptions(opacity = 0.7)  # Optional: make it semi-transparent
+  ) |> 
+  addFullscreenControl()
+map2
+```
+
+
 
 ### Typo-morphology analysis
 
 ### Space syntax analysis
+```{r space-syntax, echo=FALSE}
+question("Which one is the most suitable analysis method if you want to find the settlement centers in a larger region?",
+  answer("Angular Integration, 800m"),
+  answer("Angular Integration, 1500m", correct = TRUE),
+  answer("Angular Choice, 800m", message = "Angular choice measures the through-movement potential."),
+  answer("Angular Choice, 1500m", message = "Angular choice measures the through-movement potential.")
+)
+```
+
 
 Quiz functionality to be shown in a separate file
 
