@@ -1,11 +1,14 @@
 ---
-title: "Roma al tempo di Benedetto XIV"
-author: "Giambattista Nolli"
+title: "Mobility: a room with a view"
+author: "GF. Houben, L. M. Calabrese"
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [Figure ground analysis, Public-private analysis, Public space, Conceptual abstraction]
-tags: [3d, Learning from Las Vegas, Nolli, Giambattista, Nolli map, perspective drawings, Rome]
+categories: [Louisa Calabrese, Francine Houben, Las Vegas, mobility, the use of photographs, Randstad, visualisation]
 date-format: "YYYY"
-date: "1748"
+date: "2003"
 ---
 
-![](../../images/nolli.jpg)
+![](../../images/mobility.jpg)
+
+The highway has changed from a means to get from one place to the other into an end in itself. Many people spend a considerable part of their life on the road. The highway and increased mobility should not be considered a necessary evil, but as an urban phenomenon in its own right; obviously not only in Holland, but all over the world - or so the authors claim.\
+
+When the highway is considered a “place”, then ways have to be found to represent its characteristics, much like Venturi et al had to do when they proclaimed the Las Vegas strip the typical representative of contemporary life.  In their analysis of the randstad, the authors have tried to illustrate the principle of mobility in a map where towns are renamed according to the role in one person’s life. Next to that on the same scale is a map of the ring road connecting the cities within the randstad. Further illustrations are abstractions of that map. Ideally, when the highway is considered an urban design task, drivers might be able to enjoy it in the way foreseen in fig. 9.
