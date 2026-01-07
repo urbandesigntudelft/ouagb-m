@@ -1,11 +1,13 @@
 ---
-title: "Roma al tempo di Benedetto XIV"
-author: "Giambattista Nolli"
+title: "Urban Planning and Colonial Settlements in the period of Dutch Expansion"
+author: "Prof. Dr. Frits van Voorden, Ron van Oers"
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [Figure ground analysis, Public-private analysis, Public space, Conceptual abstraction]
-tags: [3d, Learning from Las Vegas, Nolli, Giambattista, Nolli map, perspective drawings, Rome]
+categories: [Cape Town, colonial settlements, comparison, development, morphological layers, morphology, Simon Stevin]
 date-format: "YYYY"
-date: "1748"
+date: "1997"
 ---
 
-![](../../images/nolli.jpg)
+![](../../images/colonial_settlements.png)\
+![](../../images/colonial_settlement_legend.jpg)
+
+In the nineteen-nineties, the late Professor Van Voorden was involved in the development of a masters course in the redesign and conservation of historical inner cities. In this course, Van Voorden wanted to view historical buildings and cities in a broad cosio-economic perspective, requiring analyses in which the development of the morphology of cities is connected to these broader issues. The drawings shown here are taken from a PHd. Research by Ron van Oers into the development of 17th century Dutch colonial settlements. Of course, these drawings were originally illustrations to a text. Here, we show them outside of their proper context, but in themselves, the drawings are beautiful examples of how an analysis can quickly produce insight into complex material. Fig. 4, for instance, shows six colonial settlements and how an abstract scheme like Stevin’s (see also project 13), was modified in practice to suit local circumstances. Figs 5-8 show the morphological structure of Cape Town in more detail. 
