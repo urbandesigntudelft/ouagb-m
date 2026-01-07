@@ -2,7 +2,7 @@
 title: "IJburg, Haveneiland en Rieteilanden"
 author: "Felix Claus, Frits van Dongen, Ton Schaap"
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [Amsterdam, conceptual abstraction, Casper van der Hoeven, morphological layers, Jos Louwe, modern cities, morphology, patterns, public space, Speckle, Simon Stevin, visualisation]
+categories: [Amsterdam, building and building blocks, Felix Claus, comparison, conceptual abstraction, Ijburg, morphological layers, morphology, visualisation, zooming in]
 date-format: "YYYY"
 date: "2002"
 ---
