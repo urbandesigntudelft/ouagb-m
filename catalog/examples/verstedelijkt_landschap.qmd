@@ -1,6 +1,6 @@
 ---
-title: "Roma al tempo di Benedetto XIV"
-author: "Giambattista Nolli"
+title: "Rotterdam Verstedelijkt landschap"
+author: "Frits Palmboom"
 description: "An analytical mapping method created by Giambattista Nolli"
 categories: [Figure ground analysis, Public-private analysis, Public space, Conceptual abstraction]
 tags: [3d, Learning from Las Vegas, Nolli, Giambattista, Nolli map, perspective drawings, Rome]
@@ -8,4 +8,4 @@ date-format: "YYYY"
 date: "1748"
 ---
 
-![](../../images/nolli.jpg)
+![](../../images/verstedelijkt_landschap.jpg)
