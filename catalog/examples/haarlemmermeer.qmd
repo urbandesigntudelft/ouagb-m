@@ -1,11 +1,14 @@
 ---
-title: "Roma al tempo di Benedetto XIV"
-author: "Giambattista Nolli"
+title: "Haarlemmermeer"
+author: "Clemens Steenbergen, Wouter Reh"
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [Figure ground analysis, Public-private analysis, Public space, Conceptual abstraction]
-tags: [3d, Learning from Las Vegas, Nolli, Giambattista, Nolli map, perspective drawings, Rome]
+categories: [Amsterdam, conceptual abstraction, cultural heritage, analysis as basis for design, economy, Haarlemmermeer, landscape, morphological layers, Wouter Reh, Steenbergen]
 date-format: "YYYY"
-date: "1748"
+date: "2004"
 ---
 
-![](../../images/nolli.jpg)
+![](../../images/haarlemmermeer.jpg)
+
+A final example of an analysis which separates a map in layers to uncover basic structures. The Haarlemmermeer is the biggest polder in the Netherlands. Due to its central location in the Randstad and the presence of our national airport Schiphol, there is a tremendous economic pressure on this polder. As a result, also some main infrastructural works cross the area: the Amsterdam-Rotterdam highway and several railway lines, including the new high speed connection to Paris. The economic pressure has never been counterbalanced by an appreciation of the Haarlemmermeer as an important part of our cultural heritage. It served simply as a very convenient trash-can for large scale development in the vicinity of Amsterdam. Over the last few years, Designers and government have opened their eyes to cultural historic values and have tried to find ways to allow for further economic development without destroying the landscape (see also project 32). In this analysis, Steenbergen and Reh separate the original landscape from later additions to isolate what is valuable and to find room for responsible growth.\
+
+Fig. 2 shows the “polder grammar”: a large quadrant of grid units in the centre, a number of added units to the sides and an edge that does not fit in the grid. Fig.3 shows the urban “additions”: towns, industrial areas and the airport. Fig.4 shows a superposition of these, resulting in fig.5, where we see that there is only one grid unit left which is untouched by later additions. If one has isolated the basic elements of the polder (old and new), one can draw several design options that can enhance some and spare others. Some variants for further urbanisation can be seen in figs. 8-10. This analysis uses the same techniques as [Zee van Land](zee_van_land.qmd) by the same authors.
