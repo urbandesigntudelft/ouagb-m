@@ -1,11 +1,12 @@
 ---
-title: "Roma al tempo di Benedetto XIV"
-author: "Giambattista Nolli"
+title: "Het Land in de Stad: de stedebouw van de grote agglomeratie"
+author: "L.J.M. Tummers, J.M. Tummers-Zuurmond"
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [Figure ground analysis, Public-private analysis, Public space, Conceptual abstraction]
-tags: [3d, Learning from Las Vegas, Nolli, Giambattista, Nolli map, perspective drawings, Rome]
+categories: [Amsterdam, comparison, the Hague, landscape, morphological layers, L.J.M.Tummers, J.M.Tummers-Zuurmon, urbanisation]
 date-format: "YYYY"
-date: "1748"
+date: "1997"
 ---
 
-![](../../images/nolli.jpg)
+![](../../images/land_in_stad.jpg)
+
+One of the effects of urbanisation is the reduction of open land or the inclusion of pockets of open land in larger urban regions. Large urban regions each have their own typical city-land relationships (fig. 1). According the authors of “Het Land in de Stad” (the land in the city), planners and urbanists should use this fragmentation to their advantage to lessen the contrast and the distance between the city and the open. Green spaces have always attracted citizens and public institutions: here also, different cities each in their own way (fig.2). Surprisingly, the Dutch city of The Hague seems to have much more to offer in this respect than Amsterdam or Rotterdam. Fig.3 shows an interesting example of how to use morphological layers (see the chapter on analytical techniques elsewhere in this volume) and compare cities at the same time. Many times, morphological layers are drawn for only one case. Here, a small but relevant selection of layers enabled a clear comparison between several Dutch towns and how green spaces have been incorporated within the city proper. 
