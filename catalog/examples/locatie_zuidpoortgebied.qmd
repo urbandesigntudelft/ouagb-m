@@ -1,11 +1,13 @@
 ---
-title: "Roma al tempo di Benedetto XIV"
-author: "Giambattista Nolli"
+title: "Locatie Zuidpoortgebied: stadsmorfologische atlas"
+author: "Rein Geurtsen"
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [Figure ground analysis, Public-private analysis, Public space, Conceptual abstraction]
-tags: [3d, Learning from Las Vegas, Nolli, Giambattista, Nolli map, perspective drawings, Rome]
+categories: [stadsmorfologische atlas, Delft, development, Rein Geurtsen, historical maps, the use of photographs, the use of text, Zuidpoortgebied]
 date-format: "YYYY"
-date: "1748"
+date: "1988"
 ---
 
-![](../../images/nolli.jpg)
+![](../../images/zuidpoort20.jpg)\
+![](../../images/zuidpoort21.jpg)
+
+Rein Geurtsen is an important figure for Dutch urban analysis: as a teach and as an urban designer. This study was made for the munipality of Delft, who wanted to organise a design competition for a run-down area of the old inner city: the Zuidpoortgebied. As an introduction to the design teams and to establish a proper understanding of the area with all the parties, Geurtsen prepared this “urban morphological atlas”. It offers what you might call an illustrated history of the area for professionals: historical maps, analytical drawings, texts and photographs are combined to give insight into the relationship between city form and historical development. In the book, Geurtsen looks at two scale levels: the city as a whole and the Zuidpoort in detail. Here we present a selection from the second scale level. 

@@ -1,11 +1,15 @@
 ---
-title: "Rotterdam Verstedelijkt landschap"
+title: "Rotterdam Verstedelijkt Landschap"
 author: "Frits Palmboom"
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [Figure ground analysis, Public-private analysis, Public space, Conceptual abstraction]
-tags: [3d, Learning from Las Vegas, Nolli, Giambattista, Nolli map, perspective drawings, Rome]
+categories: [Amsterdam, development, landscape, morphological layers, morphology, Frits Palmboom, patterns, Rotterdam, visualisation]
 date-format: "YYYY"
 date: "1748"
 ---
 
 ![](../../images/verstedelijkt_landschap.jpg)
+
+The name of this book is a reference to “Amsterdam als Stedelijk Bouwwerk” (project 13), but there is a big difference in meaning: where Van der Hoeven and Louwe speak of Amsterdam as an “urban construction” (a man-made object, created ex nihilo, autonomous in space and time), Palmboom speaks of Rotterdam as an urbanised landscape: as something that evolved over time and remains forever linked to the landscape on which it is grounded. In the case of Rotterdam, this landscape is much more dynamic than in Amsterdam. Where Amsterdam developed along a small provincial river and an inland sea, Rotterdam is situated at the mouth of a big river and was always subjected to the forces of the open water (figs. 2-5). Naturally, the resulting complexity of the landscape has always shaped the layout of the city - from its street pattern to the layout of its green spaces. Together with later additions which do not respect the original landscape (like the highway system, fig. 6), this results in a city of separated “islands” (fig. 7). These islands all have their own internal logic and are sometimes poorly connected on a higher scale level (figs. 8). Also, the harbour and the reconstruction of the inner city after the second world war (figs. 9-10) increase the complexity. Palmboom pleads for an understanding of this complexity and the inevitable limits this sets for future developments: urban designers should not try to fight the fragmented nature of the city but cooperate with it and attempt to enhance existing qualities. Fig. 11 shows the main morphological layers which Palmboom distinguishes (landscape, city streets, and highways). Fig. 12 shows the structural diversity of the Rotterdam area in comparison to that of Amsterdam.\
+
+Also see: [Habitat Expanding Architecture](https://nieuweinstituut.nl/en/projects/habitat-expanding-architecture/frits-palmboom)\
+Project 13, [Amsterdam als Stedelijk Bouwwerk](stedelijk_bouwwerk.qmd)
