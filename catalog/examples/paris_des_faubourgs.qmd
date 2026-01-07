@@ -1,11 +1,12 @@
 ---
-title: "Roma al tempo di Benedetto XIV"
-author: "Giambattista Nolli"
+title: "Paris des Faubourgs: Formation, Transformation"
+author: "Jacques Lucan ed."
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [Figure ground analysis, Public-private analysis, Public space, Conceptual abstraction]
-tags: [3d, Learning from Las Vegas, Nolli, Giambattista, Nolli map, perspective drawings, Rome]
+categories: [development, faubourgs, “French school” of analysis, Jacques Lucan, morphology, parcellation, Paris, patterns, the use of photographs, social issues, the use of text]
 date-format: "YYYY"
-date: "1748"
+date: "1996"
 ---
 
-![](../../images/nolli.jpg)
+![](../../images/paris_des_faubourgs.jpg)
+
+Paris des Faubourgs is a comprehensive study investigating the development of the areas which have grown around the old inner city of Paris: the Faubourgs. It includes maps, diagrams, photographs and texts which illustrate the social and urban relevance of these areas. This wide scope is characteristic for analyses of the French school. Our main interest is in the drawings. Figs. 2 - 4 show a morphological analysis of the area “cité des fleurs”; first as a basic section through a block, then as an assemblage of its various parts. The beauty of this analysis is that while one could look forever at the last drawing without learning much, the whole series clarifies the city-structure in a matter of seconds.  The same goes for the transformation of the “plaine Monceau” in fig. 5.  These drawings show how land ownership and circulation patterns have changed over time. Note that this is a very different series than in fig. 6 where the buildings in the area of Montmartre are included. All these analyses are excellent examples of how carefully drawn images can clarify complex urban patterns in a very short time. 
