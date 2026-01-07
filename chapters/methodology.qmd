@@ -3,13 +3,20 @@ title: "Methodology"
 author: "Leo van den Burg"
 ---
 
+```{r}
+#| label: setup
+#| include: false
+
+# library(learnr)
+library(leaflet)
+library(leaflet.extras)
+```
+
+
 This section provides a structured overview of methods and techniques for urban morphology analysis. All methods and techniques described here are cross-referenced with the Examples part of the book.
 
 ## Methods
 ```{r}
-library(leaflet)
-library(leaflet.extras)
-
 # load maps
 map2 <- leaflet() %>%
   setView(lng = 4.4777, lat = 51.9244, zoom = 13) %>%
@@ -28,7 +35,7 @@ map2
 ### Typo-morphology analysis
 
 ### Space syntax analysis
-```{r space-syntax, echo=FALSE}
+```{r space-syntax, echo=FALSE, eval=FALSE}
 question("Which one is the most suitable analysis method if you want to find the settlement centers in a larger region?",
   answer("Angular Integration, 800m"),
   answer("Angular Integration, 1500m", correct = TRUE),
