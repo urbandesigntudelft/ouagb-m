@@ -1,11 +1,12 @@
 ---
-title: "Roma al tempo di Benedetto XIV"
-author: "Giambattista Nolli"
+title: "Point City - South City"
+author: "Rem Koolhaas"
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [Figure ground analysis, Public-private analysis, Public space, Conceptual abstraction]
-tags: [3d, Learning from Las Vegas, Nolli, Giambattista, Nolli map, perspective drawings, Rome]
+categories: [density, Rem Koolhaas, analyses of large scale, O.M.A, Paris, Rotterdam]
 date-format: "YYYY"
-date: "1748"
+date: "1993"
 ---
 
-![](../../images/nolli.jpg)
+![](../../images/point_city.jpg)
+
+O.M.A. and Rem Koolhaas have produced many influential urban designs accompanied by seductive analyses. Examples are their design for the Paris newtown Melun Senart, the proposal for the area around the Grande Arche, also in Paris, their design for Yokohama (included here) and many others. The present study was made for the Air Alexander manifestation which asked for design proposals for a Rotterdam suburb. The design team objected to this small scale focus and drew the brief into a totally different realm, touching the issue of urban density in the Netherlands in general. Basically, the study takes the then existing population of the Netherlands as a starting point and redistributes this according to several density models. This redistribution immediately puts claims of the Netherlands being “full” in a different perspective. While it is hard to call this a true morphological analysis, the study nevertheless uses familiar techniques and does mean to speak about spatial effects, albeit on an unfamiliar scale. 
