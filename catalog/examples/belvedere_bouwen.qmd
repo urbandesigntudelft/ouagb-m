@@ -1,11 +1,16 @@
 ---
-title: "Roma al tempo di Benedetto XIV"
-author: "Giambattista Nolli"
+title: "Belvedere Bouwen: Vecht- en plassengebied"
+author: "Landscape Architects for Sale"
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [Figure ground analysis, Public-private analysis, Public space, Conceptual abstraction]
-tags: [3d, Learning from Las Vegas, Nolli, Giambattista, Nolli map, perspective drawings, Rome]
+categories: [building and building blocks, cultural heritage, analysis as basis for design, development, Michael Graves, korrels, landscape, Landscape Architects for Sale, analyses of large scale, morphological layers, the use of photographs, regional scale, type, typology, Vechtstreek, visualisation]
 date-format: "YYYY"
-date: "1748"
+date: "2002"
 ---
 
-![](../../images/nolli.jpg)
+![](../../images/belvedere_bouwen.jpg)
+
+This regional study attempts to characterise the river landscape and the building typologies of the Vechtstreek which consist for an important part of 17th and 18th century estates (fig. 4). The Vechtstreek is a beautiful area where official policy, until recently, was preservation-based, but where piecemeal growth has nevertheless resulted in a loss of character. This study is a good example of how an analysis can provide tools for both designers and policy- makers to allow growth which respects and enhances the traditional (see also project 40). It does so by establishing the basic units of the Vechtstreek, its “korrels” (fig. 2 - 4) and to modify and compress these into a “sampled” unit (fig. 5) which can be a basis for future design.\ 
+
+The use of photography is an important aspect of the study. It is used for instance to illustrate the characteristics of a typical Vecht-village and to indicate how this differs from standard housing solutions (fig. 7). A second example is a visualisation of why a Michael Graves villa was considered to be of bad taste and how this could have been avoided (fig. 9).\
+
+Also see: [Vecht Visie](http://www.la4sale.nl/afb/media/Vecht_Visie.pdf)
