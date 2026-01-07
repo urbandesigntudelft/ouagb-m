@@ -1,11 +1,12 @@
 ---
-title: "Roma al tempo di Benedetto XIV"
-author: "Giambattista Nolli"
+title: "City Branding: Image Building & Building Images"
+author: "Veronique Patteeuw, Urban Affairs ed. 2012Stealth Scape, Artgineering, Minke Themans"
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [Figure ground analysis, Public-private analysis, Public space, Conceptual abstraction]
-tags: [3d, Learning from Las Vegas, Nolli, Giambattista, Nolli map, perspective drawings, Rome]
+categories: [Amsterdam, City Branding, functions, Heerlen, morphology, Veronique Patteeuw, the use of photographs, regional scale, representation, statistical data, visualisation]
 date-format: "YYYY"
-date: "1748"
+date: "2002"
 ---
 
-![](../../images/nolli.jpg)
+![](../../images/city_branding.jpg)
+
+City branding is about how a city chooses to present itself to the world. In fig. 1, a configuration on the map is used to create a logo for a region. This region may or may not exist in reality, but the logo (and implicitly the analysis that produced it) can become a valuable pr-tool which can easily be remembered. Figs. 3 - 5 are other examples of how otherwise arbitrary images can be used to “brand” a city. These images are no real analyses in the traditional sense, but they can seem to be as evocative of reality as these earlier examples. Commercial and public relations based information can become equally important to characterise a city as its morphology or functional layout. One might say the drawing of the present map of Heerlen in fig. 2 is the least informative in this illustration. Statistical data has taken the place of graphical information.
