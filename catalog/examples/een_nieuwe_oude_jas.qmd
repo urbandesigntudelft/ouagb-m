@@ -1,11 +1,14 @@
 ---
-title: "Roma al tempo di Benedetto XIV"
-author: "Giambattista Nolli"
+title: "Een nieuwe oude jas: de heruitvinding van stedelijke weefsels en woningtypes"
+author: "Jan Brouwer"
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [Figure ground analysis, Public-private analysis, Public space, Conceptual abstraction]
-tags: [3d, Learning from Las Vegas, Nolli, Giambattista, Nolli map, perspective drawings, Rome]
+categories: [the use of 3d, Amsterdam, Jan Brouwer, building and building blocks, comparison, “French school” of analysis, “Italian school” of analysis, type, typology]
 date-format: "YYYY"
-date: "1748"
+date: "2001"
 ---
 
-![](../../images/nolli.jpg)
+![](../../images/een_nieuwe_oude_jas.jpg)
+
+Building blocks are often the basic material with which cities are built. Block sizes are inseparably connected to building typology. Width and height of a block limit the choice of buildings that will fit in and therefore influence the profitability of a plan. Block size and building typology also shape the city streets and interior spaces and consequently have a strong influence on the desired atmosphere of an area. Choices in block size and building typology are therefore basic material for urban designers. In this analysis a number of old and new blocks in Amsterdam are compared. It focuses on this relation between buildings and city form. The method can be compared to earlier French and Italian analyses (see projects 4, 8, 11, 12, 14), although there, the study would typically look into the buildings in more detail.
+
+Also see: [learning from amsterdam](http://janbrouwerstedebouwer.nl/learning-from-amsterdam/)
