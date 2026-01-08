@@ -1,12 +1,13 @@
 ---
-title: "Roma al tempo di Benedetto XIV"
-author: "Giambattista Nolli"
+title: "IJburg, Haveneiland en Rieteilanden"
+author: "Felix Claus, Frits van Dongen, Ton Schaap"
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [Figure ground analysis, Public-private analysis, Public space, Conceptual abstraction]
-tags: [3d, Learning from Las Vegas, Nolli, Giambattista, Nolli map, perspective drawings, Rome]
+categories: [Amsterdam, building and building blocks, Felix Claus, comparison, conceptual abstraction, Ijburg, morphological layers, morphology, visualisation, zooming in]
 date-format: "YYYY"
-date: "1748"
+date: "2002"
 ---
 
-![](../../images/nolli.jpg)
+![](../../images/ijburg.jpg)
+
+IJburg is a new extension to Amsterdam on new islands in the IJ-meer. The first drawings zoom into the area and show the position of IJburg relative to its surroundings. Each scale level shows information relevant to that level. Fig. 5 shows a simple comparative analysis where IJburg is compared to other well known parts of Amsterdam. The same goes for fig. 8 where the morphology of IJburg is compared. The grid-structure of the islands is put into a clear perspective when it is shown next to other grid areas in Amsterdam; the reader and designer can get a feel for the area. Fig. 6 and 7 show the principles to which the block designs should adhere in an abstract way. One should not underestimate the power of these little drawings. During the course of the design process, (which can take up to four or five years) these drawings can always be used by the different parties to remind each other of the basic principles. Fig. 9 shows the way the grid- structure is developed on the new land. Compare this for example to the drawings in ["Amsterdam als Stedelijk Bouwwerk"](stedelijk_bouwwerk.qmd). 
 
