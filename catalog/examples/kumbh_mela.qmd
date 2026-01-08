@@ -1,13 +1,15 @@
 ---
 title: "Ephemeral Urbanisms: Kumbh Mela, India"
+author: "Rahul Mehrotra, Felipe Vera"
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [Figure Ground Analysis, Public-Private Analysis]
-tags: [analysis, map]
-date: 2022-01-01
+categories: [to be updated]
+date-format: "YYYY"
+date: "2022"
 ---
+![](../../images/kumbh_mela.jpg)
 
-***Rahul Mehrotra, Felipe Vera***\
+The increased acceleration of human movement challenges permanence as a default condition of the city. It becomes ever more relevant, therefore, to study examples of temporary settlements, or ephemeral urbanisms: over 700 million of the global population are currently living in spaces of flux.\
 
-![](catalog/examples/image/nolli.tif)
+The Kumbh Mela, a Hindu celebration that takes place every 12 years, is the worlds’ largest religious gathering. It takes places over 55 days in India, on the floodplain between two sacred rivers: the Ganges and the Yamuna. The physical geography of the floodplain is highly dynamic and heavily affected by the movement of the monsoon, and so it is necessary for this temporary megacity to have fluid edges.\
 
-When most city maps were still bird’s eye perspective views (fig. 1), Giambattista Nolli produced a map of 18th century Rome which greatly reduced and systematised the information contained in the map (fig 2). Nolli limited himself to a 2d representation and only distinguished between public space (white) and private space (black). As a result, publicly accessible interior spaces like churches are visible in the map. Through reduction and abstraction, knowledge which otherwise remains hidden under the surface is instantly accessible. This is one of the basic goals of any analysis. Over the last decades, the Nolli map has mesmerised generations of urban designers, theorists and architects. Especially since the publication of “Learning from Las Vegas” (which also used  the Nolli technique) dozens of “Nolli maps” have been produced . 
+The grid defines the infrastructure network, but the morphology of the floodplain is only evident once the monsoon has passed, so the grid is adapted and shifts from year to year. City is a development of uncertainties. Grid provides each visiting community with agency over their own spatial organisation. Water, electricity, sewage, roads, bridge all organised by the grid, that connects some of the more permanent infrastructure with the temporary one that comes back every 12 years. 
