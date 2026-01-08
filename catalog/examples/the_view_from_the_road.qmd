@@ -1,13 +1,14 @@
 ---
 title: "The View From The Road"
+author: "Donald Appleyard, Kevin Lynch, John R. Myer"
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [Figure Ground Analysis, Public-Private Analysis]
-tags: [analysis, map]
-date: 1964-01-01
+categories: [to be updated]
+date-format: "YYYY"
+date: "1964"
 ---
+![](../../images/view_from_road.jpg)\
+![](../../images/view_from_road_2.jpg)
 
-***Donald Appleyard, Kevin Lynch, John R. Myer***\
+Kevin Lynch' study addresses the faster movement of the automobile. The cover photograph of the book summarises the complex visual experience of the car driver: different speeds, different horizons, different perspectives at the same time. In this study, Lynch attempts to bring this complex experience into the realm of spatial design. If we document the view from the road, we may make better designs for the road.\ 
 
-![](catalog/examples/image/nolli.tif)
-
-When most city maps were still bird’s eye perspective views (fig. 1), Giambattista Nolli produced a map of 18th century Rome which greatly reduced and systematised the information contained in the map (fig 2). Nolli limited himself to a 2d representation and only distinguished between public space (white) and private space (black). As a result, publicly accessible interior spaces like churches are visible in the map. Through reduction and abstraction, knowledge which otherwise remains hidden under the surface is instantly accessible. This is one of the basic goals of any analysis. Over the last decades, the Nolli map has mesmerised generations of urban designers, theorists and architects. Especially since the publication of “Learning from Las Vegas” (which also used  the Nolli technique) dozens of “Nolli maps” have been produced . 
+He does this in two ways: first by documenting scenes or events along the way and translating them into a symbolic legend and linear drawings. Second, by drawing maps in which this linear experience is brought back to the actual shape of the city, leading to fascinating and beautiful drawings, suggestive of much more than summarised by the rather straightforward word "road".   
