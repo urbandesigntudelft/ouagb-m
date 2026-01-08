@@ -1,11 +1,16 @@
 ---
-title: "Roma al tempo di Benedetto XIV"
-author: "Giambattista Nolli"
+title: "Stadsanalyse: De Nieuwe Kaart van Den Haag / Stadsportretten"
+author: "Els Bet, Martin Verwoest"
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [Figure ground analysis, Public-private analysis, Public space, Conceptual abstraction]
-tags: [3d, Learning from Las Vegas, Nolli, Giambattista, Nolli map, perspective drawings, Rome]
+categories: [Amsterdam, Els Bet, geomorphology, the Hague, rhetorics, Martin Verwoest, visualisation]
 date-format: "YYYY"
-date: "1748"
+date: "1998"
 ---
 
-![](../../images/nolli.jpg)
+![](../../images/stadsportretten.jpg)
+
+Many times, an urban analysis is not meant to be read by a professional audience but by relatively inexperienced people. These might nonetheless have a great influence on the future of your plan: clients, politicians etc. In such cases, it is very important to make your message comprehensible at all costs. This means that you have to be very careful in the rhetoric of your story, that you select very carefully what you show and that you make your illustrations in such a way that the attention is not directed at the map, but at the message. The present analysis produced by the Urban Development section of the city of The Hague is a very clear example of this. Several short chapters in this study are illustrated with images that leave no room for doubt. The analysis starts with fig.1 which shows that The Hague has a very different relation to the national highway system than the other big cities in the west of Holland. This relation is as yet very weak, but the construction of a new tangent (fig. 3) will make new cross connections possible in the city (fig.4). The Hague has always had much better developed east-west connections than north-south. The reason for this is partly to be found in the geomorphology of the area (fig.6). But this illustration also shows more ways to conceptualise the city. A single image to summarise your argument can be a very important help in getting your ideas across (see for instance also projects 33-34). Here the authors have chosen for the image of a “bromvlieg” (blowfly - fig.8) that can be “healed” with a second wing in the form of the new road.\ 
+
+The whole argument leads to the presentation of “The new map of The Hague”(fig.9).\ 
+
+A document that would have been much more difficult to understand without the analysis. 
