@@ -1,11 +1,14 @@
 ---
-title: "Roma al tempo di Benedetto XIV"
-author: "Giambattista Nolli"
+title: "After Sprawl: onderzoek naar de hedendaagse stad"
+author: "Xaveer de Geyter Architecten"
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [Figure ground analysis, Public-private analysis, Public space, Conceptual abstraction]
-tags: [3d, Learning from Las Vegas, Nolli, Giambattista, Nolli map, perspective drawings, Rome]
+categories: [comparison, Europe, Xaveer de Geyter, analyses of large scale, morphological layers, the use of photographs, sprawl, visualisation]
 date-format: "YYYY"
-date: "1748"
+date: "2002"
 ---
 
-![](../../images/nolli.jpg)
+Different urban landscape in Europe are systematically presented in a basic analysis, showing some of the main morphological layers. Looking at fig. 1, several characteristic configurations seem to emerge from the map of Europe. Starting from an aerial photograph, examples of these are isolated to show the built mass, infrastructure, negative pace, nature, agriculture and water (fig. 4-12). The drawings are not accompanied by text and the conclusions to the analysis are not presented in drawing.\
+
+The analysis is straightforward in its techniques but attracts attention because of the detailed drawings and its unusual scope. The main argument of the book focuses on the fact that many of of the most densely populated European urban areas are not traditional cities but a sprawl of smaller centres.\
+
+In the book, the analyses are followed by several design proposals for the Belgian “Vlaamse ruit”, the area between Antwerp, Gent and Brussels.  
