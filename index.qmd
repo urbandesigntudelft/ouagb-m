@@ -1,3 +1,9 @@
+::: {.callout-warning}
+🚧 **Work in Progress**
+
+This book is a draft and is still being actively developed.
+:::
+
 # Preface {.unnumbered}
 
 This section provides context and background information for the book.
