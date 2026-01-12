@@ -1,0 +1,23 @@
+---
+title: "De stad, object van beweging"
+author: "Rein Geurtsen"
+description: "An analytical mapping method created by Giambattista Nolli"
+categories: [to be added]
+date-format: "YYYY"
+date: "1989"
+---
+![](../../images/de_stad_1.jpg)\
+![](../../images/de_stad_2.jpg)\
+![](../../images/de_stad_3.jpg)\
+![](../../images/de_stad_4.jpg)\
+![](../../images/de_stad_5.jpg)\
+![](../../images/de_stad_6.jpg)\
+![](../../images/de_stad_7.jpg)\
+![](../../images/de_stad_8.jpg)\
+![](../../images/de_stad_9.jpg)\
+![](../../images/de_stad_10.jpg)\
+![](../../images/de_stad_11.jpg)\
+![](../../images/de_stad_12.jpg)\
+![](../../images/de_stad_13.jpg)
+
+to be added

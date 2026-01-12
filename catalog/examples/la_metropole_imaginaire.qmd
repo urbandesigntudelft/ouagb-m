@@ -1,0 +1,14 @@
+---
+title: "La Metropole Imaginaire: un Atlas de Paris"
+author: "Bruno Fortier"
+description: "An analytical mapping method created by Giambattista Nolli"
+categories: [the use of 3d, Bologna, development, documentation, Bruno Fortier, “French school” of analysis, Paris, the use of photographs, type, typology]
+date-format: "YYYY"
+date: "1989"
+---
+
+![](../../images/bruno_fortier.jpg)
+
+Maps can be used to draw the city as it is, as it was and how it could have been. This book shows these stages for some areas in Paris. The presentation is simple but systematic and the result of much hard documentary work. Every chapter is preceded by an introductory text (not included here), two photographs to convey the atmosphere, some small drawings which show the development of the area, one or more maps showing part of the area in great detail and a beautiful exploded view. All the drawings are of high quality and follow the basic rules for analysis; the drawings have the same scale, the same orientation, the same kind of information, the same detail, the same frame etc. Unfortunately, the same rigour is not applied between the series, making it confusing for the reader to relate the one to the other.\ 
+
+Although this way of analysing the city is comparable to say “Bologna”, the result is more poetic and the value for designers lies more in a comprehension of atmosphere and growth, than in concrete typological tools. 

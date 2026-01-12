@@ -1,0 +1,15 @@
+---
+title: "Learning from Las Vegas"
+author: "Robert Venturi, Denise Scott Brown and Steven Izenour"
+description: "An analytical mapping method created by Giambattista Nolli"
+categories: [Urban sprawl, Everyday urbanism]
+tags: [Steven Izenour, Las Vegas, morphological layers, Learning from Las Vegas, morphology, Nolli map, non-spaces, the use of photographs, popular culture, Denise Scott Brown, traditional urban features, Robert Venturi]
+date-format: "YYYY"
+date: "1972"
+---
+
+![](../../images/las_vegas.jpg)
+
+Before 1972, Las Vegas was regarded by many as an almost featureless and meaningless urban environment. This changed with the publication of this book. With the advent of the car- and media based culture in the nineteen sixties, a place like Las Vegas could suddenly acquire a completely different meaning; at least for architects and urban designers. This analysis suddenly made visible to the profession what had long been hidden under the surface: non-spaces and popular culture are powerful material for designers. A similar wish to find something unique in the everyday environment seems to drive many contemporary designers who try to represent phenomena like mobility, urban sprawl or the essence of the Randstad.\
+
+A traditional analysis of Las Vegas would have made little sense since the city has few traditional urban features. That is; fig. 6 shows that in fact Las Vegas is built up from the same elements as any city, only in a different mix. This is also made clear by their re-use of the Nolli map. A host of other new techniques is introduced, for instance in their visualisation of the importance of signs in Las Vegas and the use of photography. 

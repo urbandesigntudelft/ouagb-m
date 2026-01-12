@@ -1,13 +1,14 @@
 ---
-title: "Examples"
+title: "Index"
 listing:
   contents: examples
-  type: grid        # alternatives: grid, default, cards
-  fields: [title, description, categories, date]
+  type: grid        # alternatives: grid, default
+  fields: [image, title, description, categories, date]
   sort: "title"
   sort-ui: true
   filter-ui: true
   categories: true
+date-format: "YYYY"
 ---
 
 Use the filters and search box above to explore the catalog. Click items to open their detail pages.
