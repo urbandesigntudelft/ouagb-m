@@ -1,0 +1,12 @@
+---
+title: "Bologna: politica e metodologia del restauro nei centri storici"
+author: "P.L. Cervelatti"
+description: "An analytical mapping method created by Giambattista Nolli"
+categories: [Building typology, Urban blocks]
+tags: [Bologna, buildings and building blocks, P.L.Cervelatti, conceptual abstraction, development, “Italian school” of analysis, typology]
+date-format: "YYYY"
+date: "1973"
+---
+![](../../images/bologna.jpg)
+
+This is a good example of an analysis in the Italian tradition. Typically, these are based on meticulous surveys of the city. For Cervelatti, the most relevant source of knowledge about the city would probably be the building block, its characteristics and especially building typology. Conceptual abstractions like in many contemporary analyses (see for example projects 26, 29, 32 or 33) are obviously of a totally different nature. This analysis of Bologna begins with the city as a whole, but the information contained in the drawings is derived from a lower scale level. The drawings are not supposed to uncover a hidden truth about the city; they merely document its parts. In analyses like these, the factual information derived from a survey is as valuable and usable for design and policy as the conceptual force of many recent analyses. 

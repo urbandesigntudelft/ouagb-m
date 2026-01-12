@@ -1,0 +1,12 @@
+---
+title: "Barcelona, The Evolution of A Compact City"
+author: "Joan Busquets"
+description: "Study of Gulf Corperation Cities"
+categories: [to be updated]
+date-format: "YYYY"
+date: "2005"
+---
+
+![](../../images/busquets_barcelona.png)
+
+to be added
