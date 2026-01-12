@@ -1,0 +1,12 @@
+---
+title: "Elements d’analyse urbaine"
+author: "Panerai, Depaule, Demorgon, Veyrenche"
+description: "An analytical mapping method created by Giambattista Nolli"
+categories: [Building typology, Urban sprawl, Urban blocks]
+tags: [3d, development, “French school” of analysis, Nolli map, Philippe Panerai, perspective drawings, reduction drawings, type, typology ]
+date-format: "YYYY"
+date: "1980"
+---
+![](../../images/elements_urbaine.jpg)
+
+Similar to this book, Elements d’analyse urbaine gives general principles and drawing examples for urban analysis. Their modification of the Nolli map and functional analysis below are good examples of simple but effective reduction drawings. Note also the drawings to the right which illustrate different kinds of urban growth. As a representative of the French school of urban analysis, this overview pays much attention to typological research, for example about housing typology in connection to city blocks (p.118). Interesting are the perspective drawings showing basic types of urban scenes. At first glance, the drawings and techniques might look outdated, but many of the examples you see in this book still use the same principles. 

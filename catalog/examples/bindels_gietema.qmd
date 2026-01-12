@@ -1,0 +1,15 @@
+---
+title: "4"
+author: "Bindels, Gietema, Hartzema and Klok"
+description: "An analytical mapping method created by Giambattista Nolli"
+categories: [the use of 3d, Amsterdam, Edzo Bindels, comparison, conceptual abstraction, “French school” of analysis, Casper van der Hoeven, “Italian school” of analysis, morphological layers, Jos Louwe, modern cities, plan analysis, visualisation]
+date-format: "YYYY"
+date: "2000"
+---
+
+![](../../images/bindels_1.jpg)\
+![](../../images/bindels_2.jpg)
+
+“Grasstad” is a design for the Westelijke Tuinsteden in Amsterdam. The plan reinterprets the typical modernist features of this post war housing area (fig. 1). The beautiful series of drawings in fig. 3 is not an analysis of the present situation, but an analysis of the different structural layers of the new plan which follows overleaf. Compare this way of representing this area with the drawings shown in “Amsterdam als Stedelijk Bouwwerk”. Louwe and Van der Hoeven also tried to conceptualise the area but the concreteness of their analyses would have prevented a design proposal like this. Here, the existing typology is abandoned but the underlying principles are preserved. This abstract way of thinking is also far removed from the French and Italian analyses.\
+
+In “Weltevreden” the authors present an urban design on a very large scale. This creates the need for new ways of visualising the plan, but also new planning tools and design methods. Some of which can be seen here. 

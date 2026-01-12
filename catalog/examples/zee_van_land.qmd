@@ -1,0 +1,14 @@
+---
+title: "Zee van Land"
+author: "Wouter Reh and Clemens Steenbergen"
+description: "An analytical mapping method created by Giambattista Nolli"
+categories: [the use of 3d, Building and building blocks, comparison, landscape, morphological layers, polders, Wouter Reh, Steenbergen]
+date-format: "YYYY"
+date: "1999"
+---
+
+![](../../images/zee_van_land.jpg)
+
+This is a study of polders or “droogmakerijen” in the Netherlands. A large part of the country lies below sea level. In earlier times, this delta area was studded with lakes and swamps which were reclaimed from the seventeenth century onwards. The number and sizes of these polders are shown in fig 4. The internal structure of the polders was usually a grid; the size of which reflected contemporary requirements for agriculture and water management.\
+
+Fig. 5 shows a number of polders and the basic units which are part of their grid. The Beemster is used as an example to illustrate this. The grid of the Beemster has several layers. This is illustrated in figs. 6 and 7. The authors claim that even the internal structure of a single farm is connected directly to the higher grid levels. The overall layout of the polder is visualised in fig. 10. These simple, yet beautiful drawings immediately convey an image of what kind of place the Beemster is. Unfortunately, the measure with which the height was exaggerated is not indicated. One might think that the Beemster is actually that small. The drawings in this study are extremely clear and instructive. They have the power to give insight into a complex phenomenon in a short time. Exactly what an analysis should do.\

@@ -1,0 +1,14 @@
+---
+title: "The View From The Road"
+author: "Donald Appleyard, Kevin Lynch, John R. Myer"
+description: "An analytical mapping method created by Giambattista Nolli"
+categories: [to be updated]
+date-format: "YYYY"
+date: "1964"
+---
+![](../../images/view_from_road.jpg)\
+![](../../images/view_from_road_2.jpg)
+
+Kevin Lynch' study addresses the faster movement of the automobile. The cover photograph of the book summarises the complex visual experience of the car driver: different speeds, different horizons, different perspectives at the same time. In this study, Lynch attempts to bring this complex experience into the realm of spatial design. If we document the view from the road, we may make better designs for the road.\ 
+
+He does this in two ways: first by documenting scenes or events along the way and translating them into a symbolic legend and linear drawings. Second, by drawing maps in which this linear experience is brought back to the actual shape of the city, leading to fascinating and beautiful drawings, suggestive of much more than summarised by the rather straightforward word "road".   
