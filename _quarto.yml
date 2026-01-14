@@ -96,6 +96,7 @@ format:
     tbl-cap-location: top
     bread-crumbs: false
     css: styles.css
+    include-after-body: leaflet-control.js
   # pdf:
   #   documentclass: scrreprt
 
