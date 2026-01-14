@@ -28,5 +28,38 @@ map2
 
 
 # Side-By-Side Map
+```{r}
+library(leaflet)
+library(htmlwidgets)
+
+m1 <- leaflet() |>
+addTiles() |>
+setView(lng = 4.9, lat = 52.37, zoom = 12)
+
+m2 <- leaflet() |>
+addTiles() |>
+setView(lng = 4.9, lat = 52.37, zoom = 10)
+
+m1
+m2
+
+m1 <- m1 |> onRender("
+function(el, x) {
+el.id = 'map1';
+}
+")
+
+m2 <- m2 |> onRender("
+function(el, x) {
+el.id = 'map2';
+}
+")
+
+
+```
+
+
+
+
 
 # Splitted Side-By-Side Map
