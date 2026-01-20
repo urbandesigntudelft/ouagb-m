@@ -1,19 +1,43 @@
-.map-container {
+.map-wrapper {
   position: relative;
+  margin: 1em 0;
 }
 
-.fullscreen-dual {
-  position: fixed !important;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 9999;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+/* Fullscreen button */
+.fullscreen-btn {
+  position: absolute;
+  z-index: 1000;
+  top: 8px;
+  right: 8px;
   background: white;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  cursor: pointer;
 }
 
-.fullscreen-dual .leaflet-container {
-  height: 100vh !important;
+/* Normal layout */
+#map-container {
+  display: flex;
+  gap: 8px;
+  height: 400px;
+}
+
+.map-panel {
+  flex: 1;
+}
+
+.map-panel .leaflet-container {
+  width: 100%;
+  height: 100%;
+}
+
+/* FULLSCREEN STATE */
+#map-container.fullscreen {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: white;
+  height: 100vh;
+  width: 100vw;
+  padding: 10px;
 }

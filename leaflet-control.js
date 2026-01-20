@@ -1,38 +1,21 @@
-function toggleDualFullscreen() {
-  const map1 = document.getElementById("map1");
-  const map2 = document.getElementById("map2");
+// Make the function GLOBAL so inline HTML can see it
+window.toggleMapsFullscreen = function () {
+  const container = document.getElementById("map-container");
 
-  if (!map1 || !map2) return;
-
-  let wrapper = document.getElementById("dual-map-wrapper");
-
-  if (!wrapper) {
-    wrapper = document.createElement("div");
-    wrapper.id = "dual-map-wrapper";
-    wrapper.className = "fullscreen-dual";
-
-    map1.parentNode.insertBefore(wrapper, map1);
-    wrapper.appendChild(map1);
-    wrapper.appendChild(map2);
-
-    window.dispatchEvent(new Event("resize"));
-  } else {
-    const parent = document.body;
-    parent.appendChild(map1);
-    parent.appendChild(map2);
-    wrapper.remove();
-
-    window.dispatchEvent(new Event("resize"));
+  if (!container) {
+    console.error("map-container not found");
+    return;
   }
-}
 
-function syncMaps() {
-  const m1 = HTMLWidgets.find("#map1").getMap();
-  const m2 = HTMLWidgets.find("#map2").getMap();
+  container.classList.toggle("fullscreen");
 
-  m1.on("move", () => {
-    m2.setView(m1.getCenter(), m1.getZoom(), { animate: false });
-  });
-}
+  console.log("fullscreen toggled");
 
-document.addEventListener("DOMContentLoaded", syncMaps);
+  // Resize Leaflet maps after layout change
+  setTimeout(() => {
+    if (window.map1) window.map1.invalidateSize();
+    if (window.map2) window.map2.invalidateSize();
+  }, 300);
+};
+
+console.log("maps.js is loaded");

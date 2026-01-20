@@ -24,6 +24,7 @@ book:
         - chapters/techniques.qmd
         - chapters/applications.qmd
         - chapters/quiz.Rmd
+        - leaflet_template.qmd
     - part: "Cases"
       chapters:
         - catalog/index.qmd
@@ -96,7 +97,8 @@ format:
     tbl-cap-location: top
     bread-crumbs: false
     css: styles.css
-    include-after-body: leaflet-control.js
+    include-after-body: 
+      - leaflet-control.js
   # pdf:
   #   documentclass: scrreprt
 

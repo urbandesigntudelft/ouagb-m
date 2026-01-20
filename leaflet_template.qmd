@@ -3,8 +3,9 @@ title: "Leaflet Template Combining R and Javascript"
 format: html
 ---
 
-***R for accessing the Geo-data API and processing the data***
-***Javascript for advanced functions and editing the map***
+***R creates the content and data***\
+***JS controls behavior and interaction***\
+***CSS controls appearance and layout***
 
 # Single Map
 ```{r}
@@ -55,11 +56,48 @@ el.id = 'map2';
 }
 ")
 
-
 ```
 
 
-
+<button onclick="toggleDualFullscreen()">
+  Toggle dual fullscreen
+</button>
 
 
 # Splitted Side-By-Side Map
+::: {.map-wrapper}
+
+<button class="fullscreen-btn" onclick="toggleMapsFullscreen()">
+⛶ Fullscreen
+</button>
+
+::: {#map-container}
+::: {.map-panel}
+```{r echo=FALSE}
+library(leaflet)
+
+leaflet() %>%
+  addTiles() %>%
+  setView(4.9, 52.37, 8) %>%
+  htmlwidgets::onRender("
+    function(el, x) {
+      window.map1 = this;
+    }
+  ")
+```
+:::
+
+::: {.map-panel}
+```{r echo=FALSE}
+leaflet() %>%
+addTiles() %>%
+setView(13.4, 52.52, 8) %>%
+htmlwidgets::onRender("
+function(el, x) {
+window.map2 = this;
+}
+")
+```
+:::
+:::
+:::
