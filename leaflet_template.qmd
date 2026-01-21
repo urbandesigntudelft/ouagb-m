@@ -7,6 +7,28 @@ format: html
 ***JS controls behavior and interaction***\
 ***CSS controls appearance and layout***
 
+
+
+```{r}
+#| echo: FALSE
+#| results: asis
+
+# this block enables the javascript used on this page
+if(file.exists("leaflet-control.js")) {
+  cat("<!-- JS file exists -->\n")
+  cat('<script src="leaflet-control.js"></script>\n')
+} else {
+  cat("<!-- Warning: js not found -->\n")
+  cat('<script>
+    console.log("Temporary JS loaded");
+    document.addEventListener("DOMContentLoaded", function() {
+        console.log("Document ready from temporary JS");
+    });
+  </script>\n')
+}
+```
+
+
 # Single Map
 ```{r}
 # load packages

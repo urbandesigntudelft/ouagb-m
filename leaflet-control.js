@@ -18,4 +18,9 @@ window.toggleMapsFullscreen = function () {
   }, 300);
 };
 
-console.log("maps.js is loaded");
+document.addEventListener('DOMContentLoaded', function() {
+  console.log("JS loaded successfully!");
+  if (typeof L !== 'undefined') {
+    console.log("Leaflet is available");
+  }
+});
