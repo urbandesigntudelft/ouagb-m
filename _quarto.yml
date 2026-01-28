@@ -24,6 +24,7 @@ book:
         - chapters/techniques.qmd
         - chapters/applications.qmd
         - chapters/quiz.Rmd
+        - leaflet_template.qmd
     - part: "Cases"
       chapters:
         - catalog/index.qmd
