@@ -29,7 +29,7 @@ if(file.exists("leaflet-control.js")) {
 ```
 
 
-# Single Map
+## Single Map
 ```{r}
 # load packages
 library(leaflet)
@@ -50,7 +50,7 @@ map2
 
 
 
-# Side-By-Side Map
+## Side-By-Side Map
 ```{r}
 library(leaflet)
 library(htmlwidgets)
@@ -86,7 +86,7 @@ el.id = 'map2';
 </button>
 
 
-# Splitted Side-By-Side Map
+## Side-By-Side Map, scale and pan synchronized
 ::: {.map-wrapper}
 
 <button class="fullscreen-btn" onclick="toggleMapsFullscreen()">
@@ -103,7 +103,9 @@ leaflet() %>%
   setView(4.9, 52.37, 8) %>%
   htmlwidgets::onRender("
     function(el, x) {
-      window.map1 = this;
+      const map = this;
+      requestAnimationFrame(() => map.invalidateSize());
+      setTimeout(() => map.invalidateSize(), 300);
     }
   ")
 ```
@@ -112,13 +114,15 @@ leaflet() %>%
 ::: {.map-panel}
 ```{r echo=FALSE}
 leaflet() %>%
-addTiles() %>%
-setView(13.4, 52.52, 8) %>%
-htmlwidgets::onRender("
-function(el, x) {
-window.map2 = this;
-}
-")
+  addTiles() %>%
+  setView(13.4, 52.52, 8) %>%
+  htmlwidgets::onRender("
+    function(el, x) {
+      const map = this;
+      requestAnimationFrame(() => map.invalidateSize());
+      setTimeout(() => map.invalidateSize(), 300);
+    }
+  ")
 ```
 :::
 :::
