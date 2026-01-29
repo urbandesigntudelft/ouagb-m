@@ -1,0 +1,27 @@
+---
+title: "3D Scanning and Lidar "
+format: html
+---
+
+## Why use this method? 
+3D scanning can be an incredibly helpful tool in urban analysis.  Netherlands is forefront of Lidar and 3D at country scale since 2008. This open data set has a 99% validity of data points (usually data sets of this size sit around 55%).\
+
+3Dbag. A range of analysis can be done with an open data set as extensive as this: visibility analysis, wind analysis, energy and wind simulations, and solar potential. Insurance companies use the dataset to calculate the areas of roof and facades and the volumes of buildings, whilst architects may use it to obtain planning permissions. Currently, 3Dbag focusses on buildings, but this method could also be used to reconstruct terrain, which can be helpful for a student project. The best way to do this is to create your own pointcloud.\
+
+## You are ready to use this method if
+- You can create your own pointcloud 
+- You are familiar with roofer 
+
+## Questions you can answer 
+
+## Steps
+Use CloudCompare
+
+## Tools
+
+## Cases
+
+## References
+
+## Exercises
+### Exercise-1
