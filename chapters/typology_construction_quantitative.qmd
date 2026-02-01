@@ -1,6 +1,7 @@
 ---
 title: "Typology Construction (quantitative)"
 format: html
+fig-cap-location: bottom
 ---
 
 ## Why use this method?
@@ -8,7 +9,10 @@ Quantitative typology construction is a core task in urban morphometrics1, as it
 
 The underlying quantitative method is cluster analysis, an unsupervised machine learning method which is used to identify a given number of clusters in a dataset. Those clusters are then used to define types that can either simply describe the sought patterns or guide type-specific spatial decisions.\
 
-You are ready to use this method if:\
+![Sample from Martin Fleischmann's Urban Taxonomy](../images/typology_construction.png){#fig-urban-taxonomy fig-align="center"}
+
+
+## You are ready to use this method if:
 
 - You know the difference between quantitative and qualitative methods 
 
