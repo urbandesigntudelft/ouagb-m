@@ -21,9 +21,12 @@ book:
     - part: "Methodology, Techniques & Applications"
       chapters:
         - chapters/methodology.qmd
+        - chapters/3d_scanning_lidar.qmd
+        - chapters/typology_construction_quantitative.qmd
         - chapters/techniques.qmd
         - chapters/applications.qmd
         - chapters/quiz.Rmd
+        - leaflet_template.qmd
     - part: "Cases"
       chapters:
         - catalog/index.qmd
@@ -68,6 +71,9 @@ book:
         - catalog/examples/object_van_beweging.qmd
         - catalog/examples/the_view_from_the_road.qmd
         - catalog/examples/kumbh_mela.qmd
+        - catalog/examples/territory_of_a_new_modernity.qmd
+        - catalog/examples/building_with_superblocks.qmd
+        - catalog/examples/urban_taxonomy.qmd
     - part: "Appendices"
       chapters:
         # - appendices/glossary.qmd
