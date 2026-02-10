@@ -3,16 +3,40 @@ title: "Leaflet Template Combining R and Javascript"
 format: html
 ---
 
-***R for accessing the Geo-data API and processing the data***
-***Javascript for advanced functions and editing the map***
+***R creates the content and data***\
+***JS controls behavior and interaction***\
+***CSS controls appearance and layout***
 
-# Single Map
+
+
 ```{r}
-# load packages
-library(leaflet)
-library(leaflet.extras)
+#| echo: FALSE
+#| results: asis
 
-# load maps
+# this block enables the javascript used on this page
+if(file.exists("leaflet-control.js")) {
+  cat("<!-- JS file exists -->\n")
+  cat('<script src="leaflet-control.js"></script>\n')
+} else {
+  cat("<!-- Warning: js not found -->\n")
+  cat('<script>
+    console.log("Temporary JS loaded");
+    document.addEventListener("DOMContentLoaded", function() {
+        console.log("Document ready from temporary JS");
+    });
+  </script>\n')
+}
+
+library(leaflet)
+library(htmlwidgets)
+library(leaflet.extras)
+library(leaflet.extras2)
+
+```
+
+
+## Single Map
+```{r}
 map2 <- leaflet() %>%
   setView(lng = 4.4777, lat = 51.9244, zoom = 13) %>%
   addTiles() %>%  # Base OSM layer
@@ -27,6 +51,97 @@ map2
 
 
 
-# Side-By-Side Map
+## Side-By-Side Map, synchronized only in scale
+::: {.map-wrapper}
 
-# Splitted Side-By-Side Map
+<button class="fullscreen-btn" onclick="toggleMapsFullscreen()">
+⛶ Fullscreen
+</button>
+
+::: {#map-container}
+::: {.map-panel}
+```{r echo=FALSE}
+leaflet() %>%
+  addTiles() %>%
+  setView(4.9, 52.37, 8) %>%
+  htmlwidgets::onRender("
+    function(el, x) {
+      const map = this;
+      requestAnimationFrame(() => map.invalidateSize());
+      setTimeout(() => map.invalidateSize(), 300);
+    }
+  ")
+```
+:::
+
+::: {.map-panel}
+```{r echo=FALSE}
+leaflet() %>%
+  addTiles() %>%
+  setView(13.4, 52.52, 8) %>%
+  htmlwidgets::onRender("
+    function(el, x) {
+      const map = this;
+      requestAnimationFrame(() => map.invalidateSize());
+      setTimeout(() => map.invalidateSize(), 300);
+    }
+  ")
+```
+:::
+:::
+:::
+
+
+## Side-By-Side Map, scale and pan synchronized
+::: {.map-wrapper}
+
+<button class="fullscreen-btn" onclick="toggleMapsFullscreen()">
+⛶ Fullscreen
+</button>
+
+::: {#map-container}
+::: {.map-panel}
+```{r echo=FALSE}
+leaflet() %>%
+  addTiles() %>%
+  setView(4.9, 52.37, 8) %>%
+  htmlwidgets::onRender("
+    function(el, x) {
+      const map = this;
+      requestAnimationFrame(() => map.invalidateSize());
+      setTimeout(() => map.invalidateSize(), 300);
+    }
+  ")
+```
+:::
+
+::: {.map-panel}
+```{r echo=FALSE}
+leaflet() %>%
+  addTiles() %>%
+  setView(13.4, 52.52, 8) %>%
+  htmlwidgets::onRender("
+    function(el, x) {
+      const map = this;
+      requestAnimationFrame(() => map.invalidateSize());
+      setTimeout(() => map.invalidateSize(), 300);
+    }
+  ")
+```
+:::
+:::
+:::
+
+## Map with a slider bar in the middle
+```{r}
+map1 <- leaflet() %>%
+  setView(lng = 4.4777, lat = 51.9244, zoom = 13) %>%
+  addTiles() %>%  # Base OSM layer
+  addTiles(
+    urlTemplate = "https://allmaps.xyz/maps/8ebee9ef638a08cf/{z}/{x}/{y}.png",
+    attribution = "Allmaps",
+    options = tileOptions(opacity = 0.7)  # Optional: make it semi-transparent
+  ) |> 
+  addFullscreenControl()
+map1
+```
