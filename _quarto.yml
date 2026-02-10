@@ -73,6 +73,7 @@ book:
         - catalog/examples/kumbh_mela.qmd
         - catalog/examples/territory_of_a_new_modernity.qmd
         - catalog/examples/building_with_superblocks.qmd
+        - catalog/examples/urban_taxonomy.qmd
     - part: "Appendices"
       chapters:
         # - appendices/glossary.qmd
