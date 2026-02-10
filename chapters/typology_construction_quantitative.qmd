@@ -1,0 +1,77 @@
+---
+title: "Typology Construction (quantitative)"
+format: html
+fig-cap-location: bottom
+---
+
+## Why use this method?
+Quantitative typology construction is a core task in urban morphometrics1, as it is meant to reveal patterns in large amounts of data and/or variables that would otherwise be invisible. Compared to [qualitative typology construction](typology_construction_qualitative.qmd), it enables scalability, allowing the analysis of large datasets and a large number of variables that could not be processed manually.\
+
+The underlying quantitative method is cluster analysis, an unsupervised machine learning method which is used to identify a given number of clusters in a dataset. Those clusters are then used to define types that can either simply describe the sought patterns or guide type-specific spatial decisions.\
+
+![Hierarchy of morphotope taxonomy. From The Hierarchical Morphotope Classification: A Theory-Driven Framework for Large-Scale Analysis of Built Form, by M. Fleischmann et al., 2025, (ArXiv:2509.10083). arXiv. https://doi.org/10.48550/arXiv.2509.10083. Licensed under CC BY 4.0.](../images/typology_construction.png){#fig-urban-taxonomy fig-align="center"}
+
+
+## You are ready to use this method if:
+
+- You know the difference between quantitative and qualitative methods 
+
+- You know how to derive quantitative variables from spatial analysis
+
+## Questions you can answer
+What types of spatial configurations and/or compositions are found in a given urban area? \
+
+What morphological patterns can we see across a given number of cases? See the [Urban Taxonomy](../catalog/examples/urban_taxonomy.qmd).\
+
+## Steps
+1. Define the spatial unit (e.g., building, block, parcel, street, neighbourhood). \
+
+2. Collect relevant morphological variables: direct measurements or derived metrics \
+
+3. Use those variables as input in a clustering algorithm (the simplest is k-means). The number of clusters is either defined deductively (you know beforehand how many there should be) or empirically (you try out different numbers of clusters and search for an optimum either quantitatively or qualitatively). \
+
+4. You examine representative examples to interpret the clusters. Then you name and describe them.
+
+## Tools
+- GeoDa –> [tutorial](https://lanselin.github.io/introbook_vol1/) 
+
+- R –> tutorial (Basic experience in R is needed. If you're new to R, our [Geospatial Data Carpentry for Urbanism](https://carpentries-incubator.github.io/r-geospatial-urban/) provides a useful introduction.) 
+
+## Cases
+[Urban Taxonomy](https://urbantaxonomy.org/)
+
+## References
+
+## Exercises
+### Exercise 1 — Constructing and Interpreting an Urban Morphological Typology 
+Select a continuous urban area (minimum 1 km²) in a city of your choice. Using quantitative urban morphometrics, construct a morphological typology based on measurable spatial characteristics. Interpret the resulting types and discuss how they could inform urban design or planning decisions.\
+
+**Tasks** \
+
+1. Define an appropriate spatial unit (e.g. building, block, street segment, parcel, or neighbourhood).\
+
+2. Select and compute at least 6 morphological variables (e.g. [density](density.qmd), [compactness](compactness.qmd), [building height](building_height.qmd), [plot coverage](plot_coverage.qmd), [street connectivity](street_connectivity.qmd)).\
+
+3. Apply a cluster analysis method (e.g. k-means) to generate an urban typology.\
+
+4. Interpret and name the resulting clusters:\
+
+    - Describe their morphological characteristics 
+
+    - Identify representative examples spatially 
+    
+5. Reflect on: 
+
+    - What patterns are visible through this method? 
+
+    - How could these types guide design interventions? 
+    
+**Deliverables**\
+
+- Maps of clusters 
+
+- Variable summary table 
+
+- Cluster descriptions 
+
+- Short reflection 

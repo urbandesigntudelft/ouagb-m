@@ -22,9 +22,11 @@ book:
       chapters:
         - chapters/methodology.qmd
         - chapters/3d_scanning_lidar.qmd
+        - chapters/typology_construction_quantitative.qmd
         - chapters/techniques.qmd
         - chapters/applications.qmd
         - chapters/quiz.Rmd
+        - leaflet_template.qmd
     - part: "Cases"
       chapters:
         - catalog/index.qmd
