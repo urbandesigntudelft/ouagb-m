@@ -1,5 +1,5 @@
 ---
-title: "3D Scanning and Lidar "
+title: "3D Scanning and Lidar"
 format: html
 fig-cap-location: bottom
 ---
