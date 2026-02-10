@@ -1,3 +1,7 @@
+.quarto-figure-center figcaption {
+  text-align: center;
+}
+
 /*high level wrapper*/
 .map-wrapper {
   position: relative;

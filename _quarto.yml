@@ -21,6 +21,7 @@ book:
     - part: "Methodology, Techniques & Applications"
       chapters:
         - chapters/methodology.qmd
+        - chapters/typology_construction_quantitative.qmd
         - chapters/techniques.qmd
         - chapters/applications.qmd
         - chapters/quiz.Rmd
