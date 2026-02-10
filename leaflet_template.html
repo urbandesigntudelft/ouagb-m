@@ -6,11 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Rem Koolhaas">
-<meta name="dcterms.date" content="1993-01-01">
-<meta name="description" content="An analytical mapping method created by Giambattista Nolli">
 
-<title>30&nbsp; Point City - South City – Open Urban Analysis Guidebook: Morphology</title>
+<title>8&nbsp; Leaflet Template Combining R and Javascript – Open Urban Analysis Guidebook: Morphology</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,32 +20,64 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<link href="../../catalog/examples/paris_des_faubourgs.html" rel="next">
-<link href="../../catalog/examples/gli_orizzonti.html" rel="prev">
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-89a1f99596d6e4a91b0a24663eeb039f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./catalog/index.html" rel="next">
+<link href="./chapters/quiz.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-89a1f99596d6e4a91b0a24663eeb039f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -77,9 +106,21 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
+<link href="site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
+<script src="site_libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
+<script src="site_libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
+<script src="site_libs/leaflet-binding-2.2.2/leaflet.js"></script>
+<link href="site_libs/lfx-fullscreen-1.0.2/lfx-fullscreen-prod.css" rel="stylesheet">
+<script src="site_libs/lfx-fullscreen-1.0.2/lfx-fullscreen-prod.js"></script>
 
 
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-sidebar floating quarto-light">
@@ -91,7 +132,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <h1 class="quarto-secondary-nav-title no-breadcrumbs"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Point City - South City</span></h1>
+        <h1 class="quarto-secondary-nav-title no-breadcrumbs"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Leaflet Template Combining R and Javascript</span></h1>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -105,10 +146,10 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
-      <a href="../../index.html" class="sidebar-logo-link">
+      <a href="./index.html" class="sidebar-logo-link">
       </a>
     <div class="sidebar-title mb-0 py-0">
-      <a href="../../">Open Urban Analysis Guidebook: Morphology</a> 
+      <a href="./">Open Urban Analysis Guidebook: Morphology</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -120,13 +161,13 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/foundations_frontiers.html" class="sidebar-item-text sidebar-link">
+  <a href="./chapters/foundations_frontiers.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Foundations and Frontiers</span></span></a>
   </div>
 </li>
@@ -141,43 +182,43 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/methodology.html" class="sidebar-item-text sidebar-link">
+  <a href="./chapters/methodology.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Methodology</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/3d_scanning_lidar.html" class="sidebar-item-text sidebar-link">
+  <a href="./chapters/3d_scanning_lidar.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">3D Scanning and Lidar</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/typology_construction_quantitative.html" class="sidebar-item-text sidebar-link">
+  <a href="./chapters/typology_construction_quantitative.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Typology Construction (quantitative)</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/techniques.html" class="sidebar-item-text sidebar-link">
+  <a href="./chapters/techniques.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Techniques</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/applications.html" class="sidebar-item-text sidebar-link">
+  <a href="./chapters/applications.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Applications</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/quiz.html" class="sidebar-item-text sidebar-link">
+  <a href="./chapters/quiz.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Quiz</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../leaflet_template.html" class="sidebar-item-text sidebar-link">
+  <a href="./leaflet_template.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Leaflet Template Combining R and Javascript</span></span></a>
   </div>
 </li>
@@ -194,271 +235,271 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../catalog/index.html" class="sidebar-item-text sidebar-link">
+  <a href="./catalog/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Index</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../catalog/examples/roma_al_tempo_di_benedetto.html" class="sidebar-item-text sidebar-link">
+  <a href="./catalog/examples/roma_al_tempo_di_benedetto.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Roma al tempo di Benedetto XIV</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../catalog/examples/Stadtebau.html" class="sidebar-item-text sidebar-link">
+  <a href="./catalog/examples/Stadtebau.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Die Städtebau nach seinen künstlerischen Grundsätzen</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../catalog/examples/ville_radieuse.html" class="sidebar-item-text sidebar-link">
+  <a href="./catalog/examples/ville_radieuse.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">La Ville Radieuse</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../catalog/examples/studi_per_una_operante.html" class="sidebar-item-text sidebar-link">
+  <a href="./catalog/examples/studi_per_una_operante.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Studi per una Operante Storia Urbana di Venezia</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../catalog/examples/image_of_the_city.html" class="sidebar-item-text sidebar-link">
+  <a href="./catalog/examples/image_of_the_city.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">The Image of the City</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../catalog/examples/concise_townscape.html" class="sidebar-item-text sidebar-link">
+  <a href="./catalog/examples/concise_townscape.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">The Concise Townscape</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../catalog/examples/las_vegas.html" class="sidebar-item-text sidebar-link">
+  <a href="./catalog/examples/las_vegas.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Learning from Las Vegas</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../catalog/examples/bologna.html" class="sidebar-item-text sidebar-link">
+  <a href="./catalog/examples/bologna.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Bologna: politica e metodologia del restauro nei centri storici</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../catalog/examples/comparisons_of_form_and_scale.html" class="sidebar-item-text sidebar-link">
+  <a href="./catalog/examples/comparisons_of_form_and_scale.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Cities, comparisons of form and scale</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../catalog/examples/collage_city.html" class="sidebar-item-text sidebar-link">
+  <a href="./catalog/examples/collage_city.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Collage City</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../catalog/examples/elements_urbaine.html" class="sidebar-item-text sidebar-link">
+  <a href="./catalog/examples/elements_urbaine.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Elements d’analyse urbaine</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../catalog/examples/versailles.html" class="sidebar-item-text sidebar-link">
+  <a href="./catalog/examples/versailles.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Lecture d’une ville: Versailles</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../catalog/examples/stedelijk_bouwwerk.html" class="sidebar-item-text sidebar-link">
+  <a href="./catalog/examples/stedelijk_bouwwerk.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Amsterdam als stedelijk bouwwerk</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../catalog/examples/les_bastides.html" class="sidebar-item-text sidebar-link">
+  <a href="./catalog/examples/les_bastides.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Les Bastides: d’Aquitaine, du Bas-Languedoc et du Béarn</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../catalog/examples/built_for_change.html" class="sidebar-item-text sidebar-link">
+  <a href="./catalog/examples/built_for_change.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Built for Change: neighborhood architecture in San Francisco</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../catalog/examples/verstedelijkt_landschap.html" class="sidebar-item-text sidebar-link">
+  <a href="./catalog/examples/verstedelijkt_landschap.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Rotterdam Verstedelijkt Landschap</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../catalog/examples/locatie_zuidpoortgebied.html" class="sidebar-item-text sidebar-link">
+  <a href="./catalog/examples/locatie_zuidpoortgebied.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Locatie Zuidpoortgebied: stadsmorfologische atlas</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../catalog/examples/la_metropole_imaginaire.html" class="sidebar-item-text sidebar-link">
+  <a href="./catalog/examples/la_metropole_imaginaire.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">La Metropole Imaginaire: un Atlas de Paris</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../catalog/examples/landschap_en_verstedelijking.html" class="sidebar-item-text sidebar-link">
+  <a href="./catalog/examples/landschap_en_verstedelijking.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Landschap en Verstedelijking tussen Den Haag en Rotterdam</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../catalog/examples/gli_orizzonti.html" class="sidebar-item-text sidebar-link">
+  <a href="./catalog/examples/gli_orizzonti.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Gli orizzonti della città diffusa</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../catalog/examples/point_city.html" class="sidebar-item-text sidebar-link active">
+  <a href="./catalog/examples/point_city.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Point City - South City</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../catalog/examples/paris_des_faubourgs.html" class="sidebar-item-text sidebar-link">
+  <a href="./catalog/examples/paris_des_faubourgs.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Paris des Faubourgs: Formation, Transformation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../catalog/examples/porto_the_breakthrough.html" class="sidebar-item-text sidebar-link">
+  <a href="./catalog/examples/porto_the_breakthrough.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Porto: the breakthrough</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../catalog/examples/colonial_settlements.html" class="sidebar-item-text sidebar-link">
+  <a href="./catalog/examples/colonial_settlements.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Urban Planning and Colonial Settlements in the period of Dutch Expansion</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../catalog/examples/het_land_in_de_stad.html" class="sidebar-item-text sidebar-link">
+  <a href="./catalog/examples/het_land_in_de_stad.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Het Land in de Stad: de stedebouw van de grote agglomeratie</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../catalog/examples/stadsportretten.html" class="sidebar-item-text sidebar-link">
+  <a href="./catalog/examples/stadsportretten.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Stadsanalyse: De Nieuwe Kaart van Den Haag / Stadsportretten</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../catalog/examples/zee_van_land.html" class="sidebar-item-text sidebar-link">
+  <a href="./catalog/examples/zee_van_land.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Zee van Land</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../catalog/examples/bindels_gietema.html" class="sidebar-item-text sidebar-link">
+  <a href="./catalog/examples/bindels_gietema.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">4</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../catalog/examples/costa_iberica.html" class="sidebar-item-text sidebar-link">
+  <a href="./catalog/examples/costa_iberica.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Costa Iberica: upbeat to the leisure city</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../catalog/examples/een_nieuwe_oude_jas.html" class="sidebar-item-text sidebar-link">
+  <a href="./catalog/examples/een_nieuwe_oude_jas.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Een nieuwe oude jas: de heruitvinding van stedelijke weefsels en woningtypes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../catalog/examples/after_sprawl.html" class="sidebar-item-text sidebar-link">
+  <a href="./catalog/examples/after_sprawl.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">After Sprawl: onderzoek naar de hedendaagse stad</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../catalog/examples/belvedere_bouwen.html" class="sidebar-item-text sidebar-link">
+  <a href="./catalog/examples/belvedere_bouwen.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Belvedere Bouwen: Vecht- en plassengebied</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../catalog/examples/city_branding.html" class="sidebar-item-text sidebar-link">
+  <a href="./catalog/examples/city_branding.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">City Branding: Image Building &amp; Building Images</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../catalog/examples/ijburg.html" class="sidebar-item-text sidebar-link">
+  <a href="./catalog/examples/ijburg.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title">IJburg, Haveneiland en Rieteilanden</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../catalog/examples/mobility.html" class="sidebar-item-text sidebar-link">
+  <a href="./catalog/examples/mobility.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">44</span>&nbsp; <span class="chapter-title">Mobility: a room with a view</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../catalog/examples/haarlemmermeer.html" class="sidebar-item-text sidebar-link">
+  <a href="./catalog/examples/haarlemmermeer.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">45</span>&nbsp; <span class="chapter-title">Haarlemmermeer</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../catalog/examples/evolution_of_a_compact_city.html" class="sidebar-item-text sidebar-link">
+  <a href="./catalog/examples/evolution_of_a_compact_city.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">Barcelona, The Evolution of A Compact City</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../catalog/examples/measuring_pompeii.html" class="sidebar-item-text sidebar-link">
+  <a href="./catalog/examples/measuring_pompeii.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">Measuring Spatial Visibility, Adjacency, Permeability and Degrees of Street Life in Pompeii</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../catalog/examples/object_van_beweging.html" class="sidebar-item-text sidebar-link">
+  <a href="./catalog/examples/object_van_beweging.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title">De stad, object van beweging</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../catalog/examples/the_view_from_the_road.html" class="sidebar-item-text sidebar-link">
+  <a href="./catalog/examples/the_view_from_the_road.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">49</span>&nbsp; <span class="chapter-title">The View From The Road</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../catalog/examples/kumbh_mela.html" class="sidebar-item-text sidebar-link">
+  <a href="./catalog/examples/kumbh_mela.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">50</span>&nbsp; <span class="chapter-title">Ephemeral Urbanisms: Kumbh Mela, India</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../catalog/examples/territory_of_a_new_modernity.html" class="sidebar-item-text sidebar-link">
+  <a href="./catalog/examples/territory_of_a_new_modernity.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">51</span>&nbsp; <span class="chapter-title">Antwerp: Territory of a New Modernity</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../catalog/examples/building_with_superblocks.html" class="sidebar-item-text sidebar-link">
+  <a href="./catalog/examples/building_with_superblocks.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">52</span>&nbsp; <span class="chapter-title">Building with Superblocks</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../catalog/examples/urban_taxonomy.html" class="sidebar-item-text sidebar-link">
+  <a href="./catalog/examples/urban_taxonomy.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">53</span>&nbsp; <span class="chapter-title">Urban Taxonomy</span></span></a>
   </div>
 </li>
@@ -475,7 +516,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../appendices/references.html" class="sidebar-item-text sidebar-link">
+  <a href="./appendices/references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
 </li>
@@ -486,42 +527,31 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#single-map" id="toc-single-map" class="nav-link active" data-scroll-target="#single-map"><span class="header-section-number">8.1</span> Single Map</a></li>
+  <li><a href="#side-by-side-map-synchronized-only-in-scale" id="toc-side-by-side-map-synchronized-only-in-scale" class="nav-link" data-scroll-target="#side-by-side-map-synchronized-only-in-scale"><span class="header-section-number">8.2</span> Side-By-Side Map, synchronized only in scale</a></li>
+  <li><a href="#side-by-side-map-scale-and-pan-synchronized" id="toc-side-by-side-map-scale-and-pan-synchronized" class="nav-link" data-scroll-target="#side-by-side-map-scale-and-pan-synchronized"><span class="header-section-number">8.3</span> Side-By-Side Map, scale and pan synchronized</a></li>
+  <li><a href="#map-with-a-slider-bar-in-the-middle" id="toc-map-with-a-slider-bar-in-the-middle" class="nav-link" data-scroll-target="#map-with-a-slider-bar-in-the-middle"><span class="header-section-number">8.4</span> Map with a slider bar in the middle</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Point City - South City</span></h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">density</div>
-    <div class="quarto-category">Rem Koolhaas</div>
-    <div class="quarto-category">analyses of large scale</div>
-    <div class="quarto-category">O.M.A</div>
-    <div class="quarto-category">Paris</div>
-    <div class="quarto-category">Rotterdam</div>
-  </div>
-  </div>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Leaflet Template Combining R and Javascript</span></h1>
+</div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Rem Koolhaas </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">1993</p>
-    </div>
-  </div>
   
     
   </div>
@@ -531,10 +561,103 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><a href="../../images/point_city.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="../../images/point_city.jpg" class="img-fluid"></a></p>
-<p>O.M.A. and Rem Koolhaas have produced many influential urban designs accompanied by seductive analyses. Examples are their design for the Paris newtown Melun Senart, the proposal for the area around the Grande Arche, also in Paris, their design for Yokohama (included here) and many others. The present study was made for the Air Alexander manifestation which asked for design proposals for a Rotterdam suburb. The design team objected to this small scale focus and drew the brief into a totally different realm, touching the issue of urban density in the Netherlands in general. Basically, the study takes the then existing population of the Netherlands as a starting point and redistributes this according to several density models. This redistribution immediately puts claims of the Netherlands being “full” in a different perspective. While it is hard to call this a true morphological analysis, the study nevertheless uses familiar techniques and does mean to speak about spatial effects, albeit on an unfamiliar scale.</p>
+<p><strong><em>R creates the content and data</em></strong><br>
+<strong><em>JS controls behavior and interaction</em></strong><br>
+<strong><em>CSS controls appearance and layout</em></strong></p>
+<!-- JS file exists -->
+<script src="leaflet-control.js"></script>
+<section id="single-map" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="single-map"><span class="header-section-number">8.1</span> Single Map</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>map2 <span class="ot">&lt;-</span> <span class="fu">leaflet</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">setView</span>(<span class="at">lng =</span> <span class="fl">4.4777</span>, <span class="at">lat =</span> <span class="fl">51.9244</span>, <span class="at">zoom =</span> <span class="dv">13</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addTiles</span>() <span class="sc">%&gt;%</span>  <span class="co"># Base OSM layer</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addTiles</span>(</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">urlTemplate =</span> <span class="st">"https://allmaps.xyz/maps/8ebee9ef638a08cf/{z}/{x}/{y}.png"</span>,</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">attribution =</span> <span class="st">"Allmaps"</span>,</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">options =</span> <span class="fu">tileOptions</span>(<span class="at">opacity =</span> <span class="fl">0.7</span>)  <span class="co"># Optional: make it semi-transparent</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> </span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addFullscreenControl</span>()</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>map2</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-5763293f6772e67f35bf" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-5763293f6772e67f35bf">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}},"fullscreenControl":{"position":"topleft","pseudoFullscreen":false}},"setView":[[51.9244,4.4777],13,[]],"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addTiles","args":["https://allmaps.xyz/maps/8ebee9ef638a08cf/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":0.7,"zIndex":1,"detectRetina":false,"attribution":"Allmaps"}]}]},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="side-by-side-map-synchronized-only-in-scale" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="side-by-side-map-synchronized-only-in-scale"><span class="header-section-number">8.2</span> Side-By-Side Map, synchronized only in scale</h2>
+<div class="map-wrapper">
+<button class="fullscreen-btn" onclick="toggleMapsFullscreen()">
+⛶ Fullscreen
+</button>
+<div id="map-container">
+<div class="map-panel">
+<div class="cell">
+<div class="cell-output-display">
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-1c1f4ebfe2ea4b012dbf" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-1c1f4ebfe2ea4b012dbf">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]}],"setView":[[52.37,4.9],8,[]]},"evals":[],"jsHooks":{"render":[{"code":"function(el, x, data) {\n  return (\n    function(el, x) {\n      const map = this;\n      requestAnimationFrame(() => map.invalidateSize());\n      setTimeout(() => map.invalidateSize(), 300);\n    }\n  ).call(this.getMap(), el, x, data);\n}","data":null}]}}</script>
+</div>
+</div>
+</div>
+<div class="map-panel">
+<div class="cell">
+<div class="cell-output-display">
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-98591d0db39c44021034" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-98591d0db39c44021034">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]}],"setView":[[52.52,13.4],8,[]]},"evals":[],"jsHooks":{"render":[{"code":"function(el, x, data) {\n  return (\n    function(el, x) {\n      const map = this;\n      requestAnimationFrame(() => map.invalidateSize());\n      setTimeout(() => map.invalidateSize(), 300);\n    }\n  ).call(this.getMap(), el, x, data);\n}","data":null}]}}</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="side-by-side-map-scale-and-pan-synchronized" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="side-by-side-map-scale-and-pan-synchronized"><span class="header-section-number">8.3</span> Side-By-Side Map, scale and pan synchronized</h2>
+<div class="map-wrapper">
+<button class="fullscreen-btn" onclick="toggleMapsFullscreen()">
+⛶ Fullscreen
+</button>
+<div id="map-container">
+<div class="map-panel">
+<div class="cell">
+<div class="cell-output-display">
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-e6adda4db9fb550c76bf" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-e6adda4db9fb550c76bf">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]}],"setView":[[52.37,4.9],8,[]]},"evals":[],"jsHooks":{"render":[{"code":"function(el, x, data) {\n  return (\n    function(el, x) {\n      const map = this;\n      requestAnimationFrame(() => map.invalidateSize());\n      setTimeout(() => map.invalidateSize(), 300);\n    }\n  ).call(this.getMap(), el, x, data);\n}","data":null}]}}</script>
+</div>
+</div>
+</div>
+<div class="map-panel">
+<div class="cell">
+<div class="cell-output-display">
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-bdf0249c5f9ae3f70062" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-bdf0249c5f9ae3f70062">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]}],"setView":[[52.52,13.4],8,[]]},"evals":[],"jsHooks":{"render":[{"code":"function(el, x, data) {\n  return (\n    function(el, x) {\n      const map = this;\n      requestAnimationFrame(() => map.invalidateSize());\n      setTimeout(() => map.invalidateSize(), 300);\n    }\n  ).call(this.getMap(), el, x, data);\n}","data":null}]}}</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="map-with-a-slider-bar-in-the-middle" class="level2" data-number="8.4">
+<h2 data-number="8.4" class="anchored" data-anchor-id="map-with-a-slider-bar-in-the-middle"><span class="header-section-number">8.4</span> Map with a slider bar in the middle</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>map1 <span class="ot">&lt;-</span> <span class="fu">leaflet</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">setView</span>(<span class="at">lng =</span> <span class="fl">4.4777</span>, <span class="at">lat =</span> <span class="fl">51.9244</span>, <span class="at">zoom =</span> <span class="dv">13</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addTiles</span>() <span class="sc">%&gt;%</span>  <span class="co"># Base OSM layer</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addTiles</span>(</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">urlTemplate =</span> <span class="st">"https://allmaps.xyz/maps/8ebee9ef638a08cf/{z}/{x}/{y}.png"</span>,</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">attribution =</span> <span class="st">"Allmaps"</span>,</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">options =</span> <span class="fu">tileOptions</span>(<span class="at">opacity =</span> <span class="fl">0.7</span>)  <span class="co"># Optional: make it semi-transparent</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> </span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addFullscreenControl</span>()</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>map1</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-4cee616ffba9d17c8222" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-4cee616ffba9d17c8222">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}},"fullscreenControl":{"position":"topleft","pseudoFullscreen":false}},"setView":[[51.9244,4.4777],13,[]],"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addTiles","args":["https://allmaps.xyz/maps/8ebee9ef638a08cf/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":0.7,"zIndex":1,"detectRetina":false,"attribution":"Allmaps"}]}]},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -939,13 +1062,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../catalog/examples/gli_orizzonti.html" class="pagination-link" aria-label="Gli orizzonti della città diffusa">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Gli orizzonti della città diffusa</span></span>
+      <a href="./chapters/quiz.html" class="pagination-link" aria-label="Quiz">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Quiz</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../catalog/examples/paris_des_faubourgs.html" class="pagination-link" aria-label="Paris des Faubourgs: Formation, Transformation">
-        <span class="nav-page-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Paris des Faubourgs: Formation, Transformation</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./catalog/index.html" class="pagination-link" aria-label="Index">
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Index</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -963,41 +1086,9 @@ ul.task-list li input[type="checkbox"] {
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
-(function() {
-  let previousOnload = window.onload;
-  window.onload = () => {
-    if (previousOnload) {
-      previousOnload();
-    }
-    lightboxQuarto.on('slide_before_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      const href = trigger.getAttribute('href');
-      if (href !== null) {
-        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-        if (imgEl !== null) {
-          const srcAttr = imgEl.getAttribute("src");
-          if (srcAttr && srcAttr.startsWith("data:")) {
-            slideConfig.href = srcAttr;
-          }
-        }
-      } 
-    });
-  
-    lightboxQuarto.on('slide_after_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(slideNode);
-      }
-    });
-  
-  };
-  
-})();
-          </script>
 
 
 
 
-<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

@@ -3,6 +3,7 @@
     "listing": "/catalog/index.html",
     "items": [
       "/catalog/examples/bindels_gietema.html",
+      "/catalog/examples/after_sprawl.html",
       "/catalog/examples/stedelijk_bouwwerk.html",
       "/catalog/examples/territory_of_a_new_modernity.html",
       "/catalog/examples/evolution_of_a_compact_city.html",
@@ -36,7 +37,6 @@
       "/catalog/examples/point_city.html",
       "/catalog/examples/porto_the_breakthrough.html",
       "/catalog/examples/roma_al_tempo_di_benedetto.html",
-      "/catalog/examples/after_sprawl.html",
       "/catalog/examples/verstedelijkt_landschap.html",
       "/catalog/examples/stadsportretten.html",
       "/catalog/examples/studi_per_una_operante.html",
@@ -44,6 +44,7 @@
       "/catalog/examples/image_of_the_city.html",
       "/catalog/examples/the_view_from_the_road.html",
       "/catalog/examples/colonial_settlements.html",
+      "/catalog/examples/urban_taxonomy.html",
       "/catalog/examples/zee_van_land.html"
     ]
   }
