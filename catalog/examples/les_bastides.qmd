@@ -2,8 +2,7 @@
 title: "Les Bastides: d’Aquitaine, du Bas-Languedoc et du Béarn"
 author: "F. Divorne, B. Gendre, B. Lavergne and Ph. Panerai "
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [Building typology, Urban blocks]
-tags: [3d, Les Bastides, Bologna, building and building blocks, comparison, cultural heritage, development, Francois Divorne, documentation, “French school” of analysis, “Italian school” of analysis, social issues, type, typology]
+categories: [3d, Les Bastides, Bologna, building and building blocks, comparison, cultural heritage, development, Francois Divorne, documentation, “French school” of analysis, “Italian school” of analysis, social issues, type, typology]
 date-format: "YYYY"
 date: "1985"
 ---

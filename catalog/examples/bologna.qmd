@@ -2,8 +2,7 @@
 title: "Bologna: politica e metodologia del restauro nei centri storici"
 author: "P.L. Cervelatti"
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [Building typology, Urban blocks]
-tags: [Bologna, buildings and building blocks, P.L.Cervelatti, conceptual abstraction, development, “Italian school” of analysis, typology]
+categories: [Bologna, buildings and building blocks, P.L.Cervelatti, conceptual abstraction, development, “Italian school” of analysis, typology]
 date-format: "YYYY"
 date: "1973"
 ---

@@ -2,8 +2,7 @@
 title: "The Image of the City"
 author: "Kevin Lynch"
 description: "Different ways of perceiving the elements in a city"
-categories: [Mental map, Spatial network analysis]
-tags: [Kevin Lynch, patterns, topographical map]
+categories: [Kevin Lynch, patterns, topographical map]
 date-format: "YYYY"
 date: "1960"
 ---
