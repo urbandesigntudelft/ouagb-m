@@ -2,8 +2,7 @@
 title: "Lecture d’une ville: Versailles"
 author: "Jean Castex a.o."
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [Building typology, Public space analysis, Urban blocks]
-tags: [Jean Castex, density, development, “French school” of analysis, Versailles]
+categories: [Jean Castex, density, development, “French school” of analysis, Versailles]
 date-format: "YYYY"
 date: "1980"
 ---
