@@ -3,6 +3,9 @@ title: "Leaflet Template Combining R and Javascript"
 format: html
 ---
 
+this is a working page for leaflet testing, not part of the content of the book
+
+
 ***R creates the content and data***\
 ***JS controls behavior and interaction***\
 ***CSS controls appearance and layout***
