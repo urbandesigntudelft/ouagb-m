@@ -2,8 +2,7 @@
 title: "The Concise Townscape"
 author: "Gordon Cullen"
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [Urban scenes, Spatial sequence]
-tags: [3d, Gordon Cullen, movement, perspective drawings, photographs, routes]
+categories: [3d, Gordon Cullen, movement, perspective drawings, photographs, routes]
 date-format: "YYYY"
 date: "1961"
 ---
