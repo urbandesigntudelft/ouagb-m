@@ -2,7 +2,7 @@
 title: "3D Scanning and Lidar"
 format: html
 fig-cap-location: bottom
-category: [geomatics, techonology]
+categories: [geomatics, techonology]
 ---
 
 ## Why use this method? 
