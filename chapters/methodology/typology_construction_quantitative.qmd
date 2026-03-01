@@ -9,7 +9,7 @@ Quantitative typology construction is a core task in urban morphometrics1, as it
 
 The underlying quantitative method is cluster analysis, an unsupervised machine learning method which is used to identify a given number of clusters in a dataset. Those clusters are then used to define types that can either simply describe the sought patterns or guide type-specific spatial decisions.\
 
-![Hierarchy of morphotope taxonomy. From The Hierarchical Morphotope Classification: A Theory-Driven Framework for Large-Scale Analysis of Built Form, by M. Fleischmann et al., 2025, (ArXiv:2509.10083). arXiv. https://doi.org/10.48550/arXiv.2509.10083. Licensed under CC BY 4.0.](../images/typology_construction.png){#fig-urban-taxonomy fig-align="center"}
+![Hierarchy of morphotope taxonomy. From The Hierarchical Morphotope Classification: A Theory-Driven Framework for Large-Scale Analysis of Built Form, by M. Fleischmann et al., 2025, (ArXiv:2509.10083). arXiv. https://doi.org/10.48550/arXiv.2509.10083. Licensed under CC BY 4.0.](../../images/typology_construction.png){#fig-urban-taxonomy fig-align="center"}
 
 
 ## You are ready to use this method if:
@@ -21,7 +21,7 @@ The underlying quantitative method is cluster analysis, an unsupervised machine 
 ## Questions you can answer
 What types of spatial configurations and/or compositions are found in a given urban area? \
 
-What morphological patterns can we see across a given number of cases? See the [Urban Taxonomy](../catalog/examples/urban_taxonomy.qmd).\
+What morphological patterns can we see across a given number of cases? See the [Urban Taxonomy](../../catalog/examples/urban_taxonomy.qmd).\
 
 ## Steps
 1. Define the spatial unit (e.g., building, block, parcel, street, neighbourhood). \

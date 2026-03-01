@@ -2,6 +2,7 @@
 title: "3D Scanning and Lidar"
 format: html
 fig-cap-location: bottom
+category: [geomatics, techonology]
 ---
 
 ## Why use this method? 
@@ -13,7 +14,7 @@ LiDAR can be deployed from various platforms: airborne for large-scale mapping, 
 
 Methods like this are useful for creating 3D models, which you can try for yourself by following the steps below.\
 
-![Point Cloud](../images/point_cloud.png){#fig-urban-taxonomy fig-align="center"}
+![Point Cloud](../../images/point_cloud.png){#fig-urban-taxonomy fig-align="center"}
 
 ## You are ready to use this method if
 
