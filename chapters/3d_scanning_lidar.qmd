@@ -121,7 +121,7 @@ Choose a street corner near you and, following the steps above, create your own 
 Separately analyse your 3D model and a 2D plan of the same site. You should think about what the limitations and adaptations of different kinds of analyses are.  
 
 **Tasks** 
-1. Obtain a map of your site from OpenStreetMap. 
+1. Obtain a map of your site from [OpenStreetMap](https://www.openstreetmap.org/#map=19/52.026411/4.706610&layers=H). 
 
 2. Separately annotate and analyse screenshots of your 3D model and your 2D plan.  
 
