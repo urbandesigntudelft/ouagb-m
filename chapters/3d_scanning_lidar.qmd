@@ -17,7 +17,7 @@ LiDAR is a remote sensing technology that works by emitting laser pulses towards
 
 LiDAR can be deployed from various platforms: airborne for large-scale mapping, drones for smaller, more specific areas, ground-based for detailed mapping of buildings and infrastructure, and mobile (vehicle-mounted) for road and urban mapping.\
 
-![3D scan of Rocinha favela. From Favelas 4D, by MIT Senseable City Lab, 2021,  https://senseable.mit.edu/favelas/. Reproduced with permission.](../images/point_cloud_2.png){#fig-urban-taxonomy fig-align="center"}
+![3D scan of Rocinha favela. From Favelas 4D, by MIT Senseable City Lab, 2021,  https://senseable.mit.edu/favelas/. Reproduced with permission.](../images/point_cloud.png){#fig-urban-taxonomy fig-align="center"}
 In the Favelas 4D project by MIT Senseable City Lab, LiDAR scans taken at street level were used to map Rocinha, the largest favela in Rio de Janeiro. The high precision of the resulting 3D dataset enables morphological analysis of the streets and buildings that constitute this settlement. Informal forms of urbanism are often unrepresented by traditional mapping methods, but here the spatial logics of the favela are made visible.\
 
 
@@ -36,14 +36,48 @@ In the Favelas 4D project by MIT Senseable City Lab, LiDAR scans taken at street
 
 
 ## Steps
-1. Obtain data for your point cloud.  
+1. Obtain data for your point cloud.
 
-    Point cloud data can be downloaded from PDOK or AHN for the Netherlands. For other areas, you can check municipal data portals. You can usually download it in the follow formats: LAS, LAZ, PLY, XYZ, or E57. If there is no point cloud data available, go to step 2. 
+    Point cloud data can be downloaded from [PDOK](https://www.pdok.nl/) or [AHN](https://www.ahn.nl/) for the Netherlands. For other areas, you can check municipal data portals. You can usually download it in the follow formats: LAS, LAZ, PLY, XYZ, or E57. If there is no point cloud data available, go to step 2. 
 
+2. Create your own point cloud. If data for your site already exists, go to step 3.
 
+    Depending on your resources and project requirements, you can use different techniques to create a point cloud. 
+    
+      a. Photogrammetry (using a regular camera or smartphone)  
+
+          Using a regular camera or smartphone, take several overlapping photos of your chosen object or area from different angles (the bigger the area, the more photographs you will need). You can then use [COLMAP](https://colmap.github.io/) to process these images into a point cloud.  
+          
+      b. iPhone with LiDAR sensor  
+      
+          Newer iPhones (iPhone 12 Pro or later) feature built-in LiDAR sensors, offering better accuracy than regular photos. This allows for detailed, real-time 3D scans. Apps like [3D Scanner App](https://3dscannerapp.com/) let you create 3D models directly on your phone, making it ideal for small-scale projects. 
+          
+      c. Drone or airplane (for large-scale projects):  
+      
+          Drones or airplanes equipped with cameras or LiDAR sensors are better for capturing large areas, such as mapping cities or landscapes. Drones offer high resolution and flexibility but come with a higher cost and require more expertise to operate. 
+          
+3. Create a 3D model from your point cloud.
+
+    a. Import the point cloud data into [CloudCompare](https://www.cloudcompare.org/). 
+
+    b. In CloudCompare, you can preprocess and clean the point cloud if this is needed, as the data may contain noise or irrelevant points. If the data is too large, you can down sample the points or clip the area you want to focus on.    
+
+    c. If your data consists of multiple point clouds from different scans or sources, you'll need to align and register them into a single, unified point cloud.  With CloudCompare, you can either automatically align or manually registering multiple point clouds. 
+
+    d. Once you have a clear, aligned point cloud, you can generate a mesh (a 3D surface model) with the Poisson Surface Reconstruction tools.  
+
+    e. Once you have a mesh, you can smooth or refine it to better represent the real-world surface.  
+
+    f. You can now export it in various file formats, depending on your needs. Common formats include OBJ, STL, FBX, or PLY. You can even 3D print this! 
 
 
 ## Tools
+- COLMAP is an open-source photogrammetry tool that performs structure-from-motion (SfM) and multi-view stereo (MVS) to create accurate 3D reconstructions from images. You can find useful instruction manuals [here](https://colmap.github.io/tutorial.html)
+
+- [3D Scanner App](https://3dscannerapp.com/) 
+
+- Cloud Compare is a free, open-source, 3D point cloud processing software. You can find useful tutorials [here](https://www.cloudcompare.org/).
+
 
 ## Cases
 - [3dbag](https://3dbag.nl/en/viewer) 
@@ -53,3 +87,56 @@ In the Favelas 4D project by MIT Senseable City Lab, LiDAR scans taken at street
 
 ## Exercises
 ### Exercise-1
+Choose a street corner near you and, following the steps above, create your own point cloud of this area and make it into a model.  
+
+**Tasks** 
+1. Select a corner with at least two intersecting streets near you. 
+
+2. Create your own point cloud of your site. 
+
+3. Generate a 3D model from this point cloud.  
+
+4. Spend some time exploring your 3D model: 
+
+    - Where is the model distorted or missing information? 
+
+    - Identify elements that affect street perception and visibility. Are there trees or street signs that obstruct views? 
+
+    - Measure the heights and width of elements. What is the height-to-width ratio of the street? 
+
+5. Reflect on the activity: 
+
+    - What are the limitations of this method? 
+
+    - How can this method contribute to urban planning decision-making? 
+
+**Deliverables** 
+- Point cloud 
+
+- 3D model 
+
+- Short reflection 
+
+### Exercise-1
+Separately analyse your 3D model and a 2D plan of the same site. You should think about what the limitations and adaptations of different kinds of analyses are.  
+
+**Tasks** 
+1. Obtain a map of your site from OpenStreetMap. 
+
+2. Separately annotate and analyse screenshots of your 3D model and your 2D plan.  
+
+3. Compare the two analyses. 
+
+4. Reflect on the activity: 
+
+    - What is revealed in the 3D analyses that was not present in the 2D map? And vice versa? 
+
+    - Which analysis is more useful in answering different urban questions? 
+
+**Deliverables**
+
+- Screenshot of 3D model with annotations of key spatial features 
+
+- Annotation of 2D plan with key spatial features 
+
+- Short reflection 
