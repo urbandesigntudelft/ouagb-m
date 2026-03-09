@@ -17,7 +17,7 @@ LiDAR is a remote sensing technology that works by emitting laser pulses towards
 
 LiDAR can be deployed from various platforms: airborne for large-scale mapping, drones for smaller, more specific areas, ground-based for detailed mapping of buildings and infrastructure, and mobile (vehicle-mounted) for road and urban mapping.\
 
-![3D scan of Rocinha favela. From Favelas 4D, by MIT Senseable City Lab, 2021,  https://senseable.mit.edu/favelas/. Reproduced with permission.](../images/point_cloud.png){#fig-urban-taxonomy fig-align="center"}
+![3D scan of Rocinha favela. From Favelas 4D, by MIT Senseable City Lab, 2021,  https://senseable.mit.edu/favelas/. Reproduced with permission.](../images/point_cloud_2.jpeg){#fig-urban-taxonomy fig-align="center"}
 In the Favelas 4D project by MIT Senseable City Lab, LiDAR scans taken at street level were used to map Rocinha, the largest favela in Rio de Janeiro. The high precision of the resulting 3D dataset enables morphological analysis of the streets and buildings that constitute this settlement. Informal forms of urbanism are often unrepresented by traditional mapping methods, but here the spatial logics of the favela are made visible.\
 
 
