@@ -1,0 +1,33 @@
+---
+title: "Space Syntax"
+format: html
+fig-cap-location: bottom
+categories: [street network, connectivity]
+---
+
+## Why use this method? {#why-use-this-method}
+
+
+## You are ready to use this method if
+
+
+## Questions you can answer 
+
+
+## Steps
+### density 
+### FSI
+### GSI
+### OSR
+### L
+
+
+## Tools
+
+## Cases
+
+
+## References
+
+## Exercises
+### Exercise 1

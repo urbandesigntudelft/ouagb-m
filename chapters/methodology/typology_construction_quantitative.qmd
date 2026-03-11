@@ -11,6 +11,14 @@ The underlying quantitative method is cluster analysis, an unsupervised machine 
 
 ![Hierarchy of morphotope taxonomy. From The Hierarchical Morphotope Classification: A Theory-Driven Framework for Large-Scale Analysis of Built Form, by M. Fleischmann et al., 2025, (ArXiv:2509.10083). arXiv. https://doi.org/10.48550/arXiv.2509.10083. Licensed under CC BY 4.0.](../../images/typology_construction.png){#fig-urban-taxonomy fig-align="center"}
 
+![Cleaning cross-sectional segments for cluster analysis. From Semantic Urban River Space Delineation and Typology: Defining and analyzing the space around the urban river in the Netherlands, by S. Epema, 2025, MSc Thesis in Geomatics, Delft University of Technology. https://resolver.tudelft.nl/uuid:7ecbabb5-9bc6-4725-a994-49db8929f79a. Licensed under CC BY 4.0.](../../images/typology_construction_2.png){#fig-urban-taxonomy-2 fig-align="center"}
+
+![Urban river space typology clusters. From Semantic Urban River Space Delineation and Typology: Defining and analyzing the space around the urban river in the Netherlands, by S. Epema, 2025, MSc Thesis in Geomatics, Delft University of Technology. https://resolver.tudelft.nl/uuid:7ecbabb5-9bc6-4725-a994-49db8929f79a. Licensed under CC BY 4.0.](../../images/typology_construction_3.png){#fig-urban-taxonomy-3 fig-align="center"}
+
+
+This example of student work used quantitative typology construction analyse data collected from river cross-sections. The initially generated cross-sectional segments were cleaned before analysis, removing any deemed invalid, for examples, those cutting through another river’s embankment line (Figure 5.2).\
+
+The k-means clustering method resulting in 6 proposed typologies: Urbanized riverbanks (0,6,8), Lush natural floodplains (1), Barren paved land (2), Residential tree-covered space (3,5), Balanced riverside corridor (4,9), and Mixed green strips (7) (Figure 5.3).  
 
 ## You are ready to use this method if:
 
@@ -50,7 +58,7 @@ Select a continuous urban area (minimum 1 km²) in a city of your choice. Using 
 
 1. Define an appropriate spatial unit (e.g. building, block, street segment, parcel, or neighbourhood).\
 
-2. Select and compute at least 6 morphological variables (e.g. [density](density.qmd), [compactness](compactness.qmd), [building height](building_height.qmd), [plot coverage](plot_coverage.qmd), [street connectivity](street_connectivity.qmd)).\
+2. Select and compute at least 6 morphological variables (e.g. [density](space_matrix.qmd#density), [compactness](space_matrix.qmd#fsi), [building height](space_matrix.qmd#l), [plot coverage](space_matrix.qmd#gsi), [street connectivity](space_syntax.qmd#why-use-this-method)).\
 
 3. Apply a cluster analysis method (e.g. k-means) to generate an urban typology.\
 

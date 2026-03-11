@@ -24,8 +24,10 @@ book:
         - chapters/methodology/methodology.qmd
         - chapters/methodology/3d_scanning_lidar.qmd
         - chapters/methodology/typology_construction_quantitative.qmd
+        - chapters/methodology/typology_construction_qualitative.qmd
         - chapters/methodology/techniques.qmd
-        - chapters/methodology/applications.qmd
+        - chapters/methodology/space_matrix.qmd
+        - chapters/methodology/space_syntax.qmd
         - chapters/quiz.Rmd
         - leaflet_template.qmd
     - part: "Cases"

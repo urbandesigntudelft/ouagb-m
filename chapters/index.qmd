@@ -11,4 +11,4 @@ listing:
 date-format: "YYYY"
 ---
 
-Use the filters and search box above to explore the catalog. Click items to open their detail pages.
+This section provides a structured overview of methods and techniques for urban morphology analysis. All methods and techniques described here are cross-referenced with the Examples part of the book.
