@@ -74,8 +74,10 @@ book:
     - catalog/examples/territory_of_a_new_modernity.qmd
     - catalog/examples/building_with_superblocks.qmd
     - catalog/examples/urban_taxonomy.qmd
-  #- part: Appendices
-    #chapters: appendices/references.qmd
+  - part: "Appendices"
+    chapters:
+        # - appendices/glossary.qmd
+        - appendices/references.qmd
   page-footer:
     center: © 2025, Section of Urban Design TU Delft - CC BY 4.0
 license: CC BY
