@@ -75,6 +75,7 @@ book:
   - part: "Appendices"
     chapters:
     - appendices/references.qmd
+
   page-footer:
     center: © 2025, Section of Urban Design TU Delft - CC BY 4.0
 license: CC BY
