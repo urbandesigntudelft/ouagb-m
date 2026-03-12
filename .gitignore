@@ -1,5 +1,8 @@
+.Rprofile
 *.Rproj
 .Rhistory
 .Rproj.user/
 
 /.quarto/
+
+**/*.quarto_ipynb
