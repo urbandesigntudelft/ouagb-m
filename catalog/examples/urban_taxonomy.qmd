@@ -2,8 +2,7 @@
 title: "Urban Taxonomy"
 author: "Martin Fleischmann and Krasen Samardzhiev"
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [Building typology, Urban blocks]
-tags: [Martin Fleischmann, urban taxonomy, Krasen Samardzhiev, morphometrics, quantitative analysis]
+categories: [Martin Fleischmann, urban taxonomy, Krasen Samardzhiev, morphometrics, quantitative analysis]
 date-format: "YYYY"
 date: "2025"
 fig-cap-location: bottom
