@@ -5,6 +5,11 @@ fig-cap-location: bottom
 categories: [street network, connectivity]
 ---
 
+```{r setup}
+library(webexercises)
+```
+
+
 ## Why use this method? {#why-use-this-method}
 
 
