@@ -99,8 +99,6 @@ format:
     - styles.css
     - include/webex.css
     include-after-body: include/webex.js
-filters:
-  - filters/reset-chapter-numbers.lua
 search: true
 execute:
   freeze: auto
