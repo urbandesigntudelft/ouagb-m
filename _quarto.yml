@@ -31,7 +31,7 @@ book:
     chapters:
     - catalog/index.qmd
     - catalog/examples/roma_al_tempo_di_benedetto.qmd
-    - catalog/examples/Stadtebau.qmd
+    - catalog/examples/stadtebau.qmd
     - catalog/examples/ville_radieuse.qmd
     - catalog/examples/studi_per_una_operante.qmd
     - catalog/examples/image_of_the_city.qmd
