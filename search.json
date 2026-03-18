@@ -20,806 +20,1059 @@
     ]
   },
   {
-    "objectID": "chapters/methodology.html",
-    "href": "chapters/methodology.html",
-    "title": "2  Methodology",
+    "objectID": "chapters/index.html",
+    "href": "chapters/index.html",
+    "title": "2  Index",
     "section": "",
-    "text": "2.1 Methods\nThis section provides a structured overview of methods and techniques for urban morphology analysis. All methods and techniques described here are cross-referenced with the Examples part of the book.\n# load maps\nmap2 &lt;- leaflet() %&gt;%\n  setView(lng = 4.4777, lat = 51.9244, zoom = 13) %&gt;%\n  addTiles() %&gt;%  # Base OSM layer\n  addTiles(\n    urlTemplate = \"https://allmaps.xyz/maps/8ebee9ef638a08cf/{z}/{x}/{y}.png\",\n    attribution = \"Allmaps\",\n    options = tileOptions(opacity = 0.7)  # Optional: make it semi-transparent\n  ) |&gt; \n  addFullscreenControl()\nmap2",
+    "text": "This section provides a structured overview of methods and techniques for urban morphology analysis. All methods and techniques described here are cross-referenced with the Examples part of the book.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n3D Scanning and Lidar\n\n\n\ngeomatics\n\ntechonology\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMethodology\n\n\n\n\n\n\n\n\n\n\n\n\n\nSpace Matrix\n\n\n\ndensity\n\nquantitative\n\ntypology construction\n\nurban fabric\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSpace Syntax\n\n\n\nstreet network\n\nconnectivity\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTechniques\n\n\n\n\n\n\n\n\n\n\n\n\n\nTypology Construction (qualitative)\n\n\n\n\n\n\n\n\n\n\n\n\n\nTypology Construction (quantitative)\n\n\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Methodology, Techniques & Applications",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Methodology</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Index</span>"
     ]
   },
   {
-    "objectID": "chapters/methodology.html#methods",
-    "href": "chapters/methodology.html#methods",
-    "title": "2  Methodology",
+    "objectID": "chapters/methodology/methodology.html",
+    "href": "chapters/methodology/methodology.html",
+    "title": "3  Methodology",
     "section": "",
-    "text": "2.1.1 Typo-morphology analysis\n\n\n2.1.2 Space syntax analysis\nQuiz functionality to be shown in a separate file\n\n\n2.1.3 (Morpho-)Typology analysis",
+    "text": "3.1 Methods\nThis section provides a structured overview of methods and techniques for urban morphology analysis. All methods and techniques described here are cross-referenced with the Examples part of the book.\n# load maps\nmap2 &lt;- leaflet() %&gt;%\n  setView(lng = 4.4777, lat = 51.9244, zoom = 13) %&gt;%\n  addTiles() %&gt;%  # Base OSM layer\n  addTiles(\n    urlTemplate = \"https://allmaps.xyz/maps/8ebee9ef638a08cf/{z}/{x}/{y}.png\",\n    attribution = \"Allmaps\",\n    options = tileOptions(opacity = 0.7)  # Optional: make it semi-transparent\n  ) |&gt; \n  addFullscreenControl()\nmap2",
     "crumbs": [
       "Methodology, Techniques & Applications",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Methodology</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Methodology</span>"
     ]
   },
   {
-    "objectID": "chapters/3d_scanning_lidar.html",
-    "href": "chapters/3d_scanning_lidar.html",
-    "title": "3  3D Scanning and Lidar",
+    "objectID": "chapters/methodology/methodology.html#methods",
+    "href": "chapters/methodology/methodology.html#methods",
+    "title": "3  Methodology",
     "section": "",
-    "text": "3.1 Why use this method?\n3D scanning, particularly LiDAR (Light Detection and Ranging), is an incredibly useful tool for urban analysis, providing precise, high-resolution 3D data of environments. The Netherlands has been at the forefront of LiDAR and 3D mapping with the creation of 3DBAG in 2008, an open dataset that boast 99% validity, far surpassing the typical 55% accuracy found in similar datasets of the same size.\nLiDAR is a remote sensing technology that works by emitting laser pulses towards a surface. These pulses travel to the target and back to the sensor and, based on the time it takes for them to return, the system calculates the distance to the target. This is known as the “time of flight.” Using this distance, the system calculates the exact 3D coordinates (X, Y, Z) of the point where the pulse has reflected, creating a “point” in 3D space. This process is repeated rapidly, generating millions of points, which together form a dense “point cloud” that can be used to construct highly detailed models of the environment.\nLiDAR can be deployed from various platforms: airborne for large-scale mapping, drones for smaller, more specific areas, ground-based for detailed mapping of buildings and infrastructure, and mobile (vehicle-mounted) for road and urban mapping.\nMethods like this are useful for creating 3D models, which you can try for yourself by following the steps below.",
+    "text": "3.1.1 Typo-morphology analysis\n\n\n3.1.2 Space syntax analysis\nQuiz functionality to be shown in a separate file\n\n\n3.1.3 (Morpho-)Typology analysis",
     "crumbs": [
       "Methodology, Techniques & Applications",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>3D Scanning and Lidar</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Methodology</span>"
     ]
   },
   {
-    "objectID": "chapters/3d_scanning_lidar.html#why-use-this-method",
-    "href": "chapters/3d_scanning_lidar.html#why-use-this-method",
-    "title": "3  3D Scanning and Lidar",
+    "objectID": "chapters/methodology/3d_scanning_lidar.html",
+    "href": "chapters/methodology/3d_scanning_lidar.html",
+    "title": "4  3D Scanning and Lidar",
     "section": "",
-    "text": "Figure 3.1: Point Cloud",
+    "text": "4.1 Why use this method?\n3D scanning, particularly LiDAR (Light Detection and Ranging), is a useful tool for urban analysis, providing precise, high-resolution 3D data of environments. 3D models provide a strong base for a variety of analyses, such as visibility analysis, wind analysis, solar potential, and many others.\n3D data of the Netherlands is already available from 3D-BAG, which is an open dataset created in 2008 with 99% validity.\nHowever, especially in your own graduation project, you might find yourself working in sites where such data is incomplete, not so precise, or non-existent altogether. In that case, it can be useful to create your own model using the steps below.",
     "crumbs": [
       "Methodology, Techniques & Applications",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>3D Scanning and Lidar</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>3D Scanning and Lidar</span>"
     ]
   },
   {
-    "objectID": "chapters/3d_scanning_lidar.html#you-are-ready-to-use-this-method-if",
-    "href": "chapters/3d_scanning_lidar.html#you-are-ready-to-use-this-method-if",
-    "title": "3  3D Scanning and Lidar",
-    "section": "3.2 You are ready to use this method if",
-    "text": "3.2 You are ready to use this method if",
+    "objectID": "chapters/methodology/3d_scanning_lidar.html#how-does-lidar-work",
+    "href": "chapters/methodology/3d_scanning_lidar.html#how-does-lidar-work",
+    "title": "4  3D Scanning and Lidar",
+    "section": "4.2 How does LiDAR work?",
+    "text": "4.2 How does LiDAR work?\nLiDAR is a remote sensing technology that works by emitting laser pulses towards a surface. These pulses travel to the target and back to the sensor and, based on the time it takes for them to return, the system calculates the distance to the target, known as the “time of flight.” Using this distance, the system calculates the exact 3D coordinates (X, Y, Z) of the point where the pulse has reflected, creating a “point” in 3D space. This process is repeated rapidly, generating millions of data points, which together form a dense “point cloud” that can be used to construct highly detailed models of the environment.\n\nLiDAR can be deployed from various platforms: airborne for large-scale mapping, drones for smaller, more specific areas, ground-based for detailed mapping of buildings and infrastructure, and mobile (vehicle-mounted) for road and urban mapping.\n\nIn the Favelas 4D project by MIT Senseable City Lab, LiDAR scans taken at street level were used to map Rocinha, the largest favela in Rio de Janeiro. The high precision of the resulting 3D dataset enables morphological analysis of the streets and buildings that constitute this settlement. Informal forms of urbanism are often unrepresented by traditional mapping methods, but here the spatial logics of the favela are made visible.\n\n\n\n\n\n\n\nFigure 4.1: 3D scan of Rocinha favela. From Favelas 4D, by MIT Senseable City Lab, 2021, https://senseable.mit.edu/favelas/. Reproduced with permission.",
     "crumbs": [
       "Methodology, Techniques & Applications",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>3D Scanning and Lidar</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>3D Scanning and Lidar</span>"
     ]
   },
   {
-    "objectID": "chapters/3d_scanning_lidar.html#steps",
-    "href": "chapters/3d_scanning_lidar.html#steps",
-    "title": "3  3D Scanning and Lidar",
-    "section": "3.3 Steps",
-    "text": "3.3 Steps\nStep A: Create a 3D model of your point cloud\n\nFirst, you need to access or create the point cloud data. There are several websites (such as PDOK, AHN) from which point cloud data can be downloaded, or municipal data portals, depending on the region you’re working with. If there is no point cloud data available, go to step B.\nPoint cloud data typically comes in formats like LAS, LAZ, PLY, XYZ, or E57.\nImport the point cloud data into software like CloudCompare or FME.\nPreprocess and clean the point cloud if this is needed. Point cloud data can sometimes contain noise or irrelevant points. Software like CloudCompare has tools you can use to do this. Besides this, point cloud data can be very large. If the dataset is too large for your system to handle, consider down sampling the points/ or clip the area you want to keep. CloudCompare allows you to apply filters, like smoothing, to reduce irregularities or artifacts in the data.\nIf your data consists of multiple point clouds from different scans or sources, you’ll need to align and register them into a single, unified point cloud. Also CloudCompare provides tools for automatically aligning or manually registering multiple point clouds.\nOnce you have a clear, aligned point cloud, you can generate a mesh, which is a 3D surface model. This step involves connecting the points to form triangles or polygons (more about this: Hugo’s terrain modelling course). In Cloudcompare, you can use tools like Poisson Surface Reconstruction to create a mesh from the point cloud.\nOnce you have a mesh, you may need to smooth, refine, or adjust it to better represent the real-world surface. Use CloudCompare\nOnce you have your final 3D model, you can export it in various file formats, depending on your needs. Common formats include OBJ, STL, FBX, or PLY. You can 3D print this, which is very fun!\n\nStep B: Create your own point cloud\nDepending on your resources and project requirements, you can use different techniques to create a point cloud. This ranges from photogrammetry with a regular camera or smartphone to more advanced options like LiDAR sensors on iPhones or drones. In this step, we’ll break down some options.\n\nPhotogrammetry (using a regular camera or smartphone)\n\nUsing a regular camera or smartphone, you can capture overlapping photos of an object or area from different angles. Pipelines like COLMAP can be used to process these images into a point cloud. This method is affordable and accessible but less precise than LiDAR or other advanced techniques. COLMAP is an open-source photogrammetry tool that performs structure-from-motion (SfM) and multi-view stereo (MVS) to create accurate 3D reconstructions from images.\n\niPhone with LiDAR sensor\n\nNewer iPhones (iPhone 12 Pro and later) feature built-in LiDAR sensors, offering better accuracy than regular photos. This allows for detailed, real-time 3D scans. Apps like 3D Scanner App let you create 3D models directly on your phone, making it ideal for small-scale projects.\n\nDrone or airplane (for large-scale projects):\n\nDrones or airplanes equipped with cameras or LiDAR sensors are perfect for capturing large areas, such as mapping cities or landscapes. Drones offer high resolution and flexibility but come with a higher cost and require more expertise to operate.",
+    "objectID": "chapters/methodology/3d_scanning_lidar.html#you-are-ready-to-use-this-method-if",
+    "href": "chapters/methodology/3d_scanning_lidar.html#you-are-ready-to-use-this-method-if",
+    "title": "4  3D Scanning and Lidar",
+    "section": "4.3 You are ready to use this method if",
+    "text": "4.3 You are ready to use this method if\n\nYou understand how LiDAR works.\nYou have installed COLMAP and CloudCompare\nYou have access to scanning equipment (camera, 360 camera or a smartphone)",
     "crumbs": [
       "Methodology, Techniques & Applications",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>3D Scanning and Lidar</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>3D Scanning and Lidar</span>"
     ]
   },
   {
-    "objectID": "chapters/3d_scanning_lidar.html#questions-you-can-answer",
-    "href": "chapters/3d_scanning_lidar.html#questions-you-can-answer",
-    "title": "3  3D Scanning and Lidar",
-    "section": "3.4 Questions you can answer",
-    "text": "3.4 Questions you can answer",
+    "objectID": "chapters/methodology/3d_scanning_lidar.html#questions-you-can-answer",
+    "href": "chapters/methodology/3d_scanning_lidar.html#questions-you-can-answer",
+    "title": "4  3D Scanning and Lidar",
+    "section": "4.4 Questions you can answer",
+    "text": "4.4 Questions you can answer\n\nWhat kinds of analyses can 3D models be used for?\nWhat is the difference between a point cloud and a mesh model?",
     "crumbs": [
       "Methodology, Techniques & Applications",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>3D Scanning and Lidar</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>3D Scanning and Lidar</span>"
     ]
   },
   {
-    "objectID": "chapters/3d_scanning_lidar.html#tools",
-    "href": "chapters/3d_scanning_lidar.html#tools",
-    "title": "3  3D Scanning and Lidar",
-    "section": "3.5 Tools",
-    "text": "3.5 Tools",
+    "objectID": "chapters/methodology/3d_scanning_lidar.html#steps",
+    "href": "chapters/methodology/3d_scanning_lidar.html#steps",
+    "title": "4  3D Scanning and Lidar",
+    "section": "4.5 Steps",
+    "text": "4.5 Steps\n\nObtain data for your point cloud.\nPoint cloud data can be downloaded from PDOK or AHN for the Netherlands. For other areas, you can check municipal data portals. You can usually download it in the follow formats: LAS, LAZ, PLY, XYZ, or E57. If there is no point cloud data available, go to step 2.\nCreate your own point cloud. If data for your site already exists, go to step 3.\nDepending on your resources and project requirements, you can use different techniques to create a point cloud.\n\nPhotogrammetry (using a regular camera or smartphone)\nUsing a regular camera or smartphone, take several overlapping photos of your chosen object or area from different angles (the bigger the area, the more photographs you will need). You can then use COLMAP to process these images into a point cloud.\niPhone with LiDAR sensor\nNewer iPhones (iPhone 12 Pro or later) feature built-in LiDAR sensors, offering better accuracy than regular photos. This allows for detailed, real-time 3D scans. Apps like 3D Scanner App let you create 3D models directly on your phone, making it ideal for small-scale projects.\nDrone or airplane (for large-scale projects):\nDrones or airplanes equipped with cameras or LiDAR sensors are better for capturing large areas, such as mapping cities or landscapes. Drones offer high resolution and flexibility but come with a higher cost and require more expertise to operate.\n\nCreate a 3D model from your point cloud.\n\nImport the point cloud data into CloudCompare.\nIn CloudCompare, you can preprocess and clean the point cloud if this is needed, as the data may contain noise or irrelevant points. If the data is too large, you can down sample the points or clip the area you want to focus on.\nIf your data consists of multiple point clouds from different scans or sources, you’ll need to align and register them into a single, unified point cloud. With CloudCompare, you can either automatically align or manually registering multiple point clouds.\nOnce you have a clear, aligned point cloud, you can generate a mesh (a 3D surface model) with the Poisson Surface Reconstruction tools.\nOnce you have a mesh, you can smooth or refine it to better represent the real-world surface.\n\nYou can now export it in various file formats, depending on your needs. Common formats include OBJ, STL, FBX, or PLY. You can even 3D print this!",
     "crumbs": [
       "Methodology, Techniques & Applications",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>3D Scanning and Lidar</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>3D Scanning and Lidar</span>"
     ]
   },
   {
-    "objectID": "chapters/3d_scanning_lidar.html#cases",
-    "href": "chapters/3d_scanning_lidar.html#cases",
-    "title": "3  3D Scanning and Lidar",
-    "section": "3.6 Cases",
-    "text": "3.6 Cases\n\n3dbag\nMulti roof EU project",
+    "objectID": "chapters/methodology/3d_scanning_lidar.html#tools",
+    "href": "chapters/methodology/3d_scanning_lidar.html#tools",
+    "title": "4  3D Scanning and Lidar",
+    "section": "4.6 Tools",
+    "text": "4.6 Tools\n\nCOLMAP is an open-source photogrammetry tool that performs structure-from-motion (SfM) and multi-view stereo (MVS) to create accurate 3D reconstructions from images. You can find useful instruction manuals here\n3D Scanner App\nCloud Compare is a free, open-source, 3D point cloud processing software. You can find useful tutorials here",
     "crumbs": [
       "Methodology, Techniques & Applications",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>3D Scanning and Lidar</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>3D Scanning and Lidar</span>"
     ]
   },
   {
-    "objectID": "chapters/3d_scanning_lidar.html#references",
-    "href": "chapters/3d_scanning_lidar.html#references",
-    "title": "3  3D Scanning and Lidar",
-    "section": "3.7 References",
-    "text": "3.7 References",
+    "objectID": "chapters/methodology/3d_scanning_lidar.html#cases",
+    "href": "chapters/methodology/3d_scanning_lidar.html#cases",
+    "title": "4  3D Scanning and Lidar",
+    "section": "4.7 Cases",
+    "text": "4.7 Cases\n\n3dbag\nMulti roof EU project\n4D Favela scanning MIT",
     "crumbs": [
       "Methodology, Techniques & Applications",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>3D Scanning and Lidar</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>3D Scanning and Lidar</span>"
     ]
   },
   {
-    "objectID": "chapters/3d_scanning_lidar.html#exercises",
-    "href": "chapters/3d_scanning_lidar.html#exercises",
-    "title": "3  3D Scanning and Lidar",
-    "section": "3.8 Exercises",
-    "text": "3.8 Exercises\n\n3.8.1 Exercise-1",
+    "objectID": "chapters/methodology/3d_scanning_lidar.html#references",
+    "href": "chapters/methodology/3d_scanning_lidar.html#references",
+    "title": "4  3D Scanning and Lidar",
+    "section": "4.8 References",
+    "text": "4.8 References",
     "crumbs": [
       "Methodology, Techniques & Applications",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>3D Scanning and Lidar</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>3D Scanning and Lidar</span>"
     ]
   },
   {
-    "objectID": "chapters/typology_construction_quantitative.html",
-    "href": "chapters/typology_construction_quantitative.html",
-    "title": "4  Typology Construction (quantitative)",
+    "objectID": "chapters/methodology/3d_scanning_lidar.html#exercises",
+    "href": "chapters/methodology/3d_scanning_lidar.html#exercises",
+    "title": "4  3D Scanning and Lidar",
+    "section": "4.9 Exercises",
+    "text": "4.9 Exercises\n\n4.9.1 Exercise 1 — Create and explore a 3D model of a street corner\nChoose a street corner near you and, following the steps above, create your own point cloud of this area and make it into a model.\n\nTasks\n1. Select a corner with at least two intersecting streets near you.\n\nCreate your own point cloud of your site.\nGenerate a 3D model from this point cloud.\nSpend some time exploring your 3D model:\n\nWhere is the model distorted or missing information?\nIdentify elements that affect street perception and visibility. Are there trees or street signs that obstruct views?\nMeasure the heights and width of elements. What is the height-to-width ratio of the street?\n\nReflect on the activity:\n\nWhat are the limitations of this method?\nHow can this method contribute to urban planning decision-making?\n\n\nDeliverables\n- Point cloud\n\n3D model\nShort reflection\n\n\n\n4.9.2 Exercise 2 — Analyse and compare your 3D model to a plan of the site\nSeparately analyse your 3D model and a 2D plan of the same site. You should think about what the limitations and adaptations of different kinds of analyses are.\n\nTasks\n1. Obtain a map of your site from OpenStreetMap.\n\nSeparately annotate and analyse screenshots of your 3D model and your 2D plan.\nCompare the two analyses.\nReflect on the activity:\n\nWhat is revealed in the 3D analyses that was not present in the 2D map? And vice versa?\nWhich analysis is more useful in answering different urban questions?\n\n\nDeliverables\n- Screenshot of 3D model with annotations of key spatial features\n\nAnnotation of 2D plan with key spatial features\nShort reflection",
+    "crumbs": [
+      "Methodology, Techniques & Applications",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>3D Scanning and Lidar</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/methodology/typology_construction_quantitative.html",
+    "href": "chapters/methodology/typology_construction_quantitative.html",
+    "title": "5  Typology Construction (quantitative)",
     "section": "",
-    "text": "4.1 Why use this method?\nQuantitative typology construction is a core task in urban morphometrics1, as it is meant to reveal patterns in large amounts of data and/or variables that would otherwise be invisible. Compared to qualitative typology construction, it enables scalability, allowing the analysis of large datasets and a large number of variables that could not be processed manually.\nThe underlying quantitative method is cluster analysis, an unsupervised machine learning method which is used to identify a given number of clusters in a dataset. Those clusters are then used to define types that can either simply describe the sought patterns or guide type-specific spatial decisions.",
+    "text": "5.1 Why use this method?\nQuantitative typology construction is a core task in urban morphometrics1, as it is meant to reveal patterns in large amounts of data and/or variables that would otherwise be invisible. Compared to qualitative typology construction, it enables scalability, allowing the analysis of large datasets and a large number of variables that could not be processed manually.\nThe underlying quantitative method is cluster analysis, an unsupervised machine learning method which is used to identify a given number of clusters in a dataset. Those clusters are then used to define types that can either simply describe the sought patterns or guide type-specific spatial decisions.\nThis example of student work used quantitative typology construction analyse data collected from river cross-sections. The initially generated cross-sectional segments were cleaned before analysis, removing any deemed invalid, for examples, those cutting through another river’s embankment line (Figure 5.2).\nThe k-means clustering method resulting in 6 proposed typologies: Urbanized riverbanks (0,6,8), Lush natural floodplains (1), Barren paved land (2), Residential tree-covered space (3,5), Balanced riverside corridor (4,9), and Mixed green strips (7) (Figure 5.3).",
     "crumbs": [
       "Methodology, Techniques & Applications",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Typology Construction (quantitative)</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Typology Construction (quantitative)</span>"
     ]
   },
   {
-    "objectID": "chapters/typology_construction_quantitative.html#why-use-this-method",
-    "href": "chapters/typology_construction_quantitative.html#why-use-this-method",
-    "title": "4  Typology Construction (quantitative)",
+    "objectID": "chapters/methodology/typology_construction_quantitative.html#why-use-this-method",
+    "href": "chapters/methodology/typology_construction_quantitative.html#why-use-this-method",
+    "title": "5  Typology Construction (quantitative)",
     "section": "",
-    "text": "Figure 4.1: Hierarchy of morphotope taxonomy. From The Hierarchical Morphotope Classification: A Theory-Driven Framework for Large-Scale Analysis of Built Form, by M. Fleischmann et al., 2025, (ArXiv:2509.10083). arXiv. https://doi.org/10.48550/arXiv.2509.10083. Licensed under CC BY 4.0.",
+    "text": "Figure 5.1: Hierarchy of morphotope taxonomy. From The Hierarchical Morphotope Classification: A Theory-Driven Framework for Large-Scale Analysis of Built Form, by M. Fleischmann et al., 2025, (ArXiv:2509.10083). arXiv. https://doi.org/10.48550/arXiv.2509.10083. Licensed under CC BY 4.0.\n\n\n\n\n\n\n\n\n\nFigure 5.2: Cleaning cross-sectional segments for cluster analysis. From Semantic Urban River Space Delineation and Typology: Defining and analyzing the space around the urban river in the Netherlands, by S. Epema, 2025, MSc Thesis in Geomatics, Delft University of Technology. https://resolver.tudelft.nl/uuid:7ecbabb5-9bc6-4725-a994-49db8929f79a. Licensed under CC BY 4.0.\n\n\n\n\n\n\n\n\n\nFigure 5.3: Urban river space typology clusters. From Semantic Urban River Space Delineation and Typology: Defining and analyzing the space around the urban river in the Netherlands, by S. Epema, 2025, MSc Thesis in Geomatics, Delft University of Technology. https://resolver.tudelft.nl/uuid:7ecbabb5-9bc6-4725-a994-49db8929f79a. Licensed under CC BY 4.0.",
     "crumbs": [
       "Methodology, Techniques & Applications",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Typology Construction (quantitative)</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Typology Construction (quantitative)</span>"
     ]
   },
   {
-    "objectID": "chapters/typology_construction_quantitative.html#you-are-ready-to-use-this-method-if",
-    "href": "chapters/typology_construction_quantitative.html#you-are-ready-to-use-this-method-if",
-    "title": "4  Typology Construction (quantitative)",
-    "section": "4.2 You are ready to use this method if:",
-    "text": "4.2 You are ready to use this method if:\n\nYou know the difference between quantitative and qualitative methods\nYou know how to derive quantitative variables from spatial analysis",
+    "objectID": "chapters/methodology/typology_construction_quantitative.html#you-are-ready-to-use-this-method-if",
+    "href": "chapters/methodology/typology_construction_quantitative.html#you-are-ready-to-use-this-method-if",
+    "title": "5  Typology Construction (quantitative)",
+    "section": "5.2 You are ready to use this method if:",
+    "text": "5.2 You are ready to use this method if:\n\nYou know the difference between quantitative and qualitative methods\nYou know how to derive quantitative variables from spatial analysis",
     "crumbs": [
       "Methodology, Techniques & Applications",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Typology Construction (quantitative)</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Typology Construction (quantitative)</span>"
     ]
   },
   {
-    "objectID": "chapters/typology_construction_quantitative.html#questions-you-can-answer",
-    "href": "chapters/typology_construction_quantitative.html#questions-you-can-answer",
-    "title": "4  Typology Construction (quantitative)",
-    "section": "4.3 Questions you can answer",
-    "text": "4.3 Questions you can answer\nWhat types of spatial configurations and/or compositions are found in a given urban area?\n\nWhat morphological patterns can we see across a given number of cases? See the Urban Taxonomy.",
+    "objectID": "chapters/methodology/typology_construction_quantitative.html#questions-you-can-answer",
+    "href": "chapters/methodology/typology_construction_quantitative.html#questions-you-can-answer",
+    "title": "5  Typology Construction (quantitative)",
+    "section": "5.3 Questions you can answer",
+    "text": "5.3 Questions you can answer\nWhat types of spatial configurations and/or compositions are found in a given urban area?\n\nWhat morphological patterns can we see across a given number of cases? See the Urban Taxonomy.",
     "crumbs": [
       "Methodology, Techniques & Applications",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Typology Construction (quantitative)</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Typology Construction (quantitative)</span>"
     ]
   },
   {
-    "objectID": "chapters/typology_construction_quantitative.html#steps",
-    "href": "chapters/typology_construction_quantitative.html#steps",
-    "title": "4  Typology Construction (quantitative)",
-    "section": "4.4 Steps",
-    "text": "4.4 Steps\n\nDefine the spatial unit (e.g., building, block, parcel, street, neighbourhood).\n\nCollect relevant morphological variables: direct measurements or derived metrics\n\nUse those variables as input in a clustering algorithm (the simplest is k-means). The number of clusters is either defined deductively (you know beforehand how many there should be) or empirically (you try out different numbers of clusters and search for an optimum either quantitatively or qualitatively).\n\nYou examine representative examples to interpret the clusters. Then you name and describe them.",
+    "objectID": "chapters/methodology/typology_construction_quantitative.html#steps",
+    "href": "chapters/methodology/typology_construction_quantitative.html#steps",
+    "title": "5  Typology Construction (quantitative)",
+    "section": "5.4 Steps",
+    "text": "5.4 Steps\n\nDefine the spatial unit (e.g., building, block, parcel, street, neighbourhood).\n\nCollect relevant morphological variables: direct measurements or derived metrics\n\nUse those variables as input in a clustering algorithm (the simplest is k-means). The number of clusters is either defined deductively (you know beforehand how many there should be) or empirically (you try out different numbers of clusters and search for an optimum either quantitatively or qualitatively).\n\nYou examine representative examples to interpret the clusters. Then you name and describe them.",
     "crumbs": [
       "Methodology, Techniques & Applications",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Typology Construction (quantitative)</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Typology Construction (quantitative)</span>"
     ]
   },
   {
-    "objectID": "chapters/typology_construction_quantitative.html#tools",
-    "href": "chapters/typology_construction_quantitative.html#tools",
-    "title": "4  Typology Construction (quantitative)",
-    "section": "4.5 Tools",
-    "text": "4.5 Tools\n\nGeoDa –&gt; tutorial\nR –&gt; tutorial (Basic experience in R is needed. If you’re new to R, our Geospatial Data Carpentry for Urbanism provides a useful introduction.)",
+    "objectID": "chapters/methodology/typology_construction_quantitative.html#tools",
+    "href": "chapters/methodology/typology_construction_quantitative.html#tools",
+    "title": "5  Typology Construction (quantitative)",
+    "section": "5.5 Tools",
+    "text": "5.5 Tools\n\nGeoDa –&gt; tutorial\nR –&gt; tutorial (Basic experience in R is needed. If you’re new to R, our Geospatial Data Carpentry for Urbanism provides a useful introduction.)",
     "crumbs": [
       "Methodology, Techniques & Applications",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Typology Construction (quantitative)</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Typology Construction (quantitative)</span>"
     ]
   },
   {
-    "objectID": "chapters/typology_construction_quantitative.html#cases",
-    "href": "chapters/typology_construction_quantitative.html#cases",
-    "title": "4  Typology Construction (quantitative)",
-    "section": "4.6 Cases",
-    "text": "4.6 Cases\nUrban Taxonomy",
+    "objectID": "chapters/methodology/typology_construction_quantitative.html#cases",
+    "href": "chapters/methodology/typology_construction_quantitative.html#cases",
+    "title": "5  Typology Construction (quantitative)",
+    "section": "5.6 Cases",
+    "text": "5.6 Cases\nUrban Taxonomy",
     "crumbs": [
       "Methodology, Techniques & Applications",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Typology Construction (quantitative)</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Typology Construction (quantitative)</span>"
     ]
   },
   {
-    "objectID": "chapters/typology_construction_quantitative.html#references",
-    "href": "chapters/typology_construction_quantitative.html#references",
-    "title": "4  Typology Construction (quantitative)",
-    "section": "4.7 References",
-    "text": "4.7 References",
+    "objectID": "chapters/methodology/typology_construction_quantitative.html#references",
+    "href": "chapters/methodology/typology_construction_quantitative.html#references",
+    "title": "5  Typology Construction (quantitative)",
+    "section": "5.7 References",
+    "text": "5.7 References",
     "crumbs": [
       "Methodology, Techniques & Applications",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Typology Construction (quantitative)</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Typology Construction (quantitative)</span>"
     ]
   },
   {
-    "objectID": "chapters/typology_construction_quantitative.html#exercises",
-    "href": "chapters/typology_construction_quantitative.html#exercises",
-    "title": "4  Typology Construction (quantitative)",
-    "section": "4.8 Exercises",
-    "text": "4.8 Exercises\n\n4.8.1 Exercise 1 — Constructing and Interpreting an Urban Morphological Typology\nSelect a continuous urban area (minimum 1 km²) in a city of your choice. Using quantitative urban morphometrics, construct a morphological typology based on measurable spatial characteristics. Interpret the resulting types and discuss how they could inform urban design or planning decisions.\n\nTasks\n\n\nDefine an appropriate spatial unit (e.g. building, block, street segment, parcel, or neighbourhood).\n\nSelect and compute at least 6 morphological variables (e.g. density, compactness, building height, plot coverage, street connectivity).\n\nApply a cluster analysis method (e.g. k-means) to generate an urban typology.\n\nInterpret and name the resulting clusters:\n\n\nDescribe their morphological characteristics\nIdentify representative examples spatially\n\nReflect on:\n\nWhat patterns are visible through this method?\nHow could these types guide design interventions?\n\n\nDeliverables\n\n\nMaps of clusters\nVariable summary table\nCluster descriptions\nShort reflection",
+    "objectID": "chapters/methodology/typology_construction_quantitative.html#exercises",
+    "href": "chapters/methodology/typology_construction_quantitative.html#exercises",
+    "title": "5  Typology Construction (quantitative)",
+    "section": "5.8 Exercises",
+    "text": "5.8 Exercises\n\n5.8.1 Exercise 1 — Constructing and Interpreting an Urban Morphological Typology\nSelect a continuous urban area (minimum 1 km²) in a city of your choice. Using quantitative urban morphometrics, construct a morphological typology based on measurable spatial characteristics. Interpret the resulting types and discuss how they could inform urban design or planning decisions.\n\nTasks\n\n\nDefine an appropriate spatial unit (e.g. building, block, street segment, parcel, or neighbourhood).\n\nSelect and compute at least 6 morphological variables (e.g. density, compactness, building height, plot coverage, street connectivity).\n\nApply a cluster analysis method (e.g. k-means) to generate an urban typology.\n\nInterpret and name the resulting clusters:\n\n\nDescribe their morphological characteristics\nIdentify representative examples spatially\n\nReflect on:\n\nWhat patterns are visible through this method?\nHow could these types guide design interventions?\n\n\nDeliverables\n\n\nMaps of clusters\nVariable summary table\nCluster descriptions\nShort reflection",
     "crumbs": [
       "Methodology, Techniques & Applications",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Typology Construction (quantitative)</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Typology Construction (quantitative)</span>"
     ]
   },
   {
-    "objectID": "chapters/techniques.html",
-    "href": "chapters/techniques.html",
-    "title": "5  Techniques",
+    "objectID": "chapters/methodology/typology_construction_qualitative.html",
+    "href": "chapters/methodology/typology_construction_qualitative.html",
+    "title": "6  Typology Construction (qualitative)",
     "section": "",
-    "text": "5.1 Techniques",
+    "text": "6.1 Why use this method?",
     "crumbs": [
       "Methodology, Techniques & Applications",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Techniques</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Typology Construction (qualitative)</span>"
     ]
   },
   {
-    "objectID": "chapters/techniques.html#techniques",
-    "href": "chapters/techniques.html#techniques",
-    "title": "5  Techniques",
-    "section": "",
-    "text": "5.1.1 Calculating density\n\n\n5.1.2 Figure-ground mapping\n\n\n5.1.3 Mapping spatial structures\n\n\nReading layer `gis_osm_railways_free_1' from data source \n  `/Users/claudiuforgaci/Projects/ouagb-m/data-for-map/limburg_railway.gpkg' \n  using driver `GPKG'\nSimple feature collection with 2188 features and 4 fields\nGeometry type: MULTILINESTRING\nDimension:     XY\nBounding box:  xmin: 5.589132 ymin: 50.7501 xmax: 6.197994 ymax: 51.81715\nGeodetic CRS:  WGS 84\n\n\nReading layer `gis_osm_waterways_free_1' from data source \n  `/Users/claudiuforgaci/Projects/ouagb-m/data-for-map/limburg_water.gpkg' \n  using driver `GPKG'\nSimple feature collection with 10060 features and 5 fields\nGeometry type: MULTILINESTRING\nDimension:     XY\nBounding box:  xmin: 5.498348 ymin: 50.73725 xmax: 6.745541 ymax: 51.84072\nGeodetic CRS:  WGS 84\n\n\nReading layer `gis_osm_landuse_a_free_1' from data source \n  `/Users/claudiuforgaci/Projects/ouagb-m/data-for-map/limburg_industry.gpkg' \n  using driver `GPKG'\nSimple feature collection with 499 features and 4 fields\nGeometry type: MULTIPOLYGON\nDimension:     XY\nBounding box:  xmin: 5.601581 ymin: 50.74544 xmax: 6.220584 ymax: 51.76557\nGeodetic CRS:  WGS 84",
+    "objectID": "chapters/methodology/typology_construction_qualitative.html#you-are-ready-to-use-this-method-if",
+    "href": "chapters/methodology/typology_construction_qualitative.html#you-are-ready-to-use-this-method-if",
+    "title": "6  Typology Construction (qualitative)",
+    "section": "6.2 You are ready to use this method if:",
+    "text": "6.2 You are ready to use this method if:",
     "crumbs": [
       "Methodology, Techniques & Applications",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Techniques</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Typology Construction (qualitative)</span>"
     ]
   },
   {
-    "objectID": "chapters/applications.html",
-    "href": "chapters/applications.html",
-    "title": "6  Applications",
-    "section": "",
-    "text": "hdjsfbhdjfkjjkhfjkhfjkshdfjdkhfjkdhfjkdhfkjdhfjkdhfjkshdfjkhfkjhdkjfhs(van den Burg 2004), bshjbfhdbfhdjbshjbshjbhfjdbhfksbfdjkbhsdbjsbhjdbhfjdbshfkbdjkfdsjkfhsdjklncjsdkbcds(Knuth 1984)\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.\n\n\nvan den Burg, Leo, ed. 2004. Urban Analysis Guidebook, Typomorphology. Delft: Technical University of Delft.",
+    "objectID": "chapters/methodology/typology_construction_qualitative.html#questions-you-can-answer",
+    "href": "chapters/methodology/typology_construction_qualitative.html#questions-you-can-answer",
+    "title": "6  Typology Construction (qualitative)",
+    "section": "6.3 Questions you can answer",
+    "text": "6.3 Questions you can answer",
     "crumbs": [
       "Methodology, Techniques & Applications",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Applications</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Typology Construction (qualitative)</span>"
     ]
   },
   {
-    "objectID": "chapters/quiz.html",
-    "href": "chapters/quiz.html",
-    "title": "7  Quiz",
-    "section": "",
-    "text": "7.1 Methods",
+    "objectID": "chapters/methodology/typology_construction_qualitative.html#steps",
+    "href": "chapters/methodology/typology_construction_qualitative.html#steps",
+    "title": "6  Typology Construction (qualitative)",
+    "section": "6.4 Steps",
+    "text": "6.4 Steps",
     "crumbs": [
       "Methodology, Techniques & Applications",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Quiz</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Typology Construction (qualitative)</span>"
     ]
   },
   {
-    "objectID": "chapters/quiz.html#methods",
-    "href": "chapters/quiz.html#methods",
-    "title": "7  Quiz",
-    "section": "",
-    "text": "7.1.1 Typo-morphology analysis\n\n\n7.1.2 Space syntax analysis\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7.1.3 (Morpho-)Typology analysis",
+    "objectID": "chapters/methodology/typology_construction_qualitative.html#tools",
+    "href": "chapters/methodology/typology_construction_qualitative.html#tools",
+    "title": "6  Typology Construction (qualitative)",
+    "section": "6.5 Tools",
+    "text": "6.5 Tools",
     "crumbs": [
       "Methodology, Techniques & Applications",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Quiz</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Typology Construction (qualitative)</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/methodology/typology_construction_qualitative.html#cases",
+    "href": "chapters/methodology/typology_construction_qualitative.html#cases",
+    "title": "6  Typology Construction (qualitative)",
+    "section": "6.6 Cases",
+    "text": "6.6 Cases",
+    "crumbs": [
+      "Methodology, Techniques & Applications",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Typology Construction (qualitative)</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/methodology/typology_construction_qualitative.html#references",
+    "href": "chapters/methodology/typology_construction_qualitative.html#references",
+    "title": "6  Typology Construction (qualitative)",
+    "section": "6.7 References",
+    "text": "6.7 References",
+    "crumbs": [
+      "Methodology, Techniques & Applications",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Typology Construction (qualitative)</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/methodology/typology_construction_qualitative.html#exercises",
+    "href": "chapters/methodology/typology_construction_qualitative.html#exercises",
+    "title": "6  Typology Construction (qualitative)",
+    "section": "6.8 Exercises",
+    "text": "6.8 Exercises\n\n6.8.1 Exercise 1 —",
+    "crumbs": [
+      "Methodology, Techniques & Applications",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Typology Construction (qualitative)</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/methodology/techniques.html",
+    "href": "chapters/methodology/techniques.html",
+    "title": "7  Techniques",
+    "section": "",
+    "text": "7.1 Techniques",
+    "crumbs": [
+      "Methodology, Techniques & Applications",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Techniques</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/methodology/techniques.html#techniques",
+    "href": "chapters/methodology/techniques.html#techniques",
+    "title": "7  Techniques",
+    "section": "",
+    "text": "7.1.1 Calculating density\n\n\n7.1.2 Figure-ground mapping\n\n\n7.1.3 Mapping spatial structures\n\n\nReading layer `gis_osm_railways_free_1' from data source \n  `/Users/claudiuforgaci/Projects/education/ouagb-m/data-for-map/limburg_railway.gpkg' \n  using driver `GPKG'\nSimple feature collection with 2188 features and 4 fields\nGeometry type: MULTILINESTRING\nDimension:     XY\nBounding box:  xmin: 5.589132 ymin: 50.7501 xmax: 6.197994 ymax: 51.81715\nGeodetic CRS:  WGS 84\n\n\nReading layer `gis_osm_waterways_free_1' from data source \n  `/Users/claudiuforgaci/Projects/education/ouagb-m/data-for-map/limburg_water.gpkg' \n  using driver `GPKG'\nSimple feature collection with 10060 features and 5 fields\nGeometry type: MULTILINESTRING\nDimension:     XY\nBounding box:  xmin: 5.498348 ymin: 50.73725 xmax: 6.745541 ymax: 51.84072\nGeodetic CRS:  WGS 84\n\n\nReading layer `gis_osm_landuse_a_free_1' from data source \n  `/Users/claudiuforgaci/Projects/education/ouagb-m/data-for-map/limburg_industry.gpkg' \n  using driver `GPKG'\nSimple feature collection with 499 features and 4 fields\nGeometry type: MULTIPOLYGON\nDimension:     XY\nBounding box:  xmin: 5.601581 ymin: 50.74544 xmax: 6.220584 ymax: 51.76557\nGeodetic CRS:  WGS 84",
+    "crumbs": [
+      "Methodology, Techniques & Applications",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Techniques</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/methodology/space_matrix.html",
+    "href": "chapters/methodology/space_matrix.html",
+    "title": "8  Space Matrix",
+    "section": "",
+    "text": "8.1 Why use this method?",
+    "crumbs": [
+      "Methodology, Techniques & Applications",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Space Matrix</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/methodology/space_matrix.html#you-are-ready-to-use-this-method-if",
+    "href": "chapters/methodology/space_matrix.html#you-are-ready-to-use-this-method-if",
+    "title": "8  Space Matrix",
+    "section": "8.2 You are ready to use this method if",
+    "text": "8.2 You are ready to use this method if",
+    "crumbs": [
+      "Methodology, Techniques & Applications",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Space Matrix</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/methodology/space_matrix.html#questions-you-can-answer",
+    "href": "chapters/methodology/space_matrix.html#questions-you-can-answer",
+    "title": "8  Space Matrix",
+    "section": "8.3 Questions you can answer",
+    "text": "8.3 Questions you can answer",
+    "crumbs": [
+      "Methodology, Techniques & Applications",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Space Matrix</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/methodology/space_matrix.html#steps",
+    "href": "chapters/methodology/space_matrix.html#steps",
+    "title": "8  Space Matrix",
+    "section": "8.4 Steps",
+    "text": "8.4 Steps\n\n8.4.1 density\n\n\n8.4.2 FSI\n\n\n8.4.3 GSI\n\n\n8.4.4 OSR\n\n\n8.4.5 L",
+    "crumbs": [
+      "Methodology, Techniques & Applications",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Space Matrix</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/methodology/space_matrix.html#tools",
+    "href": "chapters/methodology/space_matrix.html#tools",
+    "title": "8  Space Matrix",
+    "section": "8.5 Tools",
+    "text": "8.5 Tools",
+    "crumbs": [
+      "Methodology, Techniques & Applications",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Space Matrix</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/methodology/space_matrix.html#cases",
+    "href": "chapters/methodology/space_matrix.html#cases",
+    "title": "8  Space Matrix",
+    "section": "8.6 Cases",
+    "text": "8.6 Cases",
+    "crumbs": [
+      "Methodology, Techniques & Applications",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Space Matrix</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/methodology/space_matrix.html#references",
+    "href": "chapters/methodology/space_matrix.html#references",
+    "title": "8  Space Matrix",
+    "section": "8.7 References",
+    "text": "8.7 References",
+    "crumbs": [
+      "Methodology, Techniques & Applications",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Space Matrix</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/methodology/space_matrix.html#exercises",
+    "href": "chapters/methodology/space_matrix.html#exercises",
+    "title": "8  Space Matrix",
+    "section": "8.8 Exercises",
+    "text": "8.8 Exercises\n\n8.8.1 Exercise 1",
+    "crumbs": [
+      "Methodology, Techniques & Applications",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Space Matrix</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/methodology/space_syntax.html",
+    "href": "chapters/methodology/space_syntax.html",
+    "title": "9  Space Syntax",
+    "section": "",
+    "text": "9.1 Why use this method?",
+    "crumbs": [
+      "Methodology, Techniques & Applications",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Space Syntax</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/methodology/space_syntax.html#you-are-ready-to-use-this-method-if",
+    "href": "chapters/methodology/space_syntax.html#you-are-ready-to-use-this-method-if",
+    "title": "9  Space Syntax",
+    "section": "9.2 You are ready to use this method if",
+    "text": "9.2 You are ready to use this method if",
+    "crumbs": [
+      "Methodology, Techniques & Applications",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Space Syntax</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/methodology/space_syntax.html#questions-you-can-answer",
+    "href": "chapters/methodology/space_syntax.html#questions-you-can-answer",
+    "title": "9  Space Syntax",
+    "section": "9.3 Questions you can answer",
+    "text": "9.3 Questions you can answer",
+    "crumbs": [
+      "Methodology, Techniques & Applications",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Space Syntax</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/methodology/space_syntax.html#example-questions",
+    "href": "chapters/methodology/space_syntax.html#example-questions",
+    "title": "9  Space Syntax",
+    "section": "9.4 Example Questions",
+    "text": "9.4 Example Questions\n\n9.4.1 Fill-In-The-Blanks (fitb())\nCreate fill-in-the-blank questions using fitb(), providing the answer as the first argument.\n\n2 + 2 is \n\nYou can also create these questions dynamically, using variables from your R session.\n\nx &lt;- sample(2:8, 1)\n\n\nThe square root of 64 is: \n\nThe blanks are case-sensitive; if you don’t care about case, use the argument ignore_case = TRUE.\n\nWhat is the letter after D? \n\nIf you want to ignore differences in whitespace use, use the argument ignore_ws = TRUE (which is the default) and include spaces in your answer anywhere they could be acceptable.\n\nHow do you load the tidyverse package? \n\nYou can set more than one possible correct answer by setting the answers as a vector.\n\nType a vowel: \n\nYou can use regular expressions to test answers against more complex rules.\n\nType any 3 letters: \n\n\n\n9.4.2 Multiple Choice (mcq())\n\n“Never gonna give you up, never gonna: let you goturn you downrun awaylet you down”\n“I bless the rainsguess it rainssense the rain down in Africa” -Toto\n\n\n\n9.4.3 True or False (torf())\n\nTrue or False? You can permute values in a vector using sample(). TRUEFALSE\n\n\n\n9.4.4 Longer MCQs (longmcq())\nWhen your answers are very long, sometimes a drop-down select box gets formatted oddly. You can use longmcq() to deal with this. Since the answers are long, It’s probably best to set up the options inside an R chunk with echo=FALSE.\nWhat is a p-value?\n\nopts_p &lt;- c(\n   \"the probability that the null hypothesis is true\",\n   answer = \"the probability of the observed, or more extreme, data, under the assumption that the null-hypothesis is true\",\n   \"the probability of making an error in your conclusion\"\n)\n\n\n the probability that the null hypothesis is true the probability of the observed, or more extreme, data, under the assumption that the null-hypothesis is true the probability of making an error in your conclusion\n\nWhat is true about a 95% confidence interval of the mean?\n\n# use sample() to randomise the order\nopts_ci &lt;- sample(c(\n  answer = \"if you repeated the process many times, 95% of intervals calculated in this way contain the true mean\",\n  \"there is a 95% probability that the true mean lies within this range\",\n  \"95% of the data fall within this range\"\n))\n\n\n 95% of the data fall within this range if you repeated the process many times, 95% of intervals calculated in this way contain the true mean there is a 95% probability that the true mean lies within this range",
+    "crumbs": [
+      "Methodology, Techniques & Applications",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Space Syntax</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/methodology/space_syntax.html#checked-sections",
+    "href": "chapters/methodology/space_syntax.html#checked-sections",
+    "title": "9  Space Syntax",
+    "section": "9.5 Checked sections",
+    "text": "9.5 Checked sections\nCreate sections with the class webex-check to add a button that hides feedback until it is pressed. Add the class webex-box to draw a box around the section (or use your own styles).\n\nI am going to learn a lot: TRUEFALSE\nopts &lt;- c(\n   \"the probability that the null hypothesis is true\",\n   answer = \"the probability of the observed, or more extreme, data, under the assumption that the null-hypothesis is true\",\n   \"the probability of making an error in your conclusion\"\n)\n\ncat(\"What is a p-value?\", longmcq(opts))\nWhat is a p-value?\n\n the probability that the null hypothesis is true the probability of the observed, or more extreme, data, under the assumption that the null-hypothesis is true the probability of making an error in your conclusion",
+    "crumbs": [
+      "Methodology, Techniques & Applications",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Space Syntax</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/methodology/space_syntax.html#hidden-solutions-and-hints",
+    "href": "chapters/methodology/space_syntax.html#hidden-solutions-and-hints",
+    "title": "9  Space Syntax",
+    "section": "9.6 Hidden solutions and hints",
+    "text": "9.6 Hidden solutions and hints\nYou can fence off a solution area that will be hidden behind a button using hide() before the solution and unhide() after, each as inline R code. Pass the text you want to appear on the button to the hide() function.\nIf the solution is a code chunk, instead of using hide() and unhide(), simply set the webex.hide chunk option to TRUE, or set it to the string you wish to display on the button.\nRecreate the scatterplot below, using the built-in cars dataset.\n\nwith(cars, plot(speed, dist))\n\n\n\n\n\n\n\n\n\n\nI need a hint\n\nSee the documentation for plot() (?plot)\n\n\n\n\n\nClick here to see the solution\n\nplot(cars$speed, cars$dist)",
+    "crumbs": [
+      "Methodology, Techniques & Applications",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Space Syntax</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/methodology/space_syntax.html#steps",
+    "href": "chapters/methodology/space_syntax.html#steps",
+    "title": "9  Space Syntax",
+    "section": "9.7 Steps",
+    "text": "9.7 Steps\n\n9.7.1 density\n\n\n9.7.2 FSI\n\n\n9.7.3 GSI\n\n\n9.7.4 OSR\n\n\n9.7.5 L",
+    "crumbs": [
+      "Methodology, Techniques & Applications",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Space Syntax</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/methodology/space_syntax.html#tools",
+    "href": "chapters/methodology/space_syntax.html#tools",
+    "title": "9  Space Syntax",
+    "section": "9.8 Tools",
+    "text": "9.8 Tools",
+    "crumbs": [
+      "Methodology, Techniques & Applications",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Space Syntax</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/methodology/space_syntax.html#cases",
+    "href": "chapters/methodology/space_syntax.html#cases",
+    "title": "9  Space Syntax",
+    "section": "9.9 Cases",
+    "text": "9.9 Cases",
+    "crumbs": [
+      "Methodology, Techniques & Applications",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Space Syntax</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/methodology/space_syntax.html#references",
+    "href": "chapters/methodology/space_syntax.html#references",
+    "title": "9  Space Syntax",
+    "section": "9.10 References",
+    "text": "9.10 References",
+    "crumbs": [
+      "Methodology, Techniques & Applications",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Space Syntax</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/methodology/space_syntax.html#exercises",
+    "href": "chapters/methodology/space_syntax.html#exercises",
+    "title": "9  Space Syntax",
+    "section": "9.11 Exercises",
+    "text": "9.11 Exercises\n\n9.11.1 Exercise 1",
+    "crumbs": [
+      "Methodology, Techniques & Applications",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Space Syntax</span>"
     ]
   },
   {
     "objectID": "leaflet_template.html",
     "href": "leaflet_template.html",
-    "title": "8  Leaflet Template Combining R and Javascript",
+    "title": "10  Leaflet Template Combining R and Javascript",
     "section": "",
-    "text": "8.1 Single Map\nR creates the content and data\nJS controls behavior and interaction\nCSS controls appearance and layout\nmap2 &lt;- leaflet() %&gt;%\n  setView(lng = 4.4777, lat = 51.9244, zoom = 13) %&gt;%\n  addTiles() %&gt;%  # Base OSM layer\n  addTiles(\n    urlTemplate = \"https://allmaps.xyz/maps/8ebee9ef638a08cf/{z}/{x}/{y}.png\",\n    attribution = \"Allmaps\",\n    options = tileOptions(opacity = 0.7)  # Optional: make it semi-transparent\n  ) |&gt; \n  addFullscreenControl()\nmap2",
+    "text": "10.1 Single Map\nR creates the content and data\nJS controls behavior and interaction\nCSS controls appearance and layout\nmap2 &lt;- leaflet() %&gt;%\n  setView(lng = 4.4777, lat = 51.9244, zoom = 13) %&gt;%\n  addTiles() %&gt;%  # Base OSM layer\n  addTiles(\n    urlTemplate = \"https://allmaps.xyz/maps/8ebee9ef638a08cf/{z}/{x}/{y}.png\",\n    attribution = \"Allmaps\",\n    options = tileOptions(opacity = 0.7)  # Optional: make it semi-transparent\n  ) |&gt; \n  addFullscreenControl()\nmap2",
     "crumbs": [
       "Methodology, Techniques & Applications",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Leaflet Template Combining R and Javascript</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Leaflet Template Combining R and Javascript</span>"
     ]
   },
   {
     "objectID": "leaflet_template.html#side-by-side-map-synchronized-only-in-scale",
     "href": "leaflet_template.html#side-by-side-map-synchronized-only-in-scale",
-    "title": "8  Leaflet Template Combining R and Javascript",
-    "section": "8.2 Side-By-Side Map, synchronized only in scale",
-    "text": "8.2 Side-By-Side Map, synchronized only in scale\n\n\n⛶ Fullscreen",
+    "title": "10  Leaflet Template Combining R and Javascript",
+    "section": "10.2 Side-By-Side Map, synchronized only in scale",
+    "text": "10.2 Side-By-Side Map, synchronized only in scale\n\n\n⛶ Fullscreen",
     "crumbs": [
       "Methodology, Techniques & Applications",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Leaflet Template Combining R and Javascript</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Leaflet Template Combining R and Javascript</span>"
     ]
   },
   {
     "objectID": "leaflet_template.html#side-by-side-map-scale-and-pan-synchronized",
     "href": "leaflet_template.html#side-by-side-map-scale-and-pan-synchronized",
-    "title": "8  Leaflet Template Combining R and Javascript",
-    "section": "8.3 Side-By-Side Map, scale and pan synchronized",
-    "text": "8.3 Side-By-Side Map, scale and pan synchronized\n\n\n⛶ Fullscreen",
+    "title": "10  Leaflet Template Combining R and Javascript",
+    "section": "10.3 Side-By-Side Map, scale and pan synchronized",
+    "text": "10.3 Side-By-Side Map, scale and pan synchronized\n\n\n⛶ Fullscreen",
     "crumbs": [
       "Methodology, Techniques & Applications",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Leaflet Template Combining R and Javascript</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Leaflet Template Combining R and Javascript</span>"
     ]
   },
   {
     "objectID": "leaflet_template.html#map-with-a-slider-bar-in-the-middle",
     "href": "leaflet_template.html#map-with-a-slider-bar-in-the-middle",
-    "title": "8  Leaflet Template Combining R and Javascript",
-    "section": "8.4 Map with a slider bar in the middle",
-    "text": "8.4 Map with a slider bar in the middle\n\nmap1 &lt;- leaflet() %&gt;%\n  setView(lng = 4.4777, lat = 51.9244, zoom = 13) %&gt;%\n  addTiles() %&gt;%  # Base OSM layer\n  addTiles(\n    urlTemplate = \"https://allmaps.xyz/maps/8ebee9ef638a08cf/{z}/{x}/{y}.png\",\n    attribution = \"Allmaps\",\n    options = tileOptions(opacity = 0.7)  # Optional: make it semi-transparent\n  ) |&gt; \n  addFullscreenControl()\nmap1",
+    "title": "10  Leaflet Template Combining R and Javascript",
+    "section": "10.4 Map with a slider bar in the middle",
+    "text": "10.4 Map with a slider bar in the middle\n\nmap1 &lt;- leaflet() %&gt;%\n  setView(lng = 4.4777, lat = 51.9244, zoom = 13) %&gt;%\n  addTiles() %&gt;%  # Base OSM layer\n  addTiles(\n    urlTemplate = \"https://allmaps.xyz/maps/8ebee9ef638a08cf/{z}/{x}/{y}.png\",\n    attribution = \"Allmaps\",\n    options = tileOptions(opacity = 0.7)  # Optional: make it semi-transparent\n  ) |&gt; \n  addFullscreenControl()\nmap1",
     "crumbs": [
       "Methodology, Techniques & Applications",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Leaflet Template Combining R and Javascript</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Leaflet Template Combining R and Javascript</span>"
     ]
   },
   {
     "objectID": "catalog/index.html",
     "href": "catalog/index.html",
-    "title": "9  Index",
+    "title": "11  Index",
     "section": "",
-    "text": "Use the filters and search box above to explore the catalog. Click items to open their detail pages.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n4\n\n\n\nthe use of 3d\n\nAmsterdam\n\nEdzo Bindels\n\ncomparison\n\nconceptual abstraction\n\n“French school” of analysis\n\nCasper van der Hoeven\n\n“Italian school” of analysis\n\nmorphological layers\n\nJos Louwe\n\nmodern cities\n\nplan analysis\n\nvisualisation\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n2000\n\n\n\n\n\n\n\n\n\n\n\nAfter Sprawl: onderzoek naar de hedendaagse stad\n\n\n\ncomparison\n\nEurope\n\nXaveer de Geyter\n\nanalyses of large scale\n\nmorphological layers\n\nthe use of photographs\n\nsprawl\n\nvisualisation\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n2002\n\n\n\n\n\n\n\n\n\n\n\nAmsterdam als stedelijk bouwwerk\n\n\n\nFigure ground analysis\n\nPublic space\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1985\n\n\n\n\n\n\n\n\n\n\n\nAntwerp: Territory of a New Modernity\n\n\n\nFigure Ground Analysis\n\nPublic-Private Analysis\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n2009\n\n\n\n\n\n\n\n\n\n\n\nBarcelona, The Evolution of A Compact City\n\n\n\nto be updated\n\n\n\nStudy of Gulf Corperation Cities\n\n\n\n2005\n\n\n\n\n\n\n\n\n\n\n\nBelvedere Bouwen: Vecht- en plassengebied\n\n\n\nbuilding and building blocks\n\ncultural heritage\n\nanalysis as basis for design\n\ndevelopment\n\nMichael Graves\n\nkorrels\n\nlandscape\n\nLandscape Architects for Sale\n\nanalyses of large scale\n\nmorphological layers\n\nthe use of photographs\n\nregional scale\n\ntype\n\ntypology\n\nVechtstreek\n\nvisualisation\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n2002\n\n\n\n\n\n\n\n\n\n\n\nBologna: politica e metodologia del restauro nei centri storici\n\n\n\nBuilding typology\n\nUrban blocks\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1973\n\n\n\n\n\n\n\n\n\n\n\nBuilding with Superblocks\n\n\n\nFigure Ground Analysis\n\nPublic-Private Analysis\n\n\n\nStudy of Gulf Corperation Cities\n\n\n\n2024\n\n\n\n\n\n\n\n\n\n\n\nBuilt for Change: neighborhood architecture in San Francisco\n\n\n\nBuilding typology\n\nUrban blocks\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1986\n\n\n\n\n\n\n\n\n\n\n\nCities, comparisons of form and scale\n\n\n\nComparative urban analysis\n\nScale and representation\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1974\n\n\n\n\n\n\n\n\n\n\n\nCity Branding: Image Building & Building Images\n\n\n\nAmsterdam\n\nCity Branding\n\nfunctions\n\nHeerlen\n\nmorphology\n\nVeronique Patteeuw\n\nthe use of photographs\n\nregional scale\n\nrepresentation\n\nstatistical data\n\nvisualisation\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n2002\n\n\n\n\n\n\n\n\n\n\n\nCollage City\n\n\n\nFigure ground analysis\n\nCollage city\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1978\n\n\n\n\n\n\n\n\n\n\n\nCosta Iberica: upbeat to the leisure city\n\n\n\nthe use of 3d\n\ncomputer techniques\n\ndensity\n\nanalysis as basis for design\n\neconomy\n\nRem Koolhaas\n\nlandscape\n\nMVRDV\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n2000\n\n\n\n\n\n\n\n\n\n\n\nDe stad, object van beweging\n\n\n\nto be added\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1989\n\n\n\n\n\n\n\n\n\n\n\nDie Städtebau nach seinen künstlerischen Grundsätzen\n\n\n\nPublic space form\n\nUrban spatial composition\n\nPublic space\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1889\n\n\n\n\n\n\n\n\n\n\n\nEen nieuwe oude jas: de heruitvinding van stedelijke weefsels en woningtypes\n\n\n\nthe use of 3d\n\nAmsterdam\n\nJan Brouwer\n\nbuilding and building blocks\n\ncomparison\n\n“French school” of analysis\n\n“Italian school” of analysis\n\ntype\n\ntypology\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n2001\n\n\n\n\n\n\n\n\n\n\n\nElements d’analyse urbaine\n\n\n\nBuilding typology\n\nUrban sprawl\n\nUrban blocks\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1980\n\n\n\n\n\n\n\n\n\n\n\nEphemeral Urbanisms: Kumbh Mela, India\n\n\n\nto be updated\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n2022\n\n\n\n\n\n\n\n\n\n\n\nGli orizzonti della città diffusa\n\n\n\nAmsterdam\n\nStefano Boeri\n\n“Italian school” of analysis\n\nArturo Lanzani\n\nanalyses of large scale\n\nmorphological layers\n\noccupational patterns\n\nthe use of photographs\n\nregional scale\n\ntype\n\ntypology\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1992\n\n\n\n\n\n\n\n\n\n\n\nHaarlemmermeer\n\n\n\nAmsterdam\n\nconceptual abstraction\n\ncultural heritage\n\nanalysis as basis for design\n\neconomy\n\nHaarlemmermeer\n\nlandscape\n\nmorphological layers\n\nWouter Reh\n\nSteenbergen\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n2004\n\n\n\n\n\n\n\n\n\n\n\nHet Land in de Stad: de stedebouw van de grote agglomeratie\n\n\n\nAmsterdam\n\ncomparison\n\nthe Hague\n\nlandscape\n\nmorphological layers\n\nL.J.M.Tummers\n\nJ.M.Tummers-Zuurmon\n\nurbanisation\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1997\n\n\n\n\n\n\n\n\n\n\n\nIJburg, Haveneiland en Rieteilanden\n\n\n\nAmsterdam\n\nbuilding and building blocks\n\nFelix Claus\n\ncomparison\n\nconceptual abstraction\n\nIjburg\n\nmorphological layers\n\nmorphology\n\nvisualisation\n\nzooming in\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n2002\n\n\n\n\n\n\n\n\n\n\n\nLa Metropole Imaginaire: un Atlas de Paris\n\n\n\nthe use of 3d\n\nBologna\n\ndevelopment\n\ndocumentation\n\nBruno Fortier\n\n“French school” of analysis\n\nParis\n\nthe use of photographs\n\ntype\n\ntypology\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1989\n\n\n\n\n\n\n\n\n\n\n\nLa Ville Radieuse\n\n\n\nFigure ground analysis\n\nComparative urban analysis\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1930\n\n\n\n\n\n\n\n\n\n\n\nLandschap en Verstedelijking tussen Den Haag en Rotterdam\n\n\n\nDelft\n\nanalysis as basis for design\n\ndevelopment\n\ngeomorphology\n\nthe Hague\n\nlandscape\n\nanalyses of large scale\n\nmorphological layers\n\nFrits Palmboom\n\nperspective drawings\n\nrhetorics\n\nRotterdam\n\nroutes\n\nvisualisation\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1990\n\n\n\n\n\n\n\n\n\n\n\nLearning from Las Vegas\n\n\n\nUrban sprawl\n\nEveryday urbanism\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1972\n\n\n\n\n\n\n\n\n\n\n\nLecture d’une ville: Versailles\n\n\n\nBuilding typology\n\nPublic space analysis\n\nUrban blocks\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1980\n\n\n\n\n\n\n\n\n\n\n\nLes Bastides: d’Aquitaine, du Bas-Languedoc et du Béarn\n\n\n\nBuilding typology\n\nUrban blocks\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1985\n\n\n\n\n\n\n\n\n\n\n\nLocatie Zuidpoortgebied: stadsmorfologische atlas\n\n\n\nstadsmorfologische atlas\n\nDelft\n\ndevelopment\n\nRein Geurtsen\n\nhistorical maps\n\nthe use of photographs\n\nthe use of text\n\nZuidpoortgebied\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1988\n\n\n\n\n\n\n\n\n\n\n\nMeasuring Spatial Visibility, Adjacency, Permeability and Degrees of Street Life in Pompeii\n\n\n\nto be updated\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n2011\n\n\n\n\n\n\n\n\n\n\n\nMobility: a room with a view\n\n\n\nLouisa Calabrese\n\nFrancine Houben\n\nLas Vegas\n\nmobility\n\nthe use of photographs\n\nRandstad\n\nvisualisation\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n2003\n\n\n\n\n\n\n\n\n\n\n\nParis des Faubourgs: Formation, Transformation\n\n\n\ndevelopment\n\nfaubourgs\n\n“French school” of analysis\n\nJacques Lucan\n\nmorphology\n\nparcellation\n\nParis\n\npatterns\n\nthe use of photographs\n\nsocial issues\n\nthe use of text\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1996\n\n\n\n\n\n\n\n\n\n\n\nPoint City - South City\n\n\n\ndensity\n\nRem Koolhaas\n\nanalyses of large scale\n\nO.M.A\n\nParis\n\nRotterdam\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1993\n\n\n\n\n\n\n\n\n\n\n\nPorto: the breakthrough\n\n\n\naxes of development\n\nPeter de Bois\n\ndevelopment\n\nmorphology\n\nRon van Oers\n\nperspective drawings\n\nPorto\n\nPortugal\n\nsocial issues\n\nSTOA method\n\nFrits van Voorden\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1996\n\n\n\n\n\n\n\n\n\n\n\nRoma al tempo di Benedetto XIV\n\n\n\nFigure ground analysis\n\nPublic space analysis\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1748\n\n\n\n\n\n\n\n\n\n\n\nRotterdam Verstedelijkt Landschap\n\n\n\nAmsterdam\n\ndevelopment\n\nlandscape\n\nmorphological layers\n\nmorphology\n\nFrits Palmboom\n\npatterns\n\nRotterdam\n\nvisualisation\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1748\n\n\n\n\n\n\n\n\n\n\n\nStadsanalyse: De Nieuwe Kaart van Den Haag / Stadsportretten\n\n\n\nAmsterdam\n\nEls Bet\n\ngeomorphology\n\nthe Hague\n\nrhetorics\n\nMartin Verwoest\n\nvisualisation\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1998\n\n\n\n\n\n\n\n\n\n\n\nStudi per una Operante Storia Urbana di Venezia\n\n\n\nBuilding typology\n\nUrban blocks\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1959\n\n\n\n\n\n\n\n\n\n\n\nThe Concise Townscape\n\n\n\nUrban scenes\n\nSpatial sequence\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1961\n\n\n\n\n\n\n\n\n\n\n\nThe Image of the City\n\n\n\nMental map\n\nSpatial network analysis\n\n\n\nDifferent ways of perceiving the elements in a city\n\n\n\n1960\n\n\n\n\n\n\n\n\n\n\n\nThe View From The Road\n\n\n\nto be updated\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1964\n\n\n\n\n\n\n\n\n\n\n\nUrban Planning and Colonial Settlements in the period of Dutch Expansion\n\n\n\nCape Town\n\ncolonial settlements\n\ncomparison\n\ndevelopment\n\nmorphological layers\n\nmorphology\n\nSimon Stevin\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1997\n\n\n\n\n\n\n\n\n\n\n\nUrban Taxonomy\n\n\n\nBuilding typology\n\nUrban blocks\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n2025\n\n\n\n\n\n\n\n\n\n\n\nZee van Land\n\n\n\nthe use of 3d\n\nBuilding and building blocks\n\ncomparison\n\nlandscape\n\nmorphological layers\n\npolders\n\nWouter Reh\n\nSteenbergen\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1999\n\n\n\n\n\n\nNo matching items",
+    "text": "Use the filters and search box above to explore the catalog. Click items to open their detail pages.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n4\n\n\n\nthe use of 3d\n\nAmsterdam\n\nEdzo Bindels\n\ncomparison\n\nconceptual abstraction\n\n“French school” of analysis\n\nCasper van der Hoeven\n\n“Italian school” of analysis\n\nmorphological layers\n\nJos Louwe\n\nmodern cities\n\nplan analysis\n\nvisualisation\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n2000\n\n\n\n\n\n\n\n\n\n\n\nAfter Sprawl: onderzoek naar de hedendaagse stad\n\n\n\ncomparison\n\nEurope\n\nXaveer de Geyter\n\nanalyses of large scale\n\nmorphological layers\n\nthe use of photographs\n\nsprawl\n\nvisualisation\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n2002\n\n\n\n\n\n\n\n\n\n\n\nAmsterdam als stedelijk bouwwerk\n\n\n\nAmsterdam\n\nconceptual abstraction\n\nCasper van der Hoeven\n\nmorphological layers\n\nJos Louwe\n\nmodern cities\n\nmorphology\n\npatterns\n\npublic space\n\nSpeckle\n\nSimon Stevin\n\nvisualisation\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1985\n\n\n\n\n\n\n\n\n\n\n\nBarcelona, The Evolution of A Compact City\n\n\n\nto be updated\n\n\n\nStudy of Gulf Corperation Cities\n\n\n\n2005\n\n\n\n\n\n\n\n\n\n\n\nBelvedere Bouwen: Vecht- en plassengebied\n\n\n\nbuilding and building blocks\n\ncultural heritage\n\nanalysis as basis for design\n\ndevelopment\n\nMichael Graves\n\nkorrels\n\nlandscape\n\nLandscape Architects for Sale\n\nanalyses of large scale\n\nmorphological layers\n\nthe use of photographs\n\nregional scale\n\ntype\n\ntypology\n\nVechtstreek\n\nvisualisation\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n2002\n\n\n\n\n\n\n\n\n\n\n\nBologna: politica e metodologia del restauro nei centri storici\n\n\n\nBologna\n\nbuildings and building blocks\n\nP.L.Cervelatti\n\nconceptual abstraction\n\ndevelopment\n\n“Italian school” of analysis\n\ntypology\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1973\n\n\n\n\n\n\n\n\n\n\n\nBuilt for Change: neighborhood architecture in San Francisco\n\n\n\nAlamo Square\n\ndevelopment\n\ndocumentation\n\n“French school” of analysis\n\n“Italian school” of analysis\n\nmorphological layers\n\nmorphology\n\nAnne Moudon Vernez\n\nthe use of photographs\n\nSan Francisco\n\ntype\n\ntypology\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1986\n\n\n\n\n\n\n\n\n\n\n\nCities, comparisons of form and scale\n\n\n\nComparative urban analysis\n\nScale and representation\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1974\n\n\n\n\n\n\n\n\n\n\n\nCity Branding: Image Building & Building Images\n\n\n\nAmsterdam\n\nCity Branding\n\nfunctions\n\nHeerlen\n\nmorphology\n\nVeronique Patteeuw\n\nthe use of photographs\n\nregional scale\n\nrepresentation\n\nstatistical data\n\nvisualisation\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n2002\n\n\n\n\n\n\n\n\n\n\n\nCollage City\n\n\n\nbricolage\n\nclassical urban examples\n\nLe Corbusier\n\nFred Koetter\n\nmodern cities\n\nNolli map\n\nRome\n\nColin Rowe\n\ntraditional urban features\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1978\n\n\n\n\n\n\n\n\n\n\n\nCosta Iberica: upbeat to the leisure city\n\n\n\nthe use of 3d\n\ncomputer techniques\n\ndensity\n\nanalysis as basis for design\n\neconomy\n\nRem Koolhaas\n\nlandscape\n\nMVRDV\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n2000\n\n\n\n\n\n\n\n\n\n\n\nDe stad, object van beweging\n\n\n\nto be added\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1989\n\n\n\n\n\n\n\n\n\n\n\nDie Städtebau nach seinen künstlerischen Grundsätzen\n\n\n\nthe use of 3d\n\nthe use of classical urban examples\n\nperspective drawings\n\nCamillo Sitte\n\n\n\nSetting urban design principles using classical cities as models\n\n\n\n1889\n\n\n\n\n\n\n\n\n\n\n\nEen nieuwe oude jas: de heruitvinding van stedelijke weefsels en woningtypes\n\n\n\nthe use of 3d\n\nAmsterdam\n\nJan Brouwer\n\nbuilding and building blocks\n\ncomparison\n\n“French school” of analysis\n\n“Italian school” of analysis\n\ntype\n\ntypology\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n2001\n\n\n\n\n\n\n\n\n\n\n\nElements d’analyse urbaine\n\n\n\n3d\n\ndevelopment\n\n“French school” of analysis\n\nNolli map\n\nPhilippe Panerai\n\nperspective drawings\n\nreduction drawings\n\ntype\n\ntypology\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1980\n\n\n\n\n\n\n\n\n\n\n\nEphemeral Urbanisms: Kumbh Mela, India\n\n\n\nto be updated\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n2022\n\n\n\n\n\n\n\n\n\n\n\nGli orizzonti della città diffusa\n\n\n\nAmsterdam\n\nStefano Boeri\n\n“Italian school” of analysis\n\nArturo Lanzani\n\nanalyses of large scale\n\nmorphological layers\n\noccupational patterns\n\nthe use of photographs\n\nregional scale\n\ntype\n\ntypology\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1992\n\n\n\n\n\n\n\n\n\n\n\nHaarlemmermeer\n\n\n\nAmsterdam\n\nconceptual abstraction\n\ncultural heritage\n\nanalysis as basis for design\n\neconomy\n\nHaarlemmermeer\n\nlandscape\n\nmorphological layers\n\nWouter Reh\n\nSteenbergen\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n2004\n\n\n\n\n\n\n\n\n\n\n\nHet Land in de Stad: de stedebouw van de grote agglomeratie\n\n\n\nAmsterdam\n\ncomparison\n\nthe Hague\n\nlandscape\n\nmorphological layers\n\nL.J.M.Tummers\n\nJ.M.Tummers-Zuurmon\n\nurbanisation\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1997\n\n\n\n\n\n\n\n\n\n\n\nIJburg, Haveneiland en Rieteilanden\n\n\n\nAmsterdam\n\nbuilding and building blocks\n\nFelix Claus\n\ncomparison\n\nconceptual abstraction\n\nIjburg\n\nmorphological layers\n\nmorphology\n\nvisualisation\n\nzooming in\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n2002\n\n\n\n\n\n\n\n\n\n\n\nLa Metropole Imaginaire: un Atlas de Paris\n\n\n\nthe use of 3d\n\nBologna\n\ndevelopment\n\ndocumentation\n\nBruno Fortier\n\n“French school” of analysis\n\nParis\n\nthe use of photographs\n\ntype\n\ntypology\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1989\n\n\n\n\n\n\n\n\n\n\n\nLa Ville Radieuse\n\n\n\nLe Corbusier\n\nla Ville Radieuse\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1930\n\n\n\n\n\n\n\n\n\n\n\nLandschap en Verstedelijking tussen Den Haag en Rotterdam\n\n\n\nDelft\n\nanalysis as basis for design\n\ndevelopment\n\ngeomorphology\n\nthe Hague\n\nlandscape\n\nanalyses of large scale\n\nmorphological layers\n\nFrits Palmboom\n\nperspective drawings\n\nrhetorics\n\nRotterdam\n\nroutes\n\nvisualisation\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1990\n\n\n\n\n\n\n\n\n\n\n\nLearning from Las Vegas\n\n\n\nSteven Izenour\n\nLas Vegas\n\nmorphological layers\n\nLearning from Las Vegas\n\nmorphology\n\nNolli map\n\nnon-spaces\n\nthe use of photographs\n\npopular culture\n\nDenise Scott Brown\n\ntraditional urban features\n\nRobert Venturi\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1972\n\n\n\n\n\n\n\n\n\n\n\nLecture d’une ville: Versailles\n\n\n\nJean Castex\n\ndensity\n\ndevelopment\n\n“French school” of analysis\n\nVersailles\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1980\n\n\n\n\n\n\n\n\n\n\n\nLes Bastides: d’Aquitaine, du Bas-Languedoc et du Béarn\n\n\n\nthe use of 3d\n\nLes Bastides\n\nBologna\n\nbuilding and building blocks\n\ncomparison\n\ncultural heritage\n\ndevelopment\n\nFrancois Divorne\n\ndocumentation\n\n“French school” of analysis\n\n“Italian school” of analysis\n\nsocial issues\n\ntype\n\ntypology\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1985\n\n\n\n\n\n\n\n\n\n\n\nLocatie Zuidpoortgebied: stadsmorfologische atlas\n\n\n\nstadsmorfologische atlas\n\nDelft\n\ndevelopment\n\nRein Geurtsen\n\nhistorical maps\n\nthe use of photographs\n\nthe use of text\n\nZuidpoortgebied\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1988\n\n\n\n\n\n\n\n\n\n\n\nMeasuring Spatial Visibility, Adjacency, Permeability and Degrees of Street Life in Pompeii\n\n\n\nto be updated\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n2011\n\n\n\n\n\n\n\n\n\n\n\nMobility: a room with a view\n\n\n\nLouisa Calabrese\n\nFrancine Houben\n\nLas Vegas\n\nmobility\n\nthe use of photographs\n\nRandstad\n\nvisualisation\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n2003\n\n\n\n\n\n\n\n\n\n\n\nParis des Faubourgs: Formation, Transformation\n\n\n\ndevelopment\n\nfaubourgs\n\n“French school” of analysis\n\nJacques Lucan\n\nmorphology\n\nparcellation\n\nParis\n\npatterns\n\nthe use of photographs\n\nsocial issues\n\nthe use of text\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1996\n\n\n\n\n\n\n\n\n\n\n\nPoint City - South City\n\n\n\ndensity\n\nRem Koolhaas\n\nanalyses of large scale\n\nO.M.A\n\nParis\n\nRotterdam\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1993\n\n\n\n\n\n\n\n\n\n\n\nPorto: the breakthrough\n\n\n\naxes of development\n\nPeter de Bois\n\ndevelopment\n\nmorphology\n\nRon van Oers\n\nperspective drawings\n\nPorto\n\nPortugal\n\nsocial issues\n\nSTOA method\n\nFrits van Voorden\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1996\n\n\n\n\n\n\n\n\n\n\n\nRoma al tempo di Benedetto XIV\n\n\n\nthe use of 3d\n\nconceptual abstraction\n\nLearning from Las Vegas\n\nNolli\n\nGiambattista\n\nNolli map\n\nperspective drawings\n\nRome\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1748\n\n\n\n\n\n\n\n\n\n\n\nRotterdam Verstedelijkt Landschap\n\n\n\nAmsterdam\n\ndevelopment\n\nlandscape\n\nmorphological layers\n\nmorphology\n\nFrits Palmboom\n\npatterns\n\nRotterdam\n\nvisualisation\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1748\n\n\n\n\n\n\n\n\n\n\n\nStadsanalyse: De Nieuwe Kaart van Den Haag / Stadsportretten\n\n\n\nAmsterdam\n\nEls Bet\n\ngeomorphology\n\nthe Hague\n\nrhetorics\n\nMartin Verwoest\n\nvisualisation\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1998\n\n\n\n\n\n\n\n\n\n\n\nStudi per una Operante Storia Urbana di Venezia\n\n\n\ncultural heritage\n\ndevelopment\n\ndocumentation\n\n“Italian school” of analysis\n\nMoudon Vernez\n\nAnne Muratori\n\nSaverio patterns\n\nVenice\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1959\n\n\n\n\n\n\n\n\n\n\n\nThe Concise Townscape\n\n\n\n3d\n\nGordon Cullen\n\nmovement\n\nperspective drawings\n\nphotographs\n\nroutes\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1961\n\n\n\n\n\n\n\n\n\n\n\nThe Image of the City\n\n\n\nKevin Lynch\n\npatterns\n\ntopographical map\n\n\n\nDifferent ways of perceiving the elements in a city\n\n\n\n1960\n\n\n\n\n\n\n\n\n\n\n\nThe View From The Road\n\n\n\nto be updated\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1964\n\n\n\n\n\n\n\n\n\n\n\nUrban Planning and Colonial Settlements in the period of Dutch Expansion\n\n\n\nCape Town\n\ncolonial settlements\n\ncomparison\n\ndevelopment\n\nmorphological layers\n\nmorphology\n\nSimon Stevin\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1997\n\n\n\n\n\n\n\n\n\n\n\nUrban Taxonomy\n\n\n\nMartin Fleischmann\n\nurban taxonomy\n\nKrasen Samardzhiev\n\nmorphometrics\n\nquantitative analysis\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n2025\n\n\n\n\n\n\n\n\n\n\n\nZee van Land\n\n\n\nthe use of 3d\n\nBuilding and building blocks\n\ncomparison\n\nlandscape\n\nmorphological layers\n\npolders\n\nWouter Reh\n\nSteenbergen\n\n\n\nAn analytical mapping method created by Giambattista Nolli\n\n\n\n1999\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Cases",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Index</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Index</span>"
     ]
   },
   {
     "objectID": "catalog/examples/roma_al_tempo_di_benedetto.html",
     "href": "catalog/examples/roma_al_tempo_di_benedetto.html",
-    "title": "10  Roma al tempo di Benedetto XIV",
+    "title": "12  Roma al tempo di Benedetto XIV",
     "section": "",
-    "text": "Figure 10.1: Map of Rome. From Roma al tempo di Benedetto XIV : la pianta di Roma di Giambattista Nolli del 1748 riprodotta da una copia Vaticana. Biblioteca Apostolica Vaticana:\n\n\n\nWhen most city maps were still bird’s eye perspective views (fig. 1), Giambattista Nolli produced a map of 18th century Rome which greatly reduced and systematised the information contained in the map (fig 2). Nolli limited himself to a 2d representation and only distinguished between public space (white) and private space (black). As a result, publicly accessible interior spaces like churches are visible in the map. Through reduction and abstraction, knowledge which otherwise remains hidden under the surface is instantly accessible. This is one of the basic goals of any analysis. Over the last decades, the Nolli map has mesmerised generations of urban designers, theorists and architects. Especially since the publication of “Learning from Las Vegas” (which also used the Nolli technique) dozens of “Nolli maps” have been produced.",
+    "text": "Figure 12.1: Map of Rome. From Roma al tempo di Benedetto XIV : la pianta di Roma di Giambattista Nolli del 1748 riprodotta da una copia Vaticana. Biblioteca Apostolica Vaticana:\n\n\n\nWhen most city maps were still bird’s eye perspective views, Giambattista Nolli produced a map of 18th century Rome which greatly reduced and systematised the information contained in the map (fig 12.1). Nolli limited himself to a 2d representation and only distinguished between public space (white) and private space (black). As a result, publicly accessible interior spaces like churches are visible in the map. Through reduction and abstraction, knowledge which otherwise remains hidden under the surface is instantly accessible. This is one of the basic goals of any analysis. Over the last decades, the Nolli map has mesmerised generations of urban designers, theorists and architects. Especially since the publication of “Learning from Las Vegas” (which also usedthe Nolli technique) dozens of “Nolli maps” have been produced.",
     "crumbs": [
       "Cases",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Roma al tempo di Benedetto XIV</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Roma al tempo di Benedetto XIV</span>"
     ]
   },
   {
     "objectID": "catalog/examples/Stadtebau.html",
     "href": "catalog/examples/Stadtebau.html",
-    "title": "11  Die Städtebau nach seinen künstlerischen Grundsätzen",
+    "title": "13  Die Städtebau nach seinen künstlerischen Grundsätzen",
     "section": "",
-    "text": "Figure 11.1: Forum von Pompeji. From Der Städtebau nach seinen künstlerischen Grundsätzen (4th ed. p. 3), by C. Sitte, 1909. Copyright 1983 by Friedr. Vieweg & Sohn Verlargsgesellschaft mbH, Braunschweig/Wiesbaden, No further use is allowed.\n\n\n\nThrough his clear drawings and his texts, Camillo Sitte tried to establish principles for well designed public spaces. With ancient Greek and Roman cities as basic models, Sitte’s book presents a multitude of examples of good public spaces (fig. 3, 4) and explains in his texts why these are good. He uses this knowledge to also show the reader examples of how things have gone terribly wrong in contemporary cities (fig. 5). Perspectives are included to further illustrate his point. His texts cannot be included here. The main interest is in the precision and delicacy of the drawings.",
+    "text": "Figure 13.1: Forum von Pompeji. From Der Städtebau nach seinen künstlerischen Grundsätzen (4th ed. p. 3), by C. Sitte, 1909. Copyright 1983 by Friedr. Vieweg & Sohn Verlargsgesellschaft mbH, Braunschweig/Wiesbaden, No further use is allowed.\n\n\n\nThrough his clear drawings and his texts, Camillo Sitte tried to establish principles for well designed public spaces. With ancient Greek and Roman cities as basic models (fig. 13.1), Sitte’s book presents a multitude of examples of good public spaces and explains in his texts why these are good. He uses this knowledge to also show the reader examples of how things have gone terribly wrong in contemporary cities. Perspectives are included to further illustrate his point. His texts cannot be included here. The main interest is in the precision and delicacy of the drawings.",
     "crumbs": [
       "Cases",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Die Städtebau nach seinen künstlerischen Grundsätzen</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Die Städtebau nach seinen künstlerischen Grundsätzen</span>"
     ]
   },
   {
     "objectID": "catalog/examples/ville_radieuse.html",
     "href": "catalog/examples/ville_radieuse.html",
-    "title": "12  La Ville Radieuse",
+    "title": "14  La Ville Radieuse",
     "section": "",
-    "text": "12.1 Links\nThis drawing by Le Corbusier is one of the examples where an analysis has become an icon. Good analyses have the power to convey knowledge at a glance. Some analyses do even more than that and become powerful design statements in themselves.\nThis drawing is a figure ground analysis (cf. project 10) and comparative analysis in one. Several city structures are drawn to the same scale. Please note that Le Corbusier also included information about the orientation of the cities and how he chose to give his own theoretical plan a different one.\nFoundation Le Corbusier",
+    "text": "14.1 Links\nThis drawing by Le Corbusier is one of the examples where an analysis has become an icon. Good analyses have the power to convey knowledge at a glance. Some analyses do even more than that and become powerful design statements in themselves.\nThis drawing is a figure ground analysis (cf. project 10) and comparative analysis in one. Several city structures are drawn to the same scale. Please note that Le Corbusier also included information about the orientation of the cities and how he chose to give his own theoretical plan a different one.\nFoundation Le Corbusier",
     "crumbs": [
       "Cases",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>La Ville Radieuse</span>"
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>La Ville Radieuse</span>"
     ]
   },
   {
     "objectID": "catalog/examples/studi_per_una_operante.html",
     "href": "catalog/examples/studi_per_una_operante.html",
-    "title": "13  Studi per una Operante Storia Urbana di Venezia",
+    "title": "15  Studi per una Operante Storia Urbana di Venezia",
     "section": "",
     "text": "After the second world war, even a monumental city like Venice was in danger of large-scale modernisations that would have destroyed the old urban tissue. Saverio Muratori was one of the first architects to (unpopular at that time) raise his voice against this threat. He did this through a monumental documentation of the city in which he illustrated how Venice had grown through the centuries on the basis of very stable urban patterns. Muratori implied with his book that an understanding and appreciation of these patterns (and their vulnerability) was a basic requirement for architects and urban designers who wanted to design for the city. For Muratori, the basic elements of the city are buildings and configurations of buildings. This means that to understand these, one has to make a detailed survey of many individual buildings and areas in search for what they have in common. Like this, one can describe the basic building “types” which are used in Venice. An understanding of these types could help designers to avoid plans which are alien to the city. This book was the first of its kind and had an enormous influence in Italy, but also abroad. Muratori helped ground an Italian “school” in urban analysis. For more information about this, see the text by Anne Vernez Moudon elsewhere in this volume.",
     "crumbs": [
       "Cases",
-      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Studi per una Operante Storia Urbana di Venezia</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Studi per una Operante Storia Urbana di Venezia</span>"
     ]
   },
   {
     "objectID": "catalog/examples/image_of_the_city.html",
     "href": "catalog/examples/image_of_the_city.html",
-    "title": "14  The Image of the City",
+    "title": "16  The Image of the City",
     "section": "",
     "text": "A basic point of urban analysis is that the topographical map is not the only one you can draw to represent a city. Kevin Lynch became famous by drawing maps that were reflective of people’s image of a city; their mental maps. Lynch developed drawing techniques to visualise relationships, borders, important places etc. that are perceivable to city dwellers, but are often invisible; at least on a map. Fig. 1 shows the basic principle that people moving from A to B need visual stimuli to make sense of their environment. Fig. 2 shows some of the basic urban configurations that Lynch drew for his book which people use in their image of the city. In Lynch’s view, it is important to be aware of these mental considerations. Knowing how people find their way in a city and what gives cities or areas their specific character can be a valuable tool for design. This can be done on all scale levels, as is shown in figs. 12 - 17.\nYou can find the collection of original drawings here.",
     "crumbs": [
       "Cases",
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>The Image of the City</span>"
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>The Image of the City</span>"
     ]
   },
   {
     "objectID": "catalog/examples/concise_townscape.html",
     "href": "catalog/examples/concise_townscape.html",
-    "title": "15  The Concise Townscape",
+    "title": "17  The Concise Townscape",
     "section": "",
     "text": "These drawings make the reader aware of the many different “scenes” in a city. These scenes can be drawn, named and understood. This is valuable information for urban designers since it represents some of the basic elements in the city and how these are connected through the movement of people. For Cullen, the city has qualities related to space and movement that cannot be represented in 2d. This is not unlike the idea behind the perspective drawings in for example “Elements d’Analyse Urbaine” (project 11) or “Die Städtebau nach seinen Künstlerischen Grundsätzen” (project 2). Cullen proposed no method for design; he primarily wanted to point out the beauty and importance of these spaces in the city. Please note that photographs would not have had the same effect. By drawing, Cullen had to be precise as to what was relevant and what not. His drawings are in fact analyses.\n\nAlso see: Project 11, Elements d’Analyse Urbaine\nProject 2, Die Städtebau nach seinen Künstlerischen Grundsätzen",
     "crumbs": [
       "Cases",
-      "<span class='chapter-number'>15</span>  <span class='chapter-title'>The Concise Townscape</span>"
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>The Concise Townscape</span>"
     ]
   },
   {
     "objectID": "catalog/examples/las_vegas.html",
     "href": "catalog/examples/las_vegas.html",
-    "title": "16  Learning from Las Vegas",
+    "title": "18  Learning from Las Vegas",
     "section": "",
     "text": "Before 1972, Las Vegas was regarded by many as an almost featureless and meaningless urban environment. This changed with the publication of this book. With the advent of the car- and media based culture in the nineteen sixties, a place like Las Vegas could suddenly acquire a completely different meaning; at least for architects and urban designers. This analysis suddenly made visible to the profession what had long been hidden under the surface: non-spaces and popular culture are powerful material for designers. A similar wish to find something unique in the everyday environment seems to drive many contemporary designers who try to represent phenomena like mobility, urban sprawl or the essence of the Randstad.\n\nA traditional analysis of Las Vegas would have made little sense since the city has few traditional urban features. That is; fig. 6 shows that in fact Las Vegas is built up from the same elements as any city, only in a different mix. This is also made clear by their re-use of the Nolli map. A host of other new techniques is introduced, for instance in their visualisation of the importance of signs in Las Vegas and the use of photography.",
     "crumbs": [
       "Cases",
-      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Learning from Las Vegas</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Learning from Las Vegas</span>"
     ]
   },
   {
     "objectID": "catalog/examples/bologna.html",
     "href": "catalog/examples/bologna.html",
-    "title": "17  Bologna: politica e metodologia del restauro nei centri storici",
+    "title": "19  Bologna: politica e metodologia del restauro nei centri storici",
     "section": "",
     "text": "This is a good example of an analysis in the Italian tradition. Typically, these are based on meticulous surveys of the city. For Cervelatti, the most relevant source of knowledge about the city would probably be the building block, its characteristics and especially building typology. Conceptual abstractions like in many contemporary analyses (see for example projects 26, 29, 32 or 33) are obviously of a totally different nature. This analysis of Bologna begins with the city as a whole, but the information contained in the drawings is derived from a lower scale level. The drawings are not supposed to uncover a hidden truth about the city; they merely document its parts. In analyses like these, the factual information derived from a survey is as valuable and usable for design and policy as the conceptual force of many recent analyses.",
     "crumbs": [
       "Cases",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Bologna: politica e metodologia del restauro nei centri storici</span>"
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Bologna: politica e metodologia del restauro nei centri storici</span>"
     ]
   },
   {
     "objectID": "catalog/examples/comparisons_of_form_and_scale.html",
     "href": "catalog/examples/comparisons_of_form_and_scale.html",
-    "title": "18  Cities, comparisons of form and scale",
+    "title": "20  Cities, comparisons of form and scale",
     "section": "",
     "text": "This study is a comparison of different cities. Its value lies in the immediate accessibility of the information; “ah, so Amsterdam is as big as this, and New York is as big as that”. One glance and you know.\n\nNotice that there is strict adherence to several basic principles: a unity in medium (in this case clay tablets), a unity and legibility of scale (through the gridlines) and a unity of information (each city is represented through the same elements). If any of these principles had been neglected, the information would have been lost. The most critical point in analyses like these therefore is the choice of what to show and what to leave out.\n\nFurther examples of Wurman’s clay tablets can be found here.",
     "crumbs": [
       "Cases",
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Cities, comparisons of form and scale</span>"
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Cities, comparisons of form and scale</span>"
     ]
   },
   {
     "objectID": "catalog/examples/collage_city.html",
     "href": "catalog/examples/collage_city.html",
-    "title": "19  Collage City",
+    "title": "21  Collage City",
     "section": "",
     "text": "Essential here is the so called “figure-ground” analysis (fig. 2-3); two carefully drawn illustrations where white represents public space and black represents built mass. The drawings themselves are not revolutionary (compare for instance fig. 2 to the Nolli-map), yet the opposition between the “traditional” city vs. the “modern” city (as already used in design by Le Corbusier, fig. 1) is made very clear and has made this study very influential.\n\nin Rowe’s and Koetter’s view, neither pure adherence to modern urbanism, nor a fall back on the traditional city can be the answer to the contemporary urban design task. They seek the answer in what they call the collage city; a mix or “bricolage” where modern, freestanding typologies can exist side by side with a less specific and more traditional infill. Ancient Rome is presented as an illustration of the principle. Further examples of what can be done with the figure- ground method are shown in fig. 7 and 8.",
     "crumbs": [
       "Cases",
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Collage City</span>"
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Collage City</span>"
     ]
   },
   {
     "objectID": "catalog/examples/elements_urbaine.html",
     "href": "catalog/examples/elements_urbaine.html",
-    "title": "20  Elements d’analyse urbaine",
+    "title": "22  Elements d’analyse urbaine",
     "section": "",
     "text": "Similar to this book, Elements d’analyse urbaine gives general principles and drawing examples for urban analysis. Their modification of the Nolli map and functional analysis below are good examples of simple but effective reduction drawings. Note also the drawings to the right which illustrate different kinds of urban growth. As a representative of the French school of urban analysis, this overview pays much attention to typological research, for example about housing typology in connection to city blocks (p.118). Interesting are the perspective drawings showing basic types of urban scenes. At first glance, the drawings and techniques might look outdated, but many of the examples you see in this book still use the same principles.",
     "crumbs": [
       "Cases",
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Elements d’analyse urbaine</span>"
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Elements d’analyse urbaine</span>"
     ]
   },
   {
     "objectID": "catalog/examples/versailles.html",
     "href": "catalog/examples/versailles.html",
-    "title": "21  Lecture d’une ville: Versailles",
+    "title": "23  Lecture d’une ville: Versailles",
     "section": "",
     "text": "This is another example of a French School urban analysis. That means that apart from a number of introductory drawings on a larger scale, the emphasis is on building- and block typology. In addition to the palace, a large number of houses or “pavillons” were built in Versailles for the nobility and government officials. These were all based on the same typology, resulting in a very regular and formal urban environment (fig. 4). Although there were many variants of these houses and many have been extended or modified, the basic module is still recognisable. The book shows this basic module and some of its variants and characteristic details. Figs. 7-10 show how streets, squares and blocks were constructed from this. This urban layout has also survived, even though the tissue has become denser (fig.8). Especially fig. 11 is interesting because it clearly shows that a street is more than just the “white” in the map.",
     "crumbs": [
       "Cases",
-      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Lecture d’une ville: Versailles</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Lecture d’une ville: Versailles</span>"
     ]
   },
   {
     "objectID": "catalog/examples/stedelijk_bouwwerk.html",
     "href": "catalog/examples/stedelijk_bouwwerk.html",
-    "title": "22  Amsterdam als stedelijk bouwwerk",
+    "title": "24  Amsterdam als stedelijk bouwwerk",
     "section": "",
     "text": "Amsterdam als stedelijk bouwwerk was the first of its kind in the Netherlands. The study systematically analysed different parts of Amsterdam in a great number of drawings and an accompanying text. The emphasis is on the relationship between reality and an idealised or abstracted morphology. The writers look for patterns in the city structure in an attempt to find out what Amsterdam is.\n\nDifferent areas are analysed with different drawing techniques. For the canal- zone, the emphasis is on the radial pattern formed by the canals and the streets. Its structure can be compared with ideal city plans such as those by Speckle and Stevin. Louwe and Van der Hoeven take up the canal zone and twist, cut and deform it to show its ordering principles. In fig. 3, they investigate whether we should read Amsterdam as an ideal military settlement like Speckle’s design. But the regularity in this plan is clearly absent in Amsterdam. Fig. 4 on the other hand shows the likeness between 17th century Amsterdam and the Stevin plan when the canal zone is “unrolled”.\n\nPlease note how in fig. 10, the actual state of the area around the Noorderkerk is constructed from an abstract pattern: as if the “designers” of the area had taken this pattern as a starting point. For the analysis of the Westelijke Tuinsteden, the drawings focus on the built mass, rather than on the public space. This limits the effect of the drawings somewhat since in the modern city, the space around buildings is often as relevant as the buildings themselves.",
     "crumbs": [
       "Cases",
-      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Amsterdam als stedelijk bouwwerk</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Amsterdam als stedelijk bouwwerk</span>"
     ]
   },
   {
     "objectID": "catalog/examples/les_bastides.html",
     "href": "catalog/examples/les_bastides.html",
-    "title": "23  Les Bastides: d’Aquitaine, du Bas-Languedoc et du Béarn",
+    "title": "25  Les Bastides: d’Aquitaine, du Bas-Languedoc et du Béarn",
     "section": "",
     "text": "Like in earlier examples of the French and Italian schools of urban analysis, this book on the French bastides- towns draws heavily on typological research. To isolate the typical, a very large number of towns has been studied on different scale levels. The analysis focuses on the typology of the towns themselves (fig. 4), the relationship of the internal elements such as squares, streets and churches (fig. 5 - 8), typology of the building blocks (fig. 9, 10), the typology of the houses and their relation to other elements (fig. 9). Fig. 3 shows an idealized layout and how a real Bastide is related to that. As with the Italian analysis of Bologna, the essence of the city is represented in this careful description of the typical. The study implies that an intimate knowledge of this is necessary for architects and urbanists to base their designs on, requiring lengthy and extremely thorough research.",
     "crumbs": [
       "Cases",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Les Bastides: d’Aquitaine, du Bas-Languedoc et du Béarn</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Les Bastides: d’Aquitaine, du Bas-Languedoc et du Béarn</span>"
     ]
   },
   {
     "objectID": "catalog/examples/built_for_change.html",
     "href": "catalog/examples/built_for_change.html",
-    "title": "24  Built for Change: neighborhood architecture in San Francisco",
+    "title": "26  Built for Change: neighborhood architecture in San Francisco",
     "section": "",
     "text": "This study describes the area around Alamo Square in San Francisco. This part of the city is unique for its beautiful domestic architecture. With this study, Moudon wanted to raise questions about the ability of the urban fabric to absorb contemporary requirements: how to preserve an area like this in such a way that the beauty of it remains, while allowing to adapt itself to modern life. Like in Italian and French studies, this means for Moudon that one has to understand the development of the area, but also its most typical features. To learn about this, the urban analyst has to do much work in documenting the area through the ages and on different scale levels. We see here on pages 140-141 some illustrations of the development around Alamo Square in several thematic maps. Note how one can notice shifts in use and layout even with only a quick scan of the drawings.  \nPage 142 shows how the building blocks are built up from so-called vara-modules and the typical parcellation solutions that result from that. Page 143 extends the study to the scale level of the typical Alamo Square type house and its variations.",
     "crumbs": [
       "Cases",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Built for Change: neighborhood architecture in San Francisco</span>"
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Built for Change: neighborhood architecture in San Francisco</span>"
     ]
   },
   {
     "objectID": "catalog/examples/verstedelijkt_landschap.html",
     "href": "catalog/examples/verstedelijkt_landschap.html",
-    "title": "25  Rotterdam Verstedelijkt Landschap",
+    "title": "27  Rotterdam Verstedelijkt Landschap",
     "section": "",
     "text": "The name of this book is a reference to “Amsterdam als Stedelijk Bouwwerk” (project 13), but there is a big difference in meaning: where Van der Hoeven and Louwe speak of Amsterdam as an “urban construction” (a man-made object, created ex nihilo, autonomous in space and time), Palmboom speaks of Rotterdam as an urbanised landscape: as something that evolved over time and remains forever linked to the landscape on which it is grounded. In the case of Rotterdam, this landscape is much more dynamic than in Amsterdam. Where Amsterdam developed along a small provincial river and an inland sea, Rotterdam is situated at the mouth of a big river and was always subjected to the forces of the open water (figs. 2-5). Naturally, the resulting complexity of the landscape has always shaped the layout of the city - from its street pattern to the layout of its green spaces. Together with later additions which do not respect the original landscape (like the highway system, fig. 6), this results in a city of separated “islands” (fig. 7). These islands all have their own internal logic and are sometimes poorly connected on a higher scale level (figs. 8). Also, the harbour and the reconstruction of the inner city after the second world war (figs. 9-10) increase the complexity. Palmboom pleads for an understanding of this complexity and the inevitable limits this sets for future developments: urban designers should not try to fight the fragmented nature of the city but cooperate with it and attempt to enhance existing qualities. Fig. 11 shows the main morphological layers which Palmboom distinguishes (landscape, city streets, and highways). Fig. 12 shows the structural diversity of the Rotterdam area in comparison to that of Amsterdam.\n\nAlso see: Habitat Expanding Architecture\nProject 13, Amsterdam als Stedelijk Bouwwerk",
     "crumbs": [
       "Cases",
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Rotterdam Verstedelijkt Landschap</span>"
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Rotterdam Verstedelijkt Landschap</span>"
     ]
   },
   {
     "objectID": "catalog/examples/locatie_zuidpoortgebied.html",
     "href": "catalog/examples/locatie_zuidpoortgebied.html",
-    "title": "26  Locatie Zuidpoortgebied: stadsmorfologische atlas",
+    "title": "28  Locatie Zuidpoortgebied: stadsmorfologische atlas",
     "section": "",
     "text": "Rein Geurtsen is an important figure for Dutch urban analysis: as a teach and as an urban designer. This study was made for the munipality of Delft, who wanted to organise a design competition for a run-down area of the old inner city: the Zuidpoortgebied. As an introduction to the design teams and to establish a proper understanding of the area with all the parties, Geurtsen prepared this “urban morphological atlas”. It offers what you might call an illustrated history of the area for professionals: historical maps, analytical drawings, texts and photographs are combined to give insight into the relationship between city form and historical development. In the book, Geurtsen looks at two scale levels: the city as a whole and the Zuidpoort in detail. Here we present a selection from the second scale level.",
     "crumbs": [
       "Cases",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Locatie Zuidpoortgebied: stadsmorfologische atlas</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Locatie Zuidpoortgebied: stadsmorfologische atlas</span>"
     ]
   },
   {
     "objectID": "catalog/examples/la_metropole_imaginaire.html",
     "href": "catalog/examples/la_metropole_imaginaire.html",
-    "title": "27  La Metropole Imaginaire: un Atlas de Paris",
+    "title": "29  La Metropole Imaginaire: un Atlas de Paris",
     "section": "",
     "text": "Maps can be used to draw the city as it is, as it was and how it could have been. This book shows these stages for some areas in Paris. The presentation is simple but systematic and the result of much hard documentary work. Every chapter is preceded by an introductory text (not included here), two photographs to convey the atmosphere, some small drawings which show the development of the area, one or more maps showing part of the area in great detail and a beautiful exploded view. All the drawings are of high quality and follow the basic rules for analysis; the drawings have the same scale, the same orientation, the same kind of information, the same detail, the same frame etc. Unfortunately, the same rigour is not applied between the series, making it confusing for the reader to relate the one to the other. \nAlthough this way of analysing the city is comparable to say “Bologna”, the result is more poetic and the value for designers lies more in a comprehension of atmosphere and growth, than in concrete typological tools.",
     "crumbs": [
       "Cases",
-      "<span class='chapter-number'>27</span>  <span class='chapter-title'>La Metropole Imaginaire: un Atlas de Paris</span>"
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>La Metropole Imaginaire: un Atlas de Paris</span>"
     ]
   },
   {
     "objectID": "catalog/examples/landschap_en_verstedelijking.html",
     "href": "catalog/examples/landschap_en_verstedelijking.html",
-    "title": "28  Landschap en Verstedelijking tussen Den Haag en Rotterdam",
+    "title": "30  Landschap en Verstedelijking tussen Den Haag en Rotterdam",
     "section": "",
     "text": "This is a good example of how an analysis can be used as a basis for urban design. In this study, the landscape between Den Haag and Rotterdam is looked at from all sides; from its geomorphology to the traffic routes. Systematically presented theme maps are alternated with hand-drawn illustrations, summarising the argument. The reader is taken by the hand along all the steps that the designer took to understand the area. The last drawing shows the design proposal that was made possible with the analysis. Through such a systematic and yet intuitive process, the designer can indeed gain enough information for new design proposals. All decisions seem to derive from the analysis. On the one hand, this makes it easy for the reader or client to follow the designer’s reasoning, on the other hand, just because of its persuasive character, an analysis might often be used to justify a design which in fact has a wholly different agenda.",
     "crumbs": [
       "Cases",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Landschap en Verstedelijking tussen Den Haag en Rotterdam</span>"
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Landschap en Verstedelijking tussen Den Haag en Rotterdam</span>"
     ]
   },
   {
     "objectID": "catalog/examples/gli_orizzonti.html",
     "href": "catalog/examples/gli_orizzonti.html",
-    "title": "29  Gli orizzonti della città diffusa",
+    "title": "31  Gli orizzonti della città diffusa",
     "section": "",
     "text": "This analysis of different parts of Italy is based on a very close reading of regional maps. The time consuming preparation of the drawings is something this study has in common with earlier Italian analyses, although building typology is not considered here. The study draws attention to the nature of occupational patterns outside the cities and recent changes in this field. Please note how aerial photographs are used as a basis for some of the drawings. The quality of the drawings lies not only in the delicacy with which they were made but also in the careful selection of what is shown. Within the different series, there is strict adherence to basic drawing rules; unity of scale, orientation, framing, pen thickness etc. Mentioning this might seem banal, but clarity in the visual presentation of analyses is often very hard to obtain.",
     "crumbs": [
       "Cases",
-      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Gli orizzonti della città diffusa</span>"
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Gli orizzonti della città diffusa</span>"
     ]
   },
   {
     "objectID": "catalog/examples/point_city.html",
     "href": "catalog/examples/point_city.html",
-    "title": "30  Point City - South City",
+    "title": "32  Point City - South City",
     "section": "",
     "text": "O.M.A. and Rem Koolhaas have produced many influential urban designs accompanied by seductive analyses. Examples are their design for the Paris newtown Melun Senart, the proposal for the area around the Grande Arche, also in Paris, their design for Yokohama (included here) and many others. The present study was made for the Air Alexander manifestation which asked for design proposals for a Rotterdam suburb. The design team objected to this small scale focus and drew the brief into a totally different realm, touching the issue of urban density in the Netherlands in general. Basically, the study takes the then existing population of the Netherlands as a starting point and redistributes this according to several density models. This redistribution immediately puts claims of the Netherlands being “full” in a different perspective. While it is hard to call this a true morphological analysis, the study nevertheless uses familiar techniques and does mean to speak about spatial effects, albeit on an unfamiliar scale.",
     "crumbs": [
       "Cases",
-      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Point City - South City</span>"
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Point City - South City</span>"
     ]
   },
   {
     "objectID": "catalog/examples/paris_des_faubourgs.html",
     "href": "catalog/examples/paris_des_faubourgs.html",
-    "title": "31  Paris des Faubourgs: Formation, Transformation",
+    "title": "33  Paris des Faubourgs: Formation, Transformation",
     "section": "",
     "text": "Paris des Faubourgs is a comprehensive study investigating the development of the areas which have grown around the old inner city of Paris: the Faubourgs. It includes maps, diagrams, photographs and texts which illustrate the social and urban relevance of these areas. This wide scope is characteristic for analyses of the French school. Our main interest is in the drawings. Figs. 2 - 4 show a morphological analysis of the area “cité des fleurs”; first as a basic section through a block, then as an assemblage of its various parts. The beauty of this analysis is that while one could look forever at the last drawing without learning much, the whole series clarifies the city-structure in a matter of seconds. The same goes for the transformation of the “plaine Monceau” in fig. 5. These drawings show how land ownership and circulation patterns have changed over time. Note that this is a very different series than in fig. 6 where the buildings in the area of Montmartre are included. All these analyses are excellent examples of how carefully drawn images can clarify complex urban patterns in a very short time.",
     "crumbs": [
       "Cases",
-      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Paris des Faubourgs: Formation, Transformation</span>"
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Paris des Faubourgs: Formation, Transformation</span>"
     ]
   },
   {
     "objectID": "catalog/examples/porto_the_breakthrough.html",
     "href": "catalog/examples/porto_the_breakthrough.html",
-    "title": "32  Porto: the breakthrough",
+    "title": "34  Porto: the breakthrough",
     "section": "",
     "text": "The result of a student workshop, this study and design for an inner city area of Porto is based on principles that Peter de Bois has laid out in his STOA method. STOA is a design method based on oppositional concepts, of which the mental and the material are the most important. De Bois states that urban development and design cannot be seen separate from social and psychological considerations. These have direct influence on urban form. A claim STOA makes (in this case for Portugal and Porto, fig. 2) is that the main axes of spatial development alternate over time or between different scale levels. \nFig. 3 highlights several morphological characteristics of the old inner city of Porto that put the study area (indicated in fig. 3, ed.) in perspective. Figs. 4 and 5 show the design proposal and how this is related to the morphology of the area.",
     "crumbs": [
       "Cases",
-      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Porto: the breakthrough</span>"
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Porto: the breakthrough</span>"
     ]
   },
   {
     "objectID": "catalog/examples/colonial_settlements.html",
     "href": "catalog/examples/colonial_settlements.html",
-    "title": "33  Urban Planning and Colonial Settlements in the period of Dutch Expansion",
+    "title": "35  Urban Planning and Colonial Settlements in the period of Dutch Expansion",
     "section": "",
     "text": "In the nineteen-nineties, the late Professor Van Voorden was involved in the development of a masters course in the redesign and conservation of historical inner cities. In this course, Van Voorden wanted to view historical buildings and cities in a broad cosio-economic perspective, requiring analyses in which the development of the morphology of cities is connected to these broader issues. The drawings shown here are taken from a PHd. Research by Ron van Oers into the development of 17th century Dutch colonial settlements. Of course, these drawings were originally illustrations to a text. Here, we show them outside of their proper context, but in themselves, the drawings are beautiful examples of how an analysis can quickly produce insight into complex material. Fig. 4, for instance, shows six colonial settlements and how an abstract scheme like Stevin’s (see also project 13), was modified in practice to suit local circumstances. Figs 5-8 show the morphological structure of Cape Town in more detail.",
     "crumbs": [
       "Cases",
-      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Urban Planning and Colonial Settlements in the period of Dutch Expansion</span>"
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>Urban Planning and Colonial Settlements in the period of Dutch Expansion</span>"
     ]
   },
   {
     "objectID": "catalog/examples/het_land_in_de_stad.html",
     "href": "catalog/examples/het_land_in_de_stad.html",
-    "title": "34  Het Land in de Stad: de stedebouw van de grote agglomeratie",
+    "title": "36  Het Land in de Stad: de stedebouw van de grote agglomeratie",
     "section": "",
     "text": "One of the effects of urbanisation is the reduction of open land or the inclusion of pockets of open land in larger urban regions. Large urban regions each have their own typical city-land relationships (fig. 1). According the authors of “Het Land in de Stad” (the land in the city), planners and urbanists should use this fragmentation to their advantage to lessen the contrast and the distance between the city and the open. Green spaces have always attracted citizens and public institutions: here also, different cities each in their own way (fig.2). Surprisingly, the Dutch city of The Hague seems to have much more to offer in this respect than Amsterdam or Rotterdam. Fig.3 shows an interesting example of how to use morphological layers (see the chapter on analytical techniques elsewhere in this volume) and compare cities at the same time. Many times, morphological layers are drawn for only one case. Here, a small but relevant selection of layers enabled a clear comparison between several Dutch towns and how green spaces have been incorporated within the city proper.",
     "crumbs": [
       "Cases",
-      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Het Land in de Stad: de stedebouw van de grote agglomeratie</span>"
+      "<span class='chapter-number'>36</span>  <span class='chapter-title'>Het Land in de Stad: de stedebouw van de grote agglomeratie</span>"
     ]
   },
   {
     "objectID": "catalog/examples/stadsportretten.html",
     "href": "catalog/examples/stadsportretten.html",
-    "title": "35  Stadsanalyse: De Nieuwe Kaart van Den Haag / Stadsportretten",
+    "title": "37  Stadsanalyse: De Nieuwe Kaart van Den Haag / Stadsportretten",
     "section": "",
     "text": "Many times, an urban analysis is not meant to be read by a professional audience but by relatively inexperienced people. These might nonetheless have a great influence on the future of your plan: clients, politicians etc. In such cases, it is very important to make your message comprehensible at all costs. This means that you have to be very careful in the rhetoric of your story, that you select very carefully what you show and that you make your illustrations in such a way that the attention is not directed at the map, but at the message. The present analysis produced by the Urban Development section of the city of The Hague is a very clear example of this. Several short chapters in this study are illustrated with images that leave no room for doubt. The analysis starts with fig.1 which shows that The Hague has a very different relation to the national highway system than the other big cities in the west of Holland. This relation is as yet very weak, but the construction of a new tangent (fig. 3) will make new cross connections possible in the city (fig.4). The Hague has always had much better developed east-west connections than north-south. The reason for this is partly to be found in the geomorphology of the area (fig.6). But this illustration also shows more ways to conceptualise the city. A single image to summarise your argument can be a very important help in getting your ideas across (see for instance also projects 33-34). Here the authors have chosen for the image of a “bromvlieg” (blowfly - fig.8) that can be “healed” with a second wing in the form of the new road. \nThe whole argument leads to the presentation of “The new map of The Hague”(fig.9). \nA document that would have been much more difficult to understand without the analysis.",
     "crumbs": [
       "Cases",
-      "<span class='chapter-number'>35</span>  <span class='chapter-title'>Stadsanalyse: De Nieuwe Kaart van Den Haag / Stadsportretten</span>"
+      "<span class='chapter-number'>37</span>  <span class='chapter-title'>Stadsanalyse: De Nieuwe Kaart van Den Haag / Stadsportretten</span>"
     ]
   },
   {
     "objectID": "catalog/examples/zee_van_land.html",
     "href": "catalog/examples/zee_van_land.html",
-    "title": "36  Zee van Land",
+    "title": "38  Zee van Land",
     "section": "",
     "text": "This is a study of polders or “droogmakerijen” in the Netherlands. A large part of the country lies below sea level. In earlier times, this delta area was studded with lakes and swamps which were reclaimed from the seventeenth century onwards. The number and sizes of these polders are shown in fig 4. The internal structure of the polders was usually a grid; the size of which reflected contemporary requirements for agriculture and water management.\n\nFig. 5 shows a number of polders and the basic units which are part of their grid. The Beemster is used as an example to illustrate this. The grid of the Beemster has several layers. This is illustrated in figs. 6 and 7. The authors claim that even the internal structure of a single farm is connected directly to the higher grid levels. The overall layout of the polder is visualised in fig. 10. These simple, yet beautiful drawings immediately convey an image of what kind of place the Beemster is. Unfortunately, the measure with which the height was exaggerated is not indicated. One might think that the Beemster is actually that small. The drawings in this study are extremely clear and instructive. They have the power to give insight into a complex phenomenon in a short time. Exactly what an analysis should do.",
     "crumbs": [
       "Cases",
-      "<span class='chapter-number'>36</span>  <span class='chapter-title'>Zee van Land</span>"
+      "<span class='chapter-number'>38</span>  <span class='chapter-title'>Zee van Land</span>"
     ]
   },
   {
     "objectID": "catalog/examples/bindels_gietema.html",
     "href": "catalog/examples/bindels_gietema.html",
-    "title": "37  4",
+    "title": "39  4",
     "section": "",
     "text": "“Grasstad” is a design for the Westelijke Tuinsteden in Amsterdam. The plan reinterprets the typical modernist features of this post war housing area (fig. 1). The beautiful series of drawings in fig. 3 is not an analysis of the present situation, but an analysis of the different structural layers of the new plan which follows overleaf. Compare this way of representing this area with the drawings shown in “Amsterdam als Stedelijk Bouwwerk”. Louwe and Van der Hoeven also tried to conceptualise the area but the concreteness of their analyses would have prevented a design proposal like this. Here, the existing typology is abandoned but the underlying principles are preserved. This abstract way of thinking is also far removed from the French and Italian analyses.\n\nIn “Weltevreden” the authors present an urban design on a very large scale. This creates the need for new ways of visualising the plan, but also new planning tools and design methods. Some of which can be seen here.",
     "crumbs": [
       "Cases",
-      "<span class='chapter-number'>37</span>  <span class='chapter-title'>4</span>"
+      "<span class='chapter-number'>39</span>  <span class='chapter-title'>4</span>"
     ]
   },
   {
     "objectID": "catalog/examples/costa_iberica.html",
     "href": "catalog/examples/costa_iberica.html",
-    "title": "38  Costa Iberica: upbeat to the leisure city",
+    "title": "40  Costa Iberica: upbeat to the leisure city",
     "section": "",
     "text": "Many of MVRDV’s analyses are based on reinterpretations of density or related statistical data. This is an approach not unlike Rem Koolhaas’ in his analysis of Point City and South City (project 21). The present analysis looks at the impact of tourism on the landscape and economy of Spain and how one can take this as a departure for design. The main interest here is in the use of computer graphics which make a complicated and obscure starting point visible and understandable for everybody. The renderings almost take up a life of their own. The shape of the analysis could be confused with the actual landscape. Depending on your standpoint, this can result in nonsense or an inspiring allusion to possible spatial conditions. Costa Iberica in fact contains design proposals based on this material. These are not included here.\n\nAlso see: Project 21Point city-South city",
     "crumbs": [
       "Cases",
-      "<span class='chapter-number'>38</span>  <span class='chapter-title'>Costa Iberica: upbeat to the leisure city</span>"
+      "<span class='chapter-number'>40</span>  <span class='chapter-title'>Costa Iberica: upbeat to the leisure city</span>"
     ]
   },
   {
     "objectID": "catalog/examples/een_nieuwe_oude_jas.html",
     "href": "catalog/examples/een_nieuwe_oude_jas.html",
-    "title": "39  Een nieuwe oude jas: de heruitvinding van stedelijke weefsels en woningtypes",
+    "title": "41  Een nieuwe oude jas: de heruitvinding van stedelijke weefsels en woningtypes",
     "section": "",
-    "text": "39.1 Links\nBuilding blocks are often the basic material with which cities are built. Block sizes are inseparably connected to building typology. Width and height of a block limit the choice of buildings that will fit in and therefore influence the profitability of a plan. Block size and building typology also shape the city streets and interior spaces and consequently have a strong influence on the desired atmosphere of an area. Choices in block size and building typology are therefore basic material for urban designers. In this analysis a number of old and new blocks in Amsterdam are compared. It focuses on this relation between buildings and city form. The method can be compared to earlier French and Italian analyses (see projects 4, 8, 11, 12, 14), although there, the study would typically look into the buildings in more detail.\nlearning from amsterdam",
+    "text": "41.1 Links\nBuilding blocks are often the basic material with which cities are built. Block sizes are inseparably connected to building typology. Width and height of a block limit the choice of buildings that will fit in and therefore influence the profitability of a plan. Block size and building typology also shape the city streets and interior spaces and consequently have a strong influence on the desired atmosphere of an area. Choices in block size and building typology are therefore basic material for urban designers. In this analysis a number of old and new blocks in Amsterdam are compared. It focuses on this relation between buildings and city form. The method can be compared to earlier French and Italian analyses (see projects 4, 8, 11, 12, 14), although there, the study would typically look into the buildings in more detail.\nlearning from amsterdam",
     "crumbs": [
       "Cases",
-      "<span class='chapter-number'>39</span>  <span class='chapter-title'>Een nieuwe oude jas: de heruitvinding van stedelijke weefsels en woningtypes</span>"
+      "<span class='chapter-number'>41</span>  <span class='chapter-title'>Een nieuwe oude jas: de heruitvinding van stedelijke weefsels en woningtypes</span>"
     ]
   },
   {
     "objectID": "catalog/examples/after_sprawl.html",
     "href": "catalog/examples/after_sprawl.html",
-    "title": "40  After Sprawl: onderzoek naar de hedendaagse stad",
+    "title": "42  After Sprawl: onderzoek naar de hedendaagse stad",
     "section": "",
     "text": "Different urban landscape in Europe are systematically presented in a basic analysis, showing some of the main morphological layers. Looking at fig. 1, several characteristic configurations seem to emerge from the map of Europe. Starting from an aerial photograph, examples of these are isolated to show the built mass, infrastructure, negative pace, nature, agriculture and water (fig. 4-12). The drawings are not accompanied by text and the conclusions to the analysis are not presented in drawing.\n\nThe analysis is straightforward in its techniques but attracts attention because of the detailed drawings and its unusual scope. The main argument of the book focuses on the fact that many of of the most densely populated European urban areas are not traditional cities but a sprawl of smaller centres.\n\nIn the book, the analyses are followed by several design proposals for the Belgian “Vlaamse ruit”, the area between Antwerp, Gent and Brussels.",
     "crumbs": [
       "Cases",
-      "<span class='chapter-number'>40</span>  <span class='chapter-title'>After Sprawl: onderzoek naar de hedendaagse stad</span>"
+      "<span class='chapter-number'>42</span>  <span class='chapter-title'>After Sprawl: onderzoek naar de hedendaagse stad</span>"
     ]
   },
   {
     "objectID": "catalog/examples/belvedere_bouwen.html",
     "href": "catalog/examples/belvedere_bouwen.html",
-    "title": "41  Belvedere Bouwen: Vecht- en plassengebied",
+    "title": "43  Belvedere Bouwen: Vecht- en plassengebied",
     "section": "",
     "text": "This regional study attempts to characterise the river landscape and the building typologies of the Vechtstreek which consist for an important part of 17th and 18th century estates (fig. 4). The Vechtstreek is a beautiful area where official policy, until recently, was preservation-based, but where piecemeal growth has nevertheless resulted in a loss of character. This study is a good example of how an analysis can provide tools for both designers and policy- makers to allow growth which respects and enhances the traditional (see also project 40). It does so by establishing the basic units of the Vechtstreek, its “korrels” (fig. 2 - 4) and to modify and compress these into a “sampled” unit (fig. 5) which can be a basis for future design. \nThe use of photography is an important aspect of the study. It is used for instance to illustrate the characteristics of a typical Vecht-village and to indicate how this differs from standard housing solutions (fig. 7). A second example is a visualisation of why a Michael Graves villa was considered to be of bad taste and how this could have been avoided (fig. 9).\n\nAlso see: Vecht Visie",
     "crumbs": [
       "Cases",
-      "<span class='chapter-number'>41</span>  <span class='chapter-title'>Belvedere Bouwen: Vecht- en plassengebied</span>"
+      "<span class='chapter-number'>43</span>  <span class='chapter-title'>Belvedere Bouwen: Vecht- en plassengebied</span>"
     ]
   },
   {
     "objectID": "catalog/examples/city_branding.html",
     "href": "catalog/examples/city_branding.html",
-    "title": "42  City Branding: Image Building & Building Images",
+    "title": "44  City Branding: Image Building & Building Images",
     "section": "",
     "text": "City branding is about how a city chooses to present itself to the world. In fig. 1, a configuration on the map is used to create a logo for a region. This region may or may not exist in reality, but the logo (and implicitly the analysis that produced it) can become a valuable pr-tool which can easily be remembered. Figs. 3 - 5 are other examples of how otherwise arbitrary images can be used to “brand” a city. These images are no real analyses in the traditional sense, but they can seem to be as evocative of reality as these earlier examples. Commercial and public relations based information can become equally important to characterise a city as its morphology or functional layout. One might say the drawing of the present map of Heerlen in fig. 2 is the least informative in this illustration. Statistical data has taken the place of graphical information.",
     "crumbs": [
       "Cases",
-      "<span class='chapter-number'>42</span>  <span class='chapter-title'>City Branding: Image Building & Building Images</span>"
+      "<span class='chapter-number'>44</span>  <span class='chapter-title'>City Branding: Image Building & Building Images</span>"
     ]
   },
   {
     "objectID": "catalog/examples/ijburg.html",
     "href": "catalog/examples/ijburg.html",
-    "title": "43  IJburg, Haveneiland en Rieteilanden",
+    "title": "45  IJburg, Haveneiland en Rieteilanden",
     "section": "",
     "text": "IJburg is a new extension to Amsterdam on new islands in the IJ-meer. The first drawings zoom into the area and show the position of IJburg relative to its surroundings. Each scale level shows information relevant to that level. Fig. 5 shows a simple comparative analysis where IJburg is compared to other well known parts of Amsterdam. The same goes for fig. 8 where the morphology of IJburg is compared. The grid-structure of the islands is put into a clear perspective when it is shown next to other grid areas in Amsterdam; the reader and designer can get a feel for the area. Fig. 6 and 7 show the principles to which the block designs should adhere in an abstract way. One should not underestimate the power of these little drawings. During the course of the design process, (which can take up to four or five years) these drawings can always be used by the different parties to remind each other of the basic principles. Fig. 9 shows the way the grid- structure is developed on the new land. Compare this for example to the drawings in “Amsterdam als Stedelijk Bouwwerk”.",
     "crumbs": [
       "Cases",
-      "<span class='chapter-number'>43</span>  <span class='chapter-title'>IJburg, Haveneiland en Rieteilanden</span>"
+      "<span class='chapter-number'>45</span>  <span class='chapter-title'>IJburg, Haveneiland en Rieteilanden</span>"
     ]
   },
   {
     "objectID": "catalog/examples/mobility.html",
     "href": "catalog/examples/mobility.html",
-    "title": "44  Mobility: a room with a view",
+    "title": "46  Mobility: a room with a view",
     "section": "",
     "text": "The highway has changed from a means to get from one place to the other into an end in itself. Many people spend a considerable part of their life on the road. The highway and increased mobility should not be considered a necessary evil, but as an urban phenomenon in its own right; obviously not only in Holland, but all over the world - or so the authors claim.\n\nWhen the highway is considered a “place”, then ways have to be found to represent its characteristics, much like Venturi et al had to do when they proclaimed the Las Vegas strip the typical representative of contemporary life. In their analysis of the randstad, the authors have tried to illustrate the principle of mobility in a map where towns are renamed according to the role in one person’s life. Next to that on the same scale is a map of the ring road connecting the cities within the randstad. Further illustrations are abstractions of that map. Ideally, when the highway is considered an urban design task, drivers might be able to enjoy it in the way foreseen in fig. 9.",
     "crumbs": [
       "Cases",
-      "<span class='chapter-number'>44</span>  <span class='chapter-title'>Mobility: a room with a view</span>"
+      "<span class='chapter-number'>46</span>  <span class='chapter-title'>Mobility: a room with a view</span>"
     ]
   },
   {
     "objectID": "catalog/examples/haarlemmermeer.html",
     "href": "catalog/examples/haarlemmermeer.html",
-    "title": "45  Haarlemmermeer",
+    "title": "47  Haarlemmermeer",
     "section": "",
     "text": "A final example of an analysis which separates a map in layers to uncover basic structures. The Haarlemmermeer is the biggest polder in the Netherlands. Due to its central location in the Randstad and the presence of our national airport Schiphol, there is a tremendous economic pressure on this polder. As a result, also some main infrastructural works cross the area: the Amsterdam-Rotterdam highway and several railway lines, including the new high speed connection to Paris. The economic pressure has never been counterbalanced by an appreciation of the Haarlemmermeer as an important part of our cultural heritage. It served simply as a very convenient trash-can for large scale development in the vicinity of Amsterdam. Over the last few years, Designers and government have opened their eyes to cultural historic values and have tried to find ways to allow for further economic development without destroying the landscape (see also project 32). In this analysis, Steenbergen and Reh separate the original landscape from later additions to isolate what is valuable and to find room for responsible growth.\n\nFig. 2 shows the “polder grammar”: a large quadrant of grid units in the centre, a number of added units to the sides and an edge that does not fit in the grid. Fig.3 shows the urban “additions”: towns, industrial areas and the airport. Fig.4 shows a superposition of these, resulting in fig.5, where we see that there is only one grid unit left which is untouched by later additions. If one has isolated the basic elements of the polder (old and new), one can draw several design options that can enhance some and spare others. Some variants for further urbanisation can be seen in figs. 8-10. This analysis uses the same techniques as Zee van Land by the same authors.",
     "crumbs": [
       "Cases",
-      "<span class='chapter-number'>45</span>  <span class='chapter-title'>Haarlemmermeer</span>"
+      "<span class='chapter-number'>47</span>  <span class='chapter-title'>Haarlemmermeer</span>"
     ]
   },
   {
     "objectID": "catalog/examples/evolution_of_a_compact_city.html",
     "href": "catalog/examples/evolution_of_a_compact_city.html",
-    "title": "46  Barcelona, The Evolution of A Compact City",
+    "title": "48  Barcelona, The Evolution of A Compact City",
     "section": "",
     "text": "to be added",
     "crumbs": [
       "Cases",
-      "<span class='chapter-number'>46</span>  <span class='chapter-title'>Barcelona, The Evolution of A Compact City</span>"
+      "<span class='chapter-number'>48</span>  <span class='chapter-title'>Barcelona, The Evolution of A Compact City</span>"
     ]
   },
   {
     "objectID": "catalog/examples/measuring_pompeii.html",
     "href": "catalog/examples/measuring_pompeii.html",
-    "title": "47  Measuring Spatial Visibility, Adjacency, Permeability and Degrees of Street Life in Pompeii",
+    "title": "49  Measuring Spatial Visibility, Adjacency, Permeability and Degrees of Street Life in Pompeii",
     "section": "",
     "text": "to be added",
     "crumbs": [
       "Cases",
-      "<span class='chapter-number'>47</span>  <span class='chapter-title'>Measuring Spatial Visibility, Adjacency, Permeability and Degrees of Street Life in Pompeii</span>"
+      "<span class='chapter-number'>49</span>  <span class='chapter-title'>Measuring Spatial Visibility, Adjacency, Permeability and Degrees of Street Life in Pompeii</span>"
     ]
   },
   {
     "objectID": "catalog/examples/object_van_beweging.html",
     "href": "catalog/examples/object_van_beweging.html",
-    "title": "48  De stad, object van beweging",
+    "title": "50  De stad, object van beweging",
     "section": "",
     "text": "to be added",
     "crumbs": [
       "Cases",
-      "<span class='chapter-number'>48</span>  <span class='chapter-title'>De stad, object van beweging</span>"
+      "<span class='chapter-number'>50</span>  <span class='chapter-title'>De stad, object van beweging</span>"
     ]
   },
   {
     "objectID": "catalog/examples/the_view_from_the_road.html",
     "href": "catalog/examples/the_view_from_the_road.html",
-    "title": "49  The View From The Road",
+    "title": "51  The View From The Road",
     "section": "",
     "text": "Kevin Lynch’ study addresses the faster movement of the automobile. The cover photograph of the book summarises the complex visual experience of the car driver: different speeds, different horizons, different perspectives at the same time. In this study, Lynch attempts to bring this complex experience into the realm of spatial design. If we document the view from the road, we may make better designs for the road. \nHe does this in two ways: first by documenting scenes or events along the way and translating them into a symbolic legend and linear drawings. Second, by drawing maps in which this linear experience is brought back to the actual shape of the city, leading to fascinating and beautiful drawings, suggestive of much more than summarised by the rather straightforward word “road”.",
     "crumbs": [
       "Cases",
-      "<span class='chapter-number'>49</span>  <span class='chapter-title'>The View From The Road</span>"
+      "<span class='chapter-number'>51</span>  <span class='chapter-title'>The View From The Road</span>"
     ]
   },
   {
     "objectID": "catalog/examples/kumbh_mela.html",
     "href": "catalog/examples/kumbh_mela.html",
-    "title": "50  Ephemeral Urbanisms: Kumbh Mela, India",
+    "title": "52  Ephemeral Urbanisms: Kumbh Mela, India",
     "section": "",
-    "text": "Figure 50.1: Kumbh Mela Festival, by Dinesh Mehta. From Ephemeral Urbansim: Does permanence matter? (2nd ed. p. 320), by R. Merhotra et al., 2022. Copyright 2022 by ListLab, No further use is allowed.\n\n\n\nThe increased acceleration of human movement challenges permanence as a default condition of the city. It becomes ever more relevant, therefore, to study examples of temporary settlements, or ephemeral urbanisms: over 700 million of the global population are currently living in spaces of flux.\n\nThe Kumbh Mela, a Hindu celebration that takes place every 12 years, is the worlds’ largest religious gathering. It takes places over 55 days in India, on the floodplain between two sacred rivers: the Ganges and the Yamuna. The physical geography of the floodplain is highly dynamic and heavily affected by the movement of the monsoon, and so it is necessary for this temporary megacity to have fluid edges.\n\nThe grid defines the infrastructure network, but the morphology of the floodplain is only evident once the monsoon has passed, so the grid is adapted and shifts from year to year. City is a development of uncertainties. Grid provides each visiting community with agency over their own spatial organisation. Water, electricity, sewage, roads, bridge all organised by the grid, that connects some of the more permanent infrastructure with the temporary one that comes back every 12 years.",
+    "text": "Figure 52.1: Kumbh Mela Festival, by Dinesh Mehta. From Ephemeral Urbansim: Does permanence matter? (2nd ed. p. 320), by R. Merhotra et al., 2022. Copyright 2022 by ListLab, No further use is allowed.\n\n\n\nThe increased acceleration of human movement challenges permanence as a default condition of the city. It becomes ever more relevant, therefore, to study examples of temporary settlements, or ephemeral urbanisms: over 700 million of the global population are currently living in spaces of flux.\n\nThe Kumbh Mela, a Hindu celebration that takes place every 12 years, is the worlds’ largest religious gathering. It takes places over 55 days in India, on the floodplain between two sacred rivers: the Ganges and the Yamuna. The physical geography of the floodplain is highly dynamic and heavily affected by the movement of the monsoon, and so it is necessary for this temporary megacity to have fluid edges.\n\nThe grid defines the infrastructure network, but the morphology of the floodplain is only evident once the monsoon has passed, so the grid is adapted and shifts from year to year. City is a development of uncertainties. Grid provides each visiting community with agency over their own spatial organisation. Water, electricity, sewage, roads, bridge all organised by the grid, that connects some of the more permanent infrastructure with the temporary one that comes back every 12 years.",
     "crumbs": [
       "Cases",
-      "<span class='chapter-number'>50</span>  <span class='chapter-title'>Ephemeral Urbanisms: Kumbh Mela, India</span>"
-    ]
-  },
-  {
-    "objectID": "catalog/examples/territory_of_a_new_modernity.html",
-    "href": "catalog/examples/territory_of_a_new_modernity.html",
-    "title": "51  Antwerp: Territory of a New Modernity",
-    "section": "",
-    "text": "Bernardo Secchi, Paolo Vigano\n\n\nWhen most city maps were still bird’s eye perspective views (fig. 1), Giambattista Nolli produced a map of 18th century Rome which greatly reduced and systematised the information contained in the map (fig 2). Nolli limited himself to a 2d representation and only distinguished between public space (white) and private space (black). As a result, publicly accessible interior spaces like churches are visible in the map. Through reduction and abstraction, knowledge which otherwise remains hidden under the surface is instantly accessible. This is one of the basic goals of any analysis. Over the last decades, the Nolli map has mesmerised generations of urban designers, theorists and architects. Especially since the publication of “Learning from Las Vegas” (which also used the Nolli technique) dozens of “Nolli maps” have been produced .",
-    "crumbs": [
-      "Cases",
-      "<span class='chapter-number'>51</span>  <span class='chapter-title'>Antwerp: Territory of a New Modernity</span>"
-    ]
-  },
-  {
-    "objectID": "catalog/examples/building_with_superblocks.html",
-    "href": "catalog/examples/building_with_superblocks.html",
-    "title": "52  Building with Superblocks",
-    "section": "",
-    "text": "Khaled Alawadi, Nour Alkhaja, Esma Mohamed Vall\n\n\nWhen most city maps were still bird’s eye perspective views (fig. 1), Giambattista Nolli produced a map of 18th century Rome which greatly reduced and systematised the information contained in the map (fig 2). Nolli limited himself to a 2d representation and only distinguished between public space (white) and private space (black). As a result, publicly accessible interior spaces like churches are visible in the map. Through reduction and abstraction, knowledge which otherwise remains hidden under the surface is instantly accessible. This is one of the basic goals of any analysis. Over the last decades, the Nolli map has mesmerised generations of urban designers, theorists and architects. Especially since the publication of “Learning from Las Vegas” (which also used the Nolli technique) dozens of “Nolli maps” have been produced .",
-    "crumbs": [
-      "Cases",
-      "<span class='chapter-number'>52</span>  <span class='chapter-title'>Building with Superblocks</span>"
+      "<span class='chapter-number'>52</span>  <span class='chapter-title'>Ephemeral Urbanisms: Kumbh Mela, India</span>"
     ]
   },
   {
@@ -842,17 +1095,6 @@
     "crumbs": [
       "Cases",
       "<span class='chapter-number'>53</span>  <span class='chapter-title'>Urban Taxonomy</span>"
-    ]
-  },
-  {
-    "objectID": "appendices/references.html",
-    "href": "appendices/references.html",
-    "title": "References",
-    "section": "",
-    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.\n\n\nvan den Burg, Leo, ed. 2004. Urban Analysis Guidebook,\nTypomorphology. Delft: Technical University of Delft.",
-    "crumbs": [
-      "Appendices",
-      "References"
     ]
   }
 ]

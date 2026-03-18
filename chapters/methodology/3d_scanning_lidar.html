@@ -6,11 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Kevin Lynch">
-<meta name="dcterms.date" content="1960-01-01">
-<meta name="description" content="Different ways of perceiving the elements in a city">
 
-<title>16&nbsp; The Image of the City – Open Urban Analysis Guidebook: Morphology</title>
+<title>4&nbsp; 3D Scanning and Lidar – Open Urban Analysis Guidebook: Morphology</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -33,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../catalog/examples/concise_townscape.html" rel="next">
-<link href="../../catalog/examples/studi_per_una_operante.html" rel="prev">
+<link href="../../chapters/methodology/typology_construction_quantitative.html" rel="next">
+<link href="../../chapters/methodology/methodology.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -92,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <h1 class="quarto-secondary-nav-title no-breadcrumbs"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">The Image of the City</span></h1>
+        <h1 class="quarto-secondary-nav-title no-breadcrumbs"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">3D Scanning and Lidar</span></h1>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -154,7 +151,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/methodology/3d_scanning_lidar.html" class="sidebar-item-text sidebar-link">
+  <a href="../../chapters/methodology/3d_scanning_lidar.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">3D Scanning and Lidar</span></span></a>
   </div>
 </li>
@@ -237,7 +234,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../catalog/examples/image_of_the_city.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../catalog/examples/image_of_the_city.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">The Image of the City</span></span></a>
   </div>
 </li>
@@ -487,19 +484,36 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#why-use-this-method" id="toc-why-use-this-method" class="nav-link active" data-scroll-target="#why-use-this-method"><span class="header-section-number">4.1</span> Why use this method?</a></li>
+  <li><a href="#how-does-lidar-work" id="toc-how-does-lidar-work" class="nav-link" data-scroll-target="#how-does-lidar-work"><span class="header-section-number">4.2</span> How does LiDAR work?</a></li>
+  <li><a href="#you-are-ready-to-use-this-method-if" id="toc-you-are-ready-to-use-this-method-if" class="nav-link" data-scroll-target="#you-are-ready-to-use-this-method-if"><span class="header-section-number">4.3</span> You are ready to use this method if</a></li>
+  <li><a href="#questions-you-can-answer" id="toc-questions-you-can-answer" class="nav-link" data-scroll-target="#questions-you-can-answer"><span class="header-section-number">4.4</span> Questions you can answer</a></li>
+  <li><a href="#steps" id="toc-steps" class="nav-link" data-scroll-target="#steps"><span class="header-section-number">4.5</span> Steps</a></li>
+  <li><a href="#tools" id="toc-tools" class="nav-link" data-scroll-target="#tools"><span class="header-section-number">4.6</span> Tools</a></li>
+  <li><a href="#cases" id="toc-cases" class="nav-link" data-scroll-target="#cases"><span class="header-section-number">4.7</span> Cases</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">4.8</span> References</a></li>
+  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises"><span class="header-section-number">4.9</span> Exercises</a>
+  <ul class="collapse">
+  <li><a href="#exercise-1-create-and-explore-a-3d-model-of-a-street-corner" id="toc-exercise-1-create-and-explore-a-3d-model-of-a-street-corner" class="nav-link" data-scroll-target="#exercise-1-create-and-explore-a-3d-model-of-a-street-corner"><span class="header-section-number">4.9.1</span> Exercise 1 — Create and explore a 3D model of a street corner</a></li>
+  <li><a href="#exercise-2-analyse-and-compare-your-3d-model-to-a-plan-of-the-site" id="toc-exercise-2-analyse-and-compare-your-3d-model-to-a-plan-of-the-site" class="nav-link" data-scroll-target="#exercise-2-analyse-and-compare-your-3d-model-to-a-plan-of-the-site"><span class="header-section-number">4.9.2</span> Exercise 2 — Analyse and compare your 3D model to a plan of the site</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">The Image of the City</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">3D Scanning and Lidar</span></h1>
   <div class="quarto-categories">
-    <div class="quarto-category">Kevin Lynch</div>
-    <div class="quarto-category">patterns</div>
-    <div class="quarto-category">topographical map</div>
+    <div class="quarto-category">geomatics</div>
+    <div class="quarto-category">techonology</div>
   </div>
   </div>
 
@@ -507,19 +521,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Kevin Lynch </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">1960</p>
-    </div>
-  </div>
   
     
   </div>
@@ -529,11 +531,149 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><a href="../../images/kevin_lynch.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="../../images/kevin_lynch.jpg" class="img-fluid"></a></p>
-<p>A basic point of urban analysis is that the topographical map is not the only one you can draw to represent a city. Kevin Lynch became famous by drawing maps that were reflective of people’s image of a city; their mental maps. Lynch developed drawing techniques to visualise relationships, borders, important places etc. that are perceivable to city dwellers, but are often invisible; at least on a map. Fig. 1 shows the basic principle that people moving from A to B need visual stimuli to make sense of their environment. Fig. 2 shows some of the basic urban configurations that Lynch drew for his book which people use in their image of the city. In Lynch’s view, it is important to be aware of these mental considerations. Knowing how people find their way in a city and what gives cities or areas their specific character can be a valuable tool for design. This can be done on all scale levels, as is shown in figs. 12 - 17.</p>
-<p>You can find the collection of original drawings <a href="https://dome.mit.edu/discover?scope=%2F&amp;query=kevin+lynch+image+of+the+city&amp;submit=Go">here</a>.</p>
+<section id="why-use-this-method" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="why-use-this-method"><span class="header-section-number">4.1</span> Why use this method?</h2>
+<p>3D scanning, particularly LiDAR (Light Detection and Ranging), is a useful tool for urban analysis, providing precise, high-resolution 3D data of environments. 3D models provide a strong base for a variety of analyses, such as visibility analysis, wind analysis, solar potential, and many others.&nbsp;</p>
+<p>3D data of the Netherlands is already available from <a href="https://3dbag.nl/en/viewer">3D-BAG</a>, which is an open dataset created in 2008 with 99% validity.<br>
+</p>
+<p>However, especially in your own graduation project, you might find yourself working in sites where such data is incomplete, not so precise, or non-existent altogether. In that case, it can be useful to create your own model using the steps below.<br>
+</p>
+</section>
+<section id="how-does-lidar-work" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="how-does-lidar-work"><span class="header-section-number">4.2</span> How does LiDAR work?</h2>
+<p>LiDAR is a remote sensing technology that works by emitting laser pulses towards a surface. These pulses travel to the target and back to the sensor and, based on the time it takes for them to return, the system calculates the distance to the target, known as the “time of flight.” Using this distance, the system calculates the exact 3D coordinates (X, Y, Z) of the point where the pulse has reflected, creating a “point” in 3D space. This process is repeated rapidly, generating millions of data points, which together form a dense “point cloud” that can be used to construct highly detailed models of the environment.<br>
+</p>
+<p>LiDAR can be deployed from various platforms: airborne for large-scale mapping, drones for smaller, more specific areas, ground-based for detailed mapping of buildings and infrastructure, and mobile (vehicle-mounted) for road and urban mapping.<br>
+</p>
+<p>In the Favelas 4D project by MIT Senseable City Lab, LiDAR scans taken at street level were used to map Rocinha, the largest favela in Rio de Janeiro. The high precision of the resulting 3D dataset enables morphological analysis of the streets and buildings that constitute this settlement. Informal forms of urbanism are often unrepresented by traditional mapping methods, but here the spatial logics of the favela are made visible.<br>
+</p>
+<div id="fig-urban-taxonomy" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-urban-taxonomy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../../images/point_cloud_2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;4.1: 3D scan of Rocinha favela. From Favelas 4D, by MIT Senseable City Lab, 2021, https://senseable.mit.edu/favelas/. Reproduced with permission."><img src="../../images/point_cloud_2.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-urban-taxonomy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.1: 3D scan of Rocinha favela. From Favelas 4D, by MIT Senseable City Lab, 2021, https://senseable.mit.edu/favelas/. Reproduced with permission.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="you-are-ready-to-use-this-method-if" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="you-are-ready-to-use-this-method-if"><span class="header-section-number">4.3</span> You are ready to use this method if</h2>
+<ul>
+<li><p>You understand how LiDAR works.</p></li>
+<li><p>You have installed COLMAP and CloudCompare</p></li>
+<li><p>You have access to scanning equipment (camera, 360 camera or a smartphone)</p></li>
+</ul>
+</section>
+<section id="questions-you-can-answer" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="questions-you-can-answer"><span class="header-section-number">4.4</span> Questions you can answer</h2>
+<ul>
+<li><p>What kinds of analyses can 3D models be used for?</p></li>
+<li><p>What is the difference between a point cloud and a mesh model?</p></li>
+</ul>
+</section>
+<section id="steps" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="steps"><span class="header-section-number">4.5</span> Steps</h2>
+<ol type="1">
+<li><p>Obtain data for your point cloud.</p>
+<p>Point cloud data can be downloaded from <a href="https://www.pdok.nl/">PDOK</a> or <a href="https://www.ahn.nl/">AHN</a> for the Netherlands. For other areas, you can check municipal data portals. You can usually download it in the follow formats: LAS, LAZ, PLY, XYZ, or E57. If there is no point cloud data available, go to step 2.</p></li>
+<li><p>Create your own point cloud. If data for your site already exists, go to step 3.</p>
+<p>Depending on your resources and project requirements, you can use different techniques to create a point cloud.</p>
+<ol type="a">
+<li><p>Photogrammetry (using a regular camera or smartphone)</p>
+<p>Using a regular camera or smartphone, take several overlapping photos of your chosen object or area from different angles (the bigger the area, the more photographs you will need). You can then use <a href="#tools">COLMAP</a> to process these images into a point cloud.</p></li>
+<li><p>iPhone with LiDAR sensor</p>
+<p>Newer iPhones (iPhone 12 Pro or later) feature built-in LiDAR sensors, offering better accuracy than regular photos. This allows for detailed, real-time 3D scans. Apps like <a href="#tools">3D Scanner App</a> let you create 3D models directly on your phone, making it ideal for small-scale projects.</p></li>
+<li><p>Drone or airplane (for large-scale projects):</p>
+<p>Drones or airplanes equipped with cameras or LiDAR sensors are better for capturing large areas, such as mapping cities or landscapes. Drones offer high resolution and flexibility but come with a higher cost and require more expertise to operate.</p></li>
+</ol></li>
+<li><p>Create a 3D model from your point cloud.</p>
+<ol type="a">
+<li><p>Import the point cloud data into <a href="#tools">CloudCompare</a>.</p></li>
+<li><p>In CloudCompare, you can preprocess and clean the point cloud if this is needed, as the data may contain noise or irrelevant points. If the data is too large, you can down sample the points or clip the area you want to focus on.</p></li>
+<li><p>If your data consists of multiple point clouds from different scans or sources, you’ll need to align and register them into a single, unified point cloud. With CloudCompare, you can either automatically align or manually registering multiple point clouds.</p></li>
+<li><p>Once you have a clear, aligned point cloud, you can generate a mesh (a 3D surface model) with the Poisson Surface Reconstruction tools.</p></li>
+<li><p>Once you have a mesh, you can smooth or refine it to better represent the real-world surface.<br>
+</p></li>
+<li><p>You can now export it in various file formats, depending on your needs. Common formats include OBJ, STL, FBX, or PLY. You can even 3D print this!</p></li>
+</ol></li>
+</ol>
+</section>
+<section id="tools" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="tools"><span class="header-section-number">4.6</span> Tools</h2>
+<ul>
+<li><p>COLMAP is an open-source photogrammetry tool that performs structure-from-motion (SfM) and multi-view stereo (MVS) to create accurate 3D reconstructions from images. You can find useful instruction manuals <a href="https://colmap.github.io/tutorial.html">here</a></p></li>
+<li><p><a href="https://3dscannerapp.com/">3D Scanner App</a></p></li>
+<li><p>Cloud Compare is a free, open-source, 3D point cloud processing software. You can find useful tutorials <a href="https://www.cloudcompare.org/">here</a></p></li>
+</ul>
+</section>
+<section id="cases" class="level2" data-number="4.7">
+<h2 data-number="4.7" class="anchored" data-anchor-id="cases"><span class="header-section-number">4.7</span> Cases</h2>
+<ul>
+<li><p><a href="https://3dbag.nl/en/viewer">3dbag</a></p></li>
+<li><p><a href="https://multiroofs.nweurope.eu/">Multi roof EU project</a></p></li>
+<li><p><a href="https://senseable.mit.edu/favelas/">4D Favela scanning MIT</a></p></li>
+</ul>
+</section>
+<section id="references" class="level2" data-number="4.8">
+<h2 data-number="4.8" class="anchored" data-anchor-id="references"><span class="header-section-number">4.8</span> References</h2>
+</section>
+<section id="exercises" class="level2" data-number="4.9">
+<h2 data-number="4.9" class="anchored" data-anchor-id="exercises"><span class="header-section-number">4.9</span> Exercises</h2>
+<section id="exercise-1-create-and-explore-a-3d-model-of-a-street-corner" class="level3" data-number="4.9.1">
+<h3 data-number="4.9.1" class="anchored" data-anchor-id="exercise-1-create-and-explore-a-3d-model-of-a-street-corner"><span class="header-section-number">4.9.1</span> Exercise 1 — Create and explore a 3D model of a street corner</h3>
+<p>Choose a street corner near you and, following the steps above, create your own point cloud of this area and make it into a model.<br>
+</p>
+<p><strong>Tasks</strong><br>
+1. Select a corner with at least two intersecting streets near you.</p>
+<ol start="2" type="1">
+<li><p>Create your own point cloud of your site.</p></li>
+<li><p>Generate a 3D model from this point cloud.</p></li>
+<li><p>Spend some time exploring your 3D model:</p>
+<ul>
+<li><p>Where is the model distorted or missing information?</p></li>
+<li><p>Identify elements that affect street perception and visibility. Are there trees or street signs that obstruct views?</p></li>
+<li><p>Measure the heights and width of elements. What is the height-to-width ratio of the street?</p></li>
+</ul></li>
+<li><p>Reflect on the activity:</p>
+<ul>
+<li><p>What are the limitations of this method?</p></li>
+<li><p>How can this method contribute to urban planning decision-making?</p></li>
+</ul></li>
+</ol>
+<p><strong>Deliverables</strong><br>
+- Point cloud</p>
+<ul>
+<li><p>3D model</p></li>
+<li><p>Short reflection</p></li>
+</ul>
+</section>
+<section id="exercise-2-analyse-and-compare-your-3d-model-to-a-plan-of-the-site" class="level3" data-number="4.9.2">
+<h3 data-number="4.9.2" class="anchored" data-anchor-id="exercise-2-analyse-and-compare-your-3d-model-to-a-plan-of-the-site"><span class="header-section-number">4.9.2</span> Exercise 2 — Analyse and compare your 3D model to a plan of the site</h3>
+<p>Separately analyse your 3D model and a 2D plan of the same site. You should think about what the limitations and adaptations of different kinds of analyses are.<br>
+</p>
+<p><strong>Tasks</strong><br>
+1. Obtain a map of your site from <a href="https://www.openstreetmap.org/#map=19/52.026411/4.706610&amp;layers=H">OpenStreetMap</a>.</p>
+<ol start="2" type="1">
+<li><p>Separately annotate and analyse screenshots of your 3D model and your 2D plan.</p></li>
+<li><p>Compare the two analyses.</p></li>
+<li><p>Reflect on the activity:</p>
+<ul>
+<li><p>What is revealed in the 3D analyses that was not present in the 2D map? And vice versa?</p></li>
+<li><p>Which analysis is more useful in answering different urban questions?</p></li>
+</ul></li>
+</ol>
+<p><strong>Deliverables</strong><br>
+- Screenshot of 3D model with annotations of key spatial features</p>
+<ul>
+<li><p>Annotation of 2D plan with key spatial features</p></li>
+<li><p>Short reflection</p></li>
+</ul>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script>
@@ -1144,13 +1284,13 @@ window.onload = function() {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../catalog/examples/studi_per_una_operante.html" class="pagination-link" aria-label="Studi per una Operante Storia Urbana di Venezia">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Studi per una Operante Storia Urbana di Venezia</span></span>
+      <a href="../../chapters/methodology/methodology.html" class="pagination-link" aria-label="Methodology">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Methodology</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../catalog/examples/concise_townscape.html" class="pagination-link" aria-label="The Concise Townscape">
-        <span class="nav-page-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">The Concise Townscape</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../chapters/methodology/typology_construction_quantitative.html" class="pagination-link" aria-label="Typology Construction (quantitative)">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Typology Construction (quantitative)</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

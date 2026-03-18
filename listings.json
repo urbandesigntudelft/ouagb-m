@@ -1,15 +1,25 @@
 [
   {
+    "listing": "/chapters/index.html",
+    "items": [
+      "/chapters/methodology/3d_scanning_lidar.html",
+      "/chapters/methodology/methodology.html",
+      "/chapters/methodology/space_matrix.html",
+      "/chapters/methodology/space_syntax.html",
+      "/chapters/methodology/techniques.html",
+      "/chapters/methodology/typology_construction_qualitative.html",
+      "/chapters/methodology/typology_construction_quantitative.html"
+    ]
+  },
+  {
     "listing": "/catalog/index.html",
     "items": [
       "/catalog/examples/bindels_gietema.html",
       "/catalog/examples/after_sprawl.html",
       "/catalog/examples/stedelijk_bouwwerk.html",
-      "/catalog/examples/territory_of_a_new_modernity.html",
       "/catalog/examples/evolution_of_a_compact_city.html",
       "/catalog/examples/belvedere_bouwen.html",
       "/catalog/examples/bologna.html",
-      "/catalog/examples/building_with_superblocks.html",
       "/catalog/examples/built_for_change.html",
       "/catalog/examples/comparisons_of_form_and_scale.html",
       "/catalog/examples/city_branding.html",
