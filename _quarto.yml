@@ -13,6 +13,8 @@ book:
     - name: The Morphology Foundation
       city: Rome
   date: 10/23/2025
+  sidebar:
+    collapse-level: 1
   chapters:
   - index.qmd
   - chapters/foundations_frontiers.qmd
