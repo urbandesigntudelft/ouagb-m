@@ -6,6 +6,8 @@ categories: [street network, connectivity]
 ---
 
 ```{r setup}
+#| include: false
+
 library(webexercises)
 ```
 
