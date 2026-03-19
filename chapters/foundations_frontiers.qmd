@@ -1,6 +1,5 @@
 ---
 title: "Foundations and Frontiers"
-author: "Claudiu Forgaci"
 ---
 
 A chapter that is meant to provide an update on the state of the field as well as a structured description of current sub-fields and types of analysis. This will be reflected the structure of the next section.

@@ -16,22 +16,25 @@ book:
   chapters:
   - index.qmd
   - chapters/foundations_frontiers.qmd
-  - part: Methodology, Techniques & Applications
+  - part: Approach
     chapters:
-    - chapters/index.qmd
-    - chapters/methodology/methodology.qmd
-    - chapters/methodology/3d_scanning_lidar.qmd
-    - chapters/methodology/typology_construction_quantitative.qmd
-    - chapters/methodology/typology_construction_qualitative.qmd
-    - chapters/methodology/techniques.qmd
-    - chapters/methodology/space_matrix.qmd
-    - chapters/methodology/space_syntax.qmd
-    - leaflet_template.qmd
-  - part: Cases
+    - chapters/map_based.qmd
+    - chapters/experience_based.qmd
+    - chapters/data_based.qmd
+    # - chapters/index.qmd
+    # - chapters/methodology/methodology.qmd
+    # - chapters/methodology/3d_scanning_lidar.qmd
+    # - chapters/methodology/typology_construction_quantitative.qmd
+    # - chapters/methodology/typology_construction_qualitative.qmd
+    # - chapters/methodology/techniques.qmd
+    # - chapters/methodology/space_matrix.qmd
+    # - chapters/methodology/space_syntax.qmd
+    # - leaflet_template.qmd
+  - part: Methods/Examples
     chapters:
     - catalog/index.qmd
     - catalog/examples/roma_al_tempo_di_benedetto.qmd
-    - catalog/examples/Stadtebau.qmd
+    - catalog/examples/stadtebau.qmd
     - catalog/examples/ville_radieuse.qmd
     - catalog/examples/studi_per_una_operante.qmd
     - catalog/examples/image_of_the_city.qmd
