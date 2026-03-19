@@ -10,3 +10,354 @@ This chapter explores emerging frontiers in urban morphology: urban morphometric
 
 
 ## Techniques
+
+
+## Methods
+
+```{=html}
+
+<style>
+  /* 容器样式 */
+  #graph-container {
+    width: 100%;
+    height: 600px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    margin: 20px 0;
+    position: relative;
+    background: #f8f9fa;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+  }
+  
+  /* 悬浮提示样式 */
+  .node-tooltip {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    pointer-events: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: opacity 0.2s;
+    opacity: 0;
+    border: 1px solid #495057;
+    line-height: 1.5;
+  }
+  
+  /* 调试信息样式 */
+  .debug-info {
+    margin: 10px 0;
+    padding: 10px;
+    background: #e7f5ff;
+    border-left: 4px solid #339af0;
+    font-family: monospace;
+    font-size: 14px;
+  }
+  
+  .debug-info.error {
+    background: #fff5f5;
+    border-left-color: #fa5252;
+  }
+  
+  .debug-info.success {
+    background: #ebfbee;
+    border-left-color: #51cf66;
+  }
+</style>
+
+<div class="debug-info" id="debug-info">
+  ⏳ 正在加载网络图...
+</div>
+
+<div id="graph-container"></div>
+<div class="node-tooltip" id="tooltip"></div>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+
+<script>
+(function() {
+  // ----- 调试函数 -----
+  function updateDebug(message, type = 'info') {
+    const debugEl = document.getElementById('debug-info');
+    if (debugEl) {
+      debugEl.innerHTML = message;
+      debugEl.className = 'debug-info ' + type;
+    }
+    console.log(message);
+  }
+
+  // 等待DOM完全加载
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initNetwork);
+  } else {
+    initNetwork();
+  }
+
+  function initNetwork() {
+    try {
+      // ----- 获取容器 -----
+      const container = document.getElementById('graph-container');
+      if (!container) {
+        updateDebug('❌ 错误: 找不到graph-container元素', 'error');
+        return;
+      }
+
+      // ----- 获取容器尺寸 -----
+      const width = container.clientWidth || 800;
+      const height = container.clientHeight || 600;
+      
+      updateDebug(`📐 容器尺寸: ${width} x ${height}`);
+
+      // ----- 清空容器 -----
+      container.innerHTML = '';
+
+      // ----- 节点数据（确保所有ID都是唯一的）-----
+      const nodesData = [
+        { id: "node1", name: "Quarto基础", targetPage: "../catalog/examples/after_sprawl.html" },
+        { id: "node2", name: "Markdown语法", targetPage: "../catalog/examples/bologna.html" },
+        { id: "node3", name: "代码块", targetPage: "../catalog/examples/collage_city.html" },
+        { id: "node4", name: "图表绘制", targetPage: "../catalog/examples/bindels_gietema.html" },
+        { id: "node5", name: "交叉引用", targetPage: "../catalog/examples/built_for_change.html" },
+        { id: "node6", name: "文献管理", targetPage: "../catalog/examples/ijburg.html" },
+        { id: "node7", name: "出版设置", targetPage: "../catalog/examples/kumbh_mela.html" },
+        { id: "node8", name: "模板定制", targetPage: "../catalog/examples/concise_townscape.html" }
+      ];
+
+      // ----- 连接关系（使用完整的节点ID）-----
+      const linksData = [
+        { source: "node_intro", target: "node_basics" },
+        { source: "node_intro", target: "node_publish" },
+        { source: "node_basics", target: "node_markdown" },
+        { source: "node_basics", target: "node_code" },
+        { source: "node_markdown", target: "node_plots" },
+        { source: "node_code", target: "node_plots" },
+        { source: "node_code", target: "node_crossref" },
+        { source: "node_plots", target: "node_crossref" },
+        { source: "node_crossref", target: "node_bib" },
+        { source: "node_bib", target: "node_publish" },
+        { source: "node_markdown", target: "node_crossref" },
+        { source: "node_plots", target: "node_bib" }
+      ];
+
+      // 验证所有链接的节点都存在
+      const nodeIds = new Set(nodesData.map(d => d.id));
+      const invalidLinks = linksData.filter(link => 
+        !nodeIds.has(link.source) || !nodeIds.has(link.target)
+      );
+      
+      if (invalidLinks.length > 0) {
+        console.warn('发现无效链接:', invalidLinks);
+        updateDebug(`⚠️ 警告: ${invalidLinks.length}条链接的节点不存在，已自动过滤`, 'info');
+      }
+
+      // 只保留有效的链接
+      const validLinks = linksData.filter(link => 
+        nodeIds.has(link.source) && nodeIds.has(link.target)
+      );
+
+      updateDebug(`📊 数据: ${nodesData.length}个节点, ${validLinks.length}条连接`, 'info');
+
+      // ----- 创建SVG -----
+      const svg = d3.select("#graph-container")
+        .append("svg")
+        .attr("width", width)
+        .attr("height", height)
+        .attr("viewBox", [0, 0, width, height])
+        .style("display", "block")
+        .style("background", "#f8f9fa");
+
+      // 添加背景网格（便于观察）
+      svg.append("pattern")
+        .attr("id", "grid")
+        .attr("width", 20)
+        .attr("height", 20)
+        .attr("patternUnits", "userSpaceOnUse")
+        .append("path")
+        .attr("d", "M 20 0 L 0 0 0 20")
+        .attr("fill", "none")
+        .attr("stroke", "#dee2e6")
+        .attr("stroke-width", 0.5);
+
+      svg.append("rect")
+        .attr("width", width)
+        .attr("height", height)
+        .attr("fill", "url(#grid)");
+
+      const g = svg.append("g");
+
+      // ----- 力模拟 -----
+      const simulation = d3.forceSimulation(nodesData)
+        .force("link", d3.forceLink(validLinks).id(d => d.id).distance(120).strength(0.3))  // 减弱连接强度
+        .force("charge", d3.forceManyBody().strength(-50))   // ← 减小斥力（原来-300）
+        .force("center", d3.forceCenter(width / 2, height / 2).strength(0.1))  // 减弱中心引力
+        .force("collision", d3.forceCollide().radius(30));   // 减小碰撞半径
+
+      // ----- 先创建连线（确保连线在节点下方）-----
+      const link = g.append("g")
+        .attr("stroke", "#adb5bd")
+        .attr("stroke-opacity", 0.6)
+        .selectAll("line")
+        .data(validLinks)
+        .join("line")
+        .attr("stroke-width", 2)
+        .attr("stroke-linecap", "round");
+
+      // ----- 创建节点组（包含圆形和文字）-----
+      const node = g.append("g")
+        .attr("stroke", "#fff")
+        .attr("stroke-width", 2)
+        .selectAll("g")
+        .data(nodesData)
+        .join("g")
+        .attr("cursor", "pointer");
+
+      // 添加圆形
+      node.append("circle")
+        .attr("r", 25)
+        .attr("fill", d => {
+          if (d.id.includes("intro")) return "#ff6b6b";
+          if (d.id.includes("publish")) return "#51cf66";
+          if (d.id.includes("code") || d.id.includes("plots")) return "#339af0";
+          if (d.id.includes("bib")) return "#ae3ec9";
+          return "#ff922b";
+        })
+        .attr("stroke", "white")
+        .attr("stroke-width", 3)
+        .attr("filter", "drop-shadow(0 2px 4px rgba(0,0,0,0.1))");
+
+      // 添加节点名称
+      node.append("text")
+        .text(d => d.name)
+        .attr("font-size", "12px")
+        .attr("font-family", "system-ui, -apple-system, sans-serif")
+        .attr("fill", "#212529")
+        .attr("text-anchor", "middle")
+        .attr("dy", 40)
+        .attr("font-weight", "500")
+        .attr("pointer-events", "none");
+
+      // 添加小圆点装饰（可选）
+      node.append("circle")
+        .attr("r", 6)
+        .attr("fill", "white")
+        .attr("stroke", "none")
+        .attr("cx", 8)
+        .attr("cy", -8)
+        .attr("opacity", 0.8);
+
+      // ----- 工具提示 -----
+      const tooltip = d3.select("#tooltip");
+
+      node.on("mouseenter", function(event, d) {
+          d3.select(this).select("circle:first-child")
+            .attr("stroke", "#ffc107")
+            .attr("stroke-width", 4)
+            .attr("filter", "drop-shadow(0 0 8px rgba(255,193,7,0.5))");
+          
+          const containerRect = container.getBoundingClientRect();
+          tooltip.style("opacity", 1)
+                 .html(`
+                   <strong>${d.name}</strong><br>
+                   <span style="font-size:12px; color:#adb5bd;">ID: ${d.id}</span><br>
+                   <span style="font-size:13px;">跳转: ${d.targetPage}</span>
+                 `)
+                 .style("left", (event.pageX - containerRect.left + 20) + "px")
+                 .style("top", (event.pageY - containerRect.top - 60) + "px");
+        })
+        .on("mousemove", function(event) {
+          const containerRect = container.getBoundingClientRect();
+          tooltip.style("left", (event.pageX - containerRect.left + 20) + "px")
+                 .style("top", (event.pageY - containerRect.top - 60) + "px");
+        })
+        .on("mouseleave", function() {
+          d3.select(this).select("circle:first-child")
+            .attr("stroke", "white")
+            .attr("stroke-width", 3)
+            .attr("filter", "none");
+          tooltip.style("opacity", 0);
+        })
+        .on("click", function(event, d) {
+          // 在当前窗口打开
+          window.location.href = d.targetPage;
+          event.stopPropagation();
+        });
+
+      // ----- 拖拽功能 -----
+      node.call(d3.drag()
+        .on("start", (event, d) => {
+          if (!event.active) simulation.alphaTarget(0.3).restart();
+          d.fx = d.x;
+          d.fy = d.y;
+        })
+        .on("drag", (event, d) => {
+          d.fx = event.x;
+          d.fy = event.y;
+        })
+        .on("end", (event, d) => {
+          if (!event.active) simulation.alphaTarget(0);
+          d.fx = null;
+          d.fy = null;
+        }));
+
+      // ----- 设置初始位置（避免所有节点重叠在中心）-----
+      nodesData.forEach((d, i) => {
+        d.x = width/2 + Math.sin(i * 1.5) * 200;
+        d.y = height/2 + Math.cos(i * 1.5) * 150;
+      });
+
+      // ----- 更新模拟位置 -----
+      simulation.on("tick", () => {
+        // 限制节点在画布内
+        node.attr("transform", d => {
+          // 添加边界约束，留出20px边距
+          d.x = Math.max(30, Math.min(width - 30, d.x));
+          d.y = Math.max(30, Math.min(height - 30, d.y));
+          return `translate(${d.x},${d.y})`;
+        });
+
+        link
+          .attr("x1", d => d.source.x)
+          .attr("y1", d => d.source.y)
+          .attr("x2", d => d.target.x)
+          .attr("y2", d => d.target.y);
+      });
+
+      // 启动模拟
+      simulation.alpha(1).restart();
+
+      // 3秒后如果还有节点在中心，强制分散
+      setTimeout(() => {
+        nodesData.forEach((d, i) => {
+          if (Math.abs(d.x - width/2) < 50 && Math.abs(d.y - height/2) < 50) {
+            d.x = width/2 + Math.sin(i * 2) * 180;
+            d.y = height/2 + Math.cos(i * 2) * 180;
+          }
+        });
+        simulation.alpha(0.5).restart();
+      }, 1000);
+
+      updateDebug('✅ 网络图渲染成功！', 'success');
+
+    } catch (e) {
+      updateDebug(`❌ 错误: ${e.message}`, 'error');
+      console.error(e);
+    }
+  }
+})();
+</script>
+
+<div style="margin-top: 20px; padding: 15px; background: #f1f3f5; border-radius: 8px;">
+  <h4>📌Network Diagram Instructions</h4>
+  <ul style="margin-bottom: 0;">
+    <li><strong>Hover</strong> - View node detail</li>
+    <li><strong>Drag</strong> - Freely adjust node layout</li>
+    <li><strong>Click</strong> - Jump to corresponding chapter</li>
+  </ul>
+</div>
+
+
+```
+
