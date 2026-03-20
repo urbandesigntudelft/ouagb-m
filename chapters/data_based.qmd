@@ -8,3 +8,62 @@ This chapter explores emerging frontiers in urban morphology: urban morphometric
 
 
 ## Techniques
+
+
+```{r echo=FALSE}
+library(igraph)
+library(visNetwork)
+library(dplyr)
+
+# 1. Load your data
+nodes <- data.frame(
+  id = 1:3,
+  label = c("Node A", "Node B", "Node C"),
+  title = c("Click to go to Chapter 1", "Click for Chapter 2", "Click for Chapter 3"),
+  url = c("../catalog/examples/bindels_gietema.html", "../catalog/examples/ijburg.html",
+          "../catalog/examples/kumbh_mela.html")
+)
+
+edges <- data.frame(
+  from = c(1, 2),
+  to = c(3, 3),
+  value = c(10, 2) # Relation strength
+) %>%
+  # IMPORTANT: Length must be inversely proportional to value
+  # We use a large multiplier (e.g., 500) to make the differences obvious
+  mutate(length = 300 / value)
+
+# 2. Create the interactive graph
+visNetwork(nodes, edges) %>%
+  visNodes(shape = "dot", size = 20) %>%
+  # We explicitly tell the edges NOT to inherit a single length
+  visEdges(smooth = FALSE) %>% 
+  visPhysics(
+    solver = "barnesHut",
+    barnesHut = list(
+      gravitationalConstant = -2000, # Keeps nodes from overlapping
+      centralGravity = 0.3,
+      springLength = 100,            # This is the "base", but individual edge 'length' overrides it
+      springConstant = 0.04          # Higher = stiffer springs
+    ),
+    stabilization = TRUE
+  ) %>%
+  # IMPROVED CLICK JS
+  visEvents(click = "function(params) {
+    if (params.nodes.length > 0) {
+      var nodeId = params.nodes;
+      var nodeData = this.body.data.nodes.get(nodeId);
+      if (nodeData.url) {
+        // Uncomment the line below to debug if clicking does nothing
+        // alert('Navigating to: ' + nodeData.url); 
+        window.location.assign(nodeData.url);
+      }
+    }
+  }")
+
+
+
+
+
+```
+
