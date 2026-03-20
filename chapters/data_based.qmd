@@ -22,67 +22,57 @@ nodes <- data.frame(
   label = c("Node A", "Node B", "Node C"),
   title = c("Click to go to Chapter 1", "Click for Chapter 2", "Click for Chapter 3"),
   url = c("../catalog/examples/bindels_gietema.html", "../catalog/examples/ijburg.html",
-          "../catalog/examples/kumbh_mela.html")
+          "../catalog/examples/kumbh_mela.html"),
+  stringsAsFactors = FALSE
 )
-
-# Force everything to be a simple, non-factor data frame
-nodes_clean <- as.data.frame(nodes) %>%
-  mutate(across(everything(), as.character)) %>% # Convert to strings for safety
-  mutate(id = as.numeric(id))                   # But ID must stay a number
 
 edges <- data.frame(
   from = c(1, 2),
   to = c(3, 3),
   value = c(10, 2) # Relation strength
-)
-
-edges <- edges %>%
+) %>%
   mutate(
     # Use a power function to make 'strong' relations significantly shorter
-    length = 1000 / (value^2) 
+    length = 500 / value
   )
 
-visNetwork(nodes_clean, edges) %>%
+# 2. The Plot with "Deep Peeling" Logic
+visNetwork(nodes, edges) %>%
+  visNodes(shape = "dot") %>%
   visPhysics(
-    solver = "forceAtlas2Based",
-    forceAtlas2Based = list(
-      springLength = 0,        # Force it to use our 'length' column
-      springConstant = 0.1,    # Higher = 'stiffer' springs
-      gravitationalConstant = -50 # Lower = nodes push each other away less
-    )
-  ) %>%
-
-
-
-# 2. Create the interactive graph
-# visNetwork(nodes, edges) %>%
-#   visNodes(shape = "dot") %>%
-#   visEdges(smooth = FALSE) %>%
-#   visPhysics(solver = "forceAtlas2Based", 
-#              forceAtlas2Based = list(springLength = 0)) %>%
-  # Use selectNode and wrap in JS()
+  solver = "forceAtlas2Based",
+  forceAtlas2Based = list(
+    springLength = 0,        # Crucial: forces it to use your 'length' column
+    springConstant = 0.2,    # Higher = stronger 'pull' between related nodes
+    gravitationalConstant = -25, # Lower negative = nodes push away LESS (brings them closer)
+    centralGravity = 0.005
+  ),
+  stabilization = TRUE
+) %>%
   visEvents(selectNode = htmlwidgets::JS("
     function(params) {
-      // 1. Get the raw data for the clicked node
-      var nodeData = this.body.data.nodes.get(params.nodes);
+      // 1. Get the ID of the node you clicked
+      var clickedId = params.nodes;
       
-      // 2. The 'Deep Dig': If it's an array, grab the first element (repeatedly if needed)
-      while (Array.isArray(nodeData) && nodeData.length > 0) {
-        nodeData = nodeData;
-      }
+      // 2. Instead of 'peeling' the clicked object, 
+      //    we look at the ORIGINAL data source for that ID.
+      var allNodes = this.body.data.nodes.get();
+      var targetNode = allNodes.find(function(node) {
+        return node.id == clickedId;
+      });
 
-      console.log('Target Node Data:', nodeData);
+      console.log('Target Node Found:', targetNode);
 
-      // 3. Navigate if the URL exists
-      if (nodeData && nodeData.url) {
-        console.log('Success! Moving to:', nodeData.url);
-        window.location.href = nodeData.url;
+      // 3. Navigate
+      if (targetNode && targetNode.url) {
+        window.location.href = targetNode.url;
+      } else if (targetNode && targetNode.href) {
+        window.location.href = targetNode.href;
       } else {
-        console.error('Still no URL! Available properties:', Object.keys(nodeData));
+        console.error('Node found, but no url/href property exists in the source data.');
       }
     }
   "))
-
 
 
 
