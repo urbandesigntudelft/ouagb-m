@@ -10,10 +10,11 @@ This chapter explores emerging frontiers in urban morphology: urban morphometric
 ## Techniques
 
 
-```{r echo=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE}
 library(igraph)
 library(visNetwork)
 library(dplyr)
+library(htmlwidgets)
 
 # 1. Load your data
 nodes <- data.frame(
@@ -24,42 +25,63 @@ nodes <- data.frame(
           "../catalog/examples/kumbh_mela.html")
 )
 
+# Force everything to be a simple, non-factor data frame
+nodes_clean <- as.data.frame(nodes) %>%
+  mutate(across(everything(), as.character)) %>% # Convert to strings for safety
+  mutate(id = as.numeric(id))                   # But ID must stay a number
+
 edges <- data.frame(
   from = c(1, 2),
   to = c(3, 3),
   value = c(10, 2) # Relation strength
-) %>%
-  # IMPORTANT: Length must be inversely proportional to value
-  # We use a large multiplier (e.g., 500) to make the differences obvious
-  mutate(length = 300 / value)
+)
+
+edges <- edges %>%
+  mutate(
+    # Use a power function to make 'strong' relations significantly shorter
+    length = 1000 / (value^2) 
+  )
+
+visNetwork(nodes_clean, edges) %>%
+  visPhysics(
+    solver = "forceAtlas2Based",
+    forceAtlas2Based = list(
+      springLength = 0,        # Force it to use our 'length' column
+      springConstant = 0.1,    # Higher = 'stiffer' springs
+      gravitationalConstant = -50 # Lower = nodes push each other away less
+    )
+  ) %>%
+
+
 
 # 2. Create the interactive graph
-visNetwork(nodes, edges) %>%
-  visNodes(shape = "dot", size = 20) %>%
-  # We explicitly tell the edges NOT to inherit a single length
-  visEdges(smooth = FALSE) %>% 
-  visPhysics(
-    solver = "barnesHut",
-    barnesHut = list(
-      gravitationalConstant = -2000, # Keeps nodes from overlapping
-      centralGravity = 0.3,
-      springLength = 100,            # This is the "base", but individual edge 'length' overrides it
-      springConstant = 0.04          # Higher = stiffer springs
-    ),
-    stabilization = TRUE
-  ) %>%
-  # IMPROVED CLICK JS
-  visEvents(click = "function(params) {
-    if (params.nodes.length > 0) {
-      var nodeId = params.nodes;
-      var nodeData = this.body.data.nodes.get(nodeId);
-      if (nodeData.url) {
-        // Uncomment the line below to debug if clicking does nothing
-        // alert('Navigating to: ' + nodeData.url); 
-        window.location.assign(nodeData.url);
+# visNetwork(nodes, edges) %>%
+#   visNodes(shape = "dot") %>%
+#   visEdges(smooth = FALSE) %>%
+#   visPhysics(solver = "forceAtlas2Based", 
+#              forceAtlas2Based = list(springLength = 0)) %>%
+  # Use selectNode and wrap in JS()
+  visEvents(selectNode = htmlwidgets::JS("
+    function(params) {
+      // 1. Get the raw data for the clicked node
+      var nodeData = this.body.data.nodes.get(params.nodes);
+      
+      // 2. The 'Deep Dig': If it's an array, grab the first element (repeatedly if needed)
+      while (Array.isArray(nodeData) && nodeData.length > 0) {
+        nodeData = nodeData;
+      }
+
+      console.log('Target Node Data:', nodeData);
+
+      // 3. Navigate if the URL exists
+      if (nodeData && nodeData.url) {
+        console.log('Success! Moving to:', nodeData.url);
+        window.location.href = nodeData.url;
+      } else {
+        console.error('Still no URL! Available properties:', Object.keys(nodeData));
       }
     }
-  }")
+  "))
 
 
 
