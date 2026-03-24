@@ -8,7 +8,6 @@ format: html
 ***CSS controls appearance and layout***
 
 
-
 ```{r}
 #| echo: FALSE
 #| results: asis
