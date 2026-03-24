@@ -1,119 +1,96 @@
-// Make the function GLOBAL so inline HTML can see it
-window.toggleMapsFullscreen = function () {
-  const container = document.getElementById("map-container");
-  
-  if (!container) {
-    console.error("map-container not found");
-    return;
+<script>
+/**
+ * Global variables to store the Leaflet map instances
+ */
+var mapL = null;
+var mapR = null;
+
+/**
+ * Function to find the Leaflet instances created by R/Htmlwidgets
+ */
+function findLeafletMaps() {
+  if (typeof HTMLWidgets === 'undefined' || !HTMLWidgets.widgets) {
+    console.log("Waiting for HTMLWidgets...");
+    return false;
   }
 
-  // Check if currently fullscreen
-  const isEnteringFullscreen = !container.classList.contains("fullscreen");
-  
-  // Toggle the class
-  container.classList.toggle("fullscreen");
-  
-  // Update UI state
-  updateFullscreenButton(isEnteringFullscreen);
-  
-  // Handle body scroll locking
-  if (isEnteringFullscreen) {
-    document.body.style.overflow = "hidden";
+  HTMLWidgets.widgets.forEach(function(widget) {
+    if (widget.name === 'leaflet') {
+      if (widget.id === 'mapL') mapL = widget.instance;
+      if (widget.id === 'mapR') mapR = widget.instance;
+    }
+  });
+
+  if (mapL && mapR) {
+    console.log("Maps found and linked.");
+    // Initial Sync
+    setupSync();
+    return true;
+  }
+  return false;
+}
+
+/**
+ * Applies the synchronization between the two maps
+ */
+function setupSync() {
+  if (mapL && mapR && typeof mapL.sync === 'function') {
+    // Sync Map L to Map R
+    mapL.sync(mapR, {offsetFn: L.Sync.offsetCentral});
+    // Sync Map R to Map L
+    mapR.sync(mapL, {offsetFn: L.Sync.offsetCentral});
   } else {
-    document.body.style.overflow = "";
+    console.warn("Leaflet.Sync library not found. Ensure leafsync is loaded in R.");
   }
-
-  console.log(`Fullscreen ${isEnteringFullscreen ? 'enabled' : 'disabled'}`);
-
-  // Resize maps with a more robust approach
-  resizeMaps();
-  
-  // Dispatch custom event for other components to respond
-  const event = new CustomEvent('mapsFullscreenChange', {
-    detail: { isFullscreen: isEnteringFullscreen }
-  });
-  document.dispatchEvent(event);
-};
-
-function resizeMaps() {
-  // Small delay to ensure CSS transition completes
-  setTimeout(() => {
-    const maps = [window.map1, window.map2].filter(map => map);
-    
-    maps.forEach(map => {
-      try {
-        map.invalidateSize();
-        // Reset view if needed
-        //map.fitBounds(map.getBounds(), { padding: [20, 20] });
-      } catch (error) {
-        console.warn('Error resizing map:', error);
-      }
-    });
-    
-    // If no maps found, check for any Leaflet maps on the page
-    if (maps.length === 0) {
-      console.warn('No window.map1 or map2 found. Looking for other maps...');
-      document.querySelectorAll('.leaflet-map').forEach(container => {
-        const map = container._leaflet_map;
-        if (map) map.invalidateSize();
-      });
-    }
-  }, 300);
 }
 
-function updateFullscreenButton(isFullscreen) {
-  // Update button text/icons if you have a specific button
-  const buttons = document.querySelectorAll('[data-toggle-fullscreen]');
-  
-  buttons.forEach(button => {
-    if (isFullscreen) {
-      button.classList.add('active');
-      button.setAttribute('aria-pressed', 'true');
-      button.title = 'Exit fullscreen';
-    } else {
-      button.classList.remove('active');
-      button.setAttribute('aria-pressed', 'false');
-      button.title = 'Enter fullscreen';
-    }
-  });
+/**
+ * Triggered by the button in your .qmd
+ */
+function toggleMapsFullscreen() {
+  const container = document.getElementById('map-container');
+  if (!container) return;
+
+  if (!document.fullscreenElement) {
+    container.requestFullscreen().catch(err => {
+      alert(`Error attempting to enable full-screen mode: ${err.message}`);
+    });
+  } else {
+    document.exitFullscreen();
+  }
 }
 
-// Optional: Keyboard support for exiting fullscreen with Escape key
-document.addEventListener('keydown', function(event) {
-  const container = document.getElementById("map-container");
-  
-  if (container && container.classList.contains("fullscreen") && event.key === "Escape") {
-    window.toggleMapsFullscreen();
+/**
+ * The "Magic Fix": Forces maps to redraw when the screen size changes
+ */
+document.addEventListener('fullscreenchange', function() {
+  if (!mapL || !mapR) findLeafletMaps();
+
+  if (mapL && mapR) {
+    // We wait a moment for the browser animation to finish
+    setTimeout(() => {
+      // 1. Tell Leaflet the container size has changed
+      mapL.invalidateSize({animate: true});
+      mapR.invalidateSize({animate: true});
+
+      // 2. Re-apply sync to ensure alignment
+      setupSync();
+      
+      console.log("Maps resized and re-synced.");
+    }, 400); 
   }
 });
 
-// Optional: Resize maps on window resize when in fullscreen
-let resizeTimeout;
-window.addEventListener('resize', function() {
-  const container = document.getElementById("map-container");
-  
-  if (container && container.classList.contains("fullscreen")) {
-    clearTimeout(resizeTimeout);
-    resizeTimeout = setTimeout(resizeMaps, 150);
-  }
+/**
+ * Run on page load
+ */
+window.addEventListener('load', function() {
+  // Try to find maps every 500ms until they are found (up to 5 seconds)
+  let attempts = 0;
+  const interval = setInterval(() => {
+    const found = findLeafletMaps();
+    attempts++;
+    if (found || attempts > 10) clearInterval(interval);
+  }, 500);
 });
-
-document.addEventListener('DOMContentLoaded', function() {
-  console.log("JS loaded successfully!");
-  
-  // Check for Leaflet
-  if (typeof L !== 'undefined') {
-    console.log("Leaflet is available");
-    
-    // Initialize any fullscreen buttons
-    const fullscreenButtons = document.querySelectorAll('[data-toggle-fullscreen]');
-    fullscreenButtons.forEach(button => {
-      button.addEventListener('click', window.toggleMapsFullscreen);
-    });
-  }
-  
-  // Check if any maps exist on load
-  if (window.map1 || window.map2) {
-    console.log('Maps found on window object');
-  }
-});
+</script>
