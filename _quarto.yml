@@ -96,7 +96,9 @@ format:
     css:
     - styles.css
     - include/webex.css
-    include-after-body: include/webex.js
+    include-after-body: 
+    - include/webex.js
+    - leaflet-control.js
 search: true
 execute:
   freeze: auto

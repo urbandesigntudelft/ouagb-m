@@ -39,6 +39,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 5px;
+  overflow: hidden;
 
   transition: all 0.3s ease;
 }

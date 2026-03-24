@@ -8,7 +8,6 @@ format: html
 ***CSS controls appearance and layout***
 
 
-
 ```{r}
 #| echo: FALSE
 #| results: asis
@@ -31,6 +30,7 @@ library(leaflet)
 library(htmlwidgets)
 library(leaflet.extras)
 library(leaflet.extras2)
+library(leafsync)
 
 ```
 
@@ -93,44 +93,29 @@ leaflet() %>%
 
 
 ## Side-By-Side Map, scale and pan synchronized
-::: {.map-wrapper}
+<!-- ::: {.map-wrapper} -->
 
-<button class="fullscreen-btn" onclick="toggleMapsFullscreen()">
-⛶ Fullscreen
-</button>
+<!-- <button class="fullscreen-btn" onclick="toggleMapsFullscreen()">⛶ Fullscreen</button> -->
 
-::: {#map-container}
-::: {.map-panel}
-```{r echo=FALSE}
-leaflet() %>%
-  addTiles() %>%
-  setView(4.9, 52.37, 8) %>%
-  htmlwidgets::onRender("
-    function(el, x) {
-      const map = this;
-      requestAnimationFrame(() => map.invalidateSize());
-      setTimeout(() => map.invalidateSize(), 300);
-    }
-  ")
-```
-:::
+<!-- ::: {#map-container} -->
+<!-- ::: {.map-panel} -->
+<!-- ```{r echo=FALSE} -->
+<!-- library(leaflet) -->
+<!-- leaflet(elementId = "mapL") %>% -->
+<!--   addTiles() %>% -->
+<!--   setView(4.9, 52.37, 8) -->
+<!-- ``` -->
+<!-- ::: -->
 
-::: {.map-panel}
-```{r echo=FALSE}
-leaflet() %>%
-  addTiles() %>%
-  setView(13.4, 52.52, 8) %>%
-  htmlwidgets::onRender("
-    function(el, x) {
-      const map = this;
-      requestAnimationFrame(() => map.invalidateSize());
-      setTimeout(() => map.invalidateSize(), 300);
-    }
-  ")
-```
-:::
-:::
-:::
+<!-- ::: {.map-panel} -->
+<!-- ```{r echo=FALSE} -->
+<!-- leaflet(elementId = "mapR") %>% -->
+<!--   addTiles() %>% -->
+<!--   setView(13.4, 52.52, 8) -->
+<!-- ``` -->
+<!-- ::: -->
+<!-- ::: -->
+<!-- ::: -->
 
 ## Map with a slider bar in the middle
 ```{r}
