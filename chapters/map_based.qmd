@@ -14,8 +14,8 @@ This chapter explores emerging frontiers in urban morphology: urban morphometric
 
 
 
-
-```{r echo=FALSE}
+## Methods
+```{r echo=FALSE, message=FALSE, warning=FALSE}
 # load packages
 library(leaflet)
 library(sf)

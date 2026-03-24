@@ -9,7 +9,7 @@ This chapter explores emerging frontiers in urban morphology: urban morphometric
 
 ## Techniques
 
-
+## Methods
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 library(igraph)
 library(visNetwork)
