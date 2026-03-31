@@ -30,7 +30,7 @@ book:
     # - chapters/methodology/space_matrix.qmd
     # - chapters/methodology/space_syntax.qmd
     # - leaflet_template.qmd
-  - part: Methods/Examples
+  - part: Examples
     chapters:
     - catalog/index.qmd
     - catalog/examples/roma_al_tempo_di_benedetto.qmd
@@ -47,25 +47,19 @@ book:
     - catalog/examples/versailles.qmd
     - catalog/examples/stedelijk_bouwwerk.qmd
     - catalog/examples/les_bastides.qmd
-    - catalog/examples/built_for_change.qmd
     - catalog/examples/verstedelijkt_landschap.qmd
-    - catalog/examples/locatie_zuidpoortgebied.qmd
     - catalog/examples/la_metropole_imaginaire.qmd
     - catalog/examples/landschap_en_verstedelijking.qmd
     - catalog/examples/gli_orizzonti.qmd
     - catalog/examples/point_city.qmd
     - catalog/examples/paris_des_faubourgs.qmd
-    - catalog/examples/porto_the_breakthrough.qmd
-    - catalog/examples/colonial_settlements.qmd
     - catalog/examples/het_land_in_de_stad.qmd
     - catalog/examples/stadsportretten.qmd
     - catalog/examples/zee_van_land.qmd
     - catalog/examples/bindels_gietema.qmd
     - catalog/examples/costa_iberica.qmd
     - catalog/examples/een_nieuwe_oude_jas.qmd
-    - catalog/examples/after_sprawl.qmd
     - catalog/examples/belvedere_bouwen.qmd
-    - catalog/examples/city_branding.qmd
     - catalog/examples/ijburg.qmd
     - catalog/examples/mobility.qmd
     - catalog/examples/haarlemmermeer.qmd
