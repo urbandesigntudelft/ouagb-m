@@ -6,8 +6,8 @@ categories: [bricolage, classical urban examples, Le Corbusier, Fred Koetter, mo
 date-format: "YYYY"
 date: "1978"
 ---
-![](../../images/collage_city_1.jpg)
-![](../../images/collage_city_2.jpg)
+![](../../images/collage_city_1.jpg){#fig-collage-city fig-align="center"}
+
 
 Essential here is the so called “figure-ground” analysis (fig. 2-3); two carefully drawn illustrations where white represents public space and black represents built mass. The drawings themselves are not revolutionary (compare for instance fig. 2 to the Nolli-map), yet the opposition between the “traditional” city vs. the “modern” city (as already used in design by Le Corbusier, fig. 1) is made very clear and has made this study very influential.\
 
