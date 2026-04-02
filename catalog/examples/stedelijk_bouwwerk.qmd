@@ -7,7 +7,7 @@ date-format: "YYYY"
 date: "1985"
 ---
 
-![](../../images/amsterdam_2.png)
+![](../../images/amsterdam_2.png){#fig-amsterdam fig-align="center"}
 
 Amsterdam als stedelijk bouwwerk was the first of its kind in the Netherlands. The study systematically analysed different parts of Amsterdam in a great number of drawings and an accompanying text. The emphasis is on the relationship between reality and an idealised or abstracted morphology. The writers look for patterns in the city structure in an attempt to find out what Amsterdam is.\
 
