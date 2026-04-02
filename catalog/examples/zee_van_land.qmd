@@ -7,7 +7,7 @@ date-format: "YYYY"
 date: "1999"
 ---
 
-![](../../images/zee_van_land.jpg)
+![](../../images/zee_van_land_2.png){#fig-zee-van-land fig-align="center"}
 
 This is a study of polders or “droogmakerijen” in the Netherlands. A large part of the country lies below sea level. In earlier times, this delta area was studded with lakes and swamps which were reclaimed from the seventeenth century onwards. The number and sizes of these polders are shown in fig 4. The internal structure of the polders was usually a grid; the size of which reflected contemporary requirements for agriculture and water management.\
 
