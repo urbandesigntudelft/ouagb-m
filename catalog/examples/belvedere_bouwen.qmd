@@ -7,7 +7,7 @@ date-format: "YYYY"
 date: "2002"
 ---
 
-![](../../images/belvedere_bouwen.jpg)
+![](../../images/belvedere_bouwen_2.png){#fig-belvedere fig-align="center"}
 
 This regional study attempts to characterise the river landscape and the building typologies of the Vechtstreek which consist for an important part of 17th and 18th century estates (fig. 4). The Vechtstreek is a beautiful area where official policy, until recently, was preservation-based, but where piecemeal growth has nevertheless resulted in a loss of character. This study is a good example of how an analysis can provide tools for both designers and policy- makers to allow growth which respects and enhances the traditional (see also project 40). It does so by establishing the basic units of the Vechtstreek, its “korrels” (fig. 2 - 4) and to modify and compress these into a “sampled” unit (fig. 5) which can be a basis for future design.\ 
 
