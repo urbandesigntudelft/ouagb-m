@@ -1,6 +1,5 @@
 ---
 title: "3D Scanning and Lidar"
-format: html
 description: "Setting urban design principles using classical cities as models"
 categories: [geomatics, techonology, data based, experience based]
 fig-cap-location: bottom
