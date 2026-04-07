@@ -13,3 +13,31 @@ These drawings make the reader aware of the many different “scenes” in a cit
 Also see:
 Project 11, [Elements d’Analyse Urbaine](elements_urbaine.qmd)\
 Project 2, [Die Städtebau nach seinen Künstlerischen Grundsätzen](stadtebau.qmd)
+
+
+## Why use this method? 
+
+
+## How does it work?
+
+
+## You are ready to use this method if
+
+
+## Questions you can answer 
+
+
+## Steps
+
+
+## Tools {#tools}
+
+
+## Cases
+
+
+## References
+
+
+## Exercises
+
