@@ -33,11 +33,20 @@ book:
   - part: Examples
     chapters:
     - catalog/index.qmd
+    - text: "**Image of the City**"
+      file: catalog/examples/image_of_the_city.qmd
+    
+    
+    
+    
+    
+    
+    
+    
     - catalog/examples/roma_al_tempo_di_benedetto.qmd
     - catalog/examples/stadtebau.qmd
     - catalog/examples/ville_radieuse.qmd
     - catalog/examples/studi_per_una_operante.qmd
-    - catalog/examples/image_of_the_city.qmd
     - catalog/examples/concise_townscape.qmd
     - catalog/examples/las_vegas.qmd
     - catalog/examples/bologna.qmd
