@@ -2,7 +2,7 @@
 title: "Elements d’analyse urbaine"
 author: "Panerai, Depaule, Demorgon, Veyrenche"
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [3d, development, “French school” of analysis, Nolli map, Philippe Panerai, perspective drawings, reduction drawings, type, typology ]
+categories: [the use of 3d, development, “French school” of analysis, Nolli map, Philippe Panerai, perspective drawings, reduction drawings, type, typology ]
 date-format: "YYYY"
 date: "1980"
 fig-cap-location: bottom
