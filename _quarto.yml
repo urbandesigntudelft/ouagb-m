@@ -33,7 +33,13 @@ book:
   - part: Examples
     chapters:
     - catalog/index.qmd
-    - text: "**Image of the City**"
+    - text: "**The Concise Townscape**" #map
+      file: catalog/examples/concise_townscape.qmd
+    - text: "**Les Bastides: d’Aquitaine, du Bas-Languedoc et du Béarn**" #map
+      file: catalog/examples/les_bastides.qmd
+    - text: "**The Memory of the City**" #map
+      file: catalog/examples/memory_of_the_city.qmd
+    - text: "**Image of the City**" #experience
       file: catalog/examples/image_of_the_city.qmd
     
     
@@ -47,14 +53,12 @@ book:
     - catalog/examples/stadtebau.qmd
     - catalog/examples/ville_radieuse.qmd
     - catalog/examples/studi_per_una_operante.qmd
-    - catalog/examples/concise_townscape.qmd
     - catalog/examples/las_vegas.qmd
     - catalog/examples/bologna.qmd
     - catalog/examples/collage_city.qmd
     - catalog/examples/elements_urbaine.qmd
     - catalog/examples/versailles.qmd
     - catalog/examples/stedelijk_bouwwerk.qmd
-    - catalog/examples/les_bastides.qmd
     - catalog/examples/verstedelijkt_landschap.qmd
     - catalog/examples/la_metropole_imaginaire.qmd
     - catalog/examples/landschap_en_verstedelijking.qmd
