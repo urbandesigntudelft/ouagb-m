@@ -27,28 +27,28 @@ book:
     # - chapters/methodology/typology_construction_quantitative.qmd
     # - chapters/methodology/typology_construction_qualitative.qmd
     # - chapters/methodology/techniques.qmd
-    # - chapters/methodology/space_matrix.qmd
-    # - chapters/methodology/space_syntax.qmd
     # - leaflet_template.qmd
   - part: Examples
     chapters:
     - catalog/index.qmd
-    - text: "**The Concise Townscape**" #map
+    - text: "**The Concise Townscape**"                        #map
       file: catalog/examples/concise_townscape.qmd
     - text: "**Les Bastides: d’Aquitaine, du Bas-Languedoc et du Béarn**" #map
       file: catalog/examples/les_bastides.qmd
-    - text: "**The Memory of the City**" #map
+    - text: "**The Memory of the City**"                       #map
       file: catalog/examples/memory_of_the_city.qmd
-    - text: "**Image of the City**" #experience
+    - text: "**Image of the City**"                            #experience
       file: catalog/examples/image_of_the_city.qmd
-    
-    
-    
-    
-    
-    
-    
-    
+    - text: "**Notes on the Synthesis of Form**"               #data
+      file: catalog/examples/synthesis_of_form.qmd
+    - text: "**Urban Taxonomy**"                               #data/map
+      file: catalog/examples/urban_taxonomy.qmd
+    - text: "**Space Matrix**"                                 #data/map
+      file: catalog/examples/space_matrix.qmd
+    - text: "**Space Syntax**"                                 #data/map
+      file: catalog/examples/space_syntax.qmd
+    - text: "**3D Scanning and Lidar**"                        #data/experience
+      file: catalog/examples/3d_scanning_lidar.qmd
     - catalog/examples/roma_al_tempo_di_benedetto.qmd
     - catalog/examples/stadtebau.qmd
     - catalog/examples/ville_radieuse.qmd
@@ -80,7 +80,6 @@ book:
     - catalog/examples/object_van_beweging.qmd
     - catalog/examples/the_view_from_the_road.qmd
     - catalog/examples/kumbh_mela.qmd
-    - catalog/examples/urban_taxonomy.qmd
   - part: "Appendices"
     chapters:
     - appendices/references.qmd
