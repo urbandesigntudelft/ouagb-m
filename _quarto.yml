@@ -77,9 +77,9 @@ book:
     - catalog/examples/haarlemmermeer.qmd                      #map
     - catalog/examples/evolution_of_a_compact_city.qmd         #map
     - catalog/examples/measuring_pompeii.qmd                   #map
-    - catalog/examples/object_van_beweging.qmd                 #
-    - catalog/examples/the_view_from_the_road.qmd              #
-    - catalog/examples/kumbh_mela.qmd                          #
+    - catalog/examples/object_van_beweging.qmd                 #experience
+    - catalog/examples/the_view_from_the_road.qmd              #experience
+    - catalog/examples/kumbh_mela.qmd                          #map
   - part: "Appendices"
     chapters:
     - appendices/references.qmd

@@ -23,7 +23,7 @@ library(htmlwidgets)
 
 # 1. Load your data
 nodes <- data.frame(
-  id = 1:29,
+  id = 1:30,
   label = c("The Concise Townscape", "Les Bastides", "The Memory of the City", 
             "Urban Taxonomy", "Spacematrix", "Roma al tempo di Benedetto XIV",
             "Die Städtebau nach seinen künstlerischen Grundsätzen", "La Ville Radieuse",
@@ -36,7 +36,8 @@ nodes <- data.frame(
             "Paris des Faubourgs: Formation, Transformation", "Het Land in de Stad",
             "Stadsportretten", "Zee van Land", "4", "Een nieuwe oude jas", 
             "IJburg, Haveneiland en Rieteilanden", "Haarlemmermeer", 
-            "Barcelona, The Evolution of A Compact City", "Measuring Pompeii"),
+            "Barcelona, The Evolution of A Compact City", "Measuring Pompeii",
+            "Ephemeral Urbanisms: Kumbh Mela, India"),
   title = c("The Concise Townscape", "Les Bastides", "The Memory of the City", 
             "Urban Taxonomy", "Spacematrix", "Roma al tempo di Benedetto XIV",
             "Die Städtebau nach seinen künstlerischen Grundsätzen", "La Ville Radieuse",
@@ -49,7 +50,8 @@ nodes <- data.frame(
             "Paris des Faubourgs: Formation, Transformation", "Het Land in de Stad",
             "Stadsportretten", "Zee van Land", "4", "Een nieuwe oude jas", 
             "IJburg, Haveneiland en Rieteilanden", "Haarlemmermeer",
-            "Barcelona, The Evolution of A Compact City", "Measuring Pompeii"),
+            "Barcelona, The Evolution of A Compact City", "Measuring Pompeii",
+            "Ephemeral Urbanisms: Kumbh Mela, India"),
   url = c("../catalog/examples/concise_townscape.html", "../catalog/examples/les_bastides.html",
           "../catalog/examples/memory_of_the_city.html", "../catalog/examples/urban_taxonomy.html",
           "../catalog/examples/space_matrix.html", "../catalog/examples/roma_al_tempo_di_benedetto.html",
@@ -64,7 +66,8 @@ nodes <- data.frame(
           "../catalog/examples/stadsportretten.html", "../catalog/examples/zee_van_land.html",
           "../catalog/examples/bindels_gietema.html", "../catalog/examples/een_nieuwe_oude_jas.html",
           "../catalog/examples/ijburg.html", "../catalog/examples/haarlemmermeer.html",
-          "../catalog/examples/evolution_of_a_compact_city.html", "../catalog/examples/measuring_pompeii.html"),
+          "../catalog/examples/evolution_of_a_compact_city.html", "../catalog/examples/measuring_pompeii.html",
+          "../catalog/examples/kumbh_mela.html"),
   stringsAsFactors = FALSE
 )
 

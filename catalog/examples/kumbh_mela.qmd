@@ -2,7 +2,7 @@
 title: "Ephemeral Urbanisms: Kumbh Mela, India"
 author: "Rahul Mehrotra, Felipe Vera"
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [to be updated]
+categories: [map based]
 date-format: "YYYY"
 date: "2022"
 fig-cap-location: bottom
