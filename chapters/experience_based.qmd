@@ -22,9 +22,9 @@ library(htmlwidgets)
 # 1. Load your data
 nodes <- data.frame(
   id = 1:3,
-  label = c("Image of the City", "Node B", "Node C"),
-  title = c("Click to go to Chapter 1", "Click for Chapter 2", "Click for Chapter 3"),
-  url = c("../catalog/examples/bindels_gietema.html", "../catalog/examples/ijburg.html",
+  label = c("Image of the City", "3D Scanning and Lidar", "Node C"),
+  title = c("Image of the City", "3D Scanning and Lidar", "Click for Chapter 3"),
+  url = c("../catalog/examples/image_of_the_city.html", "../catalog/examples/3d_scanning_lidar.html",
           "../catalog/examples/kumbh_mela.html"),
   stringsAsFactors = FALSE
 )
