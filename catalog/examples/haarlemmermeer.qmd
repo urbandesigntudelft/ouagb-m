@@ -2,9 +2,10 @@
 title: "Haarlemmermeer"
 author: "Clemens Steenbergen, Wouter Reh"
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [Amsterdam, conceptual abstraction, cultural heritage, analysis as basis for design, economy, Haarlemmermeer, landscape, morphological layers, Wouter Reh, Steenbergen]
+categories: [Amsterdam, conceptual abstraction, cultural heritage, analysis as basis for design, economy, Haarlemmermeer, landscape, morphological layers, Wouter Reh, Steenbergen, map based]
 date-format: "YYYY"
 date: "2004"
+fig-cap-location: bottom
 ---
 
 ![](../../images/haarlemmermeer.jpg)

@@ -72,11 +72,11 @@ book:
     - catalog/examples/costa_iberica.qmd                       #data
     - catalog/examples/een_nieuwe_oude_jas.qmd                 #map
     - catalog/examples/belvedere_bouwen.qmd                    #experience
-    - catalog/examples/ijburg.qmd                              #
-    - catalog/examples/mobility.qmd                            #
-    - catalog/examples/haarlemmermeer.qmd                      #
-    - catalog/examples/evolution_of_a_compact_city.qmd         #
-    - catalog/examples/measuring_pompeii.qmd                   #
+    - catalog/examples/ijburg.qmd                              #map
+    - catalog/examples/mobility.qmd                            #experience
+    - catalog/examples/haarlemmermeer.qmd                      #map
+    - catalog/examples/evolution_of_a_compact_city.qmd         #map
+    - catalog/examples/measuring_pompeii.qmd                   #map
     - catalog/examples/object_van_beweging.qmd                 #
     - catalog/examples/the_view_from_the_road.qmd              #
     - catalog/examples/kumbh_mela.qmd                          #
