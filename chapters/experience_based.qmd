@@ -21,7 +21,7 @@ library(htmlwidgets)
 
 # 1. Load your data
 nodes <- data.frame(
-  id = 1:8,
+  id = 1:9,
   label = c("Image of the City", "3D Scanning and Lidar", "Learning from Las Vegas", 
             "Elements d’analyse urbaine", "La Metropole Imaginaire: un Atlas de Paris",
             "Belvedere Bouwen", "Mobility: a room with a view", "De stad, object van beweging",
