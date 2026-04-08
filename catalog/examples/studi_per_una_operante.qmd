@@ -2,7 +2,7 @@
 title: "Studi per una Operante Storia Urbana di Venezia"
 author: "Saverio Muratori"
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [cultural heritage, development, documentation, “Italian school” of analysis, Moudon Vernez, Anne Muratori, Saverio patterns, Venice]
+categories: [cultural heritage, development, documentation, “Italian school” of analysis, Moudon Vernez, Anne Muratori, Saverio patterns, Venice，map based]
 date-format: "YYYY"
 date: "1959"
 fig-cap-location: bottom

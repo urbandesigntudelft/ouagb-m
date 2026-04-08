@@ -55,9 +55,9 @@ book:
     - catalog/examples/studi_per_una_operante.qmd              #map
     - catalog/examples/las_vegas.qmd                           #experience
     - catalog/examples/bologna.qmd                             #map
-    - catalog/examples/collage_city.qmd                        #
-    - catalog/examples/elements_urbaine.qmd                    #
-    - catalog/examples/versailles.qmd                          #
+    - catalog/examples/collage_city.qmd                        #map
+    - catalog/examples/elements_urbaine.qmd                    #map/experience
+    - catalog/examples/versailles.qmd                          #map
     - catalog/examples/stedelijk_bouwwerk.qmd                  #
     - catalog/examples/verstedelijkt_landschap.qmd             #
     - catalog/examples/la_metropole_imaginaire.qmd             #

@@ -2,7 +2,7 @@
 title: "Collage City"
 author: "Colin Rowe and Fred Koetter"
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [bricolage, classical urban examples, Le Corbusier, Fred Koetter, modern cities, Nolli map, Rome, Colin Rowe, traditional urban features]
+categories: [bricolage, classical urban examples, Le Corbusier, Fred Koetter, modern cities, Nolli map, Rome, Colin Rowe, traditional urban features, map based]
 date-format: "YYYY"
 date: "1978"
 ---

@@ -2,7 +2,7 @@
 title: "Die Städtebau nach seinen künstlerischen Grundsätzen"
 author: "Camillo Sitte"
 description: "Setting urban design principles using classical cities as models"
-categories: [the use of 3d, the use of classical urban examples, perspective drawings, Camillo Sitte]
+categories: [the use of 3d, the use of classical urban examples, perspective drawings, Camillo Sitte, map based]
 date-format: "YYYY"
 date: "1889"
 fig-cap-location: bottom
