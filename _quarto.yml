@@ -49,37 +49,37 @@ book:
       file: catalog/examples/space_syntax.qmd
     - text: "**3D Scanning and Lidar**"                        #data/experience
       file: catalog/examples/3d_scanning_lidar.qmd
-    - catalog/examples/roma_al_tempo_di_benedetto.qmd
-    - catalog/examples/stadtebau.qmd
-    - catalog/examples/ville_radieuse.qmd
-    - catalog/examples/studi_per_una_operante.qmd
-    - catalog/examples/las_vegas.qmd
-    - catalog/examples/bologna.qmd
-    - catalog/examples/collage_city.qmd
-    - catalog/examples/elements_urbaine.qmd
-    - catalog/examples/versailles.qmd
-    - catalog/examples/stedelijk_bouwwerk.qmd
-    - catalog/examples/verstedelijkt_landschap.qmd
-    - catalog/examples/la_metropole_imaginaire.qmd
-    - catalog/examples/landschap_en_verstedelijking.qmd
-    - catalog/examples/gli_orizzonti.qmd
-    - catalog/examples/point_city.qmd
-    - catalog/examples/paris_des_faubourgs.qmd
-    - catalog/examples/het_land_in_de_stad.qmd
-    - catalog/examples/stadsportretten.qmd
-    - catalog/examples/zee_van_land.qmd
-    - catalog/examples/bindels_gietema.qmd
-    - catalog/examples/costa_iberica.qmd
-    - catalog/examples/een_nieuwe_oude_jas.qmd
-    - catalog/examples/belvedere_bouwen.qmd
-    - catalog/examples/ijburg.qmd
-    - catalog/examples/mobility.qmd
-    - catalog/examples/haarlemmermeer.qmd
-    - catalog/examples/evolution_of_a_compact_city.qmd
-    - catalog/examples/measuring_pompeii.qmd
-    - catalog/examples/object_van_beweging.qmd
-    - catalog/examples/the_view_from_the_road.qmd
-    - catalog/examples/kumbh_mela.qmd
+    - catalog/examples/roma_al_tempo_di_benedetto.qmd          #map
+    - catalog/examples/stadtebau.qmd                           #map
+    - catalog/examples/ville_radieuse.qmd                      #map
+    - catalog/examples/studi_per_una_operante.qmd              #map
+    - catalog/examples/las_vegas.qmd                           #experience
+    - catalog/examples/bologna.qmd                             #map
+    - catalog/examples/collage_city.qmd                        #
+    - catalog/examples/elements_urbaine.qmd                    #
+    - catalog/examples/versailles.qmd                          #
+    - catalog/examples/stedelijk_bouwwerk.qmd                  #
+    - catalog/examples/verstedelijkt_landschap.qmd             #
+    - catalog/examples/la_metropole_imaginaire.qmd             #
+    - catalog/examples/landschap_en_verstedelijking.qmd        #
+    - catalog/examples/gli_orizzonti.qmd                       #
+    - catalog/examples/point_city.qmd                          #
+    - catalog/examples/paris_des_faubourgs.qmd                 #
+    - catalog/examples/het_land_in_de_stad.qmd                 #
+    - catalog/examples/stadsportretten.qmd                     #
+    - catalog/examples/zee_van_land.qmd                        #
+    - catalog/examples/bindels_gietema.qmd                     #
+    - catalog/examples/costa_iberica.qmd                       #
+    - catalog/examples/een_nieuwe_oude_jas.qmd                 #
+    - catalog/examples/belvedere_bouwen.qmd                    #
+    - catalog/examples/ijburg.qmd                              #
+    - catalog/examples/mobility.qmd                            #
+    - catalog/examples/haarlemmermeer.qmd                      #
+    - catalog/examples/evolution_of_a_compact_city.qmd         #
+    - catalog/examples/measuring_pompeii.qmd                   #
+    - catalog/examples/object_van_beweging.qmd                 #
+    - catalog/examples/the_view_from_the_road.qmd              #
+    - catalog/examples/kumbh_mela.qmd                          #
   - part: "Appendices"
     chapters:
     - appendices/references.qmd

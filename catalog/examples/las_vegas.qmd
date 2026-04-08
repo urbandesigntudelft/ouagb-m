@@ -5,9 +5,10 @@ description: "An analytical mapping method created by Giambattista Nolli"
 categories: [Steven Izenour, Las Vegas, morphological layers, Learning from Las Vegas, morphology, Nolli map, non-spaces, the use of photographs, popular culture, Denise Scott Brown, traditional urban features, Robert Venturi]
 date-format: "YYYY"
 date: "1972"
+fig-cap-location: bottom
 ---
 
-![](../../images/las_vegas.jpg)
+![](../../images/las_vegas.jpg){#fig-las-vegas fig-align="center"}
 
 Before 1972, Las Vegas was regarded by many as an almost featureless and meaningless urban environment. This changed with the publication of this book. With the advent of the car- and media based culture in the nineteen sixties, a place like Las Vegas could suddenly acquire a completely different meaning; at least for architects and urban designers. This analysis suddenly made visible to the profession what had long been hidden under the surface: non-spaces and popular culture are powerful material for designers. A similar wish to find something unique in the everyday environment seems to drive many contemporary designers who try to represent phenomena like mobility, urban sprawl or the essence of the Randstad.\
 
