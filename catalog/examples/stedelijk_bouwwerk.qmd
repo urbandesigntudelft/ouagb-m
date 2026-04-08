@@ -2,7 +2,7 @@
 title: "Amsterdam als stedelijk bouwwerk"
 author: "Louwe and Van der Hoeven"
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [Amsterdam, conceptual abstraction, Casper van der Hoeven, morphological layers, Jos Louwe, modern cities, morphology, patterns, public space, Speckle, Simon Stevin, visualisation]
+categories: [Amsterdam, conceptual abstraction, Casper van der Hoeven, morphological layers, Jos Louwe, modern cities, morphology, patterns, public space, Speckle, Simon Stevin, visualisation, map based]
 date-format: "YYYY"
 date: "1985"
 ---

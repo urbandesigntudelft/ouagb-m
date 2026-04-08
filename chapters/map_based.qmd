@@ -23,31 +23,42 @@ library(htmlwidgets)
 
 # 1. Load your data
 nodes <- data.frame(
-  id = 1:13,
+  id = 1:19,
   label = c("The Concise Townscape", "Les Bastides", "The Memory of the City", 
             "Urban Taxonomy", "Spacematrix", "Roma al tempo di Benedetto XIV",
             "Die Städtebau nach seinen künstlerischen Grundsätzen", "La Ville Radieuse",
             "Studi per una Operante Storia Urbana di Venezia", "Bologna", "Collage City",
-            "Elements d’analyse urbaine", "Lecture d’une ville: Versailles"),
+            "Elements d’analyse urbaine", "Lecture d’une ville: Versailles", 
+            "Amsterdam als stedelijk bouwwerk", "Rotterdam Verstedelijkt Landschap",
+            "La Metropole Imaginaire: un Atlas de Paris", 
+            "Landschap en Verstedelijking tussen Den Haag en Rotterdam", 
+            "Gli orizzonti della città diffusa", "Point City - South City"),
   title = c("The Concise Townscape", "Les Bastides", "The Memory of the City", 
             "Urban Taxonomy", "Spacematrix", "Roma al tempo di Benedetto XIV",
             "Die Städtebau nach seinen künstlerischen Grundsätzen", "La Ville Radieuse",
             "Studi per una Operante Storia Urbana di Venezia", "Bologna", "Collage City",
-            "Elements d’analyse urbaine", "Lecture d’une ville: Versailles"),
+            "Elements d’analyse urbaine", "Lecture d’une ville: Versailles",
+            "Amsterdam als stedelijk bouwwerk", "Rotterdam Verstedelijkt Landschap",
+            "La Metropole Imaginaire: un Atlas de Paris",
+            "Landschap en Verstedelijking tussen Den Haag en Rotterdam", 
+            "Gli orizzonti della città diffusa", "Point City - South City"),
   url = c("../catalog/examples/concise_townscape.html", "../catalog/examples/les_bastides.html",
           "../catalog/examples/memory_of_the_city.html", "../catalog/examples/urban_taxonomy.html",
           "../catalog/examples/space_matrix.html", "../catalog/examples/roma_al_tempo_di_benedetto.html",
           "../catalog/examples/stadtebau.html", "../catalog/examples/ville_radieuse.html",
           "../catalog/examples/studi_per_una_operante.html", "../catalog/examples/bologna.html",
           "../catalog/examples/collage_city.html", "../catalog/examples/elements_urbaine.html",
-          "../catalog/examples/versailles.html"),
+          "../catalog/examples/versailles.html","../catalog/examples/stedelijk_bouwwerk.html",
+          "../catalog/examples/verstedelijkt_landschap.html", "../catalog/examples/la_metropole_imaginaire.html",
+          "../catalog/examples/landschap_en_verstedelijking.html",
+          "../catalog/examples/gli_orizzonti.html", "../catalog/examples/point_city.html"),
   stringsAsFactors = FALSE
 )
 
 edges <- data.frame(
-  from = c(1, 2, 4, 6, 6, 6, 6),
-  to = c(3, 3, 5, 7, 8, 9, 11),
-  value = c(1, 1, 1, 1, 1, 1, 1) # Relation strength
+  from = c(1, 2, 4, 6, 6, 6, 6, 6),
+  to = c(3, 3, 5, 7, 8, 9, 11, 14),
+  value = c(1, 1, 1, 1, 1, 1, 1, 1) # Relation strength
 ) %>%
   mutate(
     # Use a power function to make 'strong' relations significantly shorter

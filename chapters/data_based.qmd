@@ -18,14 +18,15 @@ library(htmlwidgets)
 
 # 1. Load your data
 nodes <- data.frame(
-  id = 1:6,
+  id = 1:7,
   label = c("Synthesis of Form", "Urban Taxonomy", "Spacematrix", "Space Syntax", 
-            "3D Scanning and Lidar", "Bologna"),
+            "3D Scanning and Lidar", "Bologna", "Point City - South City"),
   title = c("Synthesis of Form", "Urban Taxonomy", "Spacematrix", "Space Syntax", 
-            "3D Scanning and Lidar", "Bologna"),
+            "3D Scanning and Lidar", "Bologna", "Point City - South City"),
   url = c("../catalog/examples/synthesis_of_form", "../catalog/examples/urban_taxonomy.html",
           "../catalog/examples/space_matrix.html", "../catalog/examples/space_syntax.html",
-          "../catalog/examples/3d_scanning_lidar.html", "../catalog/examples/bologna.html"),
+          "../catalog/examples/3d_scanning_lidar.html", "../catalog/examples/bologna.html",
+          "../catalog/examples/point_city.html"),
   stringsAsFactors = FALSE
 )
 

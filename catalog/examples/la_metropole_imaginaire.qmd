@@ -2,7 +2,7 @@
 title: "La Metropole Imaginaire: un Atlas de Paris"
 author: "Bruno Fortier"
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [the use of 3d, Bologna, development, documentation, Bruno Fortier, “French school” of analysis, Paris, the use of photographs, type, typology]
+categories: [the use of 3d, Bologna, development, documentation, Bruno Fortier, “French school” of analysis, Paris, the use of photographs, type, typology, map based, experience based]
 date-format: "YYYY"
 date: "1989"
 ---

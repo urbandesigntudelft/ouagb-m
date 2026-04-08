@@ -58,12 +58,12 @@ book:
     - catalog/examples/collage_city.qmd                        #map
     - catalog/examples/elements_urbaine.qmd                    #map/experience
     - catalog/examples/versailles.qmd                          #map
-    - catalog/examples/stedelijk_bouwwerk.qmd                  #
-    - catalog/examples/verstedelijkt_landschap.qmd             #
-    - catalog/examples/la_metropole_imaginaire.qmd             #
-    - catalog/examples/landschap_en_verstedelijking.qmd        #
-    - catalog/examples/gli_orizzonti.qmd                       #
-    - catalog/examples/point_city.qmd                          #
+    - catalog/examples/stedelijk_bouwwerk.qmd                  #map
+    - catalog/examples/verstedelijkt_landschap.qmd             #map
+    - catalog/examples/la_metropole_imaginaire.qmd             #map
+    - catalog/examples/landschap_en_verstedelijking.qmd        #map
+    - catalog/examples/gli_orizzonti.qmd                       #map
+    - catalog/examples/point_city.qmd                          #map/data
     - catalog/examples/paris_des_faubourgs.qmd                 #
     - catalog/examples/het_land_in_de_stad.qmd                 #
     - catalog/examples/stadsportretten.qmd                     #

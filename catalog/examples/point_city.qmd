@@ -2,7 +2,7 @@
 title: "Point City - South City"
 author: "Rem Koolhaas"
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [density, Rem Koolhaas, analyses of large scale, O.M.A, Paris, Rotterdam]
+categories: [density, Rem Koolhaas, analyses of large scale, O.M.A, Paris, Rotterdam, map based, data based]
 date-format: "YYYY"
 date: "1993"
 fig-cap-location: bottom
