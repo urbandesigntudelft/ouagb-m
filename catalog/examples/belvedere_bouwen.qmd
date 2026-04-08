@@ -2,9 +2,10 @@
 title: "Belvedere Bouwen: Vecht- en plassengebied"
 author: "Landscape Architects for Sale"
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [building and building blocks, cultural heritage, analysis as basis for design, development, Michael Graves, korrels, landscape, Landscape Architects for Sale, analyses of large scale, morphological layers, the use of photographs, regional scale, type, typology, Vechtstreek, visualisation]
+categories: [building and building blocks, cultural heritage, analysis as basis for design, development, Michael Graves, korrels, landscape, Landscape Architects for Sale, analyses of large scale, morphological layers, the use of photographs, regional scale, type, typology, Vechtstreek, visualisation, experience based]
 date-format: "YYYY"
 date: "2002"
+fig-cap-location: bottom
 ---
 
 ![](../../images/belvedere_bouwen_2.png){#fig-belvedere fig-align="center"}

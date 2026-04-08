@@ -2,7 +2,7 @@
 title: "4"
 author: "Bindels, Gietema, Hartzema and Klok"
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [the use of 3d, Amsterdam, Edzo Bindels, comparison, conceptual abstraction, “French school” of analysis, Casper van der Hoeven, “Italian school” of analysis, morphological layers, Jos Louwe, modern cities, plan analysis, visualisation]
+categories: [the use of 3d, Amsterdam, Edzo Bindels, comparison, conceptual abstraction, “French school” of analysis, Casper van der Hoeven, “Italian school” of analysis, morphological layers, Jos Louwe, modern cities, plan analysis, visualisation, map based, data based]
 date-format: "YYYY"
 date: "2000"
 fig-cap-location: bottom

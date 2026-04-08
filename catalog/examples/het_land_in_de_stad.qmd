@@ -2,9 +2,10 @@
 title: "Het Land in de Stad: de stedebouw van de grote agglomeratie"
 author: "L.J.M. Tummers, J.M. Tummers-Zuurmond"
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [Amsterdam, comparison, the Hague, landscape, morphological layers, L.J.M.Tummers, J.M.Tummers-Zuurmon, urbanisation]
+categories: [Amsterdam, comparison, the Hague, landscape, morphological layers, L.J.M.Tummers, J.M.Tummers-Zuurmon, urbanisation, map based]
 date-format: "YYYY"
 date: "1997"
+fig-cap-location: bottom
 ---
 
 ![](../../images/land_in_stad.jpg)

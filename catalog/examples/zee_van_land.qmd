@@ -2,9 +2,10 @@
 title: "Zee van Land"
 author: "Wouter Reh and Clemens Steenbergen"
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [the use of 3d, Building and building blocks, comparison, landscape, morphological layers, polders, Wouter Reh, Steenbergen]
+categories: [the use of 3d, Building and building blocks, comparison, landscape, morphological layers, polders, Wouter Reh, Steenbergen, map based]
 date-format: "YYYY"
 date: "1999"
+fig-cap-location: bottom
 ---
 
 ![](../../images/zee_van_land_2.png){#fig-zee-van-land fig-align="center"}

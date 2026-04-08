@@ -2,9 +2,10 @@
 title: "Paris des Faubourgs: Formation, Transformation"
 author: "Jacques Lucan ed."
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [development, faubourgs, “French school” of analysis, Jacques Lucan, morphology, parcellation, Paris, patterns, the use of photographs, social issues, the use of text]
+categories: [development, faubourgs, “French school” of analysis, Jacques Lucan, morphology, parcellation, Paris, patterns, the use of photographs, social issues, the use of text, map based]
 date-format: "YYYY"
 date: "1996"
+fig-cap-location: bottom
 ---
 
 ![](../../images/paris_des_faubourgs.jpg){#fig-paris fig-align="center"}

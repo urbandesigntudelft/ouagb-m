@@ -23,7 +23,7 @@ library(htmlwidgets)
 
 # 1. Load your data
 nodes <- data.frame(
-  id = 1:19,
+  id = 1:25,
   label = c("The Concise Townscape", "Les Bastides", "The Memory of the City", 
             "Urban Taxonomy", "Spacematrix", "Roma al tempo di Benedetto XIV",
             "Die Städtebau nach seinen künstlerischen Grundsätzen", "La Ville Radieuse",
@@ -32,7 +32,9 @@ nodes <- data.frame(
             "Amsterdam als stedelijk bouwwerk", "Rotterdam Verstedelijkt Landschap",
             "La Metropole Imaginaire: un Atlas de Paris", 
             "Landschap en Verstedelijking tussen Den Haag en Rotterdam", 
-            "Gli orizzonti della città diffusa", "Point City - South City"),
+            "Gli orizzonti della città diffusa", "Point City - South City",
+            "Paris des Faubourgs: Formation, Transformation", "Het Land in de Stad",
+            "Stadsportretten", "Zee van Land", "4", "Een nieuwe oude jas"),
   title = c("The Concise Townscape", "Les Bastides", "The Memory of the City", 
             "Urban Taxonomy", "Spacematrix", "Roma al tempo di Benedetto XIV",
             "Die Städtebau nach seinen künstlerischen Grundsätzen", "La Ville Radieuse",
@@ -41,7 +43,9 @@ nodes <- data.frame(
             "Amsterdam als stedelijk bouwwerk", "Rotterdam Verstedelijkt Landschap",
             "La Metropole Imaginaire: un Atlas de Paris",
             "Landschap en Verstedelijking tussen Den Haag en Rotterdam", 
-            "Gli orizzonti della città diffusa", "Point City - South City"),
+            "Gli orizzonti della città diffusa", "Point City - South City",
+            "Paris des Faubourgs: Formation, Transformation", "Het Land in de Stad",
+            "Stadsportretten", "Zee van Land", "4", "Een nieuwe oude jas"),
   url = c("../catalog/examples/concise_townscape.html", "../catalog/examples/les_bastides.html",
           "../catalog/examples/memory_of_the_city.html", "../catalog/examples/urban_taxonomy.html",
           "../catalog/examples/space_matrix.html", "../catalog/examples/roma_al_tempo_di_benedetto.html",
@@ -51,7 +55,10 @@ nodes <- data.frame(
           "../catalog/examples/versailles.html","../catalog/examples/stedelijk_bouwwerk.html",
           "../catalog/examples/verstedelijkt_landschap.html", "../catalog/examples/la_metropole_imaginaire.html",
           "../catalog/examples/landschap_en_verstedelijking.html",
-          "../catalog/examples/gli_orizzonti.html", "../catalog/examples/point_city.html"),
+          "../catalog/examples/gli_orizzonti.html", "../catalog/examples/point_city.html",
+          "../catalog/examples/paris_des_faubourgs.html", "../catalog/examples/het_land_in_de_stad.html",
+          "../catalog/examples/stadsportretten.html", "../catalog/examples/zee_van_land.html",
+          "../catalog/examples/bindels_gietema.html", "../catalog/examples/een_nieuwe_oude_jas.html"),
   stringsAsFactors = FALSE
 )
 

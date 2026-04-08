@@ -2,9 +2,10 @@
 title: "Stadsanalyse: De Nieuwe Kaart van Den Haag / Stadsportretten"
 author: "Els Bet, Martin Verwoest"
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [Amsterdam, Els Bet, geomorphology, the Hague, rhetorics, Martin Verwoest, visualisation]
+categories: [Amsterdam, Els Bet, geomorphology, the Hague, rhetorics, Martin Verwoest, visualisation, map based]
 date-format: "YYYY"
 date: "1998"
+fig-cap-location: bottom
 ---
 
 ![](../../images/stadsportretten.jpg){#fig-stadsportretten fig-align="center"}

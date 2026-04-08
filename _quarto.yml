@@ -64,14 +64,14 @@ book:
     - catalog/examples/landschap_en_verstedelijking.qmd        #map
     - catalog/examples/gli_orizzonti.qmd                       #map
     - catalog/examples/point_city.qmd                          #map/data
-    - catalog/examples/paris_des_faubourgs.qmd                 #
-    - catalog/examples/het_land_in_de_stad.qmd                 #
-    - catalog/examples/stadsportretten.qmd                     #
-    - catalog/examples/zee_van_land.qmd                        #
-    - catalog/examples/bindels_gietema.qmd                     #
-    - catalog/examples/costa_iberica.qmd                       #
-    - catalog/examples/een_nieuwe_oude_jas.qmd                 #
-    - catalog/examples/belvedere_bouwen.qmd                    #
+    - catalog/examples/paris_des_faubourgs.qmd                 #map
+    - catalog/examples/het_land_in_de_stad.qmd                 #map
+    - catalog/examples/stadsportretten.qmd                     #map
+    - catalog/examples/zee_van_land.qmd                        #map/data
+    - catalog/examples/bindels_gietema.qmd                     #map/data
+    - catalog/examples/costa_iberica.qmd                       #data
+    - catalog/examples/een_nieuwe_oude_jas.qmd                 #map
+    - catalog/examples/belvedere_bouwen.qmd                    #experience
     - catalog/examples/ijburg.qmd                              #
     - catalog/examples/mobility.qmd                            #
     - catalog/examples/haarlemmermeer.qmd                      #

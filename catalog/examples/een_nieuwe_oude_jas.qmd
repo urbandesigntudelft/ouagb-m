@@ -2,9 +2,10 @@
 title: "Een nieuwe oude jas: de heruitvinding van stedelijke weefsels en woningtypes"
 author: "Jan Brouwer"
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [the use of 3d, Amsterdam, Jan Brouwer, building and building blocks, comparison, “French school” of analysis, “Italian school” of analysis, type, typology]
+categories: [the use of 3d, Amsterdam, Jan Brouwer, building and building blocks, comparison, “French school” of analysis, “Italian school” of analysis, type, typology, map based]
 date-format: "YYYY"
 date: "2001"
+fig-cap-location: bottom
 ---
 
 ![](../../images/een_nieuwe_oude_jas_2.png){#fig-nieuwe-oude-jas fig-align="center"}
