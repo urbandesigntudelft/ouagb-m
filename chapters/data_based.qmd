@@ -19,9 +19,9 @@ library(htmlwidgets)
 # 1. Load your data
 nodes <- data.frame(
   id = 1:3,
-  label = c("Node A", "Node B", "Node C"),
-  title = c("Click to go to Chapter 1", "Click for Chapter 2", "Click for Chapter 3"),
-  url = c("../catalog/examples/bindels_gietema.html", "../catalog/examples/ijburg.html",
+  label = c("Synthesis of Form", "Urban Taxonomy", "Node C"),
+  title = c("Synthesis of Form", "Urban Taxonomy", "Click for Chapter 3"),
+  url = c("../catalog/examples/synthesis_of_form", "../catalog/examples/urban_taxonomy.html",
           "../catalog/examples/kumbh_mela.html"),
   stringsAsFactors = FALSE
 )
@@ -29,16 +29,19 @@ nodes <- data.frame(
 edges <- data.frame(
   from = c(1, 2),
   to = c(3, 3),
-  value = c(10, 2) # Relation strength
+  value = c(1, 1) # Relation strength
 ) %>%
   mutate(
     # Use a power function to make 'strong' relations significantly shorter
-    length = 500 / value
+    length = 200 / value
   )
 
 # 2. The Plot with "Deep Peeling" Logic
 visNetwork(nodes, edges) %>%
   visNodes(shape = "dot") %>%
+  visEdges(
+    smooth = list(enabled = FALSE)
+  ) %>%
   visPhysics(
   solver = "forceAtlas2Based",
   forceAtlas2Based = list(
@@ -49,30 +52,24 @@ visNetwork(nodes, edges) %>%
   ),
   stabilization = TRUE
 ) %>%
-  visEvents(selectNode = htmlwidgets::JS("
-    function(params) {
-      // 1. Get the ID of the node you clicked
-      var clickedId = params.nodes;
-      
-      // 2. Instead of 'peeling' the clicked object, 
-      //    we look at the ORIGINAL data source for that ID.
-      var allNodes = this.body.data.nodes.get();
-      var targetNode = allNodes.find(function(node) {
-        return node.id == clickedId;
-      });
-
-      console.log('Target Node Found:', targetNode);
-
-      // 3. Navigate
-      if (targetNode && targetNode.url) {
-        window.location.href = targetNode.url;
-      } else if (targetNode && targetNode.href) {
-        window.location.href = targetNode.href;
-      } else {
-        console.error('Node found, but no url/href property exists in the source data.');
+  visInteraction(zoomView = FALSE, dragView = TRUE) %>%
+  visOptions(nodesIdSelection = TRUE) %>%
+  # ALL your JavaScript events go in this one function:
+  visEvents(
+    # 1. Your working Navigation Logic
+    selectNode = htmlwidgets::JS("
+      function(params) {
+        var clickedId = params.nodes;
+        var allNodes = this.body.data.nodes.get();
+        var targetNode = allNodes.find(function(node) {
+          return node.id == clickedId;
+        });
+        if (targetNode && targetNode.url) {
+          window.location.href = targetNode.url;
+        }
       }
-    }
-  "))
+    ")
+  )
 
 
 

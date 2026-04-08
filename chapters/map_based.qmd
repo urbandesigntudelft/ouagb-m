@@ -16,6 +16,82 @@ This chapter explores emerging frontiers in urban morphology: urban morphometric
 
 ## Methods
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(igraph)
+library(visNetwork)
+library(dplyr)
+library(htmlwidgets)
+
+# 1. Load your data
+nodes <- data.frame(
+  id = 1:4,
+  label = c("The Concise Townscape", "Les Bastides", "The Memory of the City", "Urban Taxonomy"),
+  title = c("The Concise Townscape", "Les Bastides", "The Memory of the City", "Urban Taxonomy"),
+  url = c("../catalog/examples/concise_townscape.html", "../catalog/examples/les_bastides.html",
+          "../catalog/examples/memory_of_the_city.html", "../catalog/examples/urban_taxonomy.html"),
+  stringsAsFactors = FALSE
+)
+
+edges <- data.frame(
+  from = c(1, 2),
+  to = c(3, 3),
+  value = c(1, 1) # Relation strength
+) %>%
+  mutate(
+    # Use a power function to make 'strong' relations significantly shorter
+    length = 200 / value
+  )
+
+# 2. The Plot with "Deep Peeling" Logic
+visNetwork(nodes, edges) %>%
+  visNodes(shape = "dot") %>%
+  visEdges(
+    smooth = list(enabled = FALSE)
+  ) %>%
+  visPhysics(
+  solver = "forceAtlas2Based",
+  forceAtlas2Based = list(
+    springLength = 0,        # Crucial: forces it to use your 'length' column
+    springConstant = 0.2,    # Higher = stronger 'pull' between related nodes
+    gravitationalConstant = -25, # Lower negative = nodes push away LESS (brings them closer)
+    centralGravity = 0.005
+  ),
+  stabilization = TRUE
+) %>%
+  visInteraction(zoomView = FALSE, dragView = TRUE) %>%
+  visOptions(nodesIdSelection = TRUE) %>%
+  # ALL your JavaScript events go in this one function:
+  visEvents(
+    # 1. Your working Navigation Logic
+    selectNode = htmlwidgets::JS("
+      function(params) {
+        var clickedId = params.nodes;
+        var allNodes = this.body.data.nodes.get();
+        var targetNode = allNodes.find(function(node) {
+          return node.id == clickedId;
+        });
+        if (targetNode && targetNode.url) {
+          window.location.href = targetNode.url;
+        }
+      }
+    ")
+  )
+
+
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
 # load packages
 library(leaflet)
 library(sf)
