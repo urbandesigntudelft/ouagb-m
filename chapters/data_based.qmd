@@ -18,7 +18,7 @@ library(htmlwidgets)
 
 # 1. Load your data
 nodes <- data.frame(
-  id = 1:11,
+  id = 1:10,
   label = c("Synthesis of Form", "Urban Taxonomy", "Spacematrix", "Space Syntax", 
             "3D Scanning and Lidar", "Bologna", "Point City - South City", "Zee van Land",
             "4", "Costa Iberica: upbeat to the leisure city"),
