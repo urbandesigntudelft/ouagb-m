@@ -23,9 +23,9 @@ library(htmlwidgets)
 
 # 1. Load your data
 nodes <- data.frame(
-  id = 1:30,
+  id = 1:31,
   label = c("The Concise Townscape", "Les Bastides", "The Memory of the City", 
-            "Urban Taxonomy", "Spacematrix", "Roma al tempo di Benedetto XIV",
+            "Urban Typology (quantitative)", "Spacematrix", "Roma al tempo di Benedetto XIV",
             "Die Städtebau nach seinen künstlerischen Grundsätzen", "La Ville Radieuse",
             "Studi per una Operante Storia Urbana di Venezia", "Bologna", "Collage City",
             "Elements d’analyse urbaine", "Lecture d’une ville: Versailles", 
@@ -37,9 +37,9 @@ nodes <- data.frame(
             "Stadsportretten", "Zee van Land", "4", "Een nieuwe oude jas", 
             "IJburg, Haveneiland en Rieteilanden", "Haarlemmermeer", 
             "Barcelona, The Evolution of A Compact City", "Measuring Pompeii",
-            "Ephemeral Urbanisms: Kumbh Mela, India"),
+            "Ephemeral Urbanisms: Kumbh Mela, India", "Urban Taxonomy"),
   title = c("The Concise Townscape", "Les Bastides", "The Memory of the City", 
-            "Urban Taxonomy", "Spacematrix", "Roma al tempo di Benedetto XIV",
+            "Urban Typology (quantitative)", "Spacematrix", "Roma al tempo di Benedetto XIV",
             "Die Städtebau nach seinen künstlerischen Grundsätzen", "La Ville Radieuse",
             "Studi per una Operante Storia Urbana di Venezia", "Bologna", "Collage City",
             "Elements d’analyse urbaine", "Lecture d’une ville: Versailles",
@@ -51,9 +51,9 @@ nodes <- data.frame(
             "Stadsportretten", "Zee van Land", "4", "Een nieuwe oude jas", 
             "IJburg, Haveneiland en Rieteilanden", "Haarlemmermeer",
             "Barcelona, The Evolution of A Compact City", "Measuring Pompeii",
-            "Ephemeral Urbanisms: Kumbh Mela, India"),
+            "Ephemeral Urbanisms: Kumbh Mela, India", "Urban Taxonomy"),
   url = c("../catalog/examples/concise_townscape.html", "../catalog/examples/les_bastides.html",
-          "../catalog/examples/memory_of_the_city.html", "../catalog/examples/urban_taxonomy.html",
+          "../catalog/examples/memory_of_the_city.html", "../catalog/examples/typology_construction_quantitative.html",
           "../catalog/examples/space_matrix.html", "../catalog/examples/roma_al_tempo_di_benedetto.html",
           "../catalog/examples/stadtebau.html", "../catalog/examples/ville_radieuse.html",
           "../catalog/examples/studi_per_una_operante.html", "../catalog/examples/bologna.html",
@@ -67,9 +67,16 @@ nodes <- data.frame(
           "../catalog/examples/bindels_gietema.html", "../catalog/examples/een_nieuwe_oude_jas.html",
           "../catalog/examples/ijburg.html", "../catalog/examples/haarlemmermeer.html",
           "../catalog/examples/evolution_of_a_compact_city.html", "../catalog/examples/measuring_pompeii.html",
-          "../catalog/examples/kumbh_mela.html"),
+          "../catalog/examples/kumbh_mela.html", "../catalog/examples/urban_taxonomy.html"),
   stringsAsFactors = FALSE
 )
+
+nodes <- nodes %>%
+  mutate(color = case_when(
+    label %in% c("The Concise Townscape", "Urban Typology (quantitative)", "Les Bastides",
+                 "The Memory of the City", "Spacematrix") ~ "#ff7f0e", # Bright Orange
+    TRUE                 ~ "#2B7CE9"  # Default Blue for everything else
+  ))
 
 edges <- data.frame(
   from = c(1, 2, 4, 6, 6, 6, 6, 6),
