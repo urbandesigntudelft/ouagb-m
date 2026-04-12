@@ -1,6 +1,6 @@
 ---
 title: "Typology Construction (quantitative)"
-format: html
+categories: [data based, map based]
 fig-cap-location: bottom
 ---
 

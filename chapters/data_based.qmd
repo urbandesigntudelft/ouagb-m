@@ -25,7 +25,7 @@ nodes <- data.frame(
   title = c("Synthesis of Form", "Urban Typology (quantitative)", "Spacematrix", "Space Syntax", 
             "3D Scanning and Lidar", "Bologna", "Point City - South City", "Zee van Land",
             "4", "Costa Iberica: upbeat to the leisure city", "Urban Taxonomy"),
-  url = c("../catalog/examples/synthesis_of_form.html", "catalog/examples/typology_construction_quantitative.html",
+  url = c("../catalog/examples/synthesis_of_form.html", "../catalog/examples/typology_construction_quantitative.html",
           "../catalog/examples/space_matrix.html", "../catalog/examples/space_syntax.html",
           "../catalog/examples/3d_scanning_lidar.html", "../catalog/examples/bologna.html",
           "../catalog/examples/point_city.html", "../catalog/examples/zee_van_land.html",
