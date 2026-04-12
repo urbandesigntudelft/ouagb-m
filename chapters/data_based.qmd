@@ -18,20 +18,28 @@ library(htmlwidgets)
 
 # 1. Load your data
 nodes <- data.frame(
-  id = 1:10,
-  label = c("Synthesis of Form", "Urban Taxonomy", "Spacematrix", "Space Syntax", 
+  id = 1:11,
+  label = c("Synthesis of Form", "Urban Typology (quantitative)", "Spacematrix", "Space Syntax", 
             "3D Scanning and Lidar", "Bologna", "Point City - South City", "Zee van Land",
-            "4", "Costa Iberica: upbeat to the leisure city"),
-  title = c("Synthesis of Form", "Urban Taxonomy", "Spacematrix", "Space Syntax", 
+            "4", "Costa Iberica: upbeat to the leisure city", "Urban Taxonomy"),
+  title = c("Synthesis of Form", "Urban Typology (quantitative)", "Spacematrix", "Space Syntax", 
             "3D Scanning and Lidar", "Bologna", "Point City - South City", "Zee van Land",
-            "4", "Costa Iberica: upbeat to the leisure city"),
-  url = c("../catalog/examples/synthesis_of_form", "../catalog/examples/urban_taxonomy.html",
+            "4", "Costa Iberica: upbeat to the leisure city", "Urban Taxonomy"),
+  url = c("../catalog/examples/synthesis_of_form.html", "catalog/examples/typology_construction_quantitative.html",
           "../catalog/examples/space_matrix.html", "../catalog/examples/space_syntax.html",
           "../catalog/examples/3d_scanning_lidar.html", "../catalog/examples/bologna.html",
           "../catalog/examples/point_city.html", "../catalog/examples/zee_van_land.html",
-          "../catalog/examples/bindels_gietema.html", "../catalog/examples/costa_iberica.html"),
+          "../catalog/examples/bindels_gietema.html", "../catalog/examples/costa_iberica.html",
+          "../catalog/examples/urban_taxonomy.html"),
   stringsAsFactors = FALSE
 )
+
+nodes <- nodes %>%
+  mutate(color = case_when(
+    label %in% c("Synthesis of Form", "Urban Typology (quantitative)", "Spacematrix",
+                 "Space Syntax", "3D Scanning and Lidar") ~ "#ff7f0e", # Bright Orange
+    TRUE                 ~ "#2B7CE9"  # Default Blue for everything else
+  ))
 
 edges <- data.frame(
   from = c(1, 2),
