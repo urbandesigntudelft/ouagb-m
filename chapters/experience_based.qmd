@@ -38,6 +38,13 @@ nodes <- data.frame(
   stringsAsFactors = FALSE
 )
 
+nodes <- nodes %>%
+  mutate(color = case_when(
+    label %in% c("Image of the City", "3D Scanning and Lidar") ~ "#ff7f0e", # Bright Orange
+    TRUE                 ~ "#2B7CE9"  # Default Blue for everything else
+  ))
+
+
 edges <- data.frame(
   from = c(1, 2),
   to = c(3, 3),
