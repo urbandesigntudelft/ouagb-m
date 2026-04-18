@@ -3,10 +3,10 @@ title: "glossary"
 format: html
 ---
 
-## Situation, space, use, material
+## situation, space, use, material
 
-## Form, type, systems, composition
+## form, type, systems, composition
 
-## Scale, image, habitat, detail
+## scale, image, habitat, detail
 
-## Context, assignment, time, perception
+## context, assignment, time, perception
