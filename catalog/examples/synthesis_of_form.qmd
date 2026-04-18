@@ -1,0 +1,41 @@
+---
+title: "Notes on the Synthesis of Form"
+author: "Christopher Alexander"
+description: "Proposing a method to decompose complex problems into a logical, hierarchical structure"
+categories: [data based, systems, composition, assignment]
+date-format: "YYYY"
+date: "1964"
+fig-cap-location: bottom
+---
+![placeholder for the image](../../images/gordon_cullen.jpg){#fig-concise-townscape fig-align="center"}
+
+
+placeholder for the text
+
+
+## Why use this method? 
+
+
+## How does it work?
+
+
+## You are ready to use this method if
+
+
+## Questions you can answer 
+
+
+## Steps
+
+
+## Tools {#tools}
+
+
+## Cases
+
+
+## References
+
+
+## Exercises
+

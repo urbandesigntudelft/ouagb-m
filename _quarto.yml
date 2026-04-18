@@ -16,65 +16,75 @@ book:
   chapters:
   - index.qmd
   - chapters/foundations_frontiers.qmd
-  - part: Methodology, Techniques & Applications
+  - part: Approach
     chapters:
-    - chapters/index.qmd
-    - chapters/methodology/methodology.qmd
-    - chapters/methodology/3d_scanning_lidar.qmd
-    - chapters/methodology/typology_construction_quantitative.qmd
-    - chapters/methodology/typology_construction_qualitative.qmd
-    - chapters/methodology/techniques.qmd
-    - chapters/methodology/space_matrix.qmd
-    - chapters/methodology/space_syntax.qmd
-    - leaflet_template.qmd
-  - part: Cases
+    - chapters/map_based.qmd
+    - chapters/experience_based.qmd
+    - chapters/data_based.qmd
+    # - chapters/index.qmd
+    # - chapters/methodology/methodology.qmd
+    # - chapters/methodology/3d_scanning_lidar.qmd
+    # - chapters/methodology/typology_construction_quantitative.qmd
+    # - chapters/methodology/typology_construction_qualitative.qmd
+    # - chapters/methodology/techniques.qmd
+    # - leaflet_template.qmd
+  - part: Examples
     chapters:
     - catalog/index.qmd
-    - catalog/examples/roma_al_tempo_di_benedetto.qmd
-    - catalog/examples/Stadtebau.qmd
-    - catalog/examples/ville_radieuse.qmd
-    - catalog/examples/studi_per_una_operante.qmd
-    - catalog/examples/image_of_the_city.qmd
-    - catalog/examples/concise_townscape.qmd
-    - catalog/examples/las_vegas.qmd
-    - catalog/examples/bologna.qmd
-    - catalog/examples/comparisons_of_form_and_scale.qmd
-    - catalog/examples/collage_city.qmd
-    - catalog/examples/elements_urbaine.qmd
-    - catalog/examples/versailles.qmd
-    - catalog/examples/stedelijk_bouwwerk.qmd
-    - catalog/examples/les_bastides.qmd
-    - catalog/examples/built_for_change.qmd
-    - catalog/examples/verstedelijkt_landschap.qmd
-    - catalog/examples/locatie_zuidpoortgebied.qmd
-    - catalog/examples/la_metropole_imaginaire.qmd
-    - catalog/examples/landschap_en_verstedelijking.qmd
-    - catalog/examples/gli_orizzonti.qmd
-    - catalog/examples/point_city.qmd
-    - catalog/examples/paris_des_faubourgs.qmd
-    - catalog/examples/porto_the_breakthrough.qmd
-    - catalog/examples/colonial_settlements.qmd
-    - catalog/examples/het_land_in_de_stad.qmd
-    - catalog/examples/stadsportretten.qmd
-    - catalog/examples/zee_van_land.qmd
-    - catalog/examples/bindels_gietema.qmd
-    - catalog/examples/costa_iberica.qmd
-    - catalog/examples/een_nieuwe_oude_jas.qmd
-    - catalog/examples/after_sprawl.qmd
-    - catalog/examples/belvedere_bouwen.qmd
-    - catalog/examples/city_branding.qmd
-    - catalog/examples/ijburg.qmd
-    - catalog/examples/mobility.qmd
-    - catalog/examples/haarlemmermeer.qmd
-    - catalog/examples/evolution_of_a_compact_city.qmd
-    - catalog/examples/measuring_pompeii.qmd
-    - catalog/examples/object_van_beweging.qmd
-    - catalog/examples/the_view_from_the_road.qmd
-    - catalog/examples/kumbh_mela.qmd
-    - catalog/examples/urban_taxonomy.qmd
+    - text: "**The Concise Townscape**"                        #map
+      file: catalog/examples/concise_townscape.qmd
+    - text: "**Les Bastides: d’Aquitaine, du Bas-Languedoc et du Béarn**" #map
+      file: catalog/examples/les_bastides.qmd
+    - text: "**The Memory of the City**"                       #map
+      file: catalog/examples/memory_of_the_city.qmd
+    - text: "**Image of the City**"                            #experience
+      file: catalog/examples/image_of_the_city.qmd
+    - text: "**Notes on the Synthesis of Form**"               #data
+      file: catalog/examples/synthesis_of_form.qmd
+    - text: "**Urban Typology (quantitative)**"                #data/map
+      file: catalog/examples/typology_construction_quantitative.qmd
+    - text: "**Spacematrix**"                                  #data/map
+      file: catalog/examples/space_matrix.qmd
+    - text: "**Space Syntax**"                                 #data/map
+      file: catalog/examples/space_syntax.qmd
+    - text: "**3D Scanning and Lidar**"                        #data/experience
+      file: catalog/examples/3d_scanning_lidar.qmd
+    - catalog/examples/roma_al_tempo_di_benedetto.qmd          #map
+    - catalog/examples/stadtebau.qmd                           #map
+    - catalog/examples/ville_radieuse.qmd                      #map
+    - catalog/examples/studi_per_una_operante.qmd              #map
+    - catalog/examples/las_vegas.qmd                           #experience/map
+    - catalog/examples/bologna.qmd                             #map
+    - catalog/examples/collage_city.qmd                        #map
+    - catalog/examples/elements_urbaine.qmd                    #map/experience
+    - catalog/examples/versailles.qmd                          #map
+    - catalog/examples/stedelijk_bouwwerk.qmd                  #map
+    - catalog/examples/verstedelijkt_landschap.qmd             #map
+    - catalog/examples/la_metropole_imaginaire.qmd             #map
+    - catalog/examples/landschap_en_verstedelijking.qmd        #map
+    - catalog/examples/gli_orizzonti.qmd                       #map
+    - catalog/examples/point_city.qmd                          #map/data
+    - catalog/examples/paris_des_faubourgs.qmd                 #map
+    - catalog/examples/het_land_in_de_stad.qmd                 #map
+    - catalog/examples/stadsportretten.qmd                     #map
+    - catalog/examples/zee_van_land.qmd                        #map/data
+    - catalog/examples/bindels_gietema.qmd                     #map/data
+    - catalog/examples/costa_iberica.qmd                       #data
+    - catalog/examples/een_nieuwe_oude_jas.qmd                 #map
+    - catalog/examples/belvedere_bouwen.qmd                    #experience/map
+    - catalog/examples/ijburg.qmd                              #map
+    - catalog/examples/mobility.qmd                            #experience
+    - catalog/examples/haarlemmermeer.qmd                      #map
+    - catalog/examples/evolution_of_a_compact_city.qmd         #map
+    - catalog/examples/measuring_pompeii.qmd                   #map
+    - catalog/examples/object_van_beweging.qmd                 #experience
+    - catalog/examples/the_view_from_the_road.qmd              #experience
+    - catalog/examples/kumbh_mela.qmd                          #map
+    - catalog/examples/urban_taxonomy.qmd                      #map/data
   - part: "Appendices"
     chapters:
     - appendices/references.qmd
+    - appendices/glossary.qmd
 
   page-footer:
     center: © 2025, Section of Urban Design TU Delft - CC BY 4.0
