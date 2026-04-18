@@ -2,7 +2,7 @@
 title: "Urban Taxonomy"
 author: "Martin Fleischmann and Krasen Samardzhiev"
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [Martin Fleischmann, urban taxonomy, Krasen Samardzhiev, morphometrics, quantitative analysis, data based, map based]
+categories: [Martin Fleischmann, urban taxonomy, Krasen Samardzhiev, morphometrics, quantitative analysis, data based, map based, form, type, composition]
 date-format: "YYYY"
 date: "2025"
 fig-cap-location: bottom
@@ -17,31 +17,3 @@ The Urban Taxonomy is an example of typology construction that uses hierarchical
 
 ## Methods
 [Typology Construction (quantitative)](../../chapters/typology_construction_quantitative.qmd)
-
-## Why use this method? 
-
-
-## How does it work?
-
-
-## You are ready to use this method if
-
-
-## Questions you can answer 
-
-
-## Steps
-
-
-## Tools {#tools}
-
-
-## Cases
-
-
-## References
-
-
-## Exercises
-
-
