@@ -2,7 +2,7 @@
 title: "La Ville Radieuse"
 author: "Le Corbusier"
 description: "An figure ground and comparative analysis"
-categories: [Le Corbusier, la Ville Radieuse, map based, form, space, composition, scale]
+categories: [Le Corbusier, map based, form, space, composition, scale]
 date-format: "YYYY"
 date: "1930"
 fig-cap-location: bottom
