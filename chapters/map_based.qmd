@@ -23,7 +23,7 @@ library(htmlwidgets)
 
 # 1. Load your data
 nodes <- data.frame(
-  id = 1:32,
+  id = 1:33,
   label = c("The Concise Townscape", "Les Bastides", "The Memory of the City", 
             "Urban Typology (quantitative)", "Spacematrix", "Roma al tempo di Benedetto XIV",
             "Die Städtebau nach seinen künstlerischen Grundsätzen", "La Ville Radieuse",
@@ -38,7 +38,7 @@ nodes <- data.frame(
             "IJburg, Haveneiland en Rieteilanden", "Haarlemmermeer", 
             "Barcelona, The Evolution of A Compact City", "Measuring Pompeii",
             "Ephemeral Urbanisms: Kumbh Mela, India", "Urban Taxonomy",
-            "Learning from Las Vegas"),
+            "Learning from Las Vegas", "Belvedere Bouwen: Vecht- en plassengebied"),
   title = c("The Concise Townscape", "Les Bastides", "The Memory of the City", 
             "Urban Typology (quantitative)", "Spacematrix", "Roma al tempo di Benedetto XIV",
             "Die Städtebau nach seinen künstlerischen Grundsätzen", "La Ville Radieuse",
@@ -53,7 +53,7 @@ nodes <- data.frame(
             "IJburg, Haveneiland en Rieteilanden", "Haarlemmermeer",
             "Barcelona, The Evolution of A Compact City", "Measuring Pompeii",
             "Ephemeral Urbanisms: Kumbh Mela, India", "Urban Taxonomy",
-            "Learning from Las Vegas"),
+            "Learning from Las Vegas", "Belvedere Bouwen: Vecht- en plassengebied"),
   url = c("../catalog/examples/concise_townscape.html", "../catalog/examples/les_bastides.html",
           "../catalog/examples/memory_of_the_city.html", "../catalog/examples/typology_construction_quantitative.html",
           "../catalog/examples/space_matrix.html", "../catalog/examples/roma_al_tempo_di_benedetto.html",
@@ -70,7 +70,7 @@ nodes <- data.frame(
           "../catalog/examples/ijburg.html", "../catalog/examples/haarlemmermeer.html",
           "../catalog/examples/evolution_of_a_compact_city.html", "../catalog/examples/measuring_pompeii.html",
           "../catalog/examples/kumbh_mela.html", "../catalog/examples/urban_taxonomy.html",
-          "../catalog/examples/las_vegas.html"),
+          "../catalog/examples/las_vegas.html", "../catalog/examples/belvedere_bouwen.html"),
   stringsAsFactors = FALSE
 )
 
@@ -82,8 +82,8 @@ nodes <- nodes %>%
   ))
 
 edges <- data.frame(
-  from = c(1, 1, 2, 4, 6, 6, 6, 8, 10, 14, 14, 22, 25, 25, 25, 25, 25, 26),
-  to = c(12, 7, 10, 31, 32, 11, 12, 11, 16, 15, 24, 26, 2, 9, 10, 12, 13, 14)
+  from = c(1, 1, 2, 4, 6, 6, 6, 8, 10, 14, 14, 22, 25, 25, 25, 25, 25, 26, 27, 27),
+  to = c(12, 7, 10, 31, 32, 11, 12, 11, 16, 15, 24, 26, 2, 9, 10, 12, 13, 14, 33, 23)
   #value = c(1, 1, 1, 1, 1, 1, 1, 1) # Relation strength
 ) %>%
   mutate(

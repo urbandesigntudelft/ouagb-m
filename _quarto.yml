@@ -71,7 +71,7 @@ book:
     - catalog/examples/bindels_gietema.qmd                     #map/data
     - catalog/examples/costa_iberica.qmd                       #data
     - catalog/examples/een_nieuwe_oude_jas.qmd                 #map
-    - catalog/examples/belvedere_bouwen.qmd                    #experience
+    - catalog/examples/belvedere_bouwen.qmd                    #experience/map
     - catalog/examples/ijburg.qmd                              #map
     - catalog/examples/mobility.qmd                            #experience
     - catalog/examples/haarlemmermeer.qmd                      #map
