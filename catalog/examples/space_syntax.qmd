@@ -1,8 +1,8 @@
 ---
 title: "Space Syntax"
 author: "Bill Hillier"
-description: "regarding the layout of space as the primary driver of human behavior and social organization"
-categories: [street network, connectivity, data based, map based]
+description: "Regarding the layout of space as the primary driver of human behavior and social organization"
+categories: [street network, connectivity, data based, map based, perception, composition]
 date-format: "YYYY"
 date: "1970"
 fig-cap-location: bottom

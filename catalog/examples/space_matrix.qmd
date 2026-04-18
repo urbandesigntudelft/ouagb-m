@@ -1,8 +1,8 @@
 ---
 title: "Space Matrix"
 author: "Meta Berghauser Pont and Per Haupt"
-description: "bridging the gap between abstract urban planning and the actual physical performance of city blocks"
-categories: [density, quantitative, typology construction, urban fabric, map based, data based]
+description: "Bridging the gap between abstract urban planning and the actual physical performance of city blocks"
+categories: [density, quantitative, typology construction, urban fabric, map based, data based, form, type, composition]
 date-format: "YYYY"
 date: "2010"
 fig-cap-location: bottom
