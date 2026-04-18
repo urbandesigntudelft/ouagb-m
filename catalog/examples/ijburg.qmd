@@ -2,7 +2,7 @@
 title: "IJburg, Haveneiland en Rieteilanden"
 author: "Felix Claus, Frits van Dongen, Ton Schaap"
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [Amsterdam, building and building blocks, Felix Claus, comparison, conceptual abstraction, Ijburg, morphological layers, morphology, visualisation, zooming in, map based]
+categories: [Amsterdam, building and building blocks, Felix Claus, comparison, conceptual abstraction, Ijburg, morphological layers, morphology, visualisation, zooming in, map based, scale, form, type, space, situation]
 date-format: "YYYY"
 date: "2002"
 fig-cap-location: bottom
