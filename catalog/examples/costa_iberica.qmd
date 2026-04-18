@@ -2,7 +2,7 @@
 title: "Costa Iberica: upbeat to the leisure city"
 author: "MVRDV"
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [the use of 3d, computer techniques, density, analysis as basis for design, economy, Rem Koolhaas, landscape, MVRDV, data based]
+categories: [the use of 3d, computer techniques, density, analysis as basis for design, economy, Rem Koolhaas, landscape, MVRDV, data based, context]
 date-format: "YYYY"
 date: "2000"
 fig-cap-location: bottom
