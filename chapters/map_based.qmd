@@ -82,8 +82,8 @@ nodes <- nodes %>%
   ))
 
 edges <- data.frame(
-  from = c(1, 1, 2, 4, 6),
-  to = c(12, 7, 10, 31, 32)
+  from = c(1, 1, 2, 4, 6, 8),
+  to = c(12, 7, 10, 31, 32, 11)
   #value = c(1, 1, 1, 1, 1, 1, 1, 1) # Relation strength
 ) %>%
   mutate(
