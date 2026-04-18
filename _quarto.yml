@@ -84,6 +84,7 @@ book:
   - part: "Appendices"
     chapters:
     - appendices/references.qmd
+    - appendices/glossary.qmd
 
   page-footer:
     center: © 2025, Section of Urban Design TU Delft - CC BY 4.0
