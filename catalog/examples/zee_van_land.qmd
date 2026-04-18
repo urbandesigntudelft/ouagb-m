@@ -2,7 +2,7 @@
 title: "Zee van Land"
 author: "Wouter Reh and Clemens Steenbergen"
 description: "A study of polders in the Netherlands"
-categories: [the use of 3d, Building and building blocks, comparison, landscape, morphological layers, polders, Wouter Reh, Steenbergen, map based, type, form, scale]
+categories: [the use of 3d, building and building blocks, comparison, landscape, morphological layers, polders, Wouter Reh, Steenbergen, map based, type, form, scale]
 date-format: "YYYY"
 date: "1999"
 fig-cap-location: bottom

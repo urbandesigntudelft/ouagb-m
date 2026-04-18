@@ -2,7 +2,7 @@
 title: "Bologna: politica e metodologia del restauro nei centri storici"
 author: "P.L. Cervelatti"
 description: "A documentation of building typology in Bologna"
-categories: [Bologna, buildings and building blocks, P.L.Cervelatti, conceptual abstraction, development, “Italian school” of analysis, typology, map based, type, form, scale]
+categories: [Bologna, building and building blocks, P.L.Cervelatti, conceptual abstraction, development, “Italian school” of analysis, typology, map based, type, form, scale]
 date-format: "YYYY"
 date: "1973"
 fig-cap-location: bottom
