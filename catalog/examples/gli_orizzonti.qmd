@@ -1,8 +1,8 @@
 ---
 title: "Gli orizzonti della città diffusa"
 author: "Stefano Boeri and Arturo Lanzani"
-description: "An analytical mapping method created by Giambattista Nolli"
-categories: [Amsterdam, Stefano Boeri, “Italian school” of analysis, Arturo Lanzani, analyses of large scale, morphological layers, occupational patterns, the use of photographs, regional scale, type, typology, map based]
+description: "An analysis of different parts of Italy"
+categories: [Amsterdam, Stefano Boeri, “Italian school” of analysis, Arturo Lanzani, analyses of large scale, morphological layers, occupational patterns, the use of photographs, regional scale, type, typology, map based, scale, time]
 date-format: "YYYY"
 date: "1992"
 ---
