@@ -2,7 +2,7 @@
 title: "Roma al tempo di Benedetto XIV"
 author: "Giambattista Nolli"
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [the use of 3d, conceptual abstraction, Learning from Las Vegas, Nolli, Giambattista, Nolli map, perspective drawings, Rome, map based, space, situation, form, scale]
+categories: [the use of 3d, conceptual abstraction, Learning from Las Vegas, Giambattista, Nolli map, perspective drawings, Rome, map based, space, situation, form, scale]
 date-format: "YYYY"
 date: "1748"
 fig-cap-location: bottom
