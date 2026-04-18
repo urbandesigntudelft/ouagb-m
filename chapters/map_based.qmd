@@ -79,14 +79,15 @@ nodes <- nodes %>%
   ))
 
 edges <- data.frame(
-  from = c(1, 2, 4, 6, 6, 6, 6, 6),
-  to = c(3, 3, 5, 7, 8, 9, 11, 14),
-  value = c(1, 1, 1, 1, 1, 1, 1, 1) # Relation strength
+  from = c(1, 1, 2),
+  to = c(12, 7, 10)
+  #value = c(1, 1, 1, 1, 1, 1, 1, 1) # Relation strength
 ) %>%
   mutate(
     # Use a power function to make 'strong' relations significantly shorter
-    length = 200 / value
+    length = 100
   )
+
 
 # 2. The Plot with "Deep Peeling" Logic
 visNetwork(nodes, edges) %>%
@@ -104,7 +105,7 @@ visNetwork(nodes, edges) %>%
   ),
   stabilization = TRUE
 ) %>%
-  visInteraction(zoomView = FALSE, dragView = TRUE) %>%
+  visInteraction(zoomView = TRUE, dragView = TRUE) %>%
   visOptions(nodesIdSelection = TRUE) %>%
   # ALL your JavaScript events go in this one function:
   visEvents(
