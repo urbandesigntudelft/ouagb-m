@@ -53,7 +53,7 @@ book:
     - catalog/examples/stadtebau.qmd                           #map
     - catalog/examples/ville_radieuse.qmd                      #map
     - catalog/examples/studi_per_una_operante.qmd              #map
-    - catalog/examples/las_vegas.qmd                           #experience
+    - catalog/examples/las_vegas.qmd                           #experience/map
     - catalog/examples/bologna.qmd                             #map
     - catalog/examples/collage_city.qmd                        #map
     - catalog/examples/elements_urbaine.qmd                    #map/experience
