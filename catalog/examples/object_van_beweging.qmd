@@ -2,7 +2,7 @@
 title: "De stad, object van beweging"
 author: "Rein Geurtsen"
 description: "An analytical mapping method created by Giambattista Nolli"
-categories: [to be added]
+categories: [experience based]
 date-format: "YYYY"
 date: "1989"
 ---

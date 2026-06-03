@@ -1,0 +1,36 @@
+---
+title: "Space Matrix"
+author: "Meta Berghauser Pont and Per Haupt"
+description: "Bridging the gap between abstract urban planning and the actual physical performance of city blocks"
+categories: [density, quantitative, typology construction, urban fabric, map based, data based, form, type, composition]
+date-format: "YYYY"
+date: "2010"
+fig-cap-location: bottom
+---
+
+## Why use this method? 
+
+
+## You are ready to use this method if
+
+
+## Questions you can answer 
+
+
+## Steps
+### density {#density}
+### FSI {#fsi}
+### GSI {#gsi}
+### OSR {#osr}
+### L {#l}
+
+
+## Tools
+
+## Cases
+
+
+## References
+
+## Exercises
+### Exercise 1

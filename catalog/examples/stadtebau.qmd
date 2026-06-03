@@ -2,12 +2,16 @@
 title: "Die Städtebau nach seinen künstlerischen Grundsätzen"
 author: "Camillo Sitte"
 description: "Setting urban design principles using classical cities as models"
-categories: [the use of 3d, the use of classical urban examples, perspective drawings, Camillo Sitte]
+categories: [the use of 3d, the use of classical urban examples, perspective drawings, Camillo Sitte, map based, perception, space]
 date-format: "YYYY"
 date: "1889"
 fig-cap-location: bottom
 ---
 
 ![Forum von Pompeji. From Der Städtebau nach seinen künstlerischen Grundsätzen (4th ed. p. 3), by C. Sitte, 1909. Copyright 1983 by Friedr. Vieweg & Sohn Verlargsgesellschaft mbH, Braunschweig/Wiesbaden, No further use is allowed.](../../images/camillo_sitte.jpg){#fig-camillo-sitte fig-align="center"}
+
+![Berne Tour de l'Horloge. From Der Städtebau nach seinen künstlerischen Grundsätzen (4th ed. p. 3), by C. Sitte, 1909. Copyright 1983 by Friedr. Vieweg & Sohn Verlargsgesellschaft mbH, Braunschweig/Wiesbaden, No further use is allowed.](../../images/sitte_2.png){#fig-camillo-sitte-2 fig-align="center"}
+
+![Freiburg Münsterplatz. From Der Städtebau nach seinen künstlerischen Grundsätzen (4th ed. p. 3), by C. Sitte, 1909. Copyright 1983 by Friedr. Vieweg & Sohn Verlargsgesellschaft mbH, Braunschweig/Wiesbaden, No further use is allowed.](../../images/sitte_3.png){#fig-camillo-sitte-3 fig-align="center"}
 
 Through his clear drawings and his texts, Camillo Sitte tried to establish principles for well designed public spaces. With ancient Greek and Roman cities as basic models (fig. 13.1), Sitte’s book presents a multitude of examples of good public spaces and explains in his texts why these are good. He uses this knowledge to also show the reader examples of how things have gone terribly wrong in contemporary cities. Perspectives are included to further illustrate his point. His texts cannot be included here. The main interest is in the precision and delicacy of the drawings.

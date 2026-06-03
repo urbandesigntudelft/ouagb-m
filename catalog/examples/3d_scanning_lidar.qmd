@@ -1,8 +1,8 @@
 ---
 title: "3D Scanning and Lidar"
-format: html
+description: "Setting urban design principles using classical cities as models"
+categories: [geomatics, techonology, data based, experience based, perception, situation, space, material]
 fig-cap-location: bottom
-categories: [geomatics, techonology]
 ---
 
 ## Why use this method? 

@@ -1,13 +1,14 @@
 ---
 title: "Zee van Land"
 author: "Wouter Reh and Clemens Steenbergen"
-description: "An analytical mapping method created by Giambattista Nolli"
-categories: [the use of 3d, Building and building blocks, comparison, landscape, morphological layers, polders, Wouter Reh, Steenbergen]
+description: "A study of polders in the Netherlands"
+categories: [the use of 3d, building and building blocks, comparison, landscape, morphological layers, polders, Wouter Reh, Steenbergen, map based, type, form, scale]
 date-format: "YYYY"
 date: "1999"
+fig-cap-location: bottom
 ---
 
-![](../../images/zee_van_land.jpg)
+![](../../images/zee_van_land_2.png){#fig-zee-van-land fig-align="center"}
 
 This is a study of polders or “droogmakerijen” in the Netherlands. A large part of the country lies below sea level. In earlier times, this delta area was studded with lakes and swamps which were reclaimed from the seventeenth century onwards. The number and sizes of these polders are shown in fig 4. The internal structure of the polders was usually a grid; the size of which reflected contemporary requirements for agriculture and water management.\
 

@@ -1,0 +1,97 @@
+---
+title: "Experience Based Analysis"
+---
+
+## Overview
+
+
+
+This chapter explores emerging frontiers in urban morphology: urban morphometrics, spatial morphology, and spatial data science. Urban morphometrics is a quantitative field aiming at extracting patterns from large amounts of morphological data; spatial morphology expands the field to the analysis of unbuilt space mostly using space syntax theory and landscape ecology principles; spatial data science as a cross-cutting field increasingly adopts urban morphological information to enrich the understanding of spatial phenomena of environmental, social and economic kind.
+
+
+## Techniques
+
+
+## Methods
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(igraph)
+library(visNetwork)
+library(dplyr)
+library(htmlwidgets)
+
+# 1. Load your data
+nodes <- data.frame(
+  id = 1:9,
+  label = c("Image of the City", "3D Scanning and Lidar", "Learning from Las Vegas", 
+            "Elements d’analyse urbaine", "La Metropole Imaginaire: un Atlas de Paris",
+            "Belvedere Bouwen", "Mobility: a room with a view", "De stad, object van beweging",
+            "The View From The Road"),
+  title = c("Image of the City", "3D Scanning and Lidar", "Learning from Las Vegas",
+            "Elements d’analyse urbaine", "La Metropole Imaginaire: un Atlas de Paris",
+            "Belvedere Bouwen", "Mobility: a room with a view", "De stad, object van beweging",
+            "The View From The Road"),
+  url = c("../catalog/examples/image_of_the_city.html", "../catalog/examples/3d_scanning_lidar.html",
+          "../catalog/examples/las_vegas.html", "../catalog/examples/elements_urbaine.html",
+          "../catalog/examples/la_metropole_imaginaire.html", "../catalog/examples/belvedere_bouwen.html",
+          "../catalog/examples/mobility.html", "../catalog/examples/object_van_beweging.html",
+          "../catalog/examples/the_view_from_the_road.html"),
+  stringsAsFactors = FALSE
+)
+
+nodes <- nodes %>%
+  mutate(color = case_when(
+    label %in% c("Image of the City", "3D Scanning and Lidar") ~ "#ff7f0e", # Bright Orange
+    TRUE                 ~ "#2B7CE9"  # Default Blue for everything else
+  ))
+
+
+edges <- data.frame(
+  from = c(3, 1),
+  to = c(7, 9)
+  #value = c(1, 1) # Relation strength
+) %>%
+  mutate(
+    # Use a power function to make 'strong' relations significantly shorter
+    length = 100
+  )
+
+# 2. The Plot with "Deep Peeling" Logic
+visNetwork(nodes, edges) %>%
+  visNodes(shape = "dot") %>%
+  visEdges(
+    smooth = list(enabled = FALSE)
+  ) %>%
+  visPhysics(
+  solver = "forceAtlas2Based",
+  forceAtlas2Based = list(
+    springLength = 0,        # Crucial: forces it to use your 'length' column
+    springConstant = 0.2,    # Higher = stronger 'pull' between related nodes
+    gravitationalConstant = -25, # Lower negative = nodes push away LESS (brings them closer)
+    centralGravity = 0.005
+  ),
+  stabilization = TRUE
+) %>%
+  visInteraction(zoomView = TRUE, dragView = TRUE) %>%
+  visOptions(nodesIdSelection = TRUE) %>%
+  # ALL your JavaScript events go in this one function:
+  visEvents(
+    # 1. Your working Navigation Logic
+    selectNode = htmlwidgets::JS("
+      function(params) {
+        var clickedId = params.nodes;
+        var allNodes = this.body.data.nodes.get();
+        var targetNode = allNodes.find(function(node) {
+          return node.id == clickedId;
+        });
+        if (targetNode && targetNode.url) {
+          window.location.href = targetNode.url;
+        }
+      }
+    ")
+  )
+
+
+
+
+```
+
