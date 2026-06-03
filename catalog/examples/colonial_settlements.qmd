@@ -1,13 +1,12 @@
 ---
 title: "Urban Planning and Colonial Settlements in the period of Dutch Expansion"
 author: "Prof. Dr. Frits van Voorden, Ron van Oers"
-description: "An analytical mapping method created by Giambattista Nolli"
+description: "A socio-economic and morphological analysis of historical urban forms illustrated through adaptations of ideal colonial plans"
 categories: [Cape Town, colonial settlements, comparison, development, morphological layers, morphology, Simon Stevin]
 date-format: "YYYY"
 date: "1997"
 ---
 
-![](../../images/colonial_settlements.png)\
-![](../../images/colonial_settlement_legend.jpg)
+![Ground plans of Dutch settlements. From Landschap en Verstedelijking tussen Den Haag en Rotterdam, by F. van Voorden, R. van Oers, 1997, Stadsontwikkeling Rotterdam. Copyright 1990 by Stadsontwikkeling Rotterdam, No further use is allowed.](../../images/colonial_settlements_2.png){#fig-colonial fig-align="center"}
 
-In the nineteen-nineties, the late Professor Van Voorden was involved in the development of a masters course in the redesign and conservation of historical inner cities. In this course, Van Voorden wanted to view historical buildings and cities in a broad cosio-economic perspective, requiring analyses in which the development of the morphology of cities is connected to these broader issues. The drawings shown here are taken from a PHd. Research by Ron van Oers into the development of 17th century Dutch colonial settlements. Of course, these drawings were originally illustrations to a text. Here, we show them outside of their proper context, but in themselves, the drawings are beautiful examples of how an analysis can quickly produce insight into complex material. Fig. 4, for instance, shows six colonial settlements and how an abstract scheme like Stevin’s (see also project 13), was modified in practice to suit local circumstances. Figs 5-8 show the morphological structure of Cape Town in more detail. 
+In the 1990s, the late Professor Van Voorden was involved in the development of a masters course in the redesign and conservation of historical inner cities. In this course, Van Voorden wanted to view historical buildings and cities in a broad socio-economic perspective, requiring analyses in which the development of the morphology of cities is connected to these broader issues. The drawings shown here are taken from a PHd. Research by Ron van Oers into the development of 17th century Dutch colonial settlements. Of course, these drawings were originally illustrations to a text. Here, we show them outside of their proper context, but in themselves, the drawings are beautiful examples of how an analysis can quickly produce insight into complex material. In Figure 35.1, for instance, shows six colonial settlements and how an abstract scheme like Stevin’s plan was modified in practice to suit local circumstances.
