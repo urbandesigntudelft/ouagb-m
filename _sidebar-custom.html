@@ -1,0 +1,144 @@
+<div class="custom-category-sidebar">
+  <h2>Categories</h2>
+  <p><a href="#" id="reset-filter" style="font-weight: normal;">all examples</a></p>
+  <!-- category 1: approach -->
+  <details open>
+    <summary>approach</summary>
+    <ul>
+      <li><a href="#" data-category="data based">data based</a></li>
+      <li><a href="#" data-category="map-based">map based</a></li>
+      <li><a href="#" data-category="experience based">experience based</a></li>
+    </ul>
+  </details>
+
+  <!-- category 2: grondslagen -->
+  <details open>
+    <summary>grondslagen</summary>
+    <ul>
+      <li><a href="#" data-category="situation">situation</a></li>
+      <li><a href="#" data-category="space">space</a></li>
+      <li><a href="#" data-category="use">use</a></li>
+      <li><a href="#" data-category="material">material</a></li>
+      <li><a href="#" data-category="form">form</a></li>
+      <li><a href="#" data-category="type">type</a></li>
+      <li><a href="#" data-category="systems">systems</a></li>
+      <li><a href="#" data-category="composition">composition</a></li>
+      <li><a href="#" data-category="scale">scale</a></li>
+      <li><a href="#" data-category="image">image</a></li>
+      <li><a href="#" data-category="habitat">habitat</a></li>
+      <li><a href="#" data-category="detail">detail</a></li>
+      <li><a href="#" data-category="context">context</a></li>
+      <li><a href="#" data-category="assignment">assignment</a></li>
+      <li><a href="#" data-category="time">time</a></li>
+      <li><a href="#" data-category="perception">perception</a></li>
+    </ul>
+  </details>
+  <!-- more categories can be added -->
+</div>
+
+<script>
+(function() {
+    // Get the items container
+    function getItemsContainer() {
+        let container = document.querySelector('.list.grid');
+        if (container && container.children.length > 0) return container;
+        let firstItem = document.querySelector('.g-col-1');
+        if (firstItem && firstItem.parentElement) return firstItem.parentElement;
+        return null;
+    }
+
+    // Decode data-categories (two-step decoding)
+    function decodeCategories(encoded) {
+        if (!encoded) return [];
+        try {
+            let base64Decoded = atob(encoded);
+            let urlDecoded = decodeURIComponent(base64Decoded);
+            return urlDecoded.split(',').map(s => s.trim());
+        } catch(e) {
+            return encoded.split(',').map(s => s.trim());
+        }
+    }
+
+    function getCategoriesFromItem(item) {
+        let catData = item.getAttribute('data-categories');
+        return decodeCategories(catData);
+    }
+
+    // Show all items (remove hidden styles)
+    function showAllItems() {
+        let container = getItemsContainer();
+        if (!container) return;
+        let items = container.children;
+        for (let i = 0; i < items.length; i++) {
+            items[i].style.removeProperty('display');
+        }
+        console.log('All items displayed');
+    }
+
+    // Filter items by category
+    function filterItemsByCategory(selectedCategory) {
+        let container = getItemsContainer();
+        if (!container) return;
+        let items = container.children;
+        let visibleCount = 0;
+        for (let i = 0; i < items.length; i++) {
+            let item = items[i];
+            let cats = getCategoriesFromItem(item);
+            if (cats.includes(selectedCategory)) {
+                item.style.removeProperty('display');
+                visibleCount++;
+            } else {
+                item.style.display = 'none';
+            }
+        }
+        console.log(`Filtered by "${selectedCategory}": ${visibleCount} / ${items.length} items shown`);
+        if (visibleCount === 0 && items.length > 0) {
+            let sampleCats = getCategoriesFromItem(items[0]);
+            console.log('Actual categories in the first item:', sampleCats);
+        }
+    }
+
+    function bindSidebar() {
+        // Bind category links
+        let links = document.querySelectorAll('.custom-category-sidebar a');
+        links.forEach(link => {
+            link.removeEventListener('click', handleClick);
+            link.addEventListener('click', handleClick);
+        });
+        
+        // Bind "Reset" button
+        let resetBtn = document.getElementById('reset-filter');
+        if (resetBtn) {
+            resetBtn.removeEventListener('click', handleReset);
+            resetBtn.addEventListener('click', handleReset);
+        }
+        
+        console.log('Sidebar bound with', links.length, 'category links');
+        if (resetBtn) console.log('"Reset" button bound');
+
+        // Output sample categories for reference
+        let container = getItemsContainer();
+        if (container && container.children.length > 0) {
+            let sampleCats = getCategoriesFromItem(container.children[0]);
+            console.log('Actual categories in the first item:', sampleCats);
+        }
+    }
+
+    function handleClick(e) {
+        e.preventDefault();
+        let cat = this.getAttribute('data-category');
+        if (cat) filterItemsByCategory(cat);
+    }
+
+    function handleReset(e) {
+        e.preventDefault();
+        showAllItems();
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', bindSidebar);
+    } else {
+        bindSidebar();
+    }
+})();
+</script>

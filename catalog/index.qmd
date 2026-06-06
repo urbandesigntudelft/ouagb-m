@@ -1,12 +1,17 @@
 ---
 title: "Index"
+format: 
+  html:
+    include-after-body: ../_sidebar-custom.html
+    css: ../styles.css
 listing:
-  contents: examples
+  contents: ./examples
   type: grid        # alternatives: grid, default
-  fields: [image, title, description, categories, date]
+  fields: [image, title, description, date]
   sort: "title"
   sort-ui: true
   filter-ui: true
+  page-size: 1000
   categories: true
 date-format: "YYYY"
 ---
