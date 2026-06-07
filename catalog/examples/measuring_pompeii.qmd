@@ -1,7 +1,7 @@
 ---
 title: "Measuring Spatial Visibility, Adjacency, Permeability and Degrees of Street Life in Pompeii"
 author: "Akkelies van Nes"
-description: "An analytical mapping method created by Giambattista Nolli"
+description: "Measuring Pompeii using mapping tools"
 categories: [map based]
 date-format: "YYYY"
 date: "2011"
