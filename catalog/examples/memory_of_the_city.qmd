@@ -1,7 +1,7 @@
 ---
 title: "The Memory of the City"
 author: "Rein Geurtsen"
-description: "treating the city as a physical palimpsest"
+description: "Treating the city as a physical palimpsest"
 categories: [map based, systems, time, perception]
 date-format: "YYYY"
 date: "1988"

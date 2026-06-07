@@ -2,7 +2,7 @@
 title: "Collage City"
 author: "Colin Rowe and Fred Koetter"
 description: "A bricolage of typologies from different time"
-categories: [bricolage, classical urban examples, Le Corbusier, Fred Koetter, modern cities, Nolli map, Rome, Colin Rowe, traditional urban features, map-based, space, situation, typology, time]
+categories: [bricolage, classical urban examples, Le Corbusier, Fred Koetter, modern cities, Nolli map, Rome, Colin Rowe, traditional urban features, map based, space, situation, typology, time]
 date-format: "YYYY"
 date: "1978"
 ---
