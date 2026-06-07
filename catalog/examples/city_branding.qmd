@@ -5,6 +5,7 @@ description: "An analytical mapping method created by Giambattista Nolli"
 categories: [Amsterdam, City Branding, functions, Heerlen, morphology, Veronique Patteeuw, the use of photographs, regional scale, representation, statistical data, visualisation]
 date-format: "YYYY"
 date: "2002"
+fig-cap-location: bottom
 ---
 
 ![](../../images/city_branding.jpg)

@@ -5,6 +5,7 @@ description: "An analytical mapping method created by Giambattista Nolli"
 categories: [experience based]
 date-format: "YYYY"
 date: "1989"
+fig-cap-location: bottom
 ---
 ![](../../images/de_stad_1.jpg)\
 ![](../../images/de_stad_2.jpg)\

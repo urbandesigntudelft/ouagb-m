@@ -5,6 +5,7 @@ description: "An analysis of different parts of Italy"
 categories: [Amsterdam, Stefano Boeri, “Italian school” of analysis, Arturo Lanzani, analyses of large scale, morphological layers, occupational patterns, the use of photographs, regional scale, type, typology, map based, scale, time]
 date-format: "YYYY"
 date: "1992"
+fig-cap-location: bottom
 ---
 
 ![](../../images/boeri2.jpg)

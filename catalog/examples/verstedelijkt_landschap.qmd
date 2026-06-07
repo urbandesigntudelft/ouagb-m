@@ -5,6 +5,7 @@ description: "analyzing Rotterdam as an urbanized landscape shaped by dynamic de
 categories: [Amsterdam, development, landscape, morphological layers, morphology, Frits Palmboom, patterns, Rotterdam, visualisation, map based, time, situation, scale]
 date-format: "YYYY"
 date: "1748"
+fig-cap-location: bottom
 ---
 
 ![](../../images/verstedelijkt_landschap_2.png){#fig-rotterdam fig-align="center"}

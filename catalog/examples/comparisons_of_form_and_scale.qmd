@@ -6,6 +6,7 @@ categories: [Comparative urban analysis, Scale and representation]
 tags: [Amsterdam, Athens, Babylon, Brugues, Chandigarh, comparison, Gizeh, Karlsruhe, Miletus, New York, Palmanova, Rome, Venice, Richard Saul Wurman]
 date-format: "YYYY"
 date: "1974"
+fig-cap-location: bottom
 ---
 ![](../../images/wurman.jpg)
 

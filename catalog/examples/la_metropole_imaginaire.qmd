@@ -5,6 +5,7 @@ description: "Documenting the block typology in Paris with magificent drawing sk
 categories: [the use of 3d, Bologna, development, documentation, Bruno Fortier, “French school” of analysis, Paris, the use of photographs, type, typology, map based, experience based, form, type, composition, detail, perception]
 date-format: "YYYY"
 date: "1989"
+fig-cap-location: bottom
 ---
 
 ![](../../images/bruno_fortier.jpg)

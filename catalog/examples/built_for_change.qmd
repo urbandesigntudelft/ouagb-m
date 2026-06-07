@@ -5,6 +5,7 @@ description: "An analytical mapping method created by Giambattista Nolli"
 categories: [Alamo Square, development, documentation, “French school” of analysis, “Italian school” of analysis, morphological layers, morphology, Anne Moudon Vernez, the use of photographs, San Francisco, type, typology ]
 date-format: "YYYY"
 date: "1986"
+fig-cap-location: bottom
 ---
 
 ![](../../images/moudon.jpg)

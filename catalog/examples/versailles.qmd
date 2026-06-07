@@ -5,6 +5,7 @@ description: "An analysis on building typology in Versailles"
 categories: [Jean Castex, density, development, “French school” of analysis, Versailles, map based, scale, type, form, space]
 date-format: "YYYY"
 date: "1980"
+fig-cap-location: bottom
 ---
 ![](../../images/versailles.jpg)
 

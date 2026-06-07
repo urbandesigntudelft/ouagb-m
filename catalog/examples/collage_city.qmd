@@ -5,6 +5,7 @@ description: "A bricolage of typologies from different time"
 categories: [bricolage, classical urban examples, Le Corbusier, Fred Koetter, modern cities, Nolli map, Rome, Colin Rowe, traditional urban features, map based, space, situation, typology, time]
 date-format: "YYYY"
 date: "1978"
+fig-cap-location: bottom
 ---
 ![](../../images/collage_city_1.jpg){#fig-collage-city fig-align="center"}
 

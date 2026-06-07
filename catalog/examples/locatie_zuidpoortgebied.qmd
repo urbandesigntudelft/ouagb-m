@@ -5,6 +5,7 @@ description: "An analytical mapping method created by Giambattista Nolli"
 categories: [stadsmorfologische atlas, Delft, development, Rein Geurtsen, historical maps, the use of photographs, the use of text, Zuidpoortgebied]
 date-format: "YYYY"
 date: "1988"
+fig-cap-location: bottom
 ---
 
 ![](../../images/zuidpoort20.jpg)\
