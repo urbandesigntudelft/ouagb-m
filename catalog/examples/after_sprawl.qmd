@@ -5,6 +5,7 @@ description: "An analytical mapping method created by Giambattista Nolli"
 categories: [comparison, Europe, Xaveer de Geyter, analyses of large scale, morphological layers, the use of photographs, sprawl, visualisation]
 date-format: "YYYY"
 date: "2002"
+fig-cap-location: bottom
 ---
 
 Different urban landscape in Europe are systematically presented in a basic analysis, showing some of the main morphological layers. Looking at fig. 1, several characteristic configurations seem to emerge from the map of Europe. Starting from an aerial photograph, examples of these are isolated to show the built mass, infrastructure, negative pace, nature, agriculture and water (fig. 4-12). The drawings are not accompanied by text and the conclusions to the analysis are not presented in drawing.\

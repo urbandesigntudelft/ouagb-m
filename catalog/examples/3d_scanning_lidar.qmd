@@ -1,7 +1,10 @@
 ---
 title: "3D Scanning and Lidar"
+author: "Multiple"
 description: "Setting urban design principles using classical cities as models"
 categories: [geomatics, techonology, data based, experience based, perception, situation, space, material]
+date-format: "YYYY"
+date: "2000"
 fig-cap-location: bottom
 ---
 

@@ -1,6 +1,10 @@
 ---
 title: "Typology Construction (quantitative)"
+author: "Multiple"
+description: "Revealing patterns in large amounts of data and/or variables that would otherwise be invisible"
 categories: [data based, map based, composition, type]
+date-format: "YYYY"
+date: "2010"
 fig-cap-location: bottom
 ---
 

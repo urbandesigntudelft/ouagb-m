@@ -1,7 +1,7 @@
 ---
 title: "Urban Taxonomy"
 author: "Martin Fleischmann and Krasen Samardzhiev"
-description: "An analytical mapping method created by Giambattista Nolli"
+description: "Using algorithmic clustering and a hierarchical morphotope classification to process large datasets of urban form"
 categories: [Martin Fleischmann, Krasen Samardzhiev, morphometrics, quantitative, data based, map based, form, type, composition]
 date-format: "YYYY"
 date: "2025"

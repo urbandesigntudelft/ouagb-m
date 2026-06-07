@@ -1,10 +1,11 @@
 ---
 title: "Rotterdam Verstedelijkt Landschap"
 author: "Frits Palmboom"
-description: "An analytical mapping method created by Giambattista Nolli"
+description: "analyzing Rotterdam as an urbanized landscape shaped by dynamic delta geography and fragmented modern infrastructure"
 categories: [Amsterdam, development, landscape, morphological layers, morphology, Frits Palmboom, patterns, Rotterdam, visualisation, map based, time, situation, scale]
 date-format: "YYYY"
 date: "1748"
+fig-cap-location: bottom
 ---
 
 ![](../../images/verstedelijkt_landschap_2.png){#fig-rotterdam fig-align="center"}

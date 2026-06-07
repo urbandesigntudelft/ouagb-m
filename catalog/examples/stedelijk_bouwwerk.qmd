@@ -5,6 +5,7 @@ description: "An analysis on the urban patterns in Amsterdam"
 categories: [Amsterdam, conceptual abstraction, Casper van der Hoeven, morphological layers, Jos Louwe, modern cities, morphology, patterns, public space, Speckle, Simon Stevin, visualisation, map based, composition, type, situation]
 date-format: "YYYY"
 date: "1985"
+fig-cap-location: bottom
 ---
 
 ![](../../images/amsterdam_2.png){#fig-amsterdam fig-align="center"}

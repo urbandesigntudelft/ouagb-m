@@ -1,3 +1,4 @@
+<script>
 // Make the function GLOBAL so inline HTML can see it
 window.toggleMapsFullscreen = function () {
   const container = document.getElementById("map-container");
@@ -117,3 +118,4 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Maps found on window object');
   }
 });
+</script>
