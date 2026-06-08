@@ -1,5 +1,5 @@
 ---
-title: "4. Edzo Bindels, Ruurd Gietema, Henk Hartzema, Arjan Klok"
+title: "4, Edzo Bindels, Ruurd Gietema, Henk Hartzema, Arjan Klok"
 author: "Rotterdam-Maaskant Foundation"
 description: "A plan reinterpreting the typical modernist features of a post war housing area"
 categories: [the use of 3d, Amsterdam, Edzo Bindels, comparison, conceptual abstraction, “French school” of analysis, Casper van der Hoeven, “Italian school” of analysis, morphological layers, Jos Louwe, modern cities, plan analysis, visualisation, map based, data based, type, form, space, composition]
