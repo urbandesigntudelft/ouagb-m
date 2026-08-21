@@ -2,19 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.8.24">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Multiple">
-<meta name="dcterms.date" content="2010-01-01">
+<meta name="author" content="Claudiu Forgaci">
+<meta name="dcterms.date" content="2026-08-21">
 <meta name="description" content="Revealing patterns in large amounts of data and/or variables that would otherwise be invisible">
 
-<title>11&nbsp; Typology Construction (quantitative) – Open Urban Analysis Guidebook: Morphology</title>
+<title>12&nbsp; Typology Construction (quantitative) – Open Urban Analysis Guidebook: Morphology</title>
 <style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -26,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -40,14 +57,15 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../catalog/examples/synthesis_of_form.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-54427c74024eba8e34e34421ce4d6b49.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-89a1f99596d6e4a91b0a24663eeb039f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -94,7 +112,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <h1 class="quarto-secondary-nav-title no-breadcrumbs"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Typology Construction (quantitative)</span></h1>
+        <h1 class="quarto-secondary-nav-title no-breadcrumbs"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Typology Construction (quantitative)</span></h1>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -107,7 +125,9 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../../index.html" class="sidebar-logo-link">
+      </a>
     <div class="sidebar-title mb-0 py-0">
       <a href="../../">Open Urban Analysis Guidebook: Morphology</a> 
     </div>
@@ -125,16 +145,10 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../chapters/foundations_frontiers.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Foundations and Frontiers</span></span></a>
-  </div>
-</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
- <span class="menu-text">Approach</span></a>
+ <span class="menu-text">Introduction</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -142,296 +156,319 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../chapters/howto.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">How to use this book?</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/foundations_frontiers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Foundations and Frontiers</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+ <span class="menu-text">Approach</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../chapters/map_based.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Map Based Analysis</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Map Based Analysis</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/experience_based.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Experience Based Analysis</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Experience Based Analysis</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/data_based.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Data Based Analysis</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Data Based Analysis</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
  <span class="menu-text">Examples</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../catalog/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Index</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Index</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../catalog/examples/concise_townscape.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title"><strong>The Concise Townscape</strong></span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title"><strong>The Concise Townscape</strong></span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../catalog/examples/les_bastides.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title"><strong>Les Bastides: d’Aquitaine, du Bas-Languedoc et du Béarn</strong></span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title"><strong>Les Bastides: d’Aquitaine, du Bas-Languedoc et du Béarn</strong></span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../catalog/examples/memory_of_the_city.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title"><strong>The Memory of the City</strong></span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title"><strong>The Memory of the City</strong></span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../catalog/examples/image_of_the_city.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title"><strong>Image of the City</strong></span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title"><strong>Image of the City</strong></span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../catalog/examples/synthesis_of_form.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title"><strong>Notes on the Synthesis of Form</strong></span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title"><strong>Notes on the Synthesis of Form</strong></span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../catalog/examples/typology_construction_quantitative.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title"><strong>Urban Typology (quantitative)</strong></span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title"><strong>Urban Typology (quantitative)</strong></span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../catalog/examples/space_matrix.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title"><strong>Spacematrix</strong></span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title"><strong>Spacematrix</strong></span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../catalog/examples/space_syntax.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title"><strong>Space Syntax</strong></span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title"><strong>Space Syntax</strong></span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../catalog/examples/3d_scanning_lidar.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title"><strong>3D Scanning and Lidar</strong></span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title"><strong>3D Scanning and Lidar</strong></span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../catalog/examples/roma_al_tempo_di_benedetto.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Roma al tempo di Benedetto XIV</span></span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Roma al tempo di Benedetto XIV</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../catalog/examples/stadtebau.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Die Städtebau nach seinen künstlerischen Grundsätzen</span></span></a>
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Die Städtebau nach seinen künstlerischen Grundsätzen</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../catalog/examples/ville_radieuse.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">La Ville Radieuse</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">La Ville Radieuse</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../catalog/examples/studi_per_una_operante.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Studi per una Operante Storia Urbana di Venezia</span></span></a>
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Studi per una Operante Storia Urbana di Venezia</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../catalog/examples/las_vegas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Learning from Las Vegas</span></span></a>
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Learning from Las Vegas</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../catalog/examples/bologna.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Bologna: politica e metodologia del restauro nei centri storici</span></span></a>
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Bologna: politica e metodologia del restauro nei centri storici</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../catalog/examples/collage_city.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Collage City</span></span></a>
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Collage City</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../catalog/examples/elements_urbaine.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Elements d’analyse urbaine</span></span></a>
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Elements d’analyse urbaine</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../catalog/examples/versailles.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Lecture d’une ville: Versailles</span></span></a>
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Lecture d’une ville: Versailles</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../catalog/examples/stedelijk_bouwwerk.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Amsterdam als stedelijk bouwwerk</span></span></a>
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Amsterdam als stedelijk bouwwerk</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../catalog/examples/verstedelijkt_landschap.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Rotterdam Verstedelijkt Landschap</span></span></a>
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Rotterdam Verstedelijkt Landschap</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../catalog/examples/la_metropole_imaginaire.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">La Metropole Imaginaire: un Atlas de Paris</span></span></a>
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">La Metropole Imaginaire: un Atlas de Paris</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../catalog/examples/landschap_en_verstedelijking.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Landschap en Verstedelijking tussen Den Haag en Rotterdam</span></span></a>
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Landschap en Verstedelijking tussen Den Haag en Rotterdam</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../catalog/examples/gli_orizzonti.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Gli orizzonti della città diffusa</span></span></a>
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Gli orizzonti della città diffusa</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../catalog/examples/point_city.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Point City - South City</span></span></a>
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Point City - South City</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../catalog/examples/paris_des_faubourgs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Paris des Faubourgs: Formation, Transformation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Paris des Faubourgs: Formation, Transformation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../catalog/examples/het_land_in_de_stad.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Het Land in de Stad: de stedebouw van de grote agglomeratie</span></span></a>
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Het Land in de Stad: de stedebouw van de grote agglomeratie</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../catalog/examples/stadsportretten.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Stadsanalyse: De Nieuwe Kaart van Den Haag / Stadsportretten</span></span></a>
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Stadsanalyse: De Nieuwe Kaart van Den Haag / Stadsportretten</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../catalog/examples/zee_van_land.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Zee van Land</span></span></a>
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Zee van Land</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../catalog/examples/bindels_gietema.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">4, Edzo Bindels, Ruurd Gietema, Henk Hartzema, Arjan Klok</span></span></a>
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">4, Edzo Bindels, Ruurd Gietema, Henk Hartzema, Arjan Klok</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../catalog/examples/costa_iberica.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Costa Iberica: upbeat to the leisure city</span></span></a>
+ <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Costa Iberica: upbeat to the leisure city</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../catalog/examples/een_nieuwe_oude_jas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Een nieuwe oude jas: de heruitvinding van stedelijke weefsels en woningtypes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Een nieuwe oude jas: de heruitvinding van stedelijke weefsels en woningtypes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../catalog/examples/belvedere_bouwen.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Belvedere Bouwen: Vecht- en plassengebied</span></span></a>
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Belvedere Bouwen: Vecht- en plassengebied</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../catalog/examples/ijburg.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">IJburg, Haveneiland en Rieteilanden</span></span></a>
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">IJburg, Haveneiland en Rieteilanden</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../catalog/examples/mobility.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Mobility: a room with a view</span></span></a>
+ <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Mobility: a room with a view</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../catalog/examples/haarlemmermeer.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Haarlemmermeer</span></span></a>
+ <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Haarlemmermeer</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../catalog/examples/evolution_of_a_compact_city.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Barcelona, The Evolution of A Compact City</span></span></a>
+ <span class="menu-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">Barcelona, The Evolution of A Compact City</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../catalog/examples/measuring_pompeii.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">Measuring Spatial Visibility, Adjacency, Permeability and Degrees of Street Life in Pompeii</span></span></a>
+ <span class="menu-text"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title">Measuring Spatial Visibility, Adjacency, Permeability and Degrees of Street Life in Pompeii</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../catalog/examples/object_van_beweging.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title">De stad, object van beweging</span></span></a>
+ <span class="menu-text"><span class="chapter-number">44</span>&nbsp; <span class="chapter-title">De stad, object van beweging</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../catalog/examples/the_view_from_the_road.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">44</span>&nbsp; <span class="chapter-title">The View From The Road</span></span></a>
+ <span class="menu-text"><span class="chapter-number">45</span>&nbsp; <span class="chapter-title">The View From The Road</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../catalog/examples/kumbh_mela.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">45</span>&nbsp; <span class="chapter-title">Ephemeral Urbanisms: Kumbh Mela, India</span></span></a>
+ <span class="menu-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">Ephemeral Urbanisms: Kumbh Mela, India</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../catalog/examples/urban_taxonomy.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">Urban Taxonomy</span></span></a>
+ <span class="menu-text"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">Urban Taxonomy</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
  <span class="menu-text">Appendices</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../appendices/references.html" class="sidebar-item-text sidebar-link">
@@ -441,7 +478,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../appendices/glossary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">glossary</span></span></a>
+ <span class="menu-text"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title">glossary</span></span></a>
   </div>
 </li>
       </ul>
@@ -456,16 +493,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#why-use-this-method" id="toc-why-use-this-method" class="nav-link active" data-scroll-target="#why-use-this-method"><span class="header-section-number">11.1</span> Why use this method?</a></li>
-  <li><a href="#you-are-ready-to-use-this-method-if" id="toc-you-are-ready-to-use-this-method-if" class="nav-link" data-scroll-target="#you-are-ready-to-use-this-method-if"><span class="header-section-number">11.2</span> You are ready to use this method if:</a></li>
-  <li><a href="#questions-you-can-answer" id="toc-questions-you-can-answer" class="nav-link" data-scroll-target="#questions-you-can-answer"><span class="header-section-number">11.3</span> Questions you can answer</a></li>
-  <li><a href="#steps" id="toc-steps" class="nav-link" data-scroll-target="#steps"><span class="header-section-number">11.4</span> Steps</a></li>
-  <li><a href="#tools" id="toc-tools" class="nav-link" data-scroll-target="#tools"><span class="header-section-number">11.5</span> Tools</a></li>
-  <li><a href="#cases" id="toc-cases" class="nav-link" data-scroll-target="#cases"><span class="header-section-number">11.6</span> Cases</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">11.7</span> References</a></li>
-  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises"><span class="header-section-number">11.8</span> Exercises</a>
+  <li><a href="#why-use-this-method" id="toc-why-use-this-method" class="nav-link active" data-scroll-target="#why-use-this-method">Why use this method?</a></li>
+  <li><a href="#you-are-ready-to-use-this-method-if" id="toc-you-are-ready-to-use-this-method-if" class="nav-link" data-scroll-target="#you-are-ready-to-use-this-method-if">You are ready to use this method if…</a></li>
+  <li><a href="#questions-you-can-answer" id="toc-questions-you-can-answer" class="nav-link" data-scroll-target="#questions-you-can-answer">Questions you can answer</a></li>
+  <li><a href="#steps" id="toc-steps" class="nav-link" data-scroll-target="#steps">Steps</a></li>
+  <li><a href="#tools" id="toc-tools" class="nav-link" data-scroll-target="#tools">Tools</a></li>
+  <li><a href="#cases" id="toc-cases" class="nav-link" data-scroll-target="#cases">Cases</a></li>
+  <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples">Examples</a></li>
+  <li><a href="#student-projects-in-the-spotlight" id="toc-student-projects-in-the-spotlight" class="nav-link" data-scroll-target="#student-projects-in-the-spotlight">Student projects in the spotlight</a></li>
+  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises">Exercises</a>
   <ul class="collapse">
-  <li><a href="#exercise-1-constructing-and-interpreting-an-urban-morphological-typology" id="toc-exercise-1-constructing-and-interpreting-an-urban-morphological-typology" class="nav-link" data-scroll-target="#exercise-1-constructing-and-interpreting-an-urban-morphological-typology"><span class="header-section-number">11.8.1</span> Exercise 1 — Constructing and Interpreting an Urban Morphological Typology</a></li>
+  <li><a href="#exercise-1-constructing-and-interpreting-an-urban-morphological-typology" id="toc-exercise-1-constructing-and-interpreting-an-urban-morphological-typology" class="nav-link" data-scroll-target="#exercise-1-constructing-and-interpreting-an-urban-morphological-typology">Exercise 1 — Constructing and Interpreting an Urban Morphological Typology</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -475,11 +513,10 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Typology Construction (quantitative)</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Typology Construction (quantitative)</span></h1>
   <div class="quarto-categories">
     <div class="quarto-category">data based</div>
     <div class="quarto-category">map based</div>
-    <div class="quarto-category">composition</div>
     <div class="quarto-category">type</div>
   </div>
   </div>
@@ -491,14 +528,14 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Multiple </p>
+             <p>Claudiu Forgaci </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">2010</p>
+      <p class="date">August 21, 2026</p>
     </div>
   </div>
   
@@ -510,103 +547,106 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="why-use-this-method" class="level2" data-number="11.1">
-<h2 data-number="11.1" class="anchored" data-anchor-id="why-use-this-method"><span class="header-section-number">11.1</span> Why use this method?</h2>
-<p>Quantitative typology construction is a core task in urban morphometrics1, as it is meant to reveal patterns in large amounts of data and/or variables that would otherwise be invisible. Compared to <a href="typology_construction_qualitative.qmd">qualitative typology construction</a>, it enables scalability, allowing the analysis of large datasets and a large number of variables that could not be processed manually.<br>
-</p>
-<p>The underlying quantitative method is cluster analysis, an unsupervised machine learning method which is used to identify a given number of clusters in a dataset. Those clusters are then used to define types that can either simply describe the sought patterns or guide type-specific spatial decisions.<br>
-</p>
-<div id="fig-urban-taxonomy" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-urban-taxonomy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="../../images/typology_construction.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;11.1: Hierarchy of morphotope taxonomy. From The Hierarchical Morphotope Classification: A Theory-Driven Framework for Large-Scale Analysis of Built Form, by M. Fleischmann et al., 2025, (ArXiv:2509.10083). arXiv. https://doi.org/10.48550/arXiv.2509.10083. Licensed under CC BY 4.0."><img src="../../images/typology_construction.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></a>
+<section id="why-use-this-method" class="level2">
+<h2 class="anchored" data-anchor-id="why-use-this-method">Why use this method?</h2>
+<p>Quantitative typology construction is a core task in urban morphometrics<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, as it is meant to reveal patterns in large amounts of data and/or variables that would otherwise be invisible. Compared to <a href="typology_construction_qualitative.qmd">qualitative typology construction</a>, it enables the characterisation of large-scale and cross-case patterns.</p>
+<p>The underlying quantitative method is cluster analysis, an unsupervised machine learning method which is used to identify a given number of clusters in a dataset. Those clusters are then used to define types that can either simply describe the sought patterns or guide type-specific spatial decisions.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-urban-taxonomy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;11.1: Hierarchy of morphotope taxonomy. From The Hierarchical Morphotope Classification: A Theory-Driven Framework for Large-Scale Analysis of Built Form, by M. Fleischmann et al., 2025, (ArXiv:2509.10083). arXiv. https://doi.org/10.48550/arXiv.2509.10083. Licensed under CC BY 4.0.
-</figcaption>
-</figure>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Avoid this frequent mistake!
 </div>
-<div id="fig-urban-taxonomy-2" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-urban-taxonomy-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="../../images/typology_construction_2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figure&nbsp;11.2: Cleaning cross-sectional segments for cluster analysis. From Semantic Urban River Space Delineation and Typology: Defining and analyzing the space around the urban river in the Netherlands, by S. Epema, 2025, MSc Thesis in Geomatics, Delft University of Technology. https://resolver.tudelft.nl/uuid:7ecbabb5-9bc6-4725-a994-49db8929f79a. Licensed under CC BY 4.0."><img src="../../images/typology_construction_2.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></a>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-urban-taxonomy-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;11.2: Cleaning cross-sectional segments for cluster analysis. From Semantic Urban River Space Delineation and Typology: Defining and analyzing the space around the urban river in the Netherlands, by S. Epema, 2025, MSc Thesis in Geomatics, Delft University of Technology. https://resolver.tudelft.nl/uuid:7ecbabb5-9bc6-4725-a994-49db8929f79a. Licensed under CC BY 4.0.
-</figcaption>
-</figure>
+<div class="callout-body-container callout-body">
+<p>Typology construction results in a <strong>typology</strong> that consists of <strong>types</strong>, not typologies! For example, if you are analysing patterns of variation across urban blocks, the result of your analysis is an <strong>urban block typology</strong> which consists of, for instance, a <strong>closed block type</strong>, a <strong>green block type</strong> and a <strong>fragmented block type</strong>.</p>
 </div>
-<div id="fig-urban-taxonomy-3" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-urban-taxonomy-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="../../images/typology_construction_3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Figure&nbsp;11.3: Urban river space typology clusters. From Semantic Urban River Space Delineation and Typology: Defining and analyzing the space around the urban river in the Netherlands, by S. Epema, 2025, MSc Thesis in Geomatics, Delft University of Technology. https://resolver.tudelft.nl/uuid:7ecbabb5-9bc6-4725-a994-49db8929f79a. Licensed under CC BY 4.0."><img src="../../images/typology_construction_3.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></a>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-urban-taxonomy-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;11.3: Urban river space typology clusters. From Semantic Urban River Space Delineation and Typology: Defining and analyzing the space around the urban river in the Netherlands, by S. Epema, 2025, MSc Thesis in Geomatics, Delft University of Technology. https://resolver.tudelft.nl/uuid:7ecbabb5-9bc6-4725-a994-49db8929f79a. Licensed under CC BY 4.0.
-</figcaption>
-</figure>
-</div>
-<p>This example of student work used quantitative typology construction analyse data collected from river cross-sections. The initially generated cross-sectional segments were cleaned before analysis, removing any deemed invalid, for examples, those cutting through another river’s embankment line (Figure 5.2).<br>
-</p>
-<p>The k-means clustering method resulting in 6 proposed typologies: Urbanized riverbanks (0,6,8), Lush natural floodplains (1), Barren paved land (2), Residential tree-covered space (3,5), Balanced riverside corridor (4,9), and Mixed green strips (7) (Figure 5.3).</p>
 </section>
-<section id="you-are-ready-to-use-this-method-if" class="level2" data-number="11.2">
-<h2 data-number="11.2" class="anchored" data-anchor-id="you-are-ready-to-use-this-method-if"><span class="header-section-number">11.2</span> You are ready to use this method if:</h2>
-<ul>
-<li><p>You know the difference between quantitative and qualitative methods</p></li>
-<li><p>You know how to derive quantitative variables from spatial analysis</p></li>
-</ul>
+<section id="you-are-ready-to-use-this-method-if" class="level2">
+<h2 class="anchored" data-anchor-id="you-are-ready-to-use-this-method-if">You are ready to use this method if…</h2>
+<p>… you know the difference between quantitative and qualitative methods.</p>
+<p>… you know how to derive quantitative variables from spatial analysis.</p>
 </section>
-<section id="questions-you-can-answer" class="level2" data-number="11.3">
-<h2 data-number="11.3" class="anchored" data-anchor-id="questions-you-can-answer"><span class="header-section-number">11.3</span> Questions you can answer</h2>
-<p>What types of spatial configurations and/or compositions are found in a given urban area?<br>
-</p>
-<p>What morphological patterns can we see across a given number of cases? See the <a href="../../catalog/examples/urban_taxonomy.html">Urban Taxonomy</a>.<br>
-</p>
+<section id="questions-you-can-answer" class="level2">
+<h2 class="anchored" data-anchor-id="questions-you-can-answer">Questions you can answer</h2>
+<p>What patterns of spatial configuration and/or composition are found in a given urban area?</p>
+<p>What morphological patterns can we see across a given number of cases?</p>
 </section>
-<section id="steps" class="level2" data-number="11.4">
-<h2 data-number="11.4" class="anchored" data-anchor-id="steps"><span class="header-section-number">11.4</span> Steps</h2>
+<section id="steps" class="level2">
+<h2 class="anchored" data-anchor-id="steps">Steps</h2>
 <ol type="1">
-<li><p>Define the spatial unit (e.g., building, block, parcel, street, neighbourhood).<br>
-</p></li>
-<li><p>Collect relevant morphological variables: direct measurements or derived metrics<br>
-</p></li>
-<li><p>Use those variables as input in a clustering algorithm (the simplest is k-means). The number of clusters is either defined deductively (you know beforehand how many there should be) or empirically (you try out different numbers of clusters and search for an optimum either quantitatively or qualitatively).<br>
-</p></li>
-<li><p>You examine representative examples to interpret the clusters. Then you name and describe them.</p></li>
+<li><p>Define the spatial unit (e.g., building, block, parcel, street, neighbourhood).</p></li>
+<li><p>Collect relevant morphological variables: direct measurements (e.g., area) or derived metrics (e.g., floor space index). See Fleischmann et al. <span class="citation" data-cites="fleischmann2021">(<a href="../../appendices/references.html#ref-fleischmann2021" role="doc-biblioref">2021</a>)</span> for a comprehensive framework of measurable urban form elements.</p></li>
+<li><p>Use those variables as input in a clustering algorithm (the simplest is k-means). The number of clusters is either defined deductively (you know beforehand how many there should be) or empirically (you try out different numbers of clusters and search for an optimum either quantitatively or qualitatively).</p></li>
+<li><p>You examine representative cases, which are closest to the cluster centers, to better understand the clusters. Then you name and describe them.</p></li>
 </ol>
 </section>
-<section id="tools" class="level2" data-number="11.5">
-<h2 data-number="11.5" class="anchored" data-anchor-id="tools"><span class="header-section-number">11.5</span> Tools</h2>
+<section id="tools" class="level2">
+<h2 class="anchored" data-anchor-id="tools">Tools</h2>
 <ul>
 <li><p>GeoDa –&gt; <a href="https://lanselin.github.io/introbook_vol1/">tutorial</a></p></li>
 <li><p>R –&gt; tutorial (Basic experience in R is needed. If you’re new to R, our <a href="https://carpentries-incubator.github.io/r-geospatial-urban/">Geospatial Data Carpentry for Urbanism</a> provides a useful introduction.)</p></li>
 </ul>
 </section>
-<section id="cases" class="level2" data-number="11.6">
-<h2 data-number="11.6" class="anchored" data-anchor-id="cases"><span class="header-section-number">11.6</span> Cases</h2>
-<p><a href="https://urbantaxonomy.org/">Urban Taxonomy</a></p>
+<section id="cases" class="level2">
+<h2 class="anchored" data-anchor-id="cases">Cases</h2>
+<p>Urban Taxonomy: <a href="https://urbantaxonomy.org/">1</a>, <a href="../../catalog/examples/urban_taxonomy.html">2</a></p>
 </section>
-<section id="references" class="level2" data-number="11.7">
-<h2 data-number="11.7" class="anchored" data-anchor-id="references"><span class="header-section-number">11.7</span> References</h2>
+<section id="examples" class="level2">
+<h2 class="anchored" data-anchor-id="examples">Examples</h2>
+<div id="fig-urban-taxonomy" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-urban-taxonomy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../../images/typology_construction.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;12.1: Hierarchy of morphotope taxonomy. From The Hierarchical Morphotope Classification: A Theory-Driven Framework for Large-Scale Analysis of Built Form, by M. Fleischmann et al., 2025, (ArXiv:2509.10083). arXiv. https://doi.org/10.48550/arXiv.2509.10083. Licensed under CC BY 4.0."><img src="../../images/typology_construction.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-urban-taxonomy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12.1: Hierarchy of morphotope taxonomy. From The Hierarchical Morphotope Classification: A Theory-Driven Framework for Large-Scale Analysis of Built Form, by M. Fleischmann et al., 2025, (ArXiv:2509.10083). arXiv. https://doi.org/10.48550/arXiv.2509.10083. Licensed under CC BY 4.0.
+</figcaption>
+</figure>
+</div>
 </section>
-<section id="exercises" class="level2" data-number="11.8">
-<h2 data-number="11.8" class="anchored" data-anchor-id="exercises"><span class="header-section-number">11.8</span> Exercises</h2>
-<section id="exercise-1-constructing-and-interpreting-an-urban-morphological-typology" class="level3" data-number="11.8.1">
-<h3 data-number="11.8.1" class="anchored" data-anchor-id="exercise-1-constructing-and-interpreting-an-urban-morphological-typology"><span class="header-section-number">11.8.1</span> Exercise 1 — Constructing and Interpreting an Urban Morphological Typology</h3>
-<p>Select a continuous urban area (minimum 1 km²) in a city of your choice. Using quantitative urban morphometrics, construct a morphological typology based on measurable spatial characteristics. Interpret the resulting types and discuss how they could inform urban design or planning decisions.<br>
-</p>
-<p><strong>Tasks</strong><br>
-</p>
+<section id="student-projects-in-the-spotlight" class="level2">
+<h2 class="anchored" data-anchor-id="student-projects-in-the-spotlight">Student projects in the spotlight</h2>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Replace with example from Yaying’s thesis</p>
+</div>
+</div>
+<div id="fig-urban-taxonomy-3" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-urban-taxonomy-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../../images/typology_construction_3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figure&nbsp;12.2: Urban river space typology clusters. From Semantic Urban River Space Delineation and Typology: Defining and analyzing the space around the urban river in the Netherlands, by S. Epema, 2025, MSc Thesis in Geomatics, Delft University of Technology. https://resolver.tudelft.nl/uuid:7ecbabb5-9bc6-4725-a994-49db8929f79a. Licensed under CC BY 4.0."><img src="../../images/typology_construction_3.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-urban-taxonomy-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12.2: Urban river space typology clusters. From Semantic Urban River Space Delineation and Typology: Defining and analyzing the space around the urban river in the Netherlands, by S. Epema, 2025, MSc Thesis in Geomatics, Delft University of Technology. https://resolver.tudelft.nl/uuid:7ecbabb5-9bc6-4725-a994-49db8929f79a. Licensed under CC BY 4.0.
+</figcaption>
+</figure>
+</div>
+<p>This example of student work used quantitative typology construction analyse data collected from river cross-sections. The initially generated cross-sectional segments were cleaned before analysis, removing any deemed invalid, for examples, those cutting through another river’s embankment line (Figure 5.2).</p>
+<p>The k-means clustering method resulting in 6 proposed types: Urbanized riverbanks (0,6,8), Lush natural floodplains (1), Barren paved land (2), Residential tree-covered space (3,5), Balanced riverside corridor (4,9), and Mixed green strips (7) (Figure 5.3).</p>
+</section>
+<section id="exercises" class="level2">
+<h2 class="anchored" data-anchor-id="exercises">Exercises</h2>
+<section id="exercise-1-constructing-and-interpreting-an-urban-morphological-typology" class="level3">
+<h3 class="anchored" data-anchor-id="exercise-1-constructing-and-interpreting-an-urban-morphological-typology">Exercise 1 — Constructing and Interpreting an Urban Morphological Typology</h3>
+<p>Select a continuous urban area (minimum 1 km²) in a city of your choice. Using quantitative urban morphometrics, construct a morphological typology based on measurable spatial characteristics. Interpret the resulting types and discuss how they could inform urban design or planning decisions.</p>
+<p><strong>Tasks</strong></p>
 <ol type="1">
-<li><p>Define an appropriate spatial unit (e.g.&nbsp;building, block, street segment, parcel, or neighbourhood).<br>
-</p></li>
-<li><p>Select and compute at least 6 morphological variables (e.g.&nbsp;<a href="../../catalog/examples/space_matrix.html#density">density</a>, <a href="../../catalog/examples/space_matrix.html#fsi">compactness</a>, <a href="../../catalog/examples/space_matrix.html#l">building height</a>, <a href="../../catalog/examples/space_matrix.html#gsi">plot coverage</a>, <a href="../../catalog/examples/space_syntax.html#why-use-this-method">street connectivity</a>).<br>
-</p></li>
-<li><p>Apply a cluster analysis method (e.g.&nbsp;k-means) to generate an urban typology.<br>
-</p></li>
-<li><p>Interpret and name the resulting clusters:<br>
-</p>
+<li><p>Define an appropriate spatial unit (e.g.&nbsp;building, block, street segment, parcel, or neighbourhood).</p></li>
+<li><p>Select and compute at least 6 morphological variables (e.g.&nbsp;<a href="../../catalog/examples/space_matrix.html#density">density</a>, <a href="../../catalog/examples/space_matrix.html#fsi">compactness</a>, <a href="../../catalog/examples/space_matrix.html#l">building height</a>, <a href="../../catalog/examples/space_matrix.html#gsi">plot coverage</a>, <a href="../../catalog/examples/space_syntax.html#why-use-this-method">street connectivity</a>).</p></li>
+<li><p>Apply a cluster analysis method (e.g.&nbsp;k-means) to generate an urban typology.</p></li>
+<li><p>Interpret and name the resulting clusters:</p>
 <ul>
 <li><p>Describe their morphological characteristics</p></li>
 <li><p>Identify representative examples spatially</p></li>
@@ -617,8 +657,7 @@ Figure&nbsp;11.3: Urban river space typology clusters. From Semantic Urban River
 <li><p>How could these types guide design interventions?</p></li>
 </ul></li>
 </ol>
-<p><strong>Deliverables</strong><br>
-</p>
+<p><strong>Deliverables</strong></p>
 <ul>
 <li><p>Maps of clusters</p></li>
 <li><p>Variable summary table</p></li>
@@ -627,7 +666,18 @@ Figure&nbsp;11.3: Urban river space typology clusters. From Semantic Urban River
 </ul>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-fleischmann2021" class="csl-entry" role="listitem">
+Fleischmann, Martin, Ombretta Romice, and Sergio Porta. 2021. <span>“Measuring Urban Form: Overcoming Terminological Inconsistencies for a Quantitative and Comprehensive Morphologic Analysis of Cities.”</span> <em>Environment and Planning B</em> 48 (8): 2133–50. <a href="https://doi.org/10.1177/2399808320910444">https://doi.org/10.1177/2399808320910444</a>.
+</div>
+</div>
 </section>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>Urban morphometrics is a field that enables the quantitative analysis of physical elements in a city—such as buildings, open spaces, and roads—with a wide range of applications across scientific domains. It can help us understand and predict the complex relationships between how cities are built and contemporary challenges such as climate change and rapid urbanisation.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
 </section>
 
 </main> <!-- /main -->
@@ -1240,12 +1290,12 @@ window.onload = function() {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../../catalog/examples/synthesis_of_form.html" class="pagination-link" aria-label="**Notes on the Synthesis of Form**">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title"><strong>Notes on the Synthesis of Form</strong></span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title"><strong>Notes on the Synthesis of Form</strong></span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="../../catalog/examples/space_matrix.html" class="pagination-link" aria-label="**Spacematrix**">
-        <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title"><strong>Spacematrix</strong></span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title"><strong>Spacematrix</strong></span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

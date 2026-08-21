@@ -2,16 +2,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.8.24">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Leo van den Burg">
+<meta name="author" content="Claudiu Forgaci">
 
-<title>1&nbsp; Foundations and Frontiers – Open Urban Analysis Guidebook: Morphology</title>
+<title>2&nbsp; Foundations and Frontiers – Open Urban Analysis Guidebook: Morphology</title>
 <style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -23,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -34,17 +53,18 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../chapters/map_based.html" rel="next">
-<link href="../index.html" rel="prev">
+<link href="../chapters/howto.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-54427c74024eba8e34e34421ce4d6b49.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-89a1f99596d6e4a91b0a24663eeb039f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -76,7 +96,7 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
-<link href="../site_libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet">
+<link href="../site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
 <script src="../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
 <script src="../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <link href="../site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
@@ -85,9 +105,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/proj4-2.6.2/proj4.min.js"></script>
 <script src="../site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
 <link href="../site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
-<script src="../site_libs/leaflet-binding-2.2.3/leaflet.js"></script>
+<script src="../site_libs/leaflet-binding-2.2.2/leaflet.js"></script>
 <script src="../site_libs/leaflet-providers-2.0.0/leaflet-providers_2.0.0.js"></script>
-<script src="../site_libs/leaflet-providers-plugin-2.2.3/leaflet-providers-plugin.js"></script>
+<script src="../site_libs/leaflet-providers-plugin-2.2.2/leaflet-providers-plugin.js"></script>
 <link href="../site_libs/leaflet-minimap-3.3.1/Control.MiniMap.min.css" rel="stylesheet">
 <script src="../site_libs/leaflet-minimap-3.3.1/Control.MiniMap.min.js"></script>
 <script src="../site_libs/leaflet-minimap-3.3.1/Minimap-binding.js"></script>
@@ -107,7 +127,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <h1 class="quarto-secondary-nav-title no-breadcrumbs"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Foundations and Frontiers</span></h1>
+        <h1 class="quarto-secondary-nav-title no-breadcrumbs"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Foundations and Frontiers</span></h1>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -120,7 +140,9 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../index.html" class="sidebar-logo-link">
+      </a>
     <div class="sidebar-title mb-0 py-0">
       <a href="../">Open Urban Analysis Guidebook: Morphology</a> 
     </div>
@@ -138,37 +160,25 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/foundations_frontiers.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Foundations and Frontiers</span></span></a>
-  </div>
-</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
- <span class="menu-text">Approach</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Introduction</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/map_based.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Map Based Analysis</span></span></a>
+  <a href="../chapters/howto.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">How to use this book?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/experience_based.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Experience Based Analysis</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/data_based.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Data Based Analysis</span></span></a>
+  <a href="../chapters/foundations_frontiers.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Foundations and Frontiers</span></span></a>
   </div>
 </li>
       </ul>
@@ -176,7 +186,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
- <span class="menu-text">Examples</span></a>
+ <span class="menu-text">Approach</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -184,254 +194,20 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../catalog/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Index</span></span></a>
+  <a href="../chapters/map_based.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Map Based Analysis</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../catalog/examples/concise_townscape.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title"><strong>The Concise Townscape</strong></span></span></a>
+  <a href="../chapters/experience_based.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Experience Based Analysis</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../catalog/examples/les_bastides.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title"><strong>Les Bastides: d’Aquitaine, du Bas-Languedoc et du Béarn</strong></span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../catalog/examples/memory_of_the_city.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title"><strong>The Memory of the City</strong></span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../catalog/examples/image_of_the_city.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title"><strong>Image of the City</strong></span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../catalog/examples/synthesis_of_form.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title"><strong>Notes on the Synthesis of Form</strong></span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../catalog/examples/typology_construction_quantitative.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title"><strong>Urban Typology (quantitative)</strong></span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../catalog/examples/space_matrix.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title"><strong>Spacematrix</strong></span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../catalog/examples/space_syntax.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title"><strong>Space Syntax</strong></span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../catalog/examples/3d_scanning_lidar.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title"><strong>3D Scanning and Lidar</strong></span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../catalog/examples/roma_al_tempo_di_benedetto.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Roma al tempo di Benedetto XIV</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../catalog/examples/stadtebau.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Die Städtebau nach seinen künstlerischen Grundsätzen</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../catalog/examples/ville_radieuse.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">La Ville Radieuse</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../catalog/examples/studi_per_una_operante.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Studi per una Operante Storia Urbana di Venezia</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../catalog/examples/las_vegas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Learning from Las Vegas</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../catalog/examples/bologna.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Bologna: politica e metodologia del restauro nei centri storici</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../catalog/examples/collage_city.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Collage City</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../catalog/examples/elements_urbaine.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Elements d’analyse urbaine</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../catalog/examples/versailles.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Lecture d’une ville: Versailles</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../catalog/examples/stedelijk_bouwwerk.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Amsterdam als stedelijk bouwwerk</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../catalog/examples/verstedelijkt_landschap.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Rotterdam Verstedelijkt Landschap</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../catalog/examples/la_metropole_imaginaire.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">La Metropole Imaginaire: un Atlas de Paris</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../catalog/examples/landschap_en_verstedelijking.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Landschap en Verstedelijking tussen Den Haag en Rotterdam</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../catalog/examples/gli_orizzonti.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Gli orizzonti della città diffusa</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../catalog/examples/point_city.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Point City - South City</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../catalog/examples/paris_des_faubourgs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Paris des Faubourgs: Formation, Transformation</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../catalog/examples/het_land_in_de_stad.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Het Land in de Stad: de stedebouw van de grote agglomeratie</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../catalog/examples/stadsportretten.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Stadsanalyse: De Nieuwe Kaart van Den Haag / Stadsportretten</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../catalog/examples/zee_van_land.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Zee van Land</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../catalog/examples/bindels_gietema.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">4, Edzo Bindels, Ruurd Gietema, Henk Hartzema, Arjan Klok</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../catalog/examples/costa_iberica.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Costa Iberica: upbeat to the leisure city</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../catalog/examples/een_nieuwe_oude_jas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Een nieuwe oude jas: de heruitvinding van stedelijke weefsels en woningtypes</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../catalog/examples/belvedere_bouwen.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Belvedere Bouwen: Vecht- en plassengebied</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../catalog/examples/ijburg.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">IJburg, Haveneiland en Rieteilanden</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../catalog/examples/mobility.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Mobility: a room with a view</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../catalog/examples/haarlemmermeer.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Haarlemmermeer</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../catalog/examples/evolution_of_a_compact_city.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Barcelona, The Evolution of A Compact City</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../catalog/examples/measuring_pompeii.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">Measuring Spatial Visibility, Adjacency, Permeability and Degrees of Street Life in Pompeii</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../catalog/examples/object_van_beweging.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title">De stad, object van beweging</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../catalog/examples/the_view_from_the_road.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">44</span>&nbsp; <span class="chapter-title">The View From The Road</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../catalog/examples/kumbh_mela.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">45</span>&nbsp; <span class="chapter-title">Ephemeral Urbanisms: Kumbh Mela, India</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../catalog/examples/urban_taxonomy.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">Urban Taxonomy</span></span></a>
+  <a href="../chapters/data_based.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Data Based Analysis</span></span></a>
   </div>
 </li>
       </ul>
@@ -439,12 +215,275 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
- <span class="menu-text">Appendices</span></a>
+ <span class="menu-text">Examples</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../catalog/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Index</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../catalog/examples/concise_townscape.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title"><strong>The Concise Townscape</strong></span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../catalog/examples/les_bastides.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title"><strong>Les Bastides: d’Aquitaine, du Bas-Languedoc et du Béarn</strong></span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../catalog/examples/memory_of_the_city.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title"><strong>The Memory of the City</strong></span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../catalog/examples/image_of_the_city.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title"><strong>Image of the City</strong></span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../catalog/examples/synthesis_of_form.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title"><strong>Notes on the Synthesis of Form</strong></span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../catalog/examples/typology_construction_quantitative.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title"><strong>Urban Typology (quantitative)</strong></span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../catalog/examples/space_matrix.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title"><strong>Spacematrix</strong></span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../catalog/examples/space_syntax.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title"><strong>Space Syntax</strong></span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../catalog/examples/3d_scanning_lidar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title"><strong>3D Scanning and Lidar</strong></span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../catalog/examples/roma_al_tempo_di_benedetto.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Roma al tempo di Benedetto XIV</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../catalog/examples/stadtebau.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Die Städtebau nach seinen künstlerischen Grundsätzen</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../catalog/examples/ville_radieuse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">La Ville Radieuse</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../catalog/examples/studi_per_una_operante.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Studi per una Operante Storia Urbana di Venezia</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../catalog/examples/las_vegas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Learning from Las Vegas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../catalog/examples/bologna.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Bologna: politica e metodologia del restauro nei centri storici</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../catalog/examples/collage_city.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Collage City</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../catalog/examples/elements_urbaine.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Elements d’analyse urbaine</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../catalog/examples/versailles.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Lecture d’une ville: Versailles</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../catalog/examples/stedelijk_bouwwerk.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Amsterdam als stedelijk bouwwerk</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../catalog/examples/verstedelijkt_landschap.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Rotterdam Verstedelijkt Landschap</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../catalog/examples/la_metropole_imaginaire.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">La Metropole Imaginaire: un Atlas de Paris</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../catalog/examples/landschap_en_verstedelijking.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Landschap en Verstedelijking tussen Den Haag en Rotterdam</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../catalog/examples/gli_orizzonti.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Gli orizzonti della città diffusa</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../catalog/examples/point_city.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Point City - South City</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../catalog/examples/paris_des_faubourgs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Paris des Faubourgs: Formation, Transformation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../catalog/examples/het_land_in_de_stad.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Het Land in de Stad: de stedebouw van de grote agglomeratie</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../catalog/examples/stadsportretten.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Stadsanalyse: De Nieuwe Kaart van Den Haag / Stadsportretten</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../catalog/examples/zee_van_land.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Zee van Land</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../catalog/examples/bindels_gietema.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">4, Edzo Bindels, Ruurd Gietema, Henk Hartzema, Arjan Klok</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../catalog/examples/costa_iberica.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Costa Iberica: upbeat to the leisure city</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../catalog/examples/een_nieuwe_oude_jas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Een nieuwe oude jas: de heruitvinding van stedelijke weefsels en woningtypes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../catalog/examples/belvedere_bouwen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Belvedere Bouwen: Vecht- en plassengebied</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../catalog/examples/ijburg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">IJburg, Haveneiland en Rieteilanden</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../catalog/examples/mobility.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Mobility: a room with a view</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../catalog/examples/haarlemmermeer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Haarlemmermeer</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../catalog/examples/evolution_of_a_compact_city.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">Barcelona, The Evolution of A Compact City</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../catalog/examples/measuring_pompeii.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title">Measuring Spatial Visibility, Adjacency, Permeability and Degrees of Street Life in Pompeii</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../catalog/examples/object_van_beweging.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">44</span>&nbsp; <span class="chapter-title">De stad, object van beweging</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../catalog/examples/the_view_from_the_road.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">45</span>&nbsp; <span class="chapter-title">The View From The Road</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../catalog/examples/kumbh_mela.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">Ephemeral Urbanisms: Kumbh Mela, India</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../catalog/examples/urban_taxonomy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">Urban Taxonomy</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../appendices/references.html" class="sidebar-item-text sidebar-link">
@@ -454,7 +493,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../appendices/glossary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">glossary</span></span></a>
+ <span class="menu-text"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title">glossary</span></span></a>
   </div>
 </li>
       </ul>
@@ -464,21 +503,48 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#foundations" id="toc-foundations" class="nav-link" data-scroll-target="#foundations">Foundations</a>
+  <ul class="collapse">
+  <li><a href="#map-based-analysis" id="toc-map-based-analysis" class="nav-link" data-scroll-target="#map-based-analysis">Map-based analysis</a></li>
+  <li><a href="#perception-based-analysis" id="toc-perception-based-analysis" class="nav-link" data-scroll-target="#perception-based-analysis">Perception-based analysis</a></li>
+  <li><a href="#data-based-analysis" id="toc-data-based-analysis" class="nav-link" data-scroll-target="#data-based-analysis">Data-based analysis</a></li>
+  </ul></li>
+  <li><a href="#frontiers" id="toc-frontiers" class="nav-link" data-scroll-target="#frontiers">Frontiers</a>
+  <ul class="collapse">
+  <li><a href="#new-data-methods-and-tools" id="toc-new-data-methods-and-tools" class="nav-link" data-scroll-target="#new-data-methods-and-tools">New data, methods and tools</a></li>
+  <li><a href="#evolving-domains-of-knowledge-and-application" id="toc-evolving-domains-of-knowledge-and-application" class="nav-link" data-scroll-target="#evolving-domains-of-knowledge-and-application">Evolving domains of knowledge and application</a></li>
+  <li><a href="#quality-and-data-literacy" id="toc-quality-and-data-literacy" class="nav-link" data-scroll-target="#quality-and-data-literacy">Quality and data literacy</a></li>
+  </ul></li>
+  <li><a href="#morphological-analysis-and-design" id="toc-morphological-analysis-and-design" class="nav-link" data-scroll-target="#morphological-analysis-and-design">Morphological analysis and design</a></li>
+  <li><a href="#scraps" id="toc-scraps" class="nav-link" data-scroll-target="#scraps">Scraps</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Foundations and Frontiers</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Foundations and Frontiers</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Authors</div>
+    <div class="quarto-title-meta-contents">
+             <p>Leo van den Burg </p>
+             <p>Claudiu Forgaci </p>
+          </div>
+  </div>
     
   
     
@@ -489,12 +555,95 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Cities are physical archives of conscious spatial decisions and countless unintended events. When we walk the street, when we navigate with a map in our hands, or when we read about a place as visitors, we can see glimpses of this rich history. As professionals, we need to do research on urban form in a more systematic way, but essentially, we use the same techniques: we read maps, we document how a city is experienced at eye level, and we look for additional supporting data. In this way, we try to uncover hidden spatial patterns in a city. This study we call Urban Morphology and it remains an essential item in the urbanist’s toolbox.</p>
+<p>In this open guidebook on Urban Morphology, we set out to trace the foundations and frontiers of the field and, building on that, to provide urbanism students with a state-of-the-art overview on how to employ urban morphology analytical methods. We hope this will allow for a better understanding of the rules governing urban development but also help to make better design decisions.</p>
+</section>
+<section id="foundations" class="level2">
+<h2 class="anchored" data-anchor-id="foundations">Foundations</h2>
+<p>Morphology literally means the science of form. The term has its roots in early nineteenth century botanical experiments. Researchers had already proposed a taxonomy of species based on the physical characteristics of plants, but others found this approach to be missing an essential point: there may be countless species, but they all appear to follow one principle of growth. What is this one principle? To uncover this, one should study many examples of plants, but an equally important step is to build a mental image of what they all have in common to understand the shared principle of growth. This mental abstraction was called ‘type’. A type does not exist in reality but can be utilised as a proxy to better understand real events. This new science of natural development was coined ‘Morphology’.</p>
+<p>In post-WWII urbanism, morphology and the concept of type became key terms . As with plants, the assumption was that historically, urban development is governed by general and comparable principles. To uncover these, urbanists need to do empirical research into the physical form and development of cities and conceptualise these into types. This will allow designers to make better decisions regarding future development in at least two ways: historical lines of development can be extended in a design proposal, limiting the risk of rupture and thus failure. Second, applying the structural rules embedded within a type in a new design prevents designers from drifting too far off from proven and locally successful spatial solutions.</p>
+<p>The promotion of historical continuity, structural integrity and a contextualised approach was seen as extremely important by a new generation of planners, designers and geographers in the nineteen fifties and sixties in a critique of modern planning and design practice. This latter approach, based on a small set of universal spatial principles and backed by scientific projections of, for instance, demographics and economics, had led to unlivable urban extensions and the violation of existing cities. Urban Morphology pioneers countered this development by carefully documenting the spatial qualities of historical cities. By abstracting these in analytical maps and drawings, this knowledge also became available for designers and planners.</p>
+<p>The history of urban morphology and its different schools has been documented extensively, and we don’t have to repeat this here. Although Urban Morphology originated as a critique of modern planning practice, many of its concepts and techniques are still being used today, regardless of their original critical intent. In this Open Urban Analysis Guidebook Morphology, we propose to focus here on three research techniques running through much of the urban morphology literature: map-based analysis, perception-based analysis and data-based analysis. These strands can be read as kinds of analysis that share some common characteristics and position towards urban space and form.</p>
+<section id="map-based-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="map-based-analysis">Map-based analysis</h3>
+<p>We choose map-based analysis as one of our basic categories because for many students and practitioners in urbanism, maps and aerial photographs are the most readily available sources of information. For urbanism professionals, maps are also conventional as a mode of communication and often acquire legal status. Map-based methods are characterised by a strong choice of what is and is not shown, and how (color, contrast, annotations, hierarchies, etc.). This means that maps are inherently political in nature. They are visually powerful and can reveal actual development patterns, but they may also lie or misrepresent. Designers should be aware of this and be careful not to misuse their talents in producing drawings. So, producing maps requires both cartographic knowledge and skills [ref. to key cartography resources] as well as an ethical stance to space production that is often overlooked.</p>
+<p><strong>Key examples:</strong></p>
+<ul>
+<li><p>Map-based analysis is a deeply rooted approach going back to Nolli’s figure-ground analysis of Rome;</p></li>
+<li><p>The Dutch tradition originating in the late seventies, early eighties. Designers like Rein Geurtsen and Maurits de Hoog;</p></li>
+<li><p>Recent examples include Frits Palmboom’s book ‘Drawing the Ground’ or ‘Barcelona: the Urban Evolution of a Compact City’ by Joan Busquets.</p></li>
+</ul>
+</section>
+<section id="perception-based-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="perception-based-analysis">Perception-based analysis</h3>
+<p>This type of analysis characterises urban space through the eyes of a person (or, why not, a non-human agent) who navigates or uses it. It typically uses eye-level perspectives to systematically (e.g., sequentially) analyse the perception of urban space. Those perspectives can be photographs which are qualitatively analysed, as well as abstractions of reality such as a hand sketch (qualitative) or segmented street view image (quantitative). The perception information can also be further abstracted into mind maps following a method like Lynch’s, for instance. Such abstract map-based notation of course has elements of a map-based analysis, but it remains fundamentally perceptual and subject to interpretation (i.e., two people can draw considerably different maps of the same space). This method will benefit from a good understanding of environmental behaviour and cognition.</p>
+<p><strong>Key examples:</strong></p>
+<ul>
+<li><p>Kevin Lynch, Gordon Cullen</p></li>
+<li><p>Serial vision, scenic approach, human cognition, environmental psychology,</p></li>
+<li><p>The degree to which a city can be ‘read’ by its users. Open, closed, light, dark, contrasts, how ‘scenes’ are linked through sight lines and other visual clues. Mapping the status quo and then deciding how to improve these.</p></li>
+</ul>
+</section>
+<section id="data-based-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="data-based-analysis">Data-based analysis</h3>
+<p>Data-based analyses leverage data, either by combining a large variety of datasets (e.g., in an integrated local analysis) or by extracting patterns from large amounts of data. The main difference from the other two types of analysis is that they answer questions which could not be answered, or at least not fully answered, without data. Typical methods in this category include Space Syntax analysis, quantitative typology analysis, and various other spatial applications of machine learning (e.g., classification of building types based on footprints, prediction of new urban growth locations). These methods also require data analytical skills, including GIS and spatial statistics. We have included data based analysis as a basic category in this book because the desire to quantify urban phenomena has been part of urban research from the early twentieth century onward and continues to attract students. Urban data forever carries with it the promise of a solid, undisputable basis for design. But as with maps, data can be misunderstood or even misused. Data literacy therefore is not complete without a proper awareness of the limits of knowledge to be extracted from data and how to use this knowledge responsibly.</p>
+<p><strong>Key examples:</strong></p>
+<ul>
+<li>Space Syntax</li>
+<li>Fleischmann</li>
+<li>Biljecki</li>
+</ul>
+</section>
+</section>
+<section id="frontiers" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="frontiers">Frontiers</h2>
+<p>The three strands of urban morphology have seen considerable methodological and theoretical developments influenced by (1) the increasing availability and diversification of spatial and non-spatial data, computational capacity and related methods and tools, (2) growing attention to sustainability and a maturing body of knowledge on the relationship between spatial/physical form and urban phenomena. Contemporary map-based, perception-based, and data-based urban morphology analyses are increasingly global, evidence-based, collective, and detailed. Methods that were previously limited to a few cases (in the tens) can now be conducted at scale across hundreds or thousands of cases. This has deep implications for the kinds of questions one can ask and the depth of insights one can derive.</p>
+<section id="new-data-methods-and-tools" class="level3">
+<h3 class="anchored" data-anchor-id="new-data-methods-and-tools">New data, methods and tools</h3>
+<p>An important enabling factor of urban morphology is the increasing availability of open data products. The emergence of Volunteered Geographic Information, most notably through OpenStreetMap <span class="citation" data-cites="openstre2025">(<a href="../appendices/references.html#ref-openstre2025" role="doc-biblioref">2025</a>)</span>, has made urban form data globally available. OpenStreetMap features such as streets, buildings, and points of interest are available with increasing global coverage. Where such data is not available, datasets are generated using machine learning techniques applied to satellite imagery, as in Google’s Open Buildings project <span class="citation" data-cites="sirko2021">(<a href="../appendices/references.html#ref-sirko2021" role="doc-biblioref">Sirko et al. 2021</a>)</span>. Moreover, LiDAR (point-cloud) data provides high-resolution 3D information on building, street and landscape levels—the Dutch digital elevation model AHN4 (2020-2022) is derived from such data. Street-view imagery is also increasingly released as open data products. For instance, the availability of Mapillary data has enabled the creation of the Global Streetscapes dataset (Biljecki et al., 2025). Also, derived products such as segmented street view imagery (i.e., images in which objects and other visible elements or characteristics of a scene have been classified with computer vision) are increasingly made available openly. Moreover, when data is not openly available, methods exist to generate proxies computationally, with a notable example of Voronoi-based partitioning used as a proxy for parcel data (Fleischmann et al., 2020).</p>
+<p>[Add a composite image with the types of data mentioned in the paragraph above]</p>
+<p>The emergence and increasing availability of data have also led to the development of new tools for processing and analysing those data. Advanced analytical tools are increasingly open and accessible to anyone. Open-source software such as the urban morphology toolkit momepy (Fleischmann, 2019) has enabled automated and scalable workflows. OSMnx (Boeing, 2025) and sfnetworks (van der Meer et al., 2024) allow for programmatic acquisition, processing and analysis of spatial network data. Tools like the street geometry processing toolkit neatnet (Gaboardi et al., 2026) enable the simplification of complex data prior to analysis. While all these tools have made programmatic urban morphology accessible to a growing user base, graphical user interfaces remain the community’s primary choice. Accordingly, the QGIS platform (Graser et al., 2025) and its rapidly evolving ecosystem of plugins have revolutionised spatial analysis and, as part of that, enabled much of contemporary urban morphology analysis. Many of the programmatic tools mentioned above are becoming available as plugins in QGIS’s point-and-click interface.</p>
+<p>Such data products, computational methods and tools enable novel research questions, which can lead to both a better understanding of the current situation and potential transformations of an urban space without having to visit it.</p>
+</section>
+<section id="evolving-domains-of-knowledge-and-application" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="evolving-domains-of-knowledge-and-application">Evolving domains of knowledge and application</h3>
+<p>As shown in Figure #, urban morphology literature shows two major clusters, or domains of knowledge and application, one mostly centred on and extending traditional urban morphology (in red), and one focused on environmental aspects (in green and blue). We elaborate on those two domains in the following two sections.</p>
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><a href="../images/scopus_clusters.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="VOSviewer visualization of keyword co-occurrence from a dataset exported from Scopus on 30 October 2025 using the query “urban morpho*”."><img src="../images/scopus_clusters.png" class="img-fluid figure-img" alt="VOSviewer visualization of keyword co-occurrence from a dataset exported from Scopus on 30 October 2025 using the query “urban morpho*”."></a></p>
+<figcaption class="margin-caption">VOSviewer visualization of keyword co-occurrence from a dataset exported from Scopus on 30 October 2025 using the query “urban morpho*”.</figcaption>
+</figure>
+</div>
+<section id="urban-morphometrics" class="level4">
+<h4 class="anchored" data-anchor-id="urban-morphometrics">Urban morphometrics</h4>
+<p>The red cluster represents the longstanding efforts of the field to characterise patterns of urban form, mostly centred on traditional typo-morphology, which is more architectural, fundamental, form-based, and applied to fields of mobility/movement, social behaviour, and spatial perception. With a fundamental focus on form, it is also more design-based than the other cluster. Extending that core, the already half-century-old Space Syntax and quantitative typology-based approaches stand out as the most recent additions. We can refer to this as a quantification of the field of urban morphology, increasingly known as urban morphometrics. While rooted in the form-based cluster, it could also provide a solid basis for the environmental cluster, enhancing large-scale cross-case analysis. Compared with environmental urban morphology approaches, urban morphometrics lacks the third vertical dimension and thus is mostly limited to a two-dimensional understanding of traditional elements of urban form, namely streets, plots, blocks, and buildings.</p>
+</section>
+<section id="environmental-urban-morphology" class="level4">
+<h4 class="anchored" data-anchor-id="environmental-urban-morphology">Environmental urban morphology</h4>
+<p>The second, larger cluster has emerged recently, continues to grow at an increasing pace and is mostly driven by environmental challenges, such as the urban heat island effect, wind corridors, etc., caused by certain spatial configurations. Materiality and non-built elements also play an important role in the more engineering-focused approach dominating this cluster. This is mostly driven by sustainability challenges, which have been increasingly prominent in urban development agendas. This is known in the literature as environmental urban morphology (Maretto et al., 2023).</p>
+<p>The environmental domain is focused on local, computationally intensive approaches. These often use detailed 3D models of the environment that try to capture the complex interplay among factors such as wind, precipitation, and temperature. Assessment of current urban compositions and configurations, and their potential for transformation towards a specific target, plays an important role in this cluster. Spatial Multi-Criteria Decision Analysis (S-MCDA, ref.), spatial typologies augmented with non-spatial environmental performance information, or more advanced machine learning models meant to classify spatial elements or to predict specific environmental performances are commonly employed in this field.</p>
+</section>
+</section>
+<section id="quality-and-data-literacy" class="level3">
+<h3 class="anchored" data-anchor-id="quality-and-data-literacy">Quality and data literacy</h3>
+<p>While these recent developments make the field more quantitative, qualitative input (deciding on what to analyse and why) and interpretation (what do the results mean) remain essential. For instance, clustering-based approaches, increasingly used to construct quantitative typologies, require both well-informed input (a meaningful number of clusters) and critical interpretation (what do the clusters mean?). Also, with the increasing availability of real and proxy data, the issue is no longer a lack of information but potentially too much of it. Not least, a theoretical understanding of urban form and its interactions with both social and environmental phenomena remains crucial in quantitative approaches. These issues can only be overcome qualitatively and require critical data literacy.</p>
+<p>The analytical skills of an urbanist need to incorporate these recent developments. To what extent, though? What foundational knowledge is necessary for a student of urban morphology to navigate data-augmented contemporary practice of urbanism with competence and confidence? Can we expect urban designers to be experts in machine learning, for instance? What should students learn in the university, and what can they safely encounter only in practice? How do students and teachers position themselves in relation to recent data-producing and data-analytical technologies?</p>
+</section>
+</section>
+<section id="morphological-analysis-and-design" class="level2">
+<h2 class="anchored" data-anchor-id="morphological-analysis-and-design">Morphological analysis and design</h2>
+<p>To be added…</p>
+</section>
+<section id="scraps" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="scraps">Scraps</h2>
 <p>A chapter that is meant to provide an update on the state of the field as well as a structured description of current sub-fields and types of analysis. This will be reflected the structure of the next section.</p>
 <p>This chapter explores emerging frontiers in urban morphology: urban morphometrics, spatial morphology, and spatial data science. Urban morphometrics is a quantitative field aiming at extracting patterns from large amounts of morphological data; spatial morphology expands the field to the analysis of unbuilt space mostly using space syntax theory and landscape ecology principles; spatial data science as a cross-cutting field increasingly adopts urban morphological information to enrich the understanding of spatial phenomena of environmental, social and economic kind.</p>
 <div class="quarto-figure quarto-figure-center page-columns page-full">
 <figure class="figure page-columns page-full">
-<p><a href="../images/scopus_clusters.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="VOSviewer visualization of keyword co-occurrence from a dataset exported from Scopus on 30 October 2025 using the query “urban morpho*“."><img src="../images/scopus_clusters.png" class="img-fluid figure-img" alt="VOSviewer visualization of keyword co-occurrence from a dataset exported from Scopus on 30 October 2025 using the query “urban morpho*“."></a></p>
-<figcaption class="margin-caption">VOSviewer visualization of keyword co-occurrence from a dataset exported from Scopus on 30 October 2025 using the query “urban morpho*“.</figcaption>
+<p><a href="../images/scopus_clusters.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="VOSviewer visualization of keyword co-occurrence from a dataset exported from Scopus on 30 October 2025 using the query “urban morpho*”."><img src="../images/scopus_clusters.png" class="img-fluid figure-img" alt="VOSviewer visualization of keyword co-occurrence from a dataset exported from Scopus on 30 October 2025 using the query “urban morpho*”."></a></p>
+<figcaption class="margin-caption">VOSviewer visualization of keyword co-occurrence from a dataset exported from Scopus on 30 October 2025 using the query “urban morpho*”.</figcaption>
 </figure>
 </div>
 <div class="cell">
@@ -502,7 +651,7 @@ ul.task-list li input[type="checkbox"] {
 <pre><code>Linking to GEOS 3.13.0, GDAL 3.8.5, PROJ 9.5.1; sf_use_s2() is TRUE</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>here() starts at /Users/yayinghao/Documents/ouagb-m</code></pre>
+<pre><code>here() starts at /Users/claudiuforgaci/Projects/education/ouagb-m</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Loading required package: sp</code></pre>
@@ -518,12 +667,12 @@ Attaching package: 'magrittr'</code></pre>
 </div>
 <div class="cell-output-display">
 <div style="display:inline;width:49%;float:left;border-style:solid;border-color:#BEBEBE;border-width:1px 1px 1px 1px;">
-<div class="leaflet html-widget html-fill-item" id="htmlwidget-7896" style="width:100%;height:400px;"></div>
-<script type="application/json" data-for="htmlwidget-7896">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addProviderTiles","args":["Esri.WorldImagery",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addScaleBar","args":[{"maxWidth":100,"metric":true,"imperial":true,"updateWhenIdle":true,"position":"bottomleft"}]},{"method":"addMiniMap","args":[null,null,"bottomright",150,150,19,19,-5,false,false,false,true,false,false,{"color":"#ff7800","weight":1,"clickable":false},{"color":"#000000","weight":1,"clickable":false,"opacity":0,"fillOpacity":0},{"hideText":"Hide MiniMap","showText":"Show MiniMap"},[]]},{"method":"addLayersControl","args":["Base Map","Buildings",{"collapsed":false,"autoZIndex":true,"position":"topright"}]}],"setView":[[51.9244,4.4777],13,[]]},"evals":[],"jsHooks":[]}</script>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-6026" style="width:100%;height:400px;"></div>
+<script type="application/json" data-for="htmlwidget-6026">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addProviderTiles","args":["Esri.WorldImagery",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addScaleBar","args":[{"maxWidth":100,"metric":true,"imperial":true,"updateWhenIdle":true,"position":"bottomleft"}]},{"method":"addMiniMap","args":[null,null,"bottomright",150,150,19,19,-5,false,false,false,true,false,false,{"color":"#ff7800","weight":1,"clickable":false},{"color":"#000000","weight":1,"clickable":false,"opacity":0,"fillOpacity":0},{"hideText":"Hide MiniMap","showText":"Show MiniMap"},[]]},{"method":"addLayersControl","args":["Base Map","Buildings",{"collapsed":false,"autoZIndex":true,"position":"topright"}]}],"setView":[[51.9244,4.4777],13,[]]},"evals":[],"jsHooks":[]}</script>
 </div>
 <div style="display:inline;width:49%;float:left;border-style:solid;border-color:#BEBEBE;border-width:1px 1px 1px 1px;">
-<div class="leaflet html-widget html-fill-item" id="htmlwidget-6404" style="width:100%;height:400px;"></div>
-<script type="application/json" data-for="htmlwidget-6404">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"setView":[[51.9244,4.4777],13,[]],"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addTiles","args":["https://allmaps.xyz/maps/8ebee9ef638a08cf/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":0.7,"zIndex":1,"detectRetina":false,"attribution":"Allmaps"}]}]},"evals":[],"jsHooks":[]}</script>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-7845" style="width:100%;height:400px;"></div>
+<script type="application/json" data-for="htmlwidget-7845">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"setView":[[51.9244,4.4777],13,[]],"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addTiles","args":["https://allmaps.xyz/maps/8ebee9ef638a08cf/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":0.7,"zIndex":1,"detectRetina":false,"attribution":"Allmaps"}]}]},"evals":[],"jsHooks":[]}</script>
 </div>
 <script>
 HTMLWidgets.addPostRenderHandler(function() {
@@ -538,8 +687,8 @@ var leaf_widgets = {};
                 );
                
 
-leaf_widgets['htmlwidget-6404'].sync(leaf_widgets['htmlwidget-7896'],{syncCursor: true, noInitialSync: true});
-leaf_widgets['htmlwidget-7896'].sync(leaf_widgets['htmlwidget-6404'],{syncCursor: true, noInitialSync: true});
+leaf_widgets['htmlwidget-7845'].sync(leaf_widgets['htmlwidget-6026'],{syncCursor: true, noInitialSync: true});
+leaf_widgets['htmlwidget-6026'].sync(leaf_widgets['htmlwidget-7845'],{syncCursor: true, noInitialSync: true});
 
 });
 </script>
@@ -547,6 +696,15 @@ leaf_widgets['htmlwidget-7896'].sync(leaf_widgets['htmlwidget-6404'],{syncCursor
 </div>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-openstre2025" class="csl-entry" role="listitem">
+<span>“OpenStreetMap.”</span> 2025. <a href="https://www.openstreetmap.org/about">https://www.openstreetmap.org/about</a>.
+</div>
+<div id="ref-sirko2021" class="csl-entry" role="listitem">
+Sirko, Wojciech, Sergii Kashubin, Marvin Ritter, Abigail Annkah, Yasser Salah Eddine Bouchareb, Yann Dauphin, Daniel Keysers, Maxim Neumann, Moustapha Cisse, and John Quinn. 2021. <span>“Continental-Scale Building Detection from High Resolution Satellite Imagery,”</span> July. <a href="https://doi.org/10.48550/arXiv.2107.12283">https://doi.org/10.48550/arXiv.2107.12283</a>.
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script>
@@ -1157,13 +1315,13 @@ window.onload = function() {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../index.html" class="pagination-link" aria-label="Preface">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preface</span>
+      <a href="../chapters/howto.html" class="pagination-link" aria-label="How to use this book?">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">How to use this book?</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="../chapters/map_based.html" class="pagination-link" aria-label="Map Based Analysis">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Map Based Analysis</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Map Based Analysis</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
