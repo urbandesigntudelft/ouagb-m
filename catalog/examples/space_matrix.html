@@ -6,11 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Meta Berghauser Pont and Per Haupt">
-<meta name="dcterms.date" content="2010-01-01">
+<meta name="author" content="Meta Berghauser Pont &amp; Per Haupt">
+<meta name="dcterms.date" content="2023-01-01">
 <meta name="description" content="Bridging the gap between abstract urban planning and the actual physical performance of city blocks">
 
-<title>13&nbsp; Spacematrix – Open Urban Analysis Guidebook: Morphology</title>
+<title>13&nbsp; Spacematrix – Open Urban Morphology Guidebook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -66,6 +66,9 @@ div.csl-indent {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-89a1f99596d6e4a91b0a24663eeb039f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -126,7 +129,7 @@ div.csl-indent {
       <a href="../../index.html" class="sidebar-logo-link">
       </a>
     <div class="sidebar-title mb-0 py-0">
-      <a href="../../">Open Urban Analysis Guidebook: Morphology</a> 
+      <a href="../../">Open Urban Morphology Guidebook</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -491,16 +494,9 @@ div.csl-indent {
    
   <ul>
   <li><a href="#why-use-this-method" id="toc-why-use-this-method" class="nav-link active" data-scroll-target="#why-use-this-method">Why use this method?</a></li>
-  <li><a href="#you-are-ready-to-use-this-method-if" id="toc-you-are-ready-to-use-this-method-if" class="nav-link" data-scroll-target="#you-are-ready-to-use-this-method-if">You are ready to use this method if</a></li>
+  <li><a href="#you-are-ready-to-use-this-method-if" id="toc-you-are-ready-to-use-this-method-if" class="nav-link" data-scroll-target="#you-are-ready-to-use-this-method-if">You are ready to use this method if…</a></li>
   <li><a href="#questions-you-can-answer" id="toc-questions-you-can-answer" class="nav-link" data-scroll-target="#questions-you-can-answer">Questions you can answer</a></li>
-  <li><a href="#steps" id="toc-steps" class="nav-link" data-scroll-target="#steps">Steps</a>
-  <ul class="collapse">
-  <li><a href="#density" id="toc-density" class="nav-link" data-scroll-target="#density">density</a></li>
-  <li><a href="#fsi" id="toc-fsi" class="nav-link" data-scroll-target="#fsi">FSI</a></li>
-  <li><a href="#gsi" id="toc-gsi" class="nav-link" data-scroll-target="#gsi">GSI</a></li>
-  <li><a href="#osr" id="toc-osr" class="nav-link" data-scroll-target="#osr">OSR</a></li>
-  <li><a href="#l" id="toc-l" class="nav-link" data-scroll-target="#l">L</a></li>
-  </ul></li>
+  <li><a href="#steps" id="toc-steps" class="nav-link" data-scroll-target="#steps">Steps</a></li>
   <li><a href="#tools" id="toc-tools" class="nav-link" data-scroll-target="#tools">Tools</a></li>
   <li><a href="#cases" id="toc-cases" class="nav-link" data-scroll-target="#cases">Cases</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
@@ -537,14 +533,14 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Meta Berghauser Pont and Per Haupt </p>
+             <p>Meta Berghauser Pont &amp; Per Haupt </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">2010</p>
+      <p class="date">January 1, 2023</p>
     </div>
   </div>
   
@@ -558,35 +554,38 @@ div.csl-indent {
 
 <section id="why-use-this-method" class="level2">
 <h2 class="anchored" data-anchor-id="why-use-this-method">Why use this method?</h2>
-<p>Understanding urban density is essential</p>
-<p><strong>Spacematrix</strong> can be used to explore the potential of urban density as a tool for urban planning and design <span class="citation" data-cites="pont2023">(<a href="../../appendices/references.html#ref-pont2023" role="doc-biblioref">Pont and Haupt 2023</a>)</span>. It provides a</p>
+<p>Understanding urban density is essential for making informed decisions about how cities perform and grow. However, urban density is a rather abstract measure which cannot be easily interpreted. <strong>Spacematrix</strong> <span class="citation" data-cites="pont2023">(<a href="../../appendices/references.html#ref-pont2023" role="doc-biblioref">Pont and Haupt 2023</a>)</span> as a method for urban planning and design tackles this challenge as it allows one to explore the potential of urban density. It combines multiple density indicators, namely Floor Space Index (FSI), Ground Space Index (GSI), Open Space Ratio (OSR) and building height as number of levels (L) into a compound classification of urban form types.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/clipboard-3723489094.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Example of buildings grouped into types in the Spacemate tool."><img src="images/clipboard-3723489094.png" class="img-fluid figure-img" alt="Example of buildings grouped into types in the Spacemate tool."></a></p>
+<figcaption>Example of buildings grouped into types in the Spacemate tool.</figcaption>
+</figure>
+</div>
 </section>
 <section id="you-are-ready-to-use-this-method-if" class="level2">
-<h2 class="anchored" data-anchor-id="you-are-ready-to-use-this-method-if">You are ready to use this method if</h2>
+<h2 class="anchored" data-anchor-id="you-are-ready-to-use-this-method-if">You are ready to use this method if…</h2>
+<p>…you can calculate the density indicators FSI, GSI, OSR and L.</p>
 </section>
 <section id="questions-you-can-answer" class="level2">
 <h2 class="anchored" data-anchor-id="questions-you-can-answer">Questions you can answer</h2>
+<ol type="1">
+<li><p>How intensely is an urban area occupied or used?</p></li>
+<li><p>What is the potential growth capacity of an urban area?</p></li>
+<li><p>What types of urban form can accommodate a given density?</p></li>
+</ol>
 </section>
 <section id="steps" class="level2">
 <h2 class="anchored" data-anchor-id="steps">Steps</h2>
-<section id="density" class="level3">
-<h3 class="anchored" data-anchor-id="density">density</h3>
-</section>
-<section id="fsi" class="level3">
-<h3 class="anchored" data-anchor-id="fsi">FSI</h3>
-</section>
-<section id="gsi" class="level3">
-<h3 class="anchored" data-anchor-id="gsi">GSI</h3>
-</section>
-<section id="osr" class="level3">
-<h3 class="anchored" data-anchor-id="osr">OSR</h3>
-</section>
-<section id="l" class="level3">
-<h3 class="anchored" data-anchor-id="l">L</h3>
-</section>
+<ol type="1">
+<li>Define the spatial unit (e.g., building, block, parcel, street, neighbourhood).</li>
+<li>Calculate or obtain data on FSI, GSI, OSR and L values for each spatial unit.</li>
+<li>Use density variables in Spacematrix to identify building and types.</li>
+<li>Confront those values with reality and interpret the results.</li>
+</ol>
 </section>
 <section id="tools" class="level2">
 <h2 class="anchored" data-anchor-id="tools">Tools</h2>
+<p>Spacematrix is implemented in the tool <strong>Spacemate.</strong></p>
 </section>
 <section id="cases" class="level2">
 <h2 class="anchored" data-anchor-id="cases">Cases</h2>
@@ -1241,6 +1240,38 @@ window.onload = function() {
     </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
